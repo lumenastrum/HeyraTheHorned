@@ -52,7 +52,7 @@ if (-not $SkipBuild) {
 # ── Stage a clean copy (mod content only, no dev files) ─────────────
 robocopy $repo $staging /MIR /NFL /NDL /NJH /NJS `
     /XD .git .vs Source .release-staging `
-    /XF README.md .gitignore release.ps1 release.local.json release.local.example.json RELEASING.md workshop_item.vdf | Out-Null
+    /XF README.md .gitignore release.ps1 release.local.json release.local.example.json RELEASING.md workshop_item.vdf changenote.txt | Out-Null
 if ($LASTEXITCODE -ge 8) { Write-Error "robocopy staging failed with exit code $LASTEXITCODE" }
 
 $fileCount = (Get-ChildItem $staging -Recurse -File).Count
