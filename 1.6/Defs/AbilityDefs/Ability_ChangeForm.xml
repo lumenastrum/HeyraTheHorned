@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityGroupDef>
+		<defName>Heyra</defName>
+		<cooldownTicks>3600</cooldownTicks>
+	</AbilityGroupDef>
+
+	<AbilityDef>
+		<defName>Heyra_Ability_Formchange</defName>
+		<label>change form</label>
+		<description>Transform into the beast form. Use again while transformed to revert early.\n\nWarning: The after-effect of the transformation will debilitate the subject for weeks, and can be life-threatening if not given enough rest between transformations.</description>
+		<iconPath>Icon/Heyra_Icon_Formchange</iconPath>
+		<!-- No groupDef — Formchange toggle should not share cooldown with Electricfield -->
+		<hotKey>Misc12</hotKey>
+		<statBases>
+			<Ability_Duration>90</Ability_Duration>		<!-- in second. 1 second = 60 ticks, 2500 ticks = 1 in game hour, 41.67 seconds = 1 in game hour -->
+		</statBases>
+		<cooldownTicksRange>300</cooldownTicksRange>	<!-- 5 seconds — short toggle cooldown. Real cost is post-fatigue stacking. -->
+		<stunTargetWhileCasting>false</stunTargetWhileCasting>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1</warmupTime>
+			<range>-1</range>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<!-- Hediff management moved into CompAbilityEffect_ChangeForm for toggle support.
+				 CompAbilityEffect_GiveHediff removed — it used replaceExisting=true which
+				 caused re-add instead of revert when clicking mid-transform. -->
+			<li Class="Heyra.CompProperties_AbilityChangeForm">
+				<hediffDef>Heyra_Hediff_Monsterform</hediffDef>
+				<dropAllApparels>false</dropAllApparels>
+				<dropAllEquipments>false</dropAllEquipments>
+				<unequipAllApparels>true</unequipAllApparels>
+				<unequipAllEquipments>true</unequipAllEquipments>
+			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>Heyra_Effecter_Sparks</effecterDef>
+				<maintainForTicks>60</maintainForTicks>
+				<scale>1.55</scale>
+			</li>
+		</comps>
+	</AbilityDef>
+	<!-- Dragon breath is now an MVCF hediff verb on Heyra_Hediff_Dragonbreath, not a standalone ability -->
+
+	<AbilityDef>
+		<defName>Heyra_Ability_Electricfield</defName>
+		<label>static field</label>
+		<description>Create a strong electric field around, shock enemies that are ignorant enough to come close.</description>
+		<iconPath>Icon/Heyra_Icon_Staticfield</iconPath>
+		<groupDef>Heyra</groupDef>
+		<hotKey>Misc12</hotKey>
+		<statBases>
+			<Ability_Duration>30</Ability_Duration>		<!-- in second. 1 second = 60 ticks, 2500 ticks = 1 in game hour, 41.67 seconds = 1 in game hour -->
+		</statBases>
+		<cooldownTicksRange>5400</cooldownTicksRange>
+		<stunTargetWhileCasting>false</stunTargetWhileCasting>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.1</warmupTime>
+			<range>-1</range>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			  <li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Heyra_Hediff_Showspark</hediffDef>
+				<onlyApplyToSelf>true</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

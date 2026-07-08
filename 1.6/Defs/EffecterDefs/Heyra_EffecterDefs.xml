@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--EAST-->
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Heyra_Flamehair_East</defName>
+		<thingClass>MoteAttached</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_Flamehair_East_</texPath>
+			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
+			<drawSize>3</drawSize>
+			<drawOffset>(0.2, 0, 1.2)</drawOffset>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.05</solidTime>
+		</mote>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>Heyra_Effecter_Flamehair_East</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<scale>6.75</scale>
+				<positionRadius>0</positionRadius>
+				<moteDef>Heyra_Flamehair_East</moteDef>
+				<ticksBetweenMotes>3</ticksBetweenMotes>
+				<speed>0</speed>
+				<absoluteAngle>false</absoluteAngle>
+				<rotation>0</rotation>
+				<angle>0</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<!--WEST-->
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Heyra_Flamehair_West</defName>
+		<thingClass>MoteAttached</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_Flamehair_West_</texPath>
+			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
+			<drawSize>3</drawSize>
+			<drawOffset>(-0.2, 0, 1.2)</drawOffset>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.05</solidTime>
+		</mote>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>Heyra_Effecter_Flamehair_West</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<scale>6.75</scale>
+				<positionRadius>0</positionRadius>
+				<moteDef>Heyra_Flamehair_West</moteDef>
+				<ticksBetweenMotes>3</ticksBetweenMotes>
+				<speed>0</speed>
+				<absoluteAngle>false</absoluteAngle>
+				<rotation>0</rotation>
+				<angle>0</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<!--NORTH-->
+
+	<!--SOUTH-->
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Heyra_Flamehair_South</defName>
+		<thingClass>MoteAttached</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_Flamehair_South_</texPath>
+			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
+			<drawSize>3</drawSize>
+			<drawOffset>(0, 0, 1.2)</drawOffset>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.05</solidTime>
+		</mote>
+	</ThingDef>
+
+	<EffecterDef>
+		<defName>Heyra_Effecter_Flamehair_South</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<scale>6.75</scale>
+				<positionRadius>0</positionRadius>
+				<moteDef>Heyra_Flamehair_South</moteDef>
+				<ticksBetweenMotes>3</ticksBetweenMotes>
+				<speed>0</speed>
+				<absoluteAngle>false</absoluteAngle>
+				<rotation>0</rotation>
+				<angle>0</angle>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<!--SHADOW-->
+
+	<EffecterDef>
+		<defName>Heyra_Effecter_StaticFieldRing</defName>
+		<children>
+			<!-- Animated spark circle ring (the AOE indicator) -->
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<moteDef>Heyra_Mote_SparkCircle_</moteDef>
+				<ticksBetweenMotes>24</ticksBetweenMotes>
+			</li>
+			<!-- Random small sparks (3 sub-effecters cycle through Spark1/2/3) -->
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<moteDef>Heyra_Mote_Spark1_</moteDef>
+				<ticksBetweenMotes>12</ticksBetweenMotes>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<moteDef>Heyra_Mote_Spark2_</moteDef>
+				<ticksBetweenMotes>12</ticksBetweenMotes>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<moteDef>Heyra_Mote_Spark3_</moteDef>
+				<ticksBetweenMotes>12</ticksBetweenMotes>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<!-- Slash trail — brief burst of slash motes on melee hit target.
+	     Played by HediffComp_PlayEffecter on Heyra_Hediff_Slash (24 ticks duration).
+	     Original TrailLeaver spawned 1 random mote every 8 ticks from a pool of 6.
+	     4 sub-effecters (one per direction) at ticksBetweenMotes=8 give a rapid slash flurry. -->
+	<EffecterDef>
+		<defName>Heyra_Effecter_SlashTrail</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<moteDef>Heyra_SlashmoteA</moteDef>
+				<ticksBetweenMotes>8</ticksBetweenMotes>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<moteDef>Heyra_SlashmoteX</moteDef>
+				<ticksBetweenMotes>8</ticksBetweenMotes>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<moteDef>Heyra_SlashmoteY</moteDef>
+				<ticksBetweenMotes>8</ticksBetweenMotes>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteContinuous</subEffecterClass>
+				<moteDef>Heyra_SlashmoteZ</moteDef>
+				<ticksBetweenMotes>8</ticksBetweenMotes>
+			</li>
+		</children>
+	</EffecterDef>
+
+	<!-- Activation flash — one-shot effecter for Electricfield ability cast -->
+	<EffecterDef>
+    <defName>Heyra_Effecter_Sparks</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+        <fleckDef>PlainFlash</fleckDef>
+        <initialDelayTicks>0</initialDelayTicks>
+        <burstCount>1~1</burstCount>
+        <scale>7.0~7.0</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+        <positionRadius>1.3</positionRadius>
+        <initialDelayTicks>8</initialDelayTicks>
+        <fleckDef>ElectricalSpark</fleckDef>
+        <burstCount>7~9</burstCount>
+        <scale>2.5</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+        <positionRadius>1.3</positionRadius>
+        <initialDelayTicks>16</initialDelayTicks>
+        <fleckDef>ElectricalSpark</fleckDef>
+        <burstCount>5~7</burstCount>
+        <scale>2.5</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+        <positionRadius>1.3</positionRadius>
+        <initialDelayTicks>24</initialDelayTicks>
+        <fleckDef>ElectricalSpark</fleckDef>
+        <burstCount>3~7</burstCount>
+        <scale>1.5</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+</Defs>

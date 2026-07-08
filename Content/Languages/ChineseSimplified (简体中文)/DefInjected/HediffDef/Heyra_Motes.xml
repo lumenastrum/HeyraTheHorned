@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ShowSpark (hidden hediff, visual-only) -->
+  <Heyra_Hediff_Showspark.label>静电火花</Heyra_Hediff_Showspark.label>
+  <!-- EN: attached motes -->
+  <Heyra_Hediff_Showspark.description>静电场特效</Heyra_Hediff_Showspark.description>
+  
+  <!-- EN: flash slash -->
+  <Heyra_Hediff_Slash.label>迅捷攻击</Heyra_Hediff_Slash.label>
+  <!-- EN: attached by flash slash -->
+  <Heyra_Hediff_Slash.description>被迅捷攻击命中</Heyra_Hediff_Slash.description>
+  <Heyra_Hediff_Slash.labelNoun>迅捷攻击</Heyra_Hediff_Slash.labelNoun>
+  
+</LanguageData>

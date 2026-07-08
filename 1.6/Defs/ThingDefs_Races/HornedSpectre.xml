@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ThingDef ParentName="BasePawn" Name="HornedSpectreBase" Abstract="True">
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <LeatherAmount>0</LeatherAmount>
+	  <MeatAmount>0</MeatAmount>
+    </statBases>
+    <race>
+      <thinkTreeMain>Animal</thinkTreeMain>
+      <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+      <hasGenders>false</hasGenders>
+      <nameGenerator>NamerAnimalGenericMale</nameGenerator>
+      <nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.013</manhunterOnTameFailChance>
+      <trainability>Advanced</trainability>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+		<li>HornedSpectreBuffGiver</li>
+      </hediffGiverSets>
+      <useMeatFrom>Alien_Heyra</useMeatFrom>
+      <needsRest>false</needsRest>
+      <intelligence>ToolUser</intelligence>
+      <body>HeyraBody</body>
+      <predator>false</predator>
+      <packAnimal>false</packAnimal>
+      <baseHungerRate>0</baseHungerRate>
+      <lifeExpectancy>50</lifeExpectancy>
+      <baseBodySize>1</baseBodySize>
+      <makesFootprints>true</makesFootprints>
+      <baseHealthScale>2.0</baseHealthScale>
+      <gestationPeriodDays>32</gestationPeriodDays>
+      <!-- [1.6 FIX] <wildness> was removed from RaceProperties in 1.5+.
+           Leaving it in causes an XML error. Wildness is now handled via genes/life stages. -->
+      <foodType>None</foodType>
+      <leatherDef>Leather_Light</leatherDef>
+      <herdAnimal>false</herdAnimal>
+      <nameOnTameChance>0</nameOnTameChance>
+      <herdMigrationAllowed>false</herdMigrationAllowed>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+        </li>
+      </lifeStageAges>
+	  <specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+	  </specialShadowData>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <!-- [1.6 FIX] soundMeleeHitBuilding removed in RimWorld 1.5+ -->
+      <!-- <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding> -->
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+	  <bloodDef>HornedSpectre_Blood</bloodDef>
+	  <fleshType>HornedSpectre_Flesh</fleshType>
+    </race>
+    <tradeTags>
+      <li></li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="HornedSpectreBase">
+    <defName>HornedSpectreA</defName>
+    <label>Horned Spectre</label>
+    <description>Being neither dead or alive, the Horned Spectres do not feel anything. They act like animals and will surely rip their enemies apart.</description>
+    <statBases>
+      <PainShockThreshold>10.0</PainShockThreshold>
+      <MoveSpeed>3.0</MoveSpeed>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+      <MarketValue>1500</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+    </statBases>
+  <tools>
+    <li>
+      <label>left hand</label>
+      <capacities>
+        <li>Scratch</li>
+      </capacities>
+      <power>10</power>
+      <cooldownTime>2.2</cooldownTime>
+      <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      <surpriseAttack>
+        <extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </surpriseAttack>
+    </li>
+    <li>
+      <label>right hand</label>
+      <capacities>
+        <li>Scratch</li>
+      </capacities>
+      <power>12</power>
+      <cooldownTime>1.8</cooldownTime>
+      <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      <surpriseAttack>
+        <extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>5</amount>
+          </li>
+        </extraMeleeDamages>
+      </surpriseAttack>
+    </li>
+    <li>
+      <label>teeth</label>
+      <capacities>
+        <li>Bite</li>
+      </capacities>
+      <power>19.0</power>
+      <cooldownTime>2</cooldownTime>
+      <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+    </li>
+  </tools>
+  </ThingDef>
+  
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>HornedSpectre_Blood</defName>
+		<label>blood</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(35, 80, 63, 180)</color>
+		</graphicData>
+		<filth>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+	<FleshTypeDef>
+		<defName>HornedSpectre_Flesh</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Damage_HitFlesh</damageEffecter>
+		<genericWounds>
+			<li>
+				<color>(65, 110, 93)</color>
+				<texture>Things/Pawn/Wounds/WoundFleshA</texture>
+			</li>
+			<li>
+				<color>(65, 110, 93)</color>
+				<texture>Things/Pawn/Wounds/WoundFleshB</texture>
+			</li>
+			<li>
+				<color>(65, 110, 93)</color>
+				<texture>Things/Pawn/Wounds/WoundFleshC</texture>
+			</li>
+		</genericWounds>
+		<bandagedWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedA</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedB</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedC</texture>
+			</li>
+		</bandagedWounds>
+	</FleshTypeDef>
+
+</Defs>

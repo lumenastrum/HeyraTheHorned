@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef ParentName="CutBase">
+    <defName>Heyra_Speedyslash</defName>
+    <label>cut</label>
+	<additionalHediffs>
+			<li>
+				<hediff>Heyra_Hediff_Slash</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+			</li>
+	</additionalHediffs>
+  </DamageDef>
+  
+  <ToolCapacityDef>
+    <defName>Heyra_Speedyslash</defName>
+    <label>cut</label>
+  </ToolCapacityDef>
+  
+  <ManeuverDef>
+		<defName>Heyra_Speedyslash</defName>
+		<requiredCapacity>Heyra_Speedyslash</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>Heyra_Speedyslash</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+
+</Defs>

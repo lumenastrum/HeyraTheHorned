@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.BackstoryDef Abstract="True" Name="Heyra_Story_Base">
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		 <relationSettings>
+            <relationChanceModifierLover>0</relationChanceModifierLover>
+            <relationChanceModifierExLover>0</relationChanceModifierExLover>
+            <relationChanceModifierFiance>0</relationChanceModifierFiance>
+            <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+            <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+            <relationChanceModifierParent>0</relationChanceModifierParent>
+            <renamer>
+               <li>
+                  <relation>Parent</relation>
+                  <label>AlienFather</label>
+                  <femaleLabel>AlienMother</femaleLabel>
+               </li>
+            </renamer>
+        </relationSettings>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Pyromaniac</defName>
+				<chance>100</chance>
+			</li>
+		</disallowedTraitsChance>
+		<forcedHediffs>
+		</forcedHediffs> 		
+	</AlienRace.BackstoryDef>
+	
+	<!-- Start Here -->
+	
+	<!-- Dragon child -->
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_NaughtykidD</defName>
+		<title>naughty kid</title>
+		<titleShort>naughty kid</titleShort>
+		<baseDesc>{PAWN_nameDef} used to be the naughtiest of the kids around. {PAWN_possessive} pranks often went too far and caused a fight between {PAWN_objective} and the victim.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Social>-1</Social>			
+		</skillGains>
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs> 
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_ArtprodigyD</defName>
+		<title>art prodigy</title>
+		<titleShort>art prodigy</titleShort>
+		<baseDesc>{PAWN_nameDef} showed extraordinary artistic talent at a young age. {PAWN_pronoun} has filled many sketchbooks with {PAWN_possessive} creative drawings.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Artistic>4</Artistic>		
+		</skillGains>
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_BelovedchildD</defName>
+		<title>beloved child</title>
+		<titleShort>beloved child</titleShort>
+		<baseDesc>For various reasons, {PAWN_nameDef} got more love than her sisters combined. However, this also means that {PAWN_pronoun} received more expectations making {PAWN_objective} under pressure far beyond {PAWN_possessive} peers.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName Degree="1">Neurotic</defName>
+			</li>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_TemplekidD</defName>
+		<title>kid in the monastery</title>
+		<titleShort>monastery kid</titleShort>
+		<baseDesc>{PAWN_nameDef} grew up in a monastery and was raised by the Heyran clergy. Life in the monastery gradually became boring. From then on, {PAWN_pronoun} was looking forward to the day when {PAWN_pronoun} could leave and live {PAWN_possessive} own life.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>2</Plants>
+			<Cooking>2</Cooking>
+			<Social>-2</Social>	
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_PageD</defName>
+		<title>hierarch's page</title>
+		<titleShort>page</titleShort>
+		<baseDesc>{PAWN_nameDef} was an attendant to a local hierarch. In return for {PAWN_possessive} labor, {PAWN_pronoun} received training in manners, literacy, combat and art.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Artistic>2</Artistic>
+			<Social>2</Social>	
+			<Intellectual>2</Intellectual>	
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_SlowgrowerD</defName>
+		<title>slow-grower</title>
+		<titleShort>slow-grower</titleShort>
+		<baseDesc>{PAWN_nameDef} had a set of slow-growing horns. {PAWN_pronoun} was annoyed and concerned, and tried many ways to improve the growth rate of {PAWN_possessive} horns. Luckily it turned out just fine after {PAWN_pronoun} grew up a little bit. It remains unknown which, if any, method actually helped it. Was it the herbal medicine, the massage, or the wish {PAWN_pronoun} made to the meteor that night? </baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Medicine>3</Medicine>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_SkywatcherD</defName>
+		<title>sky watcher</title>
+		<titleShort>sky watcher</titleShort>
+		<baseDesc>A pair of binoculars and a clear night sky were enough to make {PAWN_nameDef} happy. {PAWN_pronoun} would spend hours lying on the ground watching the stars as it had an unexplainable attraction to {PAWN_objective}.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_InnocentD</defName>
+		<title>innocent child</title>
+		<titleShort>innocent</titleShort>
+		<baseDesc>{PAWN_nameDef} was the purest kid among {PAWN_possessive} peers. {PAWN_pronoun} had no bad thoughts and was willing to trust others, even if it caused {PAWN_objective} to be deceived many times.</baseDesc>
+		<slot>Childhood</slot>	
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Kind</defName>
+			</li>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_AttractivechildD</defName>
+		<title>attractive child</title>
+		<titleShort>attractive child</titleShort>
+		<baseDesc>Born with a beautiful look, {PAWN_nameDef} received countless praises for her cuteness since young.</baseDesc>
+		<slot>Childhood</slot>	
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName Degree="1">Beauty</defName>
+			</li>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_ApprenticeD</defName>
+		<title>apprentice of a master</title>
+		<titleShort>apprentice</titleShort>
+		<baseDesc>{PAWN_nameDef} spent {PAWN_possessive} entire childhood learning from a master craftsman. {PAWN_pronoun} accumulated valuable experience even though children in the workshop were only permitted to do some basic work.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Crafting>3</Crafting>
+			<Artistic>2</Artistic>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_CompetitiveD</defName>
+		<title>competitive child</title>
+		<titleShort>competitive child</titleShort>
+		<baseDesc>{PAWN_nameDef} enjoyed outsmarting other people. {PAWN_pronoun} always wanted to beat other children in exams, competitions, or even games. Once, after losing five consecutive games in Go, {PAWN_pronoun} could not control {PAWN_possessive} emotion and started a fight with the opponent furiously.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Intellectual>5</Intellectual>
+			<Social>-3</Social>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Abrasive</defName>
+				<chance>30</chance>
+			</li>
+			<li>
+				<defName>TooSmart</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_MartialartistD</defName>
+		<title>juvenile martial artist</title>
+		<titleShort>martial artist</titleShort>
+		<baseDesc>{PAWN_nameDef} practiced martial arts under a former Forbidden Army soldier. The training covered both armed and unarmed combat. As a result, {PAWN_pronoun} learned to perform deadly moves using a variety of weapons and developed a good physique.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>4</Melee>
+			<Shooting>3</Shooting>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+			<li>
+				<defName>Bloodlust</defName>
+				<chance>20</chance>
+			</li>
+			<li>
+				<defName>Nimble</defName>
+			</li>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_SlingshotD</defName>
+		<title>slingshot pro</title>
+		<titleShort>pro</titleShort>
+		<baseDesc>{PAWN_nameDef}'s sister gave {PAWN_objective} a slingshot carved from branches. {PAWN_nameDef} liked it very much, and practiced shooting with many different targets, including a few birds that unfortunately became {PAWN_possessive} victims.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Animals>-3</Animals>
+			<Shooting>4</Shooting>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_ClumsyD</defName>
+		<title>clumsy child</title>
+		<titleShort>clumsy child</titleShort>
+		<baseDesc>{PAWN_nameDef} was not good at any work that requires hands-on. If it was in the sowing season, {PAWN_pronoun} might have more seedlings crushed than planted. If {PAWN_pronoun} was sent to do the cleaning, the room could end up messier than before. After being repeatedly criticized by {PAWN_possessive} fellows, {PAWN_nameDef} swore in anger to never touch several kinds of work ever again.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>-4</Plants>
+			<Construction>-4</Construction>
+			<Crafting>-4</Crafting>
+			<Cooking>-4</Cooking>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Nimble</defName>
+			</li>
+        </disallowedTraitsChance>
+		<workDisables>
+			<li>Cleaning</li>
+			<li>Animals</li>
+		</workDisables>
+		<forcedTraitsChance>
+			<li>
+				<defName Degree="1">Nerves</defName>
+			</li>
+			<li>
+				<defName Degree="2">Nerves</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_RebelliousD</defName>
+		<title>rebellious child</title>
+		<titleShort>rebellious</titleShort>
+		<baseDesc>{PAWN_nameDef} could not stand {PAWN_possessive} family being strict with {PAWN_objective}. After running from home, the forest became {PAWN_possessive} hiding place. {PAWN_pronoun} managed to overcome the dangers in the forest and developed the ability to survive in the wild.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Animals>4</Animals>
+			<Intellectual>-2</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_SpoiledD</defName>
+		<title>spoiled kid</title>
+		<titleShort>spoiled kid</titleShort>
+		<baseDesc>{PAWN_nameDef} was born in an affluent family and was provided with the best education and living conditions. However, the excessive love {PAWN_pronoun} received has made {PAWN_objective} a domineering child. </baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Intellectual>5</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<forcedTraitsChance>
+			<li>
+				<defName>Greedy</defName>
+			</li>
+			<li>
+				<defName>Jealous</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_NobledaughterD</defName>
+		<title>hierarch's daughter</title>
+		<titleShort>hierarch's daughter</titleShort>
+		<baseDesc>{PAWN_nameDef} grew up in an influential family. {PAWN_pronoun} received training in archery, music and tea ceremony as those were common activities among wealthy Heyran families. </baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Artistic>4</Artistic>
+			<Intellectual>3</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryDragon</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Greedy</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>Heyra_DragonHediff</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- General Fits all pawnkinds -->
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Naughtykid</defName>
+		<title>naughty kid</title>
+		<titleShort>naughty kid</titleShort>
+		<baseDesc>{PAWN_nameDef} used to be the naughtiest of the kids around. {PAWN_possessive} pranks often went too far and caused a fight between {PAWN_objective} and the victim.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Social>-1</Social>			
+		</skillGains>
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Artprodigy</defName>
+		<title>art prodigy</title>
+		<titleShort>art prodigy</titleShort>
+		<baseDesc>{PAWN_nameDef} showed extraordinary artistic talent at a young age. {PAWN_pronoun} has filled many sketchbooks with {PAWN_possessive} creative drawings.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Artistic>4</Artistic>		
+		</skillGains>
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Belovedchild</defName>
+		<title>beloved child</title>
+		<titleShort>beloved child</titleShort>
+		<baseDesc>For various reasons, {PAWN_nameDef} got more love than her sisters combined. However, this also means that {PAWN_pronoun} received more expectations making {PAWN_objective} under pressure far beyond {PAWN_possessive} peers.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName Degree="1">Neurotic</defName>
+			</li>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Templekid</defName>
+		<title>kid in the monastery</title>
+		<titleShort>monastery kid</titleShort>
+		<baseDesc>{PAWN_nameDef} grew up in a monastery and was raised by the Heyran clergy. Life in the monastery gradually became boring. From then on, {PAWN_pronoun} was looking forward to the day when {PAWN_pronoun} could leave and live {PAWN_possessive} own life.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>2</Plants>
+			<Cooking>2</Cooking>
+			<Social>-2</Social>	
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Page</defName>
+		<title>hierarch's page</title>
+		<titleShort>page</titleShort>
+		<baseDesc>{PAWN_nameDef} was an attendant to a local hierarch. In return for {PAWN_possessive} labor, {PAWN_pronoun} received training in manners, literacy, combat and art.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Artistic>2</Artistic>
+			<Social>2</Social>	
+			<Intellectual>2</Intellectual>	
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneral</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Slowgrower</defName>
+		<title>slow-grower</title>
+		<titleShort>slow-grower</titleShort>
+		<baseDesc>{PAWN_nameDef} had a set of slow-growing horns. {PAWN_pronoun} was annoyed and concerned, and tried many ways to improve the growth rate of {PAWN_possessive} horns. Luckily it turned out just fine after she grew up a little bit. It remains unknown which, if any, method actually helped it. Was it the herbal medicine, the massage, or the wish she made to the meteor that night? </baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Medicine>3</Medicine>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Skywatcher</defName>
+		<title>sky watcher</title>
+		<titleShort>sky watcher</titleShort>
+		<baseDesc>A pair of binoculars and a clear night sky were enough to make {PAWN_nameDef} happy. {PAWN_pronoun} would spend hours lying on the ground watching the stars as it had an unexplainable attraction to {PAWN_objective}.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Innocent</defName>
+		<title>innocent child</title>
+		<titleShort>innocent</titleShort>
+		<baseDesc>{PAWN_nameDef} was the purest kid among {PAWN_possessive} peers. {PAWN_pronoun} had no bad thoughts and was willing to trust others, even if it caused {PAWN_objective} to be deceived many times.</baseDesc>
+		<slot>Childhood</slot>	
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Kind</defName>
+			</li>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Attractivechild</defName>
+		<title>attractive child</title>
+		<titleShort>attractive child</titleShort>
+		<baseDesc>Born with a beautiful look, {PAWN_nameDef} received countless praises for her cuteness since young.</baseDesc>
+		<slot>Childhood</slot>	
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName Degree="1">Beauty</defName>
+			</li>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Apprentice</defName>
+		<title>apprentice of a master</title>
+		<titleShort>apprentice</titleShort>
+		<baseDesc>{PAWN_nameDef} spent {PAWN_possessive} entire childhood learning from a master craftsman. {PAWN_pronoun} accumulated valuable experience even though children in the workshop were only permitted to do some basic work.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Crafting>3</Crafting>
+			<Artistic>2</Artistic>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Competitive</defName>
+		<title>competitive child</title>
+		<titleShort>competitive child</titleShort>
+		<baseDesc>{PAWN_nameDef} enjoyed outsmarting other people. {PAWN_pronoun} always wanted to beat other children in exams, competitions, or even games. Once, after losing five consecutive games in Go, {PAWN_pronoun} could not control {PAWN_possessive} emotion and started a fight with the opponent furiously.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Intellectual>5</Intellectual>
+			<Social>-3</Social>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Abrasive</defName>
+				<chance>30</chance>
+			</li>
+			<li>
+				<defName>TooSmart</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Martialartist</defName>
+		<title>juvenile martial artist</title>
+		<titleShort>martial artist</titleShort>
+		<baseDesc>{PAWN_nameDef} practiced martial arts under a former Forbidden Army soldier. The training covered both armed and unarmed combat. As a result, {PAWN_pronoun} learned to perform deadly moves using a variety of weapons and developed a good physique.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>4</Melee>
+			<Shooting>3</Shooting>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+			<li>Heyra_BackstoryFighter</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+			<li>
+				<defName>Bloodlust</defName>
+				<chance>20</chance>
+			</li>
+			<li>
+				<defName>Nimble</defName>
+			</li>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Slingshot</defName>
+		<title>slingshot pro</title>
+		<titleShort>pro</titleShort>
+		<baseDesc>{PAWN_nameDef}'s sister gave {PAWN_objective} a slingshot carved from branches. {PAWN_nameDef} liked it very much, and practiced shooting with many different targets, including a few birds that unfortunately became {PAWN_possessive} victims.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Animals>-3</Animals>
+			<Shooting>4</Shooting>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+			<li>Heyra_BackstoryFighter</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Coral</defName>
+		<title>coralize syndrome patient</title>
+		<titleShort>coral kid</titleShort>
+		<baseDesc>Unlike normal Heyras whose horns channel the spiritual power of the land creatures, {PAWN_nameDef}'s horns have the affinity to the sea. This type of situation is very rare and considered a disease. On the other hand, there are also Heyras who think coral horns are cute due to their pink color and rounded shapes.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+		</skillGains>		
+		<maleCommonality>0</maleCommonality>
+		<femaleCommonality>25</femaleCommonality>
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+			<li>Heyra_BackstoryCoral</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Clumsy</defName>
+		<title>clumsy child</title>
+		<titleShort>clumsy child</titleShort>
+		<baseDesc>{PAWN_nameDef} was not good at any work that requires hands-on. If it was in the sowing season, {PAWN_pronoun} might have more seedlings crushed than planted. If {PAWN_pronoun} was sent to do the cleaning, the room could end up messier than before. After being repeatedly criticized by {PAWN_possessive} fellows, {PAWN_nameDef} swore in anger to never touch several kinds of work ever again.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Plants>-4</Plants>
+			<Construction>-4</Construction>
+			<Crafting>-4</Crafting>
+			<Cooking>-4</Cooking>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+			<li>Heyra_BackstoryFighter</li>
+		</spawnCategories>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Nimble</defName>
+			</li>
+        </disallowedTraitsChance>
+		<workDisables>
+			<li>Cleaning</li>
+			<li>Animals</li>
+		</workDisables>
+		<forcedTraitsChance>
+			<li>
+				<defName Degree="1">Nerves</defName>
+			</li>
+			<li>
+				<defName Degree="2">Nerves</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Rebellious</defName>
+		<title>rebellious child</title>
+		<titleShort>rebellious</titleShort>
+		<baseDesc>{PAWN_nameDef} could not stand {PAWN_possessive} family being strict with {PAWN_objective}. After running from home, the forest became {PAWN_possessive} hiding place. {PAWN_pronoun} managed to overcome the dangers in the forest and developed the ability to survive in the wild.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Animals>4</Animals>
+			<Intellectual>-2</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneralC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- Humble -->
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Farmerschild</defName>
+		<title>peasant child</title>
+		<titleShort>peasant child</titleShort>
+		<baseDesc>{PAWN_nameDef} helped {PAWN_possessive} family from a very early age. {PAWN_pronoun} was assigned duties such as harvesting crops, collecting eggs and, occasionally, fighting the megascarabs that invaded the field. Unfortunately, the busy farm work took up the time {PAWN_pronoun} should have spent on study.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Plants>4</Plants>
+			<Animals>4</Animals>
+			<Intellectual>-4</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryHumble</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Separatedchild</defName>
+		<title>separated child</title>
+		<titleShort>separated</titleShort>
+		<baseDesc>One day, an Infestation scourged {PAWN_nameDef}'s village. {PAWN_pronoun} and {PAWN_possessive} family were scattered in the chaos as people were desperately trying to escape. After that, {PAWN_nameDef} had to survive alone.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Medicine>2</Medicine>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryHumble</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Wanderer</defName>
+		<title>wanderer child</title>
+		<titleShort>wanderer</titleShort>
+		<baseDesc>A toxic fallout brought an end to the peaceful life of young {PAWN_nameDef}. {PAWN_pronoun} had to leave {PAWN_possessive} hometown and seek ways to survive in an unfamiliar city.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryHumble</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- Noble -->
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Spoiled</defName>
+		<title>spoiled kid</title>
+		<titleShort>spoiled kid</titleShort>
+		<baseDesc>{PAWN_nameDef} was born in an affluent family and was provided with the best education and living conditions. However, the excessive love {PAWN_pronoun} received has made {PAWN_objective} a domineering child. </baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Intellectual>5</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNobleC</li>
+		</spawnCategories>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<forcedTraitsChance>
+			<li>
+				<defName>Greedy</defName>
+			</li>
+			<li>
+				<defName>Jealous</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Nobledaughter</defName>
+		<title>hierarch's daughter</title>
+		<titleShort>hierarch's daughter</titleShort>
+		<baseDesc>{PAWN_nameDef} grew up in an influential family. {PAWN_pronoun} received training in archery, music and tea ceremony as those were common activities among wealthy Heyran families. </baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Artistic>4</Artistic>
+			<Intellectual>3</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNobleC</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+			<li>
+				<defName>Greedy</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- .........................................Adulthood........................................................... -->
+	
+	<!-- General -->
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Huntmaster</defName>
+		<title>huntmaster</title>
+		<titleShort>huntmaster</titleShort>
+		<baseDesc>{PAWN_nameDef} leads a hunt group of many less-experienced Heyra hunters. They challenge the most dangerous beasts, even the Insectoids.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Animals>4</Animals>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneral</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Luthier</defName>
+		<title>pacifist luthier</title>
+		<titleShort>luthier</titleShort>
+		<baseDesc>{PAWN_nameDef} has never forged a sword or a piece of armor. Instead, {PAWN_pronoun} made fine zithers using {PAWN_possessive} skill and craftsmanship.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Crafting>6</Crafting>
+			<Artistic>6</Artistic>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneral</li>
+			<li>Heyra_BackstoryCraftsman</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Violent</li>
+		</workDisables>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Swordmaster</defName>
+		<title>swordmaster</title>
+		<titleShort>swordmaster</titleShort>
+		<baseDesc>{PAWN_nameDef} has mastered the use of the sword. {PAWN_pronoun} can land a precise hit on the fastest-moving enemies with her elegant yet deadly moves.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>6</Melee>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneral</li>
+			<li>Heyra_BackstoryFighter</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+			<li>
+				<defName>Brawler</defName>
+				<chance>30</chance>
+			</li>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Merchant</defName>
+		<title>merchant</title>
+		<titleShort>merchant</titleShort>
+		<baseDesc>{PAWN_nameDef} periodically visited the nearby outlander settlements to import industrial products. These products were very profitable if sold to the Heyras. {PAWN_pronoun} has made a small fortune from the trade and was planning to expand {PAWN_possessive} business.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>2</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryGeneral</li>
+			<li>Heyra_BackstoryTrader</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- Humble -->
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Farmer</defName>
+		<title>rice farmer</title>
+		<titleShort>farmer</titleShort>
+		<baseDesc>{PAWN_nameDef} ran a rice paddy. {PAWN_pronoun} always favored high-yielding varieties over high-quality ones as {PAWN_pronoun} wanted to save more people from starvation.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Plants>8</Plants>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryHumble</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Peasant</defName>
+		<title>peasant</title>
+		<titleShort>peasant</titleShort>
+		<baseDesc>{PAWN_nameDef} has been hired to cultivate a strawberry field for many years. Box after box of nicely-grown strawberries have been shipped out of the farm, but {PAWN_nameDef} has never tasted a single one.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Plants>8</Plants>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryHumble</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Armorer</defName>
+		<title>armorer</title>
+		<titleShort>armorer</titleShort>
+		<baseDesc>{PAWN_nameDef} made armor for Heyran army and the individuals that needed protection. {PAWN_possessive} workshop was small in scale and the equipment was old, but {PAWN_pronoun} worked hard with {PAWN_possessive} assistant to ensure the productivity and quality.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Crafting>7</Crafting>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryHumble</li>
+			<li>Heyra_BackstoryCraftsman</li>
+		</spawnCategories>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Builder</defName>
+		<title>builder</title>
+		<titleShort>builder</titleShort>
+		<baseDesc>{PAWN_nameDef} constructed houses for a living. {PAWN_pronoun} was stronger than many other workers and could carry parts that would normally require a wheelbarrow to transport.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>3</Melee>
+			<Construction>6</Construction>
+			<Intellectual>-3</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryHumble</li>
+			<li>Heyra_BackstoryCraftsman</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>ManualDumb</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+			<li>
+				<defName>Tough</defName>
+			</li>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Servant</defName>
+		<title>servant</title>
+		<titleShort>servant</titleShort>
+		<baseDesc>{PAWN_nameDef} was employed by a Heyran shaman to do laundry, cleaning and cooking. The shaman noticed {PAWN_nameDef}'s interest in medical books and kindly gave the servant access to her book collection. {PAWN_nameDef} enjoyed reading in {PAWN_possessive} free time and learned a lot from the books.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Cooking>4</Cooking>
+			<Medicine>2</Medicine>
+			<Intellectual>2</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryHumble</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>ManualDumb</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Skilledfighter</defName>
+		<title>skilled fighter</title>
+		<titleShort>fighter</titleShort>
+		<baseDesc>{PAWN_nameDef} knows how to fight with weapons or unarmed. {PAWN_pronoun} fought in many underground arenas with more victories than losses.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>4</Melee>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryHumble</li>
+			<li>Heyra_BackstoryFighter</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Stonemason</defName>
+		<title>stonemason</title>
+		<titleShort>stonemason</titleShort>
+		<baseDesc>{PAWN_nameDef} cut and polished stones into bricks, grinding discs, armor pieces and many other necessaries of life. In order to obtain high-quality stones, {PAWN_pronoun} always quarried them herself.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Mining>6</Mining>
+			<Crafting>4</Crafting>
+			<Artistic>-3</Artistic>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryHumble</li>
+			<li>Heyra_BackstoryCraftsman</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>ManualDumb</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- Noble -->
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Peacecaller</defName>
+		<title>peace caller</title>
+		<titleShort>peace caller</titleShort>
+		<baseDesc>Although most Heyras deny the possibility to make a peace treaty with Rong, {PAWN_nameDef} thought differently. {PAWN_pronoun} spent years reading historical documents, and found that ancient Heyra and Rong share the same bloodline. {PAWN_nameDef} believed this is key to the peaceful coexistence of the two.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Intellectual>6</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNoble</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Radicalreformer</defName>
+		<title>radical reformer</title>
+		<titleShort>reformer</titleShort>
+		<baseDesc>{PAWN_nameDef} has lived in an outlander settlement for several years and believed Realm of Heyra needed to be industrialized in all aspects. After going back to her hometown, {PAWN_pronoun} persuaded the local official to let her lead a series of reforms. Sadly most of them were hasty and did not achieve satisfactory results.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>6</Social>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNoble</li>
+		</spawnCategories>
+		<requiredWorkTags>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Chiefarchitect</defName>
+		<title>chief architect</title>
+		<titleShort>architect</titleShort>
+		<baseDesc>{PAWN_nameDef} designed the palaces and gardens for Heyran nobles. {PAWN_pronoun} did not care about the cost and would pursue the pure magnificence with {PAWN_possessive} design.
+		</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Construction>6</Construction>
+			<Artistic>2</Artistic>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNoble</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>ManualSkilled</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Busyofficial</defName>
+		<title>busy official</title>
+		<titleShort>official</titleShort>
+		<baseDesc>{PAWN_nameDef} was always exhausted by all the work assigned to {PAWN_objective}. {PAWN_pronoun} had to hire several servants to take care of the housework.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Cooking>-3</Cooking>
+			<Social>4</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNoble</li>
+		</spawnCategories>
+		<requiredWorkTags>
+            <li>Social</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Geomancer</defName>
+		<title>geomancer</title>
+		<titleShort>geomancer</titleShort>
+		<baseDesc>{PAWN_nameDef} inspected the vital energy that flows between heaven and earth. {PAWN_possessive} duties included locating mineral deposits, predicting the weather and giving instructions to the farmers.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Plants>4</Plants>
+			<Mining>4</Mining>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNoble</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualSkilled</li>
+            <li>Social</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Wealthylandlord</defName>
+		<title>wealthy landlord</title>
+		<titleShort>landlord</titleShort>
+		<baseDesc>{PAWN_nameDef} inherited a lot of land and wealth from the family. {PAWN_pronoun} enjoyed {PAWN_possessive} worry-free life as {PAWN_pronoun} went hunting daily for fun and delegated all the work to the servants.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNoble</li>
+		</spawnCategories>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Pharmacist</defName>
+		<title>imperial pharmacist</title>
+		<titleShort>pharmacist</titleShort>
+		<baseDesc>{PAWN_nameDef} worked in the Imperial Pharmacy. {PAWN_pronoun} was knowledgeable in medicine and wrote several books using {PAWN_possessive} knowledge.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Medicine>8</Medicine>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNoble</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<workDisables>
+		</workDisables>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Governess</defName>
+		<title>governess</title>
+		<titleShort>governess</titleShort>
+		<baseDesc>{PAWN_nameDef} worked in rich Heyran families. {PAWN_pronoun} was responsible for supporting children's education along with wider mentoring. {PAWN_nameDef} also liked teaching children to bake cookies.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+			<Cooking>4</Cooking>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNoble</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<workDisables>
+		</workDisables>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Tealover</defName>
+		<title>tea fanatic</title>
+		<titleShort>tea fanatic</titleShort>
+		<baseDesc>{PAWN_nameDef} was addicted to tea. {PAWN_pronoun} spent a small fortune on buying the most premium tea and {PAWN_pronoun} referred to them as the "nerves-calming omnirefresher".</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Cooking>5</Cooking>
+			<Medicine>2</Medicine>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNoble</li>
+		</spawnCategories>
+		<requiredWorkTags>
+		</requiredWorkTags>
+		<workDisables>
+		</workDisables>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<forcedHediffs>
+			<li>PsychiteAddiction</li>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Catlover</defName>
+		<title>cat lover</title>
+		<titleShort>cat lover</titleShort>
+		<baseDesc>{PAWN_nameDef} owned three cats. {PAWN_pronoun} always made {PAWN_possessive} own homemade cat food with fresh muffalo meat and berries. Once a fire took the life of {PAWN_possessive} youngest cat, which traumatized {PAWN_objective} and made {PAWN_objective} pyrophobic ever since.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Animals>6</Animals>
+			<Cooking>2</Cooking>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryNoble</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Animals</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Firefighting</li>
+		</workDisables>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<forcedHediffs>
+		</forcedHediffs>
+	</AlienRace.AlienBackstoryDef>
+	
+</Defs>	

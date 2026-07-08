@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<!--=============== Ingredient ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Heyra_Item_Seedingredient</defName>
+    <label>ancient Heyra blood</label>
+    <description>It is said that this red ampoule holds the genetic essence of ancient Heyras. This is an extremely rare item whose creator remains unknown.</description>
+    <graphicData>
+      <texPath>Item/Heyra_Seedingredient</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.1</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+  <!--=============== Actual Drugs ====================-->
+  
+  <ThingDef Name="Heyra_ActivatorBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+	<descriptionHyperlinks>
+      <HediffDef>Heyra_Hediff_Postfatigue</HediffDef>
+    </descriptionHyperlinks>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>-4</Beauty>
+	  <MarketValue>2000</MarketValue>
+      <Mass>0.1</Mass>
+	  <WorkToMake>4000</WorkToMake>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>5</stackLimit>
+    <thingCategories>
+      <li>Artifacts</li>
+    </thingCategories>
+    <tradeTags>
+    </tradeTags>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+	<ingestible>
+      <foodType>Fluid</foodType>
+      <ingestSound>MechSerumUsed</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Use {0}</ingestCommandString>
+      <ingestReportString>Using {0}.</ingestReportString>
+	  <preferability>NeverForNutrition</preferability>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <chairSearchRadius>1</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <tableDesired>false</tableDesired>
+      <outcomeDoers>
+      </outcomeDoers>
+    </ingestible>
+    <pathCost>14</pathCost>
+    <burnableByRecipe>true</burnableByRecipe>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <allowedArchonexusCount>-1</allowedArchonexusCount>
+	<recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+	  <recipeUsers>
+		<li>Heyra_Workbench</li>
+	  </recipeUsers>
+		<skillRequirements>
+		 <Crafting>12</Crafting>
+		</skillRequirements>	
+		<researchPrerequisite>Heyra_Researchawaken</researchPrerequisite>	
+    </recipeMaker>
+  </ThingDef>	
+  
+  <ThingDef ParentName="Heyra_ActivatorBase">
+    <defName>Heyra_Item_Activator_Thunder</defName>
+    <label>seed of awakening</label>
+    <description>The seed of awakening is a single-dose gene activator for Heyras. It restores the ancient power that Heyras once possessed, granting the ability to transform into a beast form. \n\nWarning: The aftermath of transformation will debilitate the subject for weeks, and can be life-threatening if not given enough rest between transformations.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Heyra_Hediff_Monsterform</HediffDef>
+      <AbilityDef>Heyra_Ability_Formchange</AbilityDef>
+	  <AbilityDef>Heyra_Ability_Electricfield</AbilityDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Item/Heyra_Autoinjector_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Heyra_Hediff_Enableformchange</hediffDef>
+        </li>
+      </outcomeDoers>
+    </ingestible>	
+	<costList>
+			<Heyra_Biohorn3D>1</Heyra_Biohorn3D>
+			<Heyra_Item_Seedingredient>1</Heyra_Item_Seedingredient>
+	</costList>	
+  </ThingDef>
+  
+</Defs>

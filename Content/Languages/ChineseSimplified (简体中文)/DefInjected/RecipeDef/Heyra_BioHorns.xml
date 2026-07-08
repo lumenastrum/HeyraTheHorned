@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Apply miracle seed - Taiga -->
+  <Applybiohorn0A.label>施用奇迹之种 - 松林</Applybiohorn0A.label>
+  <!-- EN: Apply the miracle seed. -->
+  <Applybiohorn0A.description>施用奇迹之种</Applybiohorn0A.description>
+  <!-- EN: Applying miracle seed. -->
+  <Applybiohorn0A.jobString>正在施用奇迹之种</Applybiohorn0A.jobString>
+  
+  <!-- EN: Apply miracle seed - Jade -->
+  <Applybiohorn0D.label>施用奇迹之种 - 碧玉</Applybiohorn0D.label>
+  <!-- EN: Apply the miracle seed. -->
+  <Applybiohorn0D.description>施用奇迹之种</Applybiohorn0D.description>
+  <!-- EN: Applying miracle seed. -->
+  <Applybiohorn0D.jobString>正在施用奇迹之种</Applybiohorn0D.jobString>
+  
+  <!-- EN: Apply miracle seed - Mountain -->
+  <Applybiohorn1A.label>施用奇迹之种 - 崇山</Applybiohorn1A.label>
+  <!-- EN: Apply the miracle seed. -->
+  <Applybiohorn1A.description>施用奇迹之种</Applybiohorn1A.description>
+  <!-- EN: Applying miracle seed. -->
+  <Applybiohorn1A.jobString>正在施用奇迹之种</Applybiohorn1A.jobString>
+  
+  <!-- EN: Apply miracle seed - Flame -->
+  <Applybiohorn1D.label>施用奇迹之种 - 炽焰</Applybiohorn1D.label>
+  <!-- EN: Apply the miracle seed. -->
+  <Applybiohorn1D.description>施用奇迹之种</Applybiohorn1D.description>
+  <!-- EN: Applying miracle seed. -->
+  <Applybiohorn1D.jobString>正在施用奇迹之种</Applybiohorn1D.jobString>
+  
+  <!-- EN: Apply miracle seed - Forest -->
+  <Applybiohorn2A.label>施用奇迹之种 - 茂森</Applybiohorn2A.label>
+  <!-- EN: Apply the miracle seed. -->
+  <Applybiohorn2A.description>施用奇迹之种</Applybiohorn2A.description>
+  <!-- EN: Applying miracle seed. -->
+  <Applybiohorn2A.jobString>正在施用奇迹之种</Applybiohorn2A.jobString>
+  
+  <!-- EN: Apply miracle seed - Moon -->
+  <Applybiohorn2D.label>施用奇迹之种 - 皎月</Applybiohorn2D.label>
+  <!-- EN: Apply the miracle seed. -->
+  <Applybiohorn2D.description>施用奇迹之种</Applybiohorn2D.description>
+  <!-- EN: Applying miracle seed. -->
+  <Applybiohorn2D.jobString>正在施用奇迹之种</Applybiohorn2D.jobString>
+  
+  <!-- EN: Apply miracle seed - Tundra -->
+  <Applybiohorn3A.label>施用奇迹之种 - 苔原</Applybiohorn3A.label>
+  <!-- EN: Apply the miracle seed. -->
+  <Applybiohorn3A.description>施用奇迹之种</Applybiohorn3A.description>
+  <!-- EN: Applying miracle seed. -->
+  <Applybiohorn3A.jobString>正在施用奇迹之种</Applybiohorn3A.jobString>
+  
+  <!-- EN: Apply miracle seed - Lightning -->
+  <Applybiohorn3D.label>施用奇迹之种 - 霹雳</Applybiohorn3D.label>
+  <!-- EN: Apply the miracle seed. -->
+  <Applybiohorn3D.description>施用奇迹之种</Applybiohorn3D.description>
+  <!-- EN: Applying miracle seed. -->
+  <Applybiohorn3D.jobString>正在施用奇迹之种</Applybiohorn3D.jobString>
+  
+  <!-- EN: Apply miracle seed - Wetland -->
+  <Applybiohorn4A.label>施用奇迹之种 - 湿地</Applybiohorn4A.label>
+  <!-- EN: Apply the miracle seed. -->
+  <Applybiohorn4A.description>施用奇迹之种</Applybiohorn4A.description>
+  <!-- EN: Applying miracle seed. -->
+  <Applybiohorn4A.jobString>正在施用奇迹之种</Applybiohorn4A.jobString>
+  
+  <!-- EN: Apply miracle seed - Grassland -->
+  <Applybiohorn5A.label>施用奇迹之种 - 草原</Applybiohorn5A.label>
+  <!-- EN: Apply the miracle seed. -->
+  <Applybiohorn5A.description>施用奇迹之种</Applybiohorn5A.description>
+  <!-- EN: Applying miracle seed. -->
+  <Applybiohorn5A.jobString>正在施用奇迹之种</Applybiohorn5A.jobString>
+  
+</LanguageData>

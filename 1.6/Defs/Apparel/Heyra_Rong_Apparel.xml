@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+
+
+  <!--=============================================================-->
+  <ThingDef ParentName="Heyra_ApparelBase">
+    <defName>Heyra_Rong_Berserkerarmor</defName>
+    <description>A strong competitor for the 'least protective armor' crown. Only the fearless Rong Berserkers are brave enough to dive into the battlefield wearing these.</description>
+    <label>Rong berserker armor</label>
+    <graphicData>
+      <texPath>Apparel/Heyra_Rong/Heyra_RongA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<colorGenerator Class="ColorGenerator_Options">
+      <options>
+	    <li>
+          <weight>30</weight>
+          <only>(1,1,1)</only>
+        </li>
+        <li>
+          <weight>30</weight>
+          <only>(0.3,0.3,0.8)</only>
+        </li>
+		<li>
+          <weight>30</weight>
+          <only>(0.3,0.8,0.3)</only>
+        </li>
+		<li>
+          <weight>30</weight>
+          <only>(0.8,0.3,0.3)</only>
+        </li>
+      </options>
+	 </colorGenerator>
+	 <recipeMaker>
+	  <researchPrerequisite Inherit="False">Heyra_Researchrong</researchPrerequisite>
+    </recipeMaker>
+	 <costStuffCount>40</costStuffCount>
+    <stuffCategories>
+		<li>Fabric</li>
+      <li>Leathery</li>
+	 </stuffCategories>
+    <statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.25</Mass>
+			<ArmorRating_Sharp>0.29</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.13</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<Insulation_Cold>10.0</Insulation_Cold>
+			<Insulation_Heat>10.0</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+	</statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+		<li>Neck</li>
+		<li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Heyra_Rong/Heyra_RongA</wornGraphicPath>
+      <layers>
+		<li>OnSkin</li>
+		<li>Middle</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <tags>
+	  <li>Heyra_ApparelTypeRong</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+  
+    <ThingDef ParentName="Heyra_ApparelBase">
+    <defName>Heyra_Rong_Ulfhednararmor</defName>
+    <description>A slightly heavier variant of Rong battle garb. It provides marginally more protection than its berserker counterpart, though by most standards it remains dangerously light.</description>
+    <label>Rong ulfhednar armor</label>
+    <graphicData>
+      <texPath>Apparel/Heyra_Rong/Heyra_RongB</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<colorGenerator Class="ColorGenerator_Options">
+      <options>
+	    <li>
+          <weight>30</weight>
+          <only>(1,1,1)</only>
+        </li>
+        <li>
+          <weight>30</weight>
+          <only>(0.3,0.3,0.8)</only>
+        </li>
+		<li>
+          <weight>30</weight>
+          <only>(0.3,0.8,0.3)</only>
+        </li>
+		<li>
+          <weight>30</weight>
+          <only>(0.8,0.3,0.3)</only>
+        </li>
+      </options>
+	 </colorGenerator>
+	 <recipeMaker>
+	  <researchPrerequisite Inherit="False">Heyra_Researchrong</researchPrerequisite>
+    </recipeMaker>
+	 <costStuffCount>40</costStuffCount>
+    <stuffCategories>
+	<li>Fabric</li>
+      <li>Leathery</li>
+	 </stuffCategories>
+    <statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.25</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+	</statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+		<li>Neck</li>
+		<li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Heyra_Rong/Heyra_RongB</wornGraphicPath>
+      <layers>
+		<li>OnSkin</li>
+		<li>Middle</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <tags>
+	  <li>Heyra_ApparelTypeRong</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="Heyra_HeadGearBase">
+    <defName>Heyra_Rong_MaskA</defName>
+    <description>This odd mask features four eyes. Behind the design is the Rong desire to transcend mortal limitations — the four eyes symbolize superhuman vision.</description>
+    <label>Rong four-eyed mask</label>
+	<recipeMaker>
+		<researchPrerequisite Inherit="False">Heyra_Researchrong</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/Heyra_Rong/Heyra_RongMaskA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>30</weight>
+          <only>(0.3,0.3,0.8)</only>
+        </li>
+		<li>
+          <weight>30</weight>
+          <only>(0.3,0.8,0.3)</only>
+        </li>
+		<li>
+          <weight>30</weight>
+          <only>(0.8,0.3,0.3)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+	</equippedStatOffsets>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <statBases>
+      <WorkToMake>2200</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1</Mass>
+      <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.0</EquipDelay>
+    </statBases>
+    <apparel>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Heyra_Rong/Heyra_RongMaskA</wornGraphicPath>
+      <layers>
+		<li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <tags>
+	  <li>Heyra_ApparelTypeRong</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+  
+    <ThingDef ParentName="Heyra_HeadGearBase">
+    <defName>Heyra_Rong_MaskB</defName>
+    <description>This odd mask features elongated, elf-like ears. Behind the design is the Rong desire to transcend mortal limitations — the stretched ears symbolize superhuman hearing.</description>
+    <label>Rong long-eared mask</label>
+	<recipeMaker>
+	<researchPrerequisite Inherit="False">Heyra_Researchrong</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/Heyra_Rong/Heyra_RongMaskB</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>30</weight>
+          <only>(0.3,0.3,0.8)</only>
+        </li>
+		<li>
+          <weight>30</weight>
+          <only>(0.3,0.8,0.3)</only>
+        </li>
+		<li>
+          <weight>30</weight>
+          <only>(0.8,0.3,0.3)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+	</equippedStatOffsets>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <statBases>
+      <WorkToMake>2200</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1</Mass>
+      <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.0</EquipDelay>
+    </statBases>
+    <apparel>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Heyra_Rong/Heyra_RongMaskB</wornGraphicPath>
+      <layers>
+		<li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <tags>
+	  <li>Heyra_ApparelTypeRong</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+  
+  
+</Defs>

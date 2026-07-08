@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Rong berserker armor -->
+  <Heyra_Rong_Berserkerarmor.label>戎族躁狂者护具</Heyra_Rong_Berserkerarmor.label>
+  <!-- EN: A strong competitor for the 'least protective armor' crown. Only the fearless Rong Berserkers are brave enough to dive into the battlefield wearing these. -->
+  <Heyra_Rong_Berserkerarmor.description>"最不保护人的护甲"的强力竞争者。天不怕地不怕的戎族躁狂者才敢穿着这件装备杀进战场。</Heyra_Rong_Berserkerarmor.description>
+  
+  <!-- EN: Rong four-eyed mask -->
+  <Heyra_Rong_MaskA.label>戎族四目面具</Heyra_Rong_MaskA.label>
+  <!-- EN: This odd mask features 4 eyes. Behind the design is the Rong people's desire to overcome human limitations, as the four eyes symbolize superhuman vision. -->
+  <Heyra_Rong_MaskA.description>这件面具上刻画着四只眼睛。这个设计的背后是戎族人想要突破肉体限制的渴望。四只眼睛代表的是超乎常人的视力。</Heyra_Rong_MaskA.description>
+  
+  <!-- EN: Rong long-eared mask -->
+  <Heyra_Rong_MaskB.label>戎族长耳面具</Heyra_Rong_MaskB.label>
+  <!-- EN: This odd mask features elf-like ears. Behind the design is the Rong people's desire to overcome human limitations, as the stretched ears symbolize superhuman hearing capability. -->
+  <Heyra_Rong_MaskB.description>这件面具上有一双妖精般的耳朵。这个设计的背后是戎族人想要突破肉体限制的渴望。长耳朵代表的是超乎常人的听觉。</Heyra_Rong_MaskB.description>
+  
+  <!-- EN: Rong berserker armor -->
+  <Heyra_Rong_Ulfhednararmor.label>戎族恶狼护具</Heyra_Rong_Ulfhednararmor.label>
+  <!-- EN: This piece of armor provides very little protection. No one except the Rongs enjoys wearing these in battle. -->
+  <Heyra_Rong_Ulfhednararmor.description>这件护具提供的保护十分有限。只有戎族人喜欢穿着这样的装备战斗。</Heyra_Rong_Ulfhednararmor.description>
+  
+</LanguageData>

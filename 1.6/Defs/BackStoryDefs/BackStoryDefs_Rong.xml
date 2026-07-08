@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef Abstract="True" Name="Heyra_Rong_Story_Base">
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		 <relationSettings>
+            <relationChanceModifierLover>0</relationChanceModifierLover>
+            <relationChanceModifierExLover>0</relationChanceModifierExLover>
+            <relationChanceModifierFiance>0</relationChanceModifierFiance>
+            <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+            <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+            <relationChanceModifierParent>0</relationChanceModifierParent>
+            <renamer>
+               <li>
+                  <relation>Parent</relation>
+                  <label>AlienFather</label>
+                  <femaleLabel>AlienMother</femaleLabel>
+               </li>
+            </renamer>
+        </relationSettings>
+		<requiredWorkTags>
+            <li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+				<chance>50</chance>
+			</li>		
+			<li>
+				<defName>Bloodlust</defName>
+				<chance>40</chance>
+			</li>	
+			<li>
+				<defName>Abrasive</defName>
+				<chance>10</chance>
+			</li>
+			<li>
+				<defName>Tough</defName>
+				<chance>60</chance>
+			</li>
+        </forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Kind</defName>
+				<chance>100</chance>
+			</li>
+			<li>
+				<defName>BodyPurist</defName>
+				<chance>80</chance>
+			</li>
+			<li>
+				<defName>Misogynist</defName>
+				<chance>80</chance>
+			</li>
+		</disallowedTraitsChance>
+		<forcedHediffs>
+		</forcedHediffs> 		
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- Start Here -->
+	
+	<!-- Rong child -->
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Rong_Rongkid</defName>
+		<title>Rong kid</title>
+		<titleShort>Rong kid</titleShort>
+		<baseDesc>Just like many other Rongs, {PAWN_nameDef} did not remember much about {PAWN_possessive} childhood. {PAWN_pronoun} grew up in Rong's underground settlement, and never got to see the sky or the sun.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>			
+		</skillGains>
+		<spawnCategories>
+			<li>Heyra_BackstoryRong</li>
+		</spawnCategories>
+		<forcedHediffs>
+		</forcedHediffs> 
+		<forcedTraitsChance>
+			<li>
+				<defName>Undergrounder</defName>
+				<chance>30</chance>
+			</li>	
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	
+	<!-- .........................................Adulthood........................................................... -->
+	
+	<!-- General -->
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Rong_Researcher</defName>
+		<title>researcher on vacation</title>
+		<titleShort>researcher</titleShort>
+		<baseDesc>{PAWN_nameDef} served in the Cult of Knowing. The stressful research tasks exhausted {PAWN_objective}. {PAWN_pronoun} took a leave and joined the raiding group. Now {PAWN_pronoun} can enjoy the pure fun of killing.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Intellectual>7</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryRong</li>
+		</spawnCategories>
+		<requiredWorkTags>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Rong_Engineer</defName>
+		<title>automata engineer</title>
+		<titleShort>engineer</titleShort>
+		<baseDesc>{PAWN_nameDef} spent many years improving the Rong automata, making them kill faster while costing less. To see the performance of {PAWN_possessive} creation, {PAWN_pronoun} joined the raids and fought alongside the berserkers and automatas.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Intellectual>4</Intellectual>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryRong</li>
+		</spawnCategories>
+		<requiredWorkTags>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Rong_Raider</defName>
+		<title>anxious raider</title>
+		<titleShort>raider</titleShort>
+		<baseDesc>{PAWN_nameDef} has suffered from anxiety since {PAWN_pronoun} became an adult. When {PAWN_pronoun} killed an enemy for the first time, {PAWN_pronoun} found that {PAWN_pronoun} was able to relieve {PAWN_possessive} anxiety by killing. Since then, {PAWN_pronoun} has not shown mercy to {PAWN_possessive} opponents.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>5</Melee>
+			<Shooting>3</Shooting>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryRong</li>
+		</spawnCategories>
+		<requiredWorkTags>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+			<li>
+				<defName Degree="-1">Nerves</defName>
+				<chance>80</chance>
+			</li>		
+        </forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Rong_Dancer</defName>
+		<title>sword dancer</title>
+		<titleShort>sword dancer</titleShort>
+		<baseDesc>{PAWN_nameDef} was a dancer in the Cult of Pleasure. {PAWN_pronoun} turned sword fighting moves into an elaborate acrobatic dance and entertained many. {PAWN_pronoun} brought {PAWN_possessive} greatsword to many fights, bathed in enemies' blood, just to get inspiration for the new dance.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>7</Melee>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryRong</li>
+		</spawnCategories>
+		<requiredWorkTags>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+			<li>
+				<defName>Brawler</defName>
+				<chance>50</chance>
+			</li>
+        </forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>ShootingAccuracy</defName>
+				<chance>100</chance>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Rong_Gunner</defName>
+		<title>heavy gunner</title>
+		<titleShort>gunner</titleShort>
+		<baseDesc>{PAWN_nameDef} was a warrior of the Cult of Steel. Which means in battle, {PAWN_pronoun} would always be accompanied by automatas. {PAWN_pronoun} used automatas as meat shields and shot from a safe distance.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>-3</Melee>
+			<Shooting>7</Shooting>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryRong</li>
+		</spawnCategories>
+		<requiredWorkTags>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Brawler</defName>
+				<chance>100</chance>
+			</li>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Rong_Leatherworker</defName>
+		<title>leatherworker</title>
+		<titleShort>leatherworker</titleShort>
+		<baseDesc>{PAWN_nameDef} worked at the Cult of Glamor, where {PAWN_pronoun} made clothes from leather, one of Rongs' favorite materials. Although Rongs tend to use synthetic leather, {PAWN_nameDef} has a special fascination with the real thing. Sometimes, {PAWN_pronoun} would skin the dead enemy and keep a small part as a trophy.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Crafting>4</Crafting>
+			<Artistic>5</Artistic>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryRong</li>
+		</spawnCategories>
+		<requiredWorkTags>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<disallowedTraitsChance>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Heyra_Story_Base">
+		<defName>Heyra_Story_Rong_Prosthetist</defName>
+		<title>prosthetist</title>
+		<titleShort>prosthetist</titleShort>
+		<baseDesc>{PAWN_nameDef} made and fit artificial limbs for Rong warriors. {PAWN_possessive} job required years of practice and {PAWN_pronoun} barely had any time left to do social activities.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>-9</Social>
+			<Construction>-3</Construction>
+			<Crafting>7</Crafting>
+			<Medicine>7</Medicine>
+		</skillGains>		
+		<spawnCategories>
+			<li>Heyra_BackstoryRong</li>
+		</spawnCategories>
+		<requiredWorkTags>
+		</requiredWorkTags>
+		<forcedTraitsChance>
+        </forcedTraitsChance>
+		<disallowedTraitsChance>
+		</disallowedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+	
+</Defs>	

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneCategoryDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_GeneCategory</defName>
+		<label>Heyra heritage</label>
+		<displayPriorityInXenotype>600</displayPriorityInXenotype>
+	</GeneCategoryDef>
+
+</Defs>

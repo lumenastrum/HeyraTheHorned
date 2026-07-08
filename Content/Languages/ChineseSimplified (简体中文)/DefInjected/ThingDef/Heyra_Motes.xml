@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Spark motes (VFX, not player-visible) -->
+  <Heyra_Mote_Spark1_.label>电火花</Heyra_Mote_Spark1_.label>
+  <Heyra_Mote_Spark2_.label>电火花</Heyra_Mote_Spark2_.label>
+  <Heyra_Mote_Spark3_.label>电火花</Heyra_Mote_Spark3_.label>
+  <Heyra_Mote_SparkCircle_.label>电火花环</Heyra_Mote_SparkCircle_.label>
+
+  <!-- Slash motes (VFX, not player-visible) -->
+  <Heyra_SlashmoteA.label>斩击特效</Heyra_SlashmoteA.label>
+  <Heyra_SlashmoteAFlipped.label>斩击特效</Heyra_SlashmoteAFlipped.label>
+  <Heyra_SlashmoteX.label>斩击特效</Heyra_SlashmoteX.label>
+  <Heyra_SlashmoteY.label>斩击特效</Heyra_SlashmoteY.label>
+  <Heyra_SlashmoteZ.label>斩击特效</Heyra_SlashmoteZ.label>
+  <Heyra_SlashmoteZFlipped.label>斩击特效</Heyra_SlashmoteZFlipped.label>
+
+</LanguageData>

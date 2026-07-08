@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Heyran combat glass -->
+  <Heyra_Aimbot.label>聆族自瞄镜</Heyra_Aimbot.label>
+  <!-- EN: A wearable, all-purpose computer that provides automated target acquisition and calibration to the wearer. In addition, this headgear also increase the wearer's battlefield awareness as if to give them a third eye. -->
+  <Heyra_Aimbot.description>一个可穿戴的多用途电脑。它能自动获取目标并校准，增加穿戴者的战场感知能力，让穿戴者几乎获得了第三只眼睛。</Heyra_Aimbot.description>
+  
+  <!-- EN: HMAA-Heavy -->
+  <Heyra_Hmaah.label>重型HMAA</Heyra_Hmaah.label>
+  <!-- EN: The High Mobility Assault Armor - Heavy, shortened to HMAA-H, is the most protective variant of the HMAA family. This armor features built-in rocket thrusters for short-ranged flight, but lacks the advanced neuro-memetic assistors. -->
+  <Heyra_Hmaah.description>重型高机动强袭装甲（HMAA-L）是这个家族中防护最好的型号。这个装甲内置了小型火箭推进器，能短途飞行，缺点是没有配备神经辅助装置。</Heyra_Hmaah.description>
+  <!-- EN: jump -->
+  <Heyra_Hmaah.comps.CompReloadable.chargeNoun>TODO</Heyra_Hmaah.comps.CompReloadable.chargeNoun>
+  <!-- EN: jump -->
+  <Heyra_Hmaah.verbs.jump.label>TODO</Heyra_Hmaah.verbs.jump.label>
+  
+  <!-- EN: HMAA-Light -->
+  <Heyra_Hmaal.label>轻型HMAA</Heyra_Hmaal.label>
+  <!-- EN: Born from the marrige of Heyran crafts and glitterworld technology, the High Mobility Assault Armor - Light, shortened to HMAA-L, provides even better proctection than the recon armor. The armor features customized neuro-memetic assistors that only fit the bodies of Heyras. They stabilize the wearer during shooting and improve their melee capability. -->
+  <Heyra_Hmaal.description>诞生于聆族手工和闪耀世界科技的联姻, 轻型高机动强袭装甲（HMAA-L）提供比斥候装甲还好的防护能力。此装甲内置了为聆族定制的神经辅助装置，能帮助他们保持平衡，并在近战中给与穿戴者优势。</Heyra_Hmaal.description>
+  
+  <!-- EN: HMAA-Heavy helmet -->
+  <Heyra_Hmahh.label>重型HMAA头盔</Heyra_Hmahh.label>
+  <!-- EN: The helmet designed to be equipped along with the HMAA-Heavy armor. The protection of this helmet has been pushed to the limit. It can stop the most powerful rounds and also keeps the internal temperature in a comfortable range. -->
+  <Heyra_Hmahh.description>这件头盔被设计用来和重型HMAA装甲一同装备。此头盔的防护能力已经达到理论极限，能挡住最有力的子弹，并能将内部的温度保持在舒适的范围。</Heyra_Hmahh.description>
+  
+  <!-- EN: HMAA-Light helmet -->
+  <Heyra_Hmahl.label>轻型HMAA头盔</Heyra_Hmahl.label>
+  <!-- EN: The helmet designed to be equipped along with the HMAA-Light armor. The helmet integrates a laser rangefinder and a ballistic computer, and is able to draw a lead indicator on the HUD inside to help the shooter hit the moving target. -->
+  <Heyra_Hmahl.description>这件头盔被设计用来和轻型HMAA装甲一同装备。此头盔配备了激光测距仪和弹道计算机，能自动为移动的目标绘制射击提前量指示圈。</Heyra_Hmahl.description>
+  
+  <!-- EN: Heyran sniper suit -->
+  <Heyra_Snipersuit.label>聆族狙击服</Heyra_Snipersuit.label>
+  <!-- EN: This bodysuit provides very limited protection, but the bionic fibers throughout the suit can assist the wearer in shooting. The wearer is empowered to lift and hold a large-caliber gun without getting tired. In addition, the suit correct the wearer's shooting posture, improves accuracy, and reduces recoil. -->
+  <Heyra_Snipersuit.description>这件服装提供的防护能力十分有限，但遍布全身的仿生纤维能辅助穿戴者射击。这件服装让穿戴者能够长时间举起大口径步枪而不感到劳累，还能自动矫正射击者的姿势，抑制后坐力，提高射击精准度。</Heyra_Snipersuit.description>
+  
+  <!-- EN: Heyran nanosuit  -->
+  <Heyra_Tightsuit.label>聆族纳米紧身衣</Heyra_Tightsuit.label>
+  <!-- EN: A newly designed underwear for Heyras. It is more protective than it looks and also has pretty good heat insulation. -->
+  <Heyra_Tightsuit.description>一件新颖的聆族服装。它的防护能力比看上去强得多，而且还有不错的隔温性能。</Heyra_Tightsuit.description>
+  
+</LanguageData>

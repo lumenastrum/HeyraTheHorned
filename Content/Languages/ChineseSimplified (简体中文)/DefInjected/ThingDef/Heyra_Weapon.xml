@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Heyran bow arrow -->
+  <Heyra_Blastarrow.label>聆族箭</Heyra_Blastarrow.label>
+  
+  <!-- EN: Heyran blast crossbow -->
+  <Heyra_Blastcrossbow.label>聆族神火弩</Heyra_Blastcrossbow.label>
+  <!-- EN: A crossbow that fires a pair of explosive arrows at a time. The arrow has a very small explosion range but excels in accuracy. -->
+  <Heyra_Blastcrossbow.description>这柄弩箭一次发射一对爆炸箭矢。爆炸的范围不大，但箭矢的精准度较好。</Heyra_Blastcrossbow.description>
+  <!-- EN: limb -->
+  <Heyra_Blastcrossbow.tools.limb.label>弓臂</Heyra_Blastcrossbow.tools.limb.label>
+  <!-- EN: Heyran blast crossbow -->
+  <Heyra_Blastcrossbow.verbs.Verb_Shoot.label>TODO</Heyra_Blastcrossbow.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Heyran crossbow -->
+  <Heyra_Crossbow.label>聆族钢弩</Heyra_Crossbow.label>
+  <!-- EN: A powerful long-range crossbow. It takes long time to reload but has high armor penetration and accuracy. -->
+  <Heyra_Crossbow.description>威力巨大的长射程兵器。装填耗时非常长但穿甲能力和精准度都很高。</Heyra_Crossbow.description>
+  <!-- EN: limb -->
+  <Heyra_Crossbow.tools.limb.label>弓臂</Heyra_Crossbow.tools.limb.label>
+  <!-- EN: Heyran crossbow -->
+  <Heyra_Crossbow.verbs.Verb_Shoot.label>TODO</Heyra_Crossbow.verbs.Verb_Shoot.label>
+  
+  <!-- EN: greatbow arrow -->
+  <Heyra_Crossbowarrow.label>聆族弩箭</Heyra_Crossbowarrow.label>
+  
+  <!-- EN: Heyran dagger-axe -->
+  <Heyra_Daggeraxe.label>聆族戈</Heyra_Daggeraxe.label>
+  <!-- EN: A polearm tipped with a curved blade and a sharp spike. -->
+  <Heyra_Daggeraxe.description>这件长柄武器的末端绑着一个弯刃，还有一个尖锐的部分用来刺击。</Heyra_Daggeraxe.description>
+  <!-- EN: shaft -->
+  <Heyra_Daggeraxe.tools.shaft.label>杆子</Heyra_Daggeraxe.tools.shaft.label>
+  <!-- EN: blade -->
+  <Heyra_Daggeraxe.tools.blade.label>刃</Heyra_Daggeraxe.tools.blade.label>
+  
+  <!-- EN: Forbidden Army's Halberd -->
+  <Heyra_Forbiddenarmyhalberd.label>禁军长戟</Heyra_Forbiddenarmyhalberd.label>
+  <!-- EN: A well-made polearm that consists a spear tip with a crescent blade on one side. This weapon is the standard equipment of the Heyran Forbidden Army. -->
+  <Heyra_Forbiddenarmyhalberd.description>这件精致的长兵器有着一个枪尖和一个弯曲的刃。它是聆族禁军的标配装备。</Heyra_Forbiddenarmyhalberd.description>
+  <!-- EN: shaft -->
+  <Heyra_Forbiddenarmyhalberd.tools.shaft.label>长杆</Heyra_Forbiddenarmyhalberd.tools.shaft.label>
+  <!-- EN: point -->
+  <Heyra_Forbiddenarmyhalberd.tools.point.label>枪尖</Heyra_Forbiddenarmyhalberd.tools.point.label>
+  
+  <!-- EN: Forbidden Amry's Sword -->
+  <Heyra_Forbiddenarmysword.label>禁军佩剑</Heyra_Forbiddenarmysword.label>
+  <!-- EN: An exquisite sword etched with a diamond pattern, it is a self-defense weapon of the Heyran Forbidden Army. -->
+  <Heyra_Forbiddenarmysword.description>蚀刻着菱形纹的精致宝剑。这是聆族禁军的自卫武器。</Heyra_Forbiddenarmysword.description>
+  <!-- EN: handle -->
+  <Heyra_Forbiddenarmysword.tools.handle.label>把手</Heyra_Forbiddenarmysword.tools.handle.label>
+  <!-- EN: blade -->
+  <Heyra_Forbiddenarmysword.tools.blade.label>剑刃</Heyra_Forbiddenarmysword.tools.blade.label>
+  <!-- EN: point -->
+  <Heyra_Forbiddenarmysword.tools.point.label>刃尖</Heyra_Forbiddenarmysword.tools.point.label>
+  
+  <!-- EN: Rong gunblade -->
+  <Heyra_Gunblade.label>戎族铳刃</Heyra_Gunblade.label>
+  <!-- EN: A hybrid weapon that consists of two parts: a blade and an autocannon. The melee part of the weapon delivers significant damage but lacks the armor-piercing capability. However the autocannon that fires sabot rounds makes up for this weakness. A deadly combo. -->
+  <Heyra_Gunblade.description>这件兵器由两部分组成：一柄巨刃，和一挺连射炮。巨刃能造成不小的伤害，但穿甲能力很差。而能发射穿甲弹的连射炮弥补了这一缺点。真是致命的组合。</Heyra_Gunblade.description>
+  <!-- EN: blade -->
+  <Heyra_Gunblade.tools.blade.label>刀刃</Heyra_Gunblade.tools.blade.label>
+  <!-- EN: Rong gunblade -->
+  <Heyra_Gunblade.verbs.Verb_Shoot.label>TODO</Heyra_Gunblade.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Heyran Halberd -->
+  <Heyra_Halberd.label>聆族戟</Heyra_Halberd.label>
+  <!-- EN: A weapon that consists two vertically positioned blades mounted on the end of a long staff, has decent armor piercing. -->
+  <Heyra_Halberd.description>这件兵器有两个相互垂直的刃，有不错的破甲能力。</Heyra_Halberd.description>
+  <!-- EN: shaft -->
+  <Heyra_Halberd.tools.shaft.label>杆子</Heyra_Halberd.tools.shaft.label>
+  <!-- EN: point -->
+  <Heyra_Halberd.tools.point.label>刃尖</Heyra_Halberd.tools.point.label>
+  
+  <!-- EN: Rong greatsword -->
+  <Heyra_Ronggreatblade.label>戎族巨剑</Heyra_Ronggreatblade.label>
+  <!-- EN: These intimidating Rong swords are typically 5 to 6 feet long. One would only hope their armor could save them as it is nearly impossible to deflect a full power blow from this sword. -->
+  <Heyra_Ronggreatblade.description>这些巨剑的长度可以达到两米。巨大的剑刃的强力一击难以格挡，防御者只能祈祷他的护甲来救他了。</Heyra_Ronggreatblade.description>
+  <!-- EN: handle -->
+  <Heyra_Ronggreatblade.tools.handle.label>把手</Heyra_Ronggreatblade.tools.handle.label>
+  <!-- EN: blade -->
+  <Heyra_Ronggreatblade.tools.blade.label>剑刃</Heyra_Ronggreatblade.tools.blade.label>
+  <!-- EN: point -->
+  <Heyra_Ronggreatblade.tools.point.label>刃尖</Heyra_Ronggreatblade.tools.point.label>
+  
+  <!-- EN: sabot round -->
+  <Heyra_Sabotround.label>穿甲弹</Heyra_Sabotround.label>
+  
+  <!-- EN: Heyran sword -->
+  <Heyra_Sword.label>聆族剑</Heyra_Sword.label>
+  <!-- EN: A sword with a popular design among the realm of Heyra. -->
+  <Heyra_Sword.description>一种在聆族间流行的兵刃。</Heyra_Sword.description>
+  <!-- EN: handle -->
+  <Heyra_Sword.tools.handle.label>把手</Heyra_Sword.tools.handle.label>
+  <!-- EN: blade -->
+  <Heyra_Sword.tools.blade.label>剑刃</Heyra_Sword.tools.blade.label>
+  <!-- EN: point -->
+  <Heyra_Sword.tools.point.label>刃尖</Heyra_Sword.tools.point.label>
+  
+  <!-- EN: Heyran breach hammer -->
+  <Heyra_Warhammer.label>聆族破拆槌</Heyra_Warhammer.label>
+  <!-- EN: A deadly war hammer designed to efficiently tear down walls and gates. -->
+  <Heyra_Warhammer.description>一件致命的战锤。它是被设计来拆掉墙壁和大门的。</Heyra_Warhammer.description>
+  <!-- EN: handle -->
+  <Heyra_Warhammer.tools.handle.label>握柄</Heyra_Warhammer.tools.handle.label>
+  <!-- EN: head -->
+  <Heyra_Warhammer.tools.head.label>槌头</Heyra_Warhammer.tools.head.label>
+  
+</LanguageData>

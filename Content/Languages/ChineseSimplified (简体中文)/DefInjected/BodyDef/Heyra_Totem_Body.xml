@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Totem -->
+  <Heyra_MobileTotem_Body.label>图腾</Heyra_MobileTotem_Body.label>
+  <!-- EN: left front wheel -->
+  <Heyra_MobileTotem_Body.corePart.parts.left_front_wheel.customLabel>左前轮</Heyra_MobileTotem_Body.corePart.parts.left_front_wheel.customLabel>
+  <!-- EN: right front wheel -->
+  <Heyra_MobileTotem_Body.corePart.parts.right_front_wheel.customLabel>右前轮</Heyra_MobileTotem_Body.corePart.parts.right_front_wheel.customLabel>
+  <!-- EN: left rear wheel -->
+  <Heyra_MobileTotem_Body.corePart.parts.left_rear_wheel.customLabel>左后轮</Heyra_MobileTotem_Body.corePart.parts.left_rear_wheel.customLabel>
+  <!-- EN: right rear wheel -->
+  <Heyra_MobileTotem_Body.corePart.parts.right_rear_wheel.customLabel>右后轮</Heyra_MobileTotem_Body.corePart.parts.right_rear_wheel.customLabel>
+  
+</LanguageData>

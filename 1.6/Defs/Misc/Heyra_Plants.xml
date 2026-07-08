@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=========================== Food crops ==============================-->
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Heyra_Bean</defName>
+    <label>Milksoy plant</label>
+    <description>A plant that yields edible beans that are rich in protein. The beans can be used to produce plant milk, and filtered out bean pulp makes good animal feed.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.225</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Item/Heyranbean_Plant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Heyra_Rawbean</harvestedThingDef>
+      <harvestYield>8</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>4.6</growDays>
+	  <immatureGraphicPath>Item/Heyranbean_Plant_Immature</immatureGraphicPath>
+      <visualSizeRange>0.3~0.8</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+	<ThingDef ParentName="PlantFoodRawBase">
+    <defName>Heyra_Rawbean</defName>
+    <label>Heyran bean</label>
+    <description>Raw Milksoy bean.</description>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <graphicData>
+      <texPath>Item/Heyranbean</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>Seed</foodType>
+    </ingestible>
+	<thingCategories Inherit="False">
+      <li>Heyra_Beancategory</li>
+	  <li>PlantFoodRaw</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <RecipeDef>
+    <defName>Heyra_Make_Beanmilk</defName>
+    <label>make bean milk x5</label>
+    <description>Make plant milk from Milksoy beans. During the process, the beans are ground to a puree, then boiled and filtered. The remaining bean pulp is tasteless but can be used as animal food.</description>
+    <jobString>Making bulk bean milk.</jobString>
+    <workAmount>350</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Rawbean</li>
+          </thingDefs>
+        </filter>
+        <count>0.75</count>
+      </li>
+    </ingredients>
+    <products>
+      <Milk>5</Milk>
+	  <Heyra_Beanpulp>10</Heyra_Beanpulp>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Heyra_Researchfarming</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Heyra_Make_Beanmilk_Bulk</defName>
+    <label>make bean milk x20</label>
+    <description>Make plant milk from Heyran beans. During the process, the beans are ground to a puree, then boiled and filtered. The remaining bean pulp is tasteless but can be used as animal food.</description>
+    <jobString>Making bulk bean milk.</jobString>
+    <workAmount>1400</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Rawbean</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <Milk>20</Milk>
+	  <Heyra_Beanpulp>40</Heyra_Beanpulp>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Heyra_Researchfarming</researchPrerequisite>
+  </RecipeDef>
+  
+
+</Defs>

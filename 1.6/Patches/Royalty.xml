@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<success>Normal</success>
+		<xpath>/Defs/ThingDef[defName="Heyra_Hmaah"]/statBases</xpath>
+		<value>
+			<JumpRange>36</JumpRange>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<success>Normal</success>
+		<xpath>/Defs/ThingDef[defName="Heyra_Hmaah"]</xpath>
+		<value>
+		<comps>
+			<!-- [1.6 FIX] CompProperties_Reloadable renamed to CompProperties_ApparelReloadable in 1.5+ -->
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>20</maxCharges>
+				<ammoDef>Chemfuel</ammoDef>
+				<ammoCountPerCharge>10</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>jump</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>		
+				<verbClass>Verb_Jump</verbClass>
+				<label>jump</label>
+				<commandIcon>Things/Pawn/Humanlike/Apparel/JumpPack/JumpPack</commandIcon>
+				<violent>false</violent>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<warmupTime>0.2</warmupTime>
+				<warmupEffecter>JumpWarmupEffect</warmupEffecter>
+				<requireLineOfSight>true</requireLineOfSight>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				  <canTargetPawns>false</canTargetPawns>
+				  <canTargetBuildings>false</canTargetBuildings>
+				</targetParams>		
+			</li>				
+		</verbs>
+		</value>
+	</match>
+</Operation>
+
+
+</Patch>

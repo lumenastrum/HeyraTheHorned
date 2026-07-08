@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MVCF.ModDef>
+		<defName>HeyraTheHorned</defName>
+		<label>Heyra the Horned</label>
+		<description>Adding ranged attack to heyra form changing ability.</description>
+		<ActivateFeatures>
+			<li>HediffVerbs</li>
+			<li>IntegratedToggle</li>
+			<li>IndependentFire</li>
+		</ActivateFeatures>
+	</MVCF.ModDef>
+</Defs>

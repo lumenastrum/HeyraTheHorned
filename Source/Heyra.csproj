@@ -1,0 +1,80 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Heyra</AssemblyName>
+    <RootNamespace>Heyra</RootNamespace>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>portable</DebugType>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+
+  <!--
+    ============================================================
+    ASSEMBLY REFERENCE PATHS — UPDATE THESE TO YOUR LOCAL PATHS
+    ============================================================
+    
+    RIMWORLD_DIR  = Your RimWorld install folder
+                    Steam default: C:\Program Files (x86)\Steam\steamapps\common\RimWorld
+    
+    WORKSHOP_DIR  = Your Steam Workshop folder
+                    Steam default: C:\Program Files (x86)\Steam\steamapps\workshop\content\294100
+    
+    Mod Workshop IDs:
+      Harmony:  2009463077
+      HAR:      839005762
+      VFE:      2023507013
+  -->
+
+  <PropertyGroup>
+    <!-- EDIT THESE PATHS -->
+    <RimWorldDir>F:\SteamLibrary\steamapps\common\RimWorld</RimWorldDir>
+    <WorkshopDir>F:\SteamLibrary\steamapps\workshop\content\294100</WorkshopDir>
+    <ManagedDir>$(RimWorldDir)\RimWorldWin64_Data\Managed</ManagedDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- RimWorld Core -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(ManagedDir)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(ManagedDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Harmony -->
+    <Reference Include="0Harmony">
+      <HintPath>$(WorkshopDir)\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Humanoid Alien Races -->
+    <Reference Include="AlienRace">
+      <HintPath>$(WorkshopDir)\839005762\1.6\Assemblies\AlienRace.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- System -->
+    <Reference Include="System.Core" />
+  </ItemGroup>
+
+  <!-- Auto-copy DLL to mod folder after build -->
+  <PropertyGroup>
+    <ModOutputDir>..\1.6\Assemblies</ModOutputDir>
+  </PropertyGroup>
+  
+  <Target Name="CopyToMod" AfterTargets="Build">
+    <Copy SourceFiles="$(OutputPath)\Heyra.dll" DestinationFolder="$(ModOutputDir)" SkipUnchangedFiles="true" />
+    <Message Text="Copied Heyra.dll to $(ModOutputDir)" Importance="high" />
+  </Target>
+
+</Project>

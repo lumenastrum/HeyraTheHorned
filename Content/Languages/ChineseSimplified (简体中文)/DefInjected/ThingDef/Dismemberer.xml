@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Dismemberer -->
+  <Heyra_Dismemberer.label>裂肢者</Heyra_Dismemberer.label>
+  <!-- EN: Human-sized combat automatas specializing in melee combat. Due to their purely mechanical body, Dismemberers are not affected by EMP. -->
+  <Heyra_Dismemberer.description>戎族制造的机械士兵。它和人类大小类似，专精与近身战斗。得益于其机械式的结构，裂肢者免疫EMP的攻击。</Heyra_Dismemberer.description>
+  <!-- EN: left blade -->
+  <Heyra_Dismemberer.tools.left_blade.label>左镰刃</Heyra_Dismemberer.tools.left_blade.label>
+  <!-- EN: right blade -->
+  <Heyra_Dismemberer.tools.right_blade.label>右镰刃</Heyra_Dismemberer.tools.right_blade.label>
+  
+</LanguageData>

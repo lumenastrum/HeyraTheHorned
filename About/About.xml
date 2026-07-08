@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+	<name>Heyra the Horned (Revived)</name>
+	<author>Bando (original), Foxed (1.6 revival)</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>Foxed.HeyraTheHorned</packageId>
+	<modIconPath IgnoreIfNoMatchingField="True">Icon/Heyra_MainIcon</modIconPath>
+
+	<description>
+[h1]Heyra the Horned — Revived for 1.6[/h1]
+
+A community revival of Bando's beloved Heyra the Horned race mod, updated for RimWorld 1.6 with the original author's absence.
+
+[h2]About[/h2]
+This mod brings a new humanoid race to Rimworld. Heyras settled in Rimworld a long time ago. They possess a unique psychic ability to, occasionally, hear whispers in their heads. Despite these whispers being mostly scattered words, Heyras believe they are the oracles of God. We do not know if these whispers are real. But it is confirmed that Heyras have a higher psychic sensitivity than humans.
+
+Heyran factions are medieval level. However, with the help of your colony's technology, you may craft spacer-level Heyran gears for your Heyra colonists.
+
+This mod also features the Rong people, the nemesis of Heyras — a small group of fierce barbarians who make a living through constant raids.
+
+[h2]Features[/h2]
+- Heyra race with unique psychic abilities and transformation system
+- Rong rival faction with War-Automata
+- Milksoy farming and bean processing chain
+- Spacer-level Heyran equipment
+- Ancestral Recall transformation mechanic
+- Celestial Whisper ranged psychic ability
+
+[h2]Changes from Original[/h2]
+- Updated to RimWorld 1.6 compatibility
+- MoHAR framework dependency removed (functionality internalized)
+- VFE Core namespace updated for 1.6 (VFECore.* to VEF.*)
+- Recompiled assemblies for Unity 2022.3.35
+
+[h2]Dependencies[/h2]
+- Humanoid Alien Races (HAR)
+- Vanilla Expanded Framework (VEF) — includes MVCF and KCSG
+- Ancot Library — for biohorn (miracle seed) visual rendering
+
+[h2]Credits[/h2]
+- [b]Bando[/b] — Original mod author. All creative work, art, and design.
+- [b]Foxed[/b] — 1.6 revival, code updates, and MoHAR internalization.
+- [b]Gouda quiche[/b] — MoHAR framework (open source, internalized with credit).
+
+All rights to the original creative work belong to Bando. This revival is published in good faith due to the original author's extended absence. If Bando returns and requests removal, this mod will be taken down immediately.
+	</description>
+
+	<!-- Hard dependencies — HAR + VEF (includes MVCF + KCSG) -->
+	<modDependencies>
+		<li>
+			<packageId>erdelf.HumanoidAlienRaces</packageId>
+			<displayName>Humanoid Alien Races</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>oskarpotocki.vanillafactionsexpanded.core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>ancot.ancotlibrary</packageId>
+			<displayName>Ancot Library</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2988801276</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>oskarpotocki.vanillafactionsexpanded.core</li>
+		<li>ancot.ancotlibrary</li>
+	</loadAfter>
+
+	<!-- Optional compatibility -->
+	<loadBefore>
+		<li>CETeam.CombatExtended</li>
+	</loadBefore>
+</ModMetaData>

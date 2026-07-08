@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Heyran totem carrier -->
+  <Heyra_MobileTotem.label>聆族图腾机关车</Heyra_MobileTotem.label>
+  <!-- EN: This wooden cart-mounting totem is rarely seen on the battlefield. It has a built-in ballista for close-range defense. This device is closely related to Heyran necromancy. -->
+  <Heyra_MobileTotem.description>这个木制的机关车极少出现在战场。它有一个内置的自动弩作为自卫的手段。这个装置和聆族死灵术有关系。</Heyra_MobileTotem.description>
+  <!-- EN: Cart body -->
+  <Heyra_MobileTotem.tools.Cart_body.label>车身</Heyra_MobileTotem.tools.Cart_body.label>
+  
+</LanguageData>

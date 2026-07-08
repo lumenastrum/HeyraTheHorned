@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Heyra_SlashmoteA</defName>
+		<thingClass>MoteAttached</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_Slash_</texPath>
+			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
+			<drawSize>1.9</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+		<mote>
+			<solidTime>0.2</solidTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Heyra_SlashmoteX</defName>
+		<thingClass>MoteAttached</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_SlashX_</texPath>
+			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
+			<drawSize>1.9</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+		<mote>
+			<solidTime>0.2</solidTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Heyra_SlashmoteY</defName>
+		<thingClass>MoteAttached</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_SlashY_</texPath>
+			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
+			<drawSize>1.9</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+		<mote>
+			<solidTime>0.2</solidTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Heyra_SlashmoteZ</defName>
+		<thingClass>MoteAttached</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_SlashZ_</texPath>
+			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
+			<drawSize>1.9</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+		<mote>
+			<solidTime>0.2</solidTime>
+		</mote>
+	</ThingDef>
+
+
+	<!-- ===============================hediff====================================================== -->
+	<HediffDef>
+		<defName>Heyra_Hediff_Slash</defName>
+		<label>flash slash</label>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>attached by flash slash</description>
+
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>24</disappearsAfterTicks>
+			</li>
+			<li Class="Heyra.HediffCompProperties_PlayEffecter">
+				<effecterDef>Heyra_Effecter_SlashTrail</effecterDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+<!-- ===============================SPARK====================================================== -->
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Heyra_Mote_Spark1_</defName>
+		<thingClass>MoteAttached</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_Spark1_</texPath>
+			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
+			<drawSize>20</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<solidTime>0.2</solidTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Heyra_Mote_Spark2_</defName>
+		<thingClass>MoteAttached</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_Spark2_</texPath>
+			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
+			<drawSize>20</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<solidTime>0.2</solidTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Heyra_Mote_Spark3_</defName>
+		<thingClass>MoteAttached</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_Spark3_</texPath>
+			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
+			<drawSize>20</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<solidTime>0.2</solidTime>
+		</mote>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Heyra_Mote_SparkCircle_</defName>
+		<thingClass>MoteAttached</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_SparkCircle_</texPath>
+			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
+			<drawSize>20</drawSize>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<solidTime>0.3</solidTime>
+			<fadeOutTime>0.1</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+
+	<!-- ===============================hediff============ -->
+
+	<HediffDef>
+		<defName>Heyra_Hediff_Showspark</defName>
+		<label>ShowSpark</label>
+
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>attached motes</description>
+
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="Heyra.HediffCompProperties_PlayEffecter">
+				<effecterDef>Heyra_Effecter_StaticFieldRing</effecterDef>
+			</li>
+			<li Class="Heyra.HediffCompProperties_RemoveIfHediffNotExists">
+			  <hediffDef>Heyra_Hediff_Monsterform</hediffDef>
+			</li>
+			<li Class="Heyra.HediffCompProperties_AddHediffToBodyPart">
+				<hediffsToParts>
+					<li>
+						<hediffDef>Heyra_Hediff_Electricfield</hediffDef>
+						<bodyPartTagDef>TalkingSource</bodyPartTagDef>
+						<bodyPartLable>
+							<li>jaw</li>
+						</bodyPartLable>
+					</li>
+				</hediffsToParts>
+			</li>
+		</comps>
+
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+
+
+</Defs>

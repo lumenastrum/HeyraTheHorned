@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make bean milk x5 -->
+  <Heyra_Make_Beanmilk.label>制作豆奶 x5</Heyra_Make_Beanmilk.label>
+  <!-- EN: Make plant milk from Milksoy beans. During the process, the beans are ground to a puree, then boiled and filtered. The remaining bean pulp is tasteless but can be used as animal food. -->
+  <Heyra_Make_Beanmilk.description>将矮豆研磨、煮沸并过滤来制作豆奶。过滤后剩下的豆渣可以作为饲料使用。</Heyra_Make_Beanmilk.description>
+  <!-- EN: Making bulk bean milk. -->
+  <Heyra_Make_Beanmilk.jobString>正在制作豆奶。</Heyra_Make_Beanmilk.jobString>
+  
+  <!-- EN: make bean milk x20 -->
+  <Heyra_Make_Beanmilk_Bulk.label>制作豆奶 x20</Heyra_Make_Beanmilk_Bulk.label>
+  <!-- EN: Make plant milk from Heyran beans. During the process, the beans are ground to a puree, then boiled and filtered. The remaining bean pulp is tasteless but can be used as animal food. -->
+  <Heyra_Make_Beanmilk_Bulk.description>将矮豆研磨、煮沸并过滤来制作豆奶。过滤后剩下的豆渣可以作为饲料使用。</Heyra_Make_Beanmilk_Bulk.description>
+  <!-- EN: Making bulk bean milk. -->
+  <Heyra_Make_Beanmilk_Bulk.jobString>正在制作豆奶。</Heyra_Make_Beanmilk_Bulk.jobString>
+  
+</LanguageData>

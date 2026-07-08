@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<KCSG.SymbolDef>
+  <defName>Heyra_Item_Seedingredient</defName>
+  <thing>Heyra_Item_Seedingredient</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Heyra_Symbol_MyCasket_West</defName>
+  <thing>CryptosleepCasket</thing>
+  <rotation>West</rotation>
+  <containPawnKindAnyOf>
+    <li>Heyra_Freeman</li>
+  </containPawnKindAnyOf>
+  <chanceToContainPawn>0.2</chanceToContainPawn>
+  <spawnPartOfFaction>false</spawnPartOfFaction>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Heyra_Symbol_MyCasket_East</defName>
+  <thing>CryptosleepCasket</thing>
+  <rotation>East</rotation>
+  <containPawnKindAnyOf>
+    <li>Heyra_Freeman</li>
+  </containPawnKindAnyOf>
+  <chanceToContainPawn>0.2</chanceToContainPawn>
+  <spawnPartOfFaction>false</spawnPartOfFaction>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Heyra_Symbol_MyCasket_South</defName>
+  <thing>CryptosleepCasket</thing>
+  <rotation>South</rotation>
+  <containPawnKindAnyOf>
+    <li>Heyra_Freeman</li>
+  </containPawnKindAnyOf>
+  <chanceToContainPawn>0.2</chanceToContainPawn>
+  <spawnPartOfFaction>false</spawnPartOfFaction>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Heyra_Symbol_MyCasket_North</defName>
+  <thing>CryptosleepCasket</thing>
+  <rotation>North</rotation>
+  <containPawnKindAnyOf>
+    <li>Heyra_Freeman</li>
+  </containPawnKindAnyOf>
+  <chanceToContainPawn>0.2</chanceToContainPawn>
+  <spawnPartOfFaction>false</spawnPartOfFaction>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Heyra_Samplecontainer_North</defName>
+  <thing>Heyra_Samplecontainer</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Filth_Blood_North</defName>
+  <thing>Filth_Blood</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Filth_Trash_North</defName>
+  <thing>Filth_Trash</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>BiofuelRefinery_North</defName>
+  <thing>BiofuelRefinery</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VitalsMonitor_East</defName>
+  <thing>VitalsMonitor</thing>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VitalsMonitor_North</defName>
+  <thing>VitalsMonitor</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VitalsMonitor_West</defName>
+  <thing>VitalsMonitor</thing>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VitalsMonitor_South</defName>
+  <thing>VitalsMonitor</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Vent_East</defName>
+  <thing>Vent</thing>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Vent_North</defName>
+  <thing>Vent</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Vent_West</defName>
+  <thing>Vent</thing>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Vent_South</defName>
+  <thing>Vent</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Battery_South</defName>
+  <thing>Battery</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Battery_North</defName>
+  <thing>Battery</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Shelf_Steel_North</defName>
+  <thing>Shelf</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Shelf_Steel_East</defName>
+  <thing>Shelf</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Shelf_Steel_West</defName>
+  <thing>Shelf</thing>
+  <stuff>Steel</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Shelf_Steel_South</defName>
+  <thing>Shelf</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Shelf_Wood_North</defName>
+  <thing>Shelf</thing>
+  <stuff>Wood</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Shelf_Wood_East</defName>
+  <thing>Shelf</thing>
+  <stuff>Wood</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Shelf_Wood_West</defName>
+  <thing>Shelf</thing>
+  <stuff>Wood</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Shelf_Wood_South</defName>
+  <thing>Shelf</thing>
+  <stuff>Wood</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>HiTechResearchBench_Steel_South</defName>
+  <thing>HiTechResearchBench</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>HiTechResearchBench_Steel_North</defName>
+  <thing>HiTechResearchBench</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>HiTechResearchBench_Steel_East</defName>
+  <thing>HiTechResearchBench</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>HiTechResearchBench_Steel_West</defName>
+  <thing>HiTechResearchBench</thing>
+  <stuff>Steel</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Table1x2c_Steel_South</defName>
+  <thing>Table1x2c</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+  </KCSG.SymbolDef>
+  
+  <KCSG.SymbolDef>
+  <defName>Table1x2c_Steel_North</defName>
+  <thing>Table1x2c</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+  </KCSG.SymbolDef>
+  
+  <KCSG.SymbolDef>
+  <defName>Table1x2c_Steel_East</defName>
+  <thing>Table1x2c</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+  </KCSG.SymbolDef>
+  
+  <KCSG.SymbolDef>
+  <defName>Table1x2c_Steel_West</defName>
+  <thing>Table1x2c</thing>
+  <stuff>Steel</stuff>
+  <rotation>West</rotation>
+  </KCSG.SymbolDef>
+  
+  <KCSG.SymbolDef>
+  <defName>HospitalBed_Steel_South</defName>
+  <thing>HospitalBed</thing>
+  <stuff>Steel</stuff>
+  <rotation>South</rotation>
+  </KCSG.SymbolDef>
+  
+  <KCSG.SymbolDef>
+  <defName>HospitalBed_Steel_North</defName>
+  <thing>HospitalBed</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+  </KCSG.SymbolDef>
+  
+  <KCSG.SymbolDef>
+  <defName>HospitalBed_Steel_East</defName>
+  <thing>HospitalBed</thing>
+  <stuff>Steel</stuff>
+  <rotation>East</rotation>
+  </KCSG.SymbolDef>
+  
+  <KCSG.SymbolDef>
+  <defName>HospitalBed_Steel_West</defName>
+  <thing>HospitalBed</thing>
+  <stuff>Steel</stuff>
+  <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+
+</Defs>

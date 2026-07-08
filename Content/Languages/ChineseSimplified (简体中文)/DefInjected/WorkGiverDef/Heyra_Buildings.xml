@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: using the stone mill -->
+  <Heyra_Cook.label>使用石磨</Heyra_Cook.label>
+  <Heyra_Cook.description>使用石磨。</Heyra_Cook.description>
+  <!-- EN: working at -->
+  <Heyra_Cook.gerund>使用</Heyra_Cook.gerund>
+  <!-- EN: make -->
+  <Heyra_Cook.verb>使用石磨</Heyra_Cook.verb>
+  
+  <!-- EN: craft Heyran items -->
+  <Heyra_Craft.label>制作聆族物品</Heyra_Craft.label>
+  <Heyra_Craft.description>制作聆族物品。</Heyra_Craft.description>
+  <!-- EN: crafting at -->
+  <Heyra_Craft.gerund>制作于</Heyra_Craft.gerund>
+  <!-- EN: craft -->
+  <Heyra_Craft.verb>制作</Heyra_Craft.verb>
+  
+  <!-- EN: make things at Heyran Altar -->
+  <Heyra_Makeseeds.label>制作奇迹之种</Heyra_Makeseeds.label>
+  <Heyra_Makeseeds.description>制作奇迹之种。</Heyra_Makeseeds.description>
+  <!-- EN: crafting at -->
+  <Heyra_Makeseeds.gerund>制作于</Heyra_Makeseeds.gerund>
+  <!-- EN: craft -->
+  <Heyra_Makeseeds.verb>制作</Heyra_Makeseeds.verb>
+  
+</LanguageData>

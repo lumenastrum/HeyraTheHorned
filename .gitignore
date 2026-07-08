@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build artifacts (the shipped DLL in 1.6/Assemblies IS committed on purpose —
+# it makes the repo directly installable as a mod)
+[Bb]in/
+[Oo]bj/
+
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store

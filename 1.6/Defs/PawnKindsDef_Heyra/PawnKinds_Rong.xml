@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<PawnKindDef Abstract="True" Name="RongBasePawnKind">
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>30~37</initialResistanceRange>
+		<apparelColor>(40,40,40)</apparelColor>
+	</PawnKindDef>
+
+<PawnKindDef ParentName="RongBasePawnKind">
+    <defName>Heyra_ZRong_Playable</defName>
+    <label>Example Rong</label>
+    <race>Alien_Heyra_Rong</race>
+	<combatPower>30</combatPower>
+    <isFighter>false</isFighter>
+	<defaultFactionType>PlayerColony</defaultFactionType>
+	<chemicalAddictionChance>0.2</chemicalAddictionChance>
+	<combatEnhancingDrugsChance>0.55</combatEnhancingDrugsChance>
+	<skills>
+      <li>
+				<skill>Cooking</skill>
+				<range>0~2</range>
+			</li>
+			<li>
+				<skill>Plants</skill>
+				<range>0~4</range>
+			</li>
+			<li>
+				<skill>Animals</skill>
+				<range>0~2</range>
+			</li>
+    </skills>
+	<apparelTags>
+			<li>Heyra_ApparelTypeT</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>140~580</apparelMoney>
+	<weaponTags>
+			<li>None</li>
+	</weaponTags>
+		<weaponMoney>0~250</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryRong</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>	
+
+<PawnKindDef ParentName="RongBasePawnKind">
+    <defName>Heyra_ZRong_BerserkerMelee</defName>
+    <label>Rong Berserker</label>
+    <race>Alien_Heyra_Rong</race>
+	<combatPower>140</combatPower>
+    <isFighter>True</isFighter>
+	<defaultFactionType>Heyra_Rong_Faction</defaultFactionType>
+	<apparelTags>
+			<li>Heyra_ApparelTypeRong</li>
+	</apparelTags>
+	<apparelRequired>
+      <li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+	<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+	<apparelMoney>340~2580</apparelMoney>
+	<weaponTags>
+			<li>Heyra_MeleeTypeRong</li>
+	</weaponTags>
+	<weaponMoney>300~3250</weaponMoney>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~10</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>12~16</range>
+      </li>
+    </skills>
+	<techHediffsChance>0.6</techHediffsChance>
+    <techHediffsMoney>1000~3800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+	  <li>ImplantEmpireCommon</li>
+    </techHediffsTags>	
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+                <li>Heyra_BackstoryRong</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>	
+
+<PawnKindDef ParentName="RongBasePawnKind">
+    <defName>Heyra_ZRong_BerserkerRanged</defName>
+    <label>Rong Berserker</label>
+    <race>Alien_Heyra_Rong</race>
+	<combatPower>120</combatPower>
+    <isFighter>True</isFighter>
+	<defaultFactionType>Heyra_Rong_Faction</defaultFactionType>
+	<apparelTags>
+			<li>Heyra_ApparelTypeRong</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+		<apparelMoney>1000~2580</apparelMoney>
+	<weaponTags>
+			<li>Heyra_RangedTypeRong</li>
+	</weaponTags>
+	<weaponMoney>970~3250</weaponMoney>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~16</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>8~12</range>
+      </li>
+    </skills>
+	<techHediffsChance>0.6</techHediffsChance>
+    <techHediffsMoney>1000~3800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+	  <li>ImplantEmpireCommon</li>
+    </techHediffsTags>	
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryRong</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+
+</Defs>

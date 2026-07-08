@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- Scenario: New Horizons                                -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- EN: Heyran Chronicle: New Horizons -->
+  <Heyra_Scenario_Crashlanded.label>聆族轶事：新天地</Heyra_Scenario_Crashlanded.label>
+  <!-- EN: The homeland is far behind... -->
+  <Heyra_Scenario_Crashlanded.description>故土已远在身后。无论是被战争、饥荒所驱，还是受未知的召唤牵引，你们三人已在陌生的土地上跋涉了数周。旧地图在这里毫无用处，踏过的路也早已没了踪迹。\n\n但前方的土地富饶——木材、石料、沃土应有尽有。尽占者的祝福仍在角中微微回响。带着随身携带的物资和这片新土地的馈赠，是时候扎根安家了。新的篇章由此开启。</Heyra_Scenario_Crashlanded.description>
+  <Heyra_Scenario_Crashlanded.scenario.description>故土已远在身后。无论是被战争、饥荒所驱，还是受未知的召唤牵引，你们三人已在陌生的土地上跋涉了数周。旧地图在这里毫无用处，踏过的路也早已没了踪迹。\n\n但前方的土地富饶——木材、石料、沃土应有尽有。尽占者的祝福仍在角中微微回响。带着随身携带的物资和这片新土地的馈赠，是时候扎根安家了。新的篇章由此开启。</Heyra_Scenario_Crashlanded.scenario.description>
+  <Heyra_Scenario_Crashlanded.scenario.name>聆族轶事：新天地</Heyra_Scenario_Crashlanded.scenario.name>
+  <!-- EN: Three Heyra wanderers settle in an unknown land with basic supplies. A standard starting experience. -->
+  <Heyra_Scenario_Crashlanded.scenario.summary>三名聆族流浪者带着基本物资在未知的土地上定居。标准的起始体验。</Heyra_Scenario_Crashlanded.scenario.summary>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- Scenario: The Long March                              -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- EN: Heyran Chronicle: The Long March -->
+  <Heyra_Scenario_LongMarch.label>聆族轶事：漫漫长路</Heyra_Scenario_LongMarch.label>
+  <!-- EN: The village burned three days ago... -->
+  <Heyra_Scenario_LongMarch.description>村子三天前被烧了。戎族在黎明时分来袭，到了黄昏，只剩下灰烬和惨叫。你把能找到的人聚集起来——农夫、医者、老铁匠，所有还站得起来的人——逃入了山中。\n\n六人活了下来。物资少得可怜：几块干饼、几件捡来的武器、还有医者匆忙抓起的草药。但六双手胜过三双手，你们偶然发现的这片土地还未被开垦。只要齐心协力，或许还有一线生机。</Heyra_Scenario_LongMarch.description>
+  <Heyra_Scenario_LongMarch.scenario.description>村子三天前被烧了。戎族在黎明时分来袭，到了黄昏，只剩下灰烬和惨叫。你把能找到的人聚集起来——农夫、医者、老铁匠，所有还站得起来的人——逃入了山中。\n\n六人活了下来。物资少得可怜：几块干饼、几件捡来的武器、还有医者匆忙抓起的草药。但六双手胜过三双手，你们偶然发现的这片土地还未被开垦。只要齐心协力，或许还有一线生机。</Heyra_Scenario_LongMarch.scenario.description>
+  <Heyra_Scenario_LongMarch.scenario.name>聆族轶事：漫漫长路</Heyra_Scenario_LongMarch.scenario.name>
+  <!-- EN: Six Heyra refugees flee a destroyed village. Many hands, but almost nothing to work with. -->
+  <Heyra_Scenario_LongMarch.scenario.summary>六名聆族难民逃离被毁的村庄。人手充足，但物资匮乏。</Heyra_Scenario_LongMarch.scenario.summary>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- Scenario: The Blade Unsheathed                        -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- EN: Heyran Chronicle: The Blade Unsheathed -->
+  <Heyra_Scenario_BladeUnsheathed.label>聆族轶事：拔刀出鞘</Heyra_Scenario_BladeUnsheathed.label>
+  <!-- EN: You were the best. Two sword-sisters of the Forbidden Army... -->
+  <Heyra_Scenario_BladeUnsheathed.description>你们曾是最强的。禁军中的两位刀姐妹，聆族有史以来最锋利的双刃。但战争结束了，而你们的一方战败了。将军战死，旗帜焚毁，军队四散而去。\n\n如今你们以浪人之身行走——无主，却非无力。铠甲依旧光亮，刀刃依旧锋利，凭你们二人的本领，足以白手起家建起一方基业。问题只在于，两个战士能否在物资耗尽之前学会耕田。</Heyra_Scenario_BladeUnsheathed.description>
+  <Heyra_Scenario_BladeUnsheathed.scenario.description>你们曾是最强的。禁军中的两位刀姐妹，聆族有史以来最锋利的双刃。但战争结束了，而你们的一方战败了。将军战死，旗帜焚毁，军队四散而去。\n\n如今你们以浪人之身行走——无主，却非无力。铠甲依旧光亮，刀刃依旧锋利，凭你们二人的本领，足以白手起家建起一方基业。问题只在于，两个战士能否在物资耗尽之前学会耕田。</Heyra_Scenario_BladeUnsheathed.scenario.description>
+  <Heyra_Scenario_BladeUnsheathed.scenario.name>聆族轶事：拔刀出鞘</Heyra_Scenario_BladeUnsheathed.scenario.name>
+  <!-- EN: Two elite Heyra veterans with excellent equipment. Highly skilled, but dangerously outnumbered. -->
+  <Heyra_Scenario_BladeUnsheathed.scenario.summary>两名装备精良的聆族精锐老兵。技艺高超，但寡不敌众。</Heyra_Scenario_BladeUnsheathed.scenario.summary>
+
+</LanguageData>

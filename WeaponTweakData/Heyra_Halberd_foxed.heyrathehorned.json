@@ -1,0 +1,11 @@
+{
+  "TextureModID": "foxed.heyrathehorned",
+  "ItemDefName": "Heyra_Halberd",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.377510041,
+  "Rotation": 45.0,
+  "BladeStart": 0.578313231,
+  "BladeEnd": 1.062249,
+  "MeleeWeaponType": 6
+}

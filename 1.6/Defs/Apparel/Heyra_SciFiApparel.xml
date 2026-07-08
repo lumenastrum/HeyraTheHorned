@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Abstract="True" Name="Heyra_SciFiArmorBase" ParentName="ApparelBase">
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<shaderType>CutoutComplex</shaderType>
+			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>Heyra_Researchappareltier2</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>Heyra_Workbench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>			
+		</recipeMaker>				
+		<tradeTags Inherit="false">
+			<li></li>
+		</tradeTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>	
+			<tags>
+				<li>Heyra_Apparel</li>
+				<li>Heyra_ApparelTypeS</li>
+				<li>Psychic</li>
+			</tags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>	
+		</apparel>
+		<thingCategories>
+			<li>HeyraApparel</li>
+		</thingCategories>		
+	</ThingDef>	
+
+	<ThingDef Abstract="True" Name="Heyra_SciFiHelmetBase" ParentName="Heyra_SciFiArmorBase">
+		<apparel Inherit="False">
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Heyra_Apparel</li>
+				<li>Heyra_ApparelTypeS</li>
+			</tags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>				
+		</apparel>		
+		<thingCategories Inherit="False">
+			<li>HeyraHeadgear</li>
+		</thingCategories>
+	</ThingDef>
+
+  <ThingDef ParentName="Heyra_SciFiArmorBase">
+		<defName>Heyra_Hmaal</defName>
+		<label>HMAA-Light</label>
+		<description>Born from the marriage of Heyran craftsmanship and glitterworld technology, the High Mobility Assault Armor - Light, shortened to HMAA-L, provides even better protection than recon armor. It features customized neuro-memetic assist systems fitted exclusively to the Heyran body, stabilizing the wearer during shooting and improving melee capability.</description>
+		<graphicData>
+			<texPath>Apparel/Heyra_SciFi/Heyra_Hmaal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>12</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>35</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>			
+		</statBases>
+		<equippedStatOffsets>
+			<AimingDelayFactor>-0.1</AimingDelayFactor>
+			<MoveSpeed>0.8</MoveSpeed>
+			<MeleeDodgeChance>0.25</MeleeDodgeChance>
+			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.50</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>5</ComponentSpacer>
+			<Plasteel>100</Plasteel>
+			<Uranium>25</Uranium>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Tail</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Heyra_SciFi/Heyra_Hmaal</wornGraphicPath>
+			<tags>
+				<li>Heyra_ApparelTypeHmaal</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	<ThingDef ParentName="Heyra_SciFiArmorBase">
+		<defName>Heyra_Hmaah</defName>
+		<label>HMAA-Heavy</label>
+		<description>The High Mobility Assault Armor - Heavy, shortened to HMAA-H, is the most protective variant of the HMAA family. This armor features built-in rocket thrusters for short-range flight, but lacks the advanced neuro-memetic assist systems.</description>
+		<graphicData>
+			<texPath>Apparel/Heyra_SciFi/Heyra_Hmaah</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>12</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>35</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>					
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.8</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.50</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>5</ComponentSpacer>
+			<Plasteel>120</Plasteel>
+			<Uranium>30</Uranium>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Tail</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Heyra_SciFi/Heyra_Hmaah</wornGraphicPath>
+			<tags>
+				<li>Heyra_ApparelTypeHmaah</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	<ThingDef ParentName="Heyra_SciFiArmorBase">
+		<defName>Heyra_Snipersuit</defName>
+		<label>Heyran sniper suit</label>
+		<description>This bodysuit provides very limited protection, but the bionic fibers throughout the suit assist the wearer in shooting. The wearer is empowered to lift and hold a large-caliber gun without fatigue. In addition, the suit corrects the wearer's shooting posture, improves accuracy, and reduces recoil.</description>
+		<graphicData>
+			<texPath>Apparel/Heyra_SciFi/Heyra_Snipersuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>4</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>35</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			<VEF_RangedCooldownFactor>0.5</VEF_RangedCooldownFactor>			
+		</statBases>			
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance>0.60</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.30</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>5</ComponentSpacer>
+			<Plasteel>80</Plasteel>
+			<Uranium>10</Uranium>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Apparel/Heyra_SciFi/Heyra_Snipersuit</wornGraphicPath>
+			<tags>
+				<li>Heyra_Heyra_ApparelTypeSnipersuit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<layers Inherit="False">
+				<li>Middle</li>
+				<li>Shell</li>
+				<li>OnSkin</li>
+			</layers>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	<ThingDef ParentName="Heyra_SciFiArmorBase">
+		<defName>Heyra_Tightsuit</defName>
+		<label>Heyran nanosuit</label>
+		<description>A form-fitting undersuit designed for Heyras. Woven from nano-fiber mesh, it is far more protective than it looks and provides excellent thermal insulation.</description>
+		<graphicData>
+			<texPath>Apparel/Heyra_SciFi/Heyra_Tightsuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>35</Insulation_Cold>
+			<Insulation_Heat>35</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>			
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.60</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.60</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>45</Plasteel>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Apparel/Heyra_SciFi/Heyra_Tightsuit</wornGraphicPath>
+			<tags>
+				<li>Heyra_Heyra_ApparelTypeTightsuit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<bodyPartGroups Inherit="False">
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers Inherit="False">
+				<li>OnSkin</li>
+			</layers>	
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	<ThingDef ParentName="Heyra_SciFiHelmetBase">
+		<defName>Heyra_Hmahl</defName>
+		<label>HMAA-Light helmet</label>
+		<description>The helmet designed to be equipped along with the HMAA-Light armor. The helmet integrates a laser rangefinder and a ballistic computer, and is able to draw a lead indicator on the HUD inside to help the shooter hit the moving target.</description>
+		<graphicData>
+			<texPath>Apparel/Heyra_SciFi/Heyra_Hmahl</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>			
+		</statBases>
+		<equippedStatOffsets>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.50</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>50</Plasteel>
+			<Uranium>10</Uranium>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Apparel/Heyra_SciFi/Heyra_Hmahl</wornGraphicPath>
+			<tags>
+				<li>Heyra_ApparelTypeHmaal</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>		
+  
+  <ThingDef ParentName="Heyra_SciFiHelmetBase">
+		<defName>Heyra_Hmahh</defName>
+		<label>HMAA-Heavy helmet</label>
+		<description>The helmet designed to be equipped along with the HMAA-Heavy armor. The protection of this helmet has been pushed to the limit. It can stop the most powerful rounds and also keeps the internal temperature in a comfortable range.</description>
+		<graphicData>
+			<texPath>Apparel/Heyra_SciFi/Heyra_Hmahh</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.50</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>50</Plasteel>
+			<Uranium>20</Uranium>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Apparel/Heyra_SciFi/Heyra_Hmahh</wornGraphicPath>
+			<tags>
+				<li>Heyra_ApparelTypeHmaah</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>		
+
+  <ThingDef ParentName="Heyra_SciFiHelmetBase">
+		<defName>Heyra_Aimbot</defName>
+		<label>Heyran combat glass</label>
+		<description>A wearable, all-purpose computer that provides automated target acquisition and calibration. In addition, it increases the wearer's battlefield awareness as if granting them a third eye.</description>
+		<graphicData>
+			<texPath>Apparel/Heyra_SciFi/Heyra_Aimassistant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>			
+		</statBases>
+		<equippedStatOffsets>
+			<AimingDelayFactor>-0.45</AimingDelayFactor>
+			<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance>0.10</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.10</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>30</Plasteel>
+		</costList>
+		<apparel>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<bodyPartGroups Inherit="False">
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Heyra_SciFi/Heyra_Aimassistant</wornGraphicPath>
+			<tags>
+				<li>Heyra_ApparelTypeHmaah</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>100</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>	
+	
+</Defs>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectTagDef>
+		<defName>Heyra_Researchprojecttag</defName>
+	</ResearchProjectTagDef>
+	
+	<ResearchProjectTagDef>
+		<defName>Heyra_ResearchTypeStart</defName>
+	</ResearchProjectTagDef>
+
+	<ResearchTabDef>
+		<defName>Heyra_Research</defName>
+		<label>Heyra study</label>
+	</ResearchTabDef>
+	
+	<ResearchProjectDef>
+		<defName>Heyra_Researchappareltier0</defName>
+		<label>basic Heyran crafting</label>
+		<description>Learn Heyran crafting with this amazing starter kit! Includes a compact workbench and two simple reciepes for beginners to practice. \n\n* Materials required for manufacturing are not included</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<requiredResearchFacilities>
+		</requiredResearchFacilities>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tags>
+			<li>Heyra_ResearchTypeStart</li>
+		</tags>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Heyra_Researchappareltier1</defName>
+		<label>authentic Heyran tailoring</label>
+		<description>Gain access to the Heyran apparel</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>1200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Heyra_Researchappareltier0</li>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<requiredResearchFacilities>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tags>
+			<li>Heyra_ResearchTypeStart</li>
+		</tags>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Heyra_Researcharmortier1</defName>
+		<label>Heyran armor construction</label>
+		<description>Unlock the recipes for Heyran armory.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>1500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Heyra_Researchappareltier0</li>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<requiredResearchFacilities>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.8</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Heyra_Researchappareltier2</defName>
+		<label>innovative Heyran tailoring</label>
+		<description>By Combining Heyran tailoring with your colony's technology, a series of advanced gears are made available for your Heyra colonists.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>9000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Heyra_Researchappareltier1</li>
+			<li>Heyra_Researcharmortier1</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2.5</researchViewX>
+		<researchViewY>0.4</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Heyra_Researchweapontier1</defName>
+		<label>Heyran blacksmithing</label>
+		<description>Craft Heyran weapons.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>1500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Heyra_Researchappareltier0</li>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1.6</researchViewY>
+		<tags>
+			<li>Heyra_ResearchTypeStart</li>
+		</tags>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Heyra_Researchforbiddenarmy</defName>
+		<label>Forbidden Army armaments</label>
+		<description>Unlock the weapon and armor designs of the Heyran Forbidden Army — elite-grade equipment forged to exacting military standards.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>3000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Heyra_Researchweapontier1</li>
+			<li>Heyra_Researcharmortier1</li>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<researchViewX>2.5</researchViewX>
+		<researchViewY>1.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Heyra_Researchlegendaryarms</defName>
+		<label>legendary armaments</label>
+		<description>Combine Heyran blacksmithing mastery with exotic techniques and forbidden knowledge to forge legendary soul-infused weapons — armaments of mythical power that resonate with awakened Heyra.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Heyra_Researchforbiddenarmy</li>
+			<li>Heyra_Researchrong</li>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1.6</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Heyra_Researchaltar</defName>
+		<label>miracle seed</label>
+		<description>Build the Heyran altar and grow the miracle seeds, a magical item that can reform the horns of your Heyra colonists.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>6000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<researchViewX>0</researchViewX>
+		<researchViewY>4.8</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Heyra_Researchawaken</defName>
+		<label>seed of awakening</label>
+		<description>Synthesize the seed of awakening, a single-dose gene activator that grants Heyras the power to transform.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>9000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Heyra_Researchaltar</li>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<researchViewX>1</researchViewX>
+		<researchViewY>4.8</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Heyra_Researchrong</defName>
+		<label>exotic gears</label>
+		<description>Reverse engineer Rong technology to produce their weapons and apparel.\n\n*Heyras can wear Rong clothing and vice versa.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Heyra_Researchweapontier1</li>
+			<li>Heyra_Researcharmortier1</li>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<researchViewX>2.5</researchViewX>
+		<researchViewY>2.0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Heyra_Researchfarming</defName>
+		<label>stone mill</label>
+		<description>Learn how to make bean milk from milksoy.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<researchViewX>0</researchViewX>
+		<researchViewY>3.2</researchViewY>
+		<tags>
+			<li>Heyra_ResearchTypeStart</li>
+		</tags>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Heyra_Researchfarmingadvanced</defName>
+		<label>automatic milling</label>
+		<description>Build machines that automatically cook bean milk for your colonists.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Heyra_Researchfarming</li>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3.2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Heyra_Researchbiscuit</defName>
+		<label>compressed biscuits</label>
+		<description>Bake bean pulp into compressed biscuits, an ideal survival food that can be enjoyed without a dining table.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Heyra_Researchfarming</li>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<researchViewX>1</researchViewX>
+		<researchViewY>4.0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Heyra_Researchloom</defName>
+		<label>fiber extraction</label>
+		<description>Extract the protein fiber from milksoy and turn it into synthread.</description>
+		<tab>Heyra_Research</tab>
+		<baseCost>1200</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Heyra_Researchbiscuit</li>
+		</prerequisites>
+		<requiredResearchBuilding></requiredResearchBuilding>
+		<researchViewX>2</researchViewX>
+		<researchViewY>4.0</researchViewY>
+	</ResearchProjectDef>
+
+	
+</Defs>

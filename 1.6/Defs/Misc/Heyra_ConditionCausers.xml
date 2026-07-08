@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ========================= BASE ========================= -->
+  <ThingDef Name="Heyra_ConditionCauserBase" Abstract="True" ParentName="BuildingBase">
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <passability>Impassable</passability>
+    <canOverlapZones>false</canOverlapZones>
+    <fillPercent>1.0</fillPercent>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <damageMultipliers>
+      <li>
+        <damageDef>Flame</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+    </damageMultipliers>
+    <building>
+      <combatPower>550</combatPower>
+      <buildingTags>
+        <li>Heyra_Totem</li>
+      </buildingTags>
+      <claimable>false</claimable>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+    </comps>
+    <receivesSignals>true</receivesSignals>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <drawerType>MapMeshOnly</drawerType>
+    <castEdgeShadows>True</castEdgeShadows>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <isMechClusterThreat>false</isMechClusterThreat>
+    <killedLeavings>
+      <Steel>60</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Plasteel>10</Plasteel>
+      <ChunkSlagSteel>4</ChunkSlagSteel>
+    </killedLeavings>
+  </ThingDef>
+ 
+
+  <!-- ========================= Sun blocker ========================= -->
+  <ThingDef ParentName="Heyra_ConditionCauserBase">
+    <defName>Heyra_Totem</defName>
+    <label>sun blocker</label>
+    <description>An ultratech machine that generates a sheet of exotic fields at high altitude, turning the sky opaque and blocking the sun.</description>
+    <size>(2,2)</size>
+    <graphicData>
+      <texPath>Apparel/Heyra_SciFi/Heyra_Hmaah</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(8.8,8.8)</drawSize>
+      <drawOffset>(0,0,0.6)</drawOffset>
+      <shadowData>
+        <volume>(4.5,3.5,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.5, 0, 4.8, 3.4)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+      <!-- [1.6 FIX] soundAmbient removed from BuildingProperties in RimWorld 1.5+ -->
+      <!-- <soundAmbient></soundAmbient> -->
+    </building>
+    <comps>
+      <li Class="CompProperties_CausesGameCondition">
+        <conditionDef>Eclipse</conditionDef>
+        <worldRange>1</worldRange>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: seed of awakening -->
+  <Heyra_Item_Activator_Thunder.label>觉醒之种</Heyra_Item_Activator_Thunder.label>
+  <!-- EN: The seed of awakening is a single-dose gene activator for Heyras. The drug gives back the ancient power that Heyras once possessed, granting them the ability to transform into a beast form. \n\nWarning: The after-effect of the transformation will debilitate the subject for weeks, and can be life-threatening if not given enough rest between transformations. -->
+  <Heyra_Item_Activator_Thunder.description>这是一种一次性的基因活化剂，能让聆族找回先人曾经拥有的力量————化身为一头威风凛凛的猛兽。\n\n警告: 变身后会因副作用而在数周内变得虚弱。在副作用没有缓解前使用变身可能致命。</Heyra_Item_Activator_Thunder.description>
+  <!-- EN: Use {0} -->
+  <Heyra_Item_Activator_Thunder.ingestible.ingestCommandString>使用{0}</Heyra_Item_Activator_Thunder.ingestible.ingestCommandString>
+  <!-- EN: Using {0}. -->
+  <Heyra_Item_Activator_Thunder.ingestible.ingestReportString>正在使用{0}</Heyra_Item_Activator_Thunder.ingestible.ingestReportString>
+  
+  <!-- EN: ancient Heyra blood -->
+  <Heyra_Item_Seedingredient.label>远古聆族血液</Heyra_Item_Seedingredient.label>
+  <!-- EN: It is said that this red ampoule holds the genetic factors of ancient Heyras. This is an extremely rare item whose maker remains unknown. -->
+  <Heyra_Item_Seedingredient.description>据说这个红色的安瓿种保存着古代聆族的基因。这个物品非常稀有，制作者不明。</Heyra_Item_Seedingredient.description>
+  
+</LanguageData>

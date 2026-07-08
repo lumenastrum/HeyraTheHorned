@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: {PAWN_nameDef} spent {PAWN_possessive} entire childhood learning from a master craftsman. {PAWN_pronoun} accumulated valuable experience even though children in the workshop were only permitted to do some basic work. -->
+  <Heyra_Story_Apprentice.baseDesc>{PAWN_nameDef}在一位大师工匠门下度过了整个童年。即使工坊里的孩童只被允许做一些杂工，{PAWN_pronoun}仍然积累了宝贵的经验。</Heyra_Story_Apprentice.baseDesc>
+  <!-- EN: apprentice of a master -->
+  <Heyra_Story_Apprentice.title>名师门徒</Heyra_Story_Apprentice.title>
+  <!-- EN: apprentice -->
+  <Heyra_Story_Apprentice.titleShort>名师门徒</Heyra_Story_Apprentice.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} spent {PAWN_possessive} entire childhood learning from a master craftsman. {PAWN_pronoun} accumulated valuable experience even though children in the workshop were only permitted to do some basic work. -->
+  <Heyra_Story_ApprenticeD.baseDesc>{PAWN_nameDef}在一位大师工匠门下度过了整个童年。即使工坊里的孩童只被允许做一些杂工，{PAWN_pronoun}仍然积累了宝贵的经验。</Heyra_Story_ApprenticeD.baseDesc>
+  <!-- EN: apprentice of a master -->
+  <Heyra_Story_ApprenticeD.title>名师门徒</Heyra_Story_ApprenticeD.title>
+  <!-- EN: apprentice -->
+  <Heyra_Story_ApprenticeD.titleShort>名师门徒</Heyra_Story_ApprenticeD.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} made armor for Heyran army and the individuals that needed protection. {PAWN_possessive} workshop was small in scale and the equipments were old, but {PAWN_pronoun} worked hard with {PAWN_possessive} assistant to ensure the productivity and quality. -->
+  <Heyra_Story_Armorer.baseDesc>{PAWN_nameDef}为寻求装备的人们打造护甲。{PAWN_possessive}的工坊又小又旧，但是{PAWN_pronoun}和助手一起努力保证了产量和质量。</Heyra_Story_Armorer.baseDesc>
+  <!-- EN: armorer -->
+  <Heyra_Story_Armorer.title>铸甲匠</Heyra_Story_Armorer.title>
+  <!-- EN: armorer -->
+  <Heyra_Story_Armorer.titleShort>铸甲匠</Heyra_Story_Armorer.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} showed extraordinary artistic talent at a young age. {PAWN_pronoun} has filled many sketchbooks with {PAWN_possessive} creative drawings. -->
+  <Heyra_Story_Artprodigy.baseDesc>{PAWN_nameDef}幼时就展现出惊人的艺术天赋。{PAWN_pronoun}用富有创造力的绘画填满了许多个速写本。</Heyra_Story_Artprodigy.baseDesc>
+  <!-- EN: art prodigy -->
+  <Heyra_Story_Artprodigy.title>绘画逸才</Heyra_Story_Artprodigy.title>
+  <!-- EN: art prodigy -->
+  <Heyra_Story_Artprodigy.titleShort>绘画逸才</Heyra_Story_Artprodigy.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} showed extraordinary artistic talent at a young age. {PAWN_pronoun} has filled many sketchbooks with {PAWN_possessive} creative drawings. -->
+  <Heyra_Story_ArtprodigyD.baseDesc>{PAWN_nameDef}幼时就展现出惊人的艺术天赋。{PAWN_pronoun}用富有创造力的绘画填满了许多个速写本。</Heyra_Story_ArtprodigyD.baseDesc>
+  <!-- EN: art prodigy -->
+  <Heyra_Story_ArtprodigyD.title>绘画逸才</Heyra_Story_ArtprodigyD.title>
+  <!-- EN: art prodigy -->
+  <Heyra_Story_ArtprodigyD.titleShort>绘画逸才</Heyra_Story_ArtprodigyD.titleShort>
+  
+  <!-- EN: Born with a beautiful look, {PAWN_nameDef} received countless praises for her cuteness since young. -->
+  <Heyra_Story_Attractivechild.baseDesc>{PAWN_nameDef}生得十分美丽，从小就因为可爱的外表受到人们的称赞。</Heyra_Story_Attractivechild.baseDesc>
+  <!-- EN: attractive child -->
+  <Heyra_Story_Attractivechild.title>天生丽质</Heyra_Story_Attractivechild.title>
+  <!-- EN: attractive child -->
+  <Heyra_Story_Attractivechild.titleShort>天生丽质</Heyra_Story_Attractivechild.titleShort>
+  
+  <!-- EN: Born with a beautiful look, {PAWN_nameDef} received countless praises for her cuteness since young. -->
+  <Heyra_Story_AttractivechildD.baseDesc>{PAWN_nameDef}生得十分美丽，从小就因为可爱的外表受到人们的称赞。</Heyra_Story_AttractivechildD.baseDesc>
+  <!-- EN: attractive child -->
+  <Heyra_Story_AttractivechildD.title>天生丽质</Heyra_Story_AttractivechildD.title>
+  <!-- EN: attractive child -->
+  <Heyra_Story_AttractivechildD.titleShort>天生丽质</Heyra_Story_AttractivechildD.titleShort>
+  
+  <!-- EN: For various reasons, {PAWN_nameDef} got more love than her sisters combined. However, this also means that {PAWN_pronoun} received more expectations making {PAWN_objective} under pressure far beyond {PAWN_possessive} peers. -->
+  <Heyra_Story_Belovedchild.baseDesc>因为种种原因，{PAWN_nameDef}比姐妹们博得了更多的父母的爱。然而这也意味着{PAWN_pronoun}身上寄托了更多的期待，让{PAWN_pronoun}倍感压力。</Heyra_Story_Belovedchild.baseDesc>
+  <!-- EN: beloved child -->
+  <Heyra_Story_Belovedchild.title>掌上明珠</Heyra_Story_Belovedchild.title>
+  <!-- EN: beloved child -->
+  <Heyra_Story_Belovedchild.titleShort>掌上明珠</Heyra_Story_Belovedchild.titleShort>
+  
+  <!-- EN: For various reasons, {PAWN_nameDef} got more love than her sisters combined. However, this also means that {PAWN_pronoun} received more expectations making {PAWN_objective} under pressure far beyond {PAWN_possessive} peers. -->
+  <Heyra_Story_BelovedchildD.baseDesc>因为种种原因，{PAWN_nameDef}比姐妹们博得了更多的父母的爱。然而这也意味着{PAWN_pronoun}身上寄托了更多的期待，让{PAWN_pronoun}倍感压力。</Heyra_Story_BelovedchildD.baseDesc>
+  <!-- EN: beloved child -->
+  <Heyra_Story_BelovedchildD.title>掌上明珠</Heyra_Story_BelovedchildD.title>
+  <!-- EN: beloved child -->
+  <Heyra_Story_BelovedchildD.titleShort>掌上明珠</Heyra_Story_BelovedchildD.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} constructed houses for living. {PAWN_pronoun} was stronger than many other workers and could carry parts that will normally require a wheelbarrow to trasport. -->
+  <Heyra_Story_Builder.baseDesc>{PAWN_nameDef}的工作就是替人出力盖房。{PAWN_pronoun}比他人更强壮，甚至能扛起一般需要独轮车运输的重物。</Heyra_Story_Builder.baseDesc>
+  <!-- EN: builder -->
+  <Heyra_Story_Builder.title>建筑工</Heyra_Story_Builder.title>
+  <!-- EN: builder -->
+  <Heyra_Story_Builder.titleShort>建筑工</Heyra_Story_Builder.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} was always exhausted by all the works assigned to {PAWN_objective}. She had to hire several servants to take care of the housework. -->
+  <Heyra_Story_Busyofficial.baseDesc>{PAWN_nameDef}被工作耗尽了全部精力。{PAWN_pronoun}不得不雇人来替{PAWN_objective}做家务。</Heyra_Story_Busyofficial.baseDesc>
+  <!-- EN: busy official -->
+  <Heyra_Story_Busyofficial.title>繁忙官员</Heyra_Story_Busyofficial.title>
+  <!-- EN: official -->
+  <Heyra_Story_Busyofficial.titleShort>官员</Heyra_Story_Busyofficial.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} owned three cats. {PAWN_pronoun} always made {PAWN_possessive} own homemade cat food with fresh muffalo meat and berries. /n Once a fire took the life of {PAWN_possessive} youngest cat, which traumatized {PAWN_objective} and made {PAWN_objective} pyrophobic ever since. -->
+  <Heyra_Story_Catlover.baseDesc>{PAWN_nameDef}有三只猫。{PAWN_pronoun}一直自己制作猫粮，原料一般是新鲜的牛肉和树果。/n以前{PAWN_pronoun}最小的那只猫死在一场火灾中，从那以后{PAWN_pronoun}就对火有阴影。</Heyra_Story_Catlover.baseDesc>
+  <!-- EN: cat lover -->
+  <Heyra_Story_Catlover.title>爱猫人士</Heyra_Story_Catlover.title>
+  <!-- EN: cat lover -->
+  <Heyra_Story_Catlover.titleShort>爱猫者</Heyra_Story_Catlover.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} designed the palaces and gardens for Heyran nobles. {PAWN_pronoun} did not care about the cost and would pursue the pure magnificence with {PAWN_possessive} design.\n		 -->
+  <Heyra_Story_Chiefarchitect.baseDesc>{PAWN_nameDef}为皇族设计宫殿和园林。{PAWN_pronoun}的设计不计成本，力求营造极致的壮丽。</Heyra_Story_Chiefarchitect.baseDesc>
+  <!-- EN: chief architect -->
+  <Heyra_Story_Chiefarchitect.title>首席建筑师</Heyra_Story_Chiefarchitect.title>
+  <!-- EN: architect -->
+  <Heyra_Story_Chiefarchitect.titleShort>建筑师</Heyra_Story_Chiefarchitect.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} was not good at any work that requires hands-on. If it was in the sowing season, {PAWN_pronoun} might have more seedlings crushed than planted. If {PAWN_pronoun} was sent to do the cleaning, the room could end up messier than before. After being repeatedly criticized by {PAWN_possessive} fellows, {PAWN_nameDef} swore in anger to never touch several kinds of work ever again. -->
+  <Heyra_Story_Clumsy.baseDesc>{PAWN_nameDef}不擅长需要亲自动手的工作。要是让{PAWN_pronoun}去田埂里帮忙，那{PAWN_pronoun}可能踩坏的幼苗比种下的还多。如果派{PAWN_pronoun}去打扫屋子，那房间可能会变得比之前更乱。在连续的恶评之下，{PAWN_pronoun}发誓以后再也不干某些活了。</Heyra_Story_Clumsy.baseDesc>
+  <!-- EN: clumsy child -->
+  <Heyra_Story_Clumsy.title>笨拙稚童</Heyra_Story_Clumsy.title>
+  <!-- EN: clumsy child -->
+  <Heyra_Story_Clumsy.titleShort>笨拙稚童</Heyra_Story_Clumsy.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} was not good at any work that requires hands-on. If it was in the sowing season, {PAWN_pronoun} might have more seedlings crushed than planted. If {PAWN_pronoun} was sent to do the cleaning, the room could end up messier than before. After being repeatedly criticized by {PAWN_possessive} fellows, {PAWN_nameDef} swore in anger to never touch several kinds of work ever again. -->
+  <Heyra_Story_ClumsyD.baseDesc>{PAWN_nameDef}不擅长需要亲自动手的工作。要是让{PAWN_pronoun}去田埂里帮忙，那{PAWN_pronoun}可能踩坏的幼苗比种下的还多。如果派{PAWN_pronoun}去打扫屋子，那房间可能会变得比之前更乱。在连续的恶评之下，{PAWN_pronoun}发誓以后再也不干某些活了。</Heyra_Story_ClumsyD.baseDesc>
+  <!-- EN: clumsy child -->
+  <Heyra_Story_ClumsyD.title>笨拙稚童</Heyra_Story_ClumsyD.title>
+  <!-- EN: clumsy child -->
+  <Heyra_Story_ClumsyD.titleShort>笨拙稚童</Heyra_Story_ClumsyD.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} enjoyed outsmarting other people. {PAWN_pronoun} always wanted to beat other children in exams, competitions, or even games. Once, after losing five consecutive games in Go, {PAWN_pronoun} could not control {PAWN_possessive} emotion and started a fight with the opponent furiously. -->
+  <Heyra_Story_Competitive.baseDesc>{PAWN_nameDef}享受智胜他人一筹的感觉。不管是考试、比赛还是游戏，{PAWN_pronoun}都力求打败对手。一次连输了五把围棋之后，{PAWN_nameDef}抑制不住自己的怒火，和对方打了起来。</Heyra_Story_Competitive.baseDesc>
+  <!-- EN: competitive child -->
+  <Heyra_Story_Competitive.title>争胜骄子</Heyra_Story_Competitive.title>
+  <!-- EN: competitive child -->
+  <Heyra_Story_Competitive.titleShort>争胜骄子</Heyra_Story_Competitive.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} enjoyed outsmarting other people. {PAWN_pronoun} always wanted to beat other children in exams, competitions, or even games. Once, after losing five consecutive games in Go, {PAWN_pronoun} could not control {PAWN_possessive} emotion and started a fight with the opponent furiously. -->
+  <Heyra_Story_CompetitiveD.baseDesc>{PAWN_nameDef}享受智胜他人一筹的感觉。不管是考试、比赛还是游戏，{PAWN_pronoun}都力求打败对手。一次连输了五把围棋之后，{PAWN_nameDef}抑制不住自己的怒火，和对方打了起来。</Heyra_Story_CompetitiveD.baseDesc>
+  <!-- EN: competitive child -->
+  <Heyra_Story_CompetitiveD.title>争胜骄子</Heyra_Story_CompetitiveD.title>
+  <!-- EN: competitive child -->
+  <Heyra_Story_CompetitiveD.titleShort>争胜骄子</Heyra_Story_CompetitiveD.titleShort>
+  
+
+  <!-- EN: Unlike normal Heyras whose horns channel the spiritual power of the land creatures, {PAWN_nameDef}'s horns have the affinity to the sea. This type of situation is very rare and considered a disease. In the other hand, there are also Heyras who thinks coral horns are cute due to their pink color and rounded shapes. -->
+  <Heyra_Story_Coral.baseDesc>与一般聆族不同，{PAWN_nameDef}的角不与陆地生物共鸣，而和海洋生物有良好的相性。这类情况被认为是一种稀有的疾病。但也有部分聆族认为珊瑚角粉粉的很可爱。</Heyra_Story_Coral.baseDesc>
+  <!-- EN: coralize syndrome patient -->
+  <Heyra_Story_Coral.title>珊瑚角</Heyra_Story_Coral.title>
+  <!-- EN: coral kid -->
+  <Heyra_Story_Coral.titleShort>珊瑚角</Heyra_Story_Coral.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} ran a rice paddy. {PAWN_pronoun} always favored the high-yielding varieties than the high-quality ones as {PAWN_pronoun} wanted to save more people in starvation. -->
+  <Heyra_Story_Farmer.baseDesc>{PAWN_nameDef}耕种着一片稻田。比起高级的品种，{PAWN_pronoun}更青睐高产的稻种。{PAWN_pronoun}觉得喂饱更多人才是最重要的。</Heyra_Story_Farmer.baseDesc>
+  <!-- EN: rice farmer -->
+  <Heyra_Story_Farmer.title>稻农</Heyra_Story_Farmer.title>
+  <!-- EN: farmer -->
+  <Heyra_Story_Farmer.titleShort>农民</Heyra_Story_Farmer.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} helped {PAWN_possessive} family from a very early age. {PAWN_pronoun} were assigned duties such as harvesting crops, collecting eggs and, occasionally, fighting the megascarabs that invaded the field. Unfortunately, the busy farm work took up the time {PAWN_pronoun} should have spent on study. -->
+  <Heyra_Story_Farmerschild.baseDesc>{PAWN_nameDef}从小就帮家里人务农。{PAWN_pronoun}得负责收粮食，捡鸡蛋，偶尔还得驱逐闯进农田的巨型甲虫。繁忙的农活让{PAWN_pronoun}完全没有时间读书了。</Heyra_Story_Farmerschild.baseDesc>
+  <!-- EN: peasant child -->
+  <Heyra_Story_Farmerschild.title>农家少年</Heyra_Story_Farmerschild.title>
+  <!-- EN: peasant child -->
+  <Heyra_Story_Farmerschild.titleShort>农家少年</Heyra_Story_Farmerschild.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} inspected the vital energy that flows between heaven and earth. {PAWN_possessive} duties included locating mineral deposits, predicting the weather and giving instructions to the farmers. -->
+  <Heyra_Story_Geomancer.baseDesc>{PAWN_nameDef}观察天地间气的流动。{PAWN_pronoun}能探测地下的矿物资源，预测天气，指引人们进行农事活动。</Heyra_Story_Geomancer.baseDesc>
+  <!-- EN: geomancer -->
+  <Heyra_Story_Geomancer.title>钦天监监正</Heyra_Story_Geomancer.title>
+  <!-- EN: geomancer -->
+  <Heyra_Story_Geomancer.titleShort>监正</Heyra_Story_Geomancer.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} worked in rich Heyran famlies. {PAWN_possessive} was responsible for supporting children's education along with wider mentoring. {PAWN_nameDef} also liked teaching children to bake cookies. -->
+  <Heyra_Story_Governess.baseDesc>{PAWN_nameDef}为那些富裕的家庭工作。{PAWN_pronoun}负责教育这些家庭的孩子，提供人生的指导。除此之外，{PAWN_pronoun}还喜欢教孩子们烤小糖饼。</Heyra_Story_Governess.baseDesc>
+  <!-- EN: governess -->
+  <Heyra_Story_Governess.title>家庭教师</Heyra_Story_Governess.title>
+  <!-- EN: governess -->
+  <Heyra_Story_Governess.titleShort>家教</Heyra_Story_Governess.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} leads a hunt group of many less-experienced Heyra hunters. They challenge the most dangerous beasts, even the Insectoid.   -->
+  <Heyra_Story_Huntmaster.baseDesc>{PAWN_nameDef}带领着一队猎人，挑战最危险的猎物。这之中甚至包括虫族。</Heyra_Story_Huntmaster.baseDesc>
+  <!-- EN: huntmaster -->
+  <Heyra_Story_Huntmaster.title>猎师</Heyra_Story_Huntmaster.title>
+  <!-- EN: huntmaster -->
+  <Heyra_Story_Huntmaster.titleShort>猎师</Heyra_Story_Huntmaster.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} was the purest kid among the peers. {PAWN_pronoun} had no bad thoughts and was willing to trust others, even if it caused {PAWN_objective} to be deceived many times. -->
+  <Heyra_Story_Innocent.baseDesc>{PAWN_nameDef}简直是同龄人中最纯洁的，可谓是心无邪念。即便被骗了几次，{PAWN_pronoun}还是愿意相信他人</Heyra_Story_Innocent.baseDesc>
+  <!-- EN: innocent child -->
+  <Heyra_Story_Innocent.title>纯真稚童</Heyra_Story_Innocent.title>
+  <!-- EN: innocent -->
+  <Heyra_Story_Innocent.titleShort>稚童</Heyra_Story_Innocent.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} was the purest kid among the peers. {PAWN_pronoun} had no bad thoughts and was willing to trust others, even if it caused {PAWN_objective} to be deceived many times. -->
+  <Heyra_Story_InnocentD.baseDesc>{PAWN_nameDef}简直是同龄人中最纯洁的，可谓是心无邪念。即便被骗了几次，{PAWN_pronoun}还是愿意相信他人</Heyra_Story_InnocentD.baseDesc>
+  <!-- EN: innocent child -->
+  <Heyra_Story_InnocentD.title>纯真稚童</Heyra_Story_InnocentD.title>
+  <!-- EN: innocent -->
+  <Heyra_Story_InnocentD.titleShort>稚童</Heyra_Story_InnocentD.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} has never forged a sword or a piece of armor. Instead, {PAWN_pronoun} made fine zithers using {PAWN_possessive} skill and craftmanship. -->
+  <Heyra_Story_Luthier.baseDesc>{PAWN_nameDef}从未打造过任何兵刃，而是用超凡的手艺制作精致的筝琴。</Heyra_Story_Luthier.baseDesc>
+  <!-- EN: pacifist luthier -->
+  <Heyra_Story_Luthier.title>制琴师</Heyra_Story_Luthier.title>
+  <!-- EN: luthier -->
+  <Heyra_Story_Luthier.titleShort>制琴师</Heyra_Story_Luthier.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} practiced martial arts under a former Forbidden Army soldier. The trainning covered both armed and unarmed combat. As a result, {PAWN_pronoun} learned to perform deadly moves using a variety of weapons and developed a good physique. -->
+  <Heyra_Story_Martialartist.baseDesc>{PAWN_nameDef}曾在一名退伍禁军手下学习武术。训练内容包括持械和空手战斗。经过多年的练习，{PAWN_pronoun}学会了多般兵器，身体也变得强壮了。</Heyra_Story_Martialartist.baseDesc>
+  <!-- EN: juvenile martial artist -->
+  <Heyra_Story_Martialartist.title>习武少年</Heyra_Story_Martialartist.title>
+  <!-- EN: martial artist -->
+  <Heyra_Story_Martialartist.titleShort>习武少年</Heyra_Story_Martialartist.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} practiced martial arts under a former Forbidden Army soldier. The trainning covered both armed and unarmed combat. As a result, {PAWN_pronoun} learned to perform deadly moves using a variety of weapons and developed a good physique. -->
+  <Heyra_Story_MartialartistD.baseDesc>{PAWN_nameDef}曾在一名退伍禁军手下学习武术。训练内容包括持械和空手战斗。经过多年的练习，{PAWN_pronoun}学会了多般兵器，身体也变得强壮了。</Heyra_Story_MartialartistD.baseDesc>
+  <!-- EN: juvenile martial artist -->
+  <Heyra_Story_MartialartistD.title>习武少年</Heyra_Story_MartialartistD.title>
+  <!-- EN: martial artist -->
+  <Heyra_Story_MartialartistD.titleShort>习武少年</Heyra_Story_MartialartistD.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} periodically visited the nearby outlander settlements to import industrial products. These products were very profitable if sold to the Heyras. {PAWN_pronoun} has made a small fortune from the trade and was planning to expand {PAWN_possessive} business. -->
+  <Heyra_Story_Merchant.baseDesc>{PAWN_nameDef}按期从外来者的定居地进口重要的工业品。这些产品非常好卖。{PAWN_nameDef}挣了不少钱，打算进一步拓展{PAWN_possessive}生意。</Heyra_Story_Merchant.baseDesc>
+  <!-- EN: merchant -->
+  <Heyra_Story_Merchant.title>康食商贾</Heyra_Story_Merchant.title>
+  <!-- EN: merchant -->
+  <Heyra_Story_Merchant.titleShort>商贾</Heyra_Story_Merchant.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} used to be the naughtiest of the kids around. {PAWN_possessive} pranks often went too far and caused a fight between {PAWN_objective} and the victim. -->
+  <Heyra_Story_Naughtykid.baseDesc>{PAWN_nameDef}曾是最调皮的那一类孩子。{PAWN_possessive}恶作剧经常搞过头，使得愤怒的受害者对{PAWN_objective}拳脚相向。</Heyra_Story_Naughtykid.baseDesc>
+  <!-- EN: naughty kid -->
+  <Heyra_Story_Naughtykid.title>调皮鬼</Heyra_Story_Naughtykid.title>
+  <!-- EN: naughty kid -->
+  <Heyra_Story_Naughtykid.titleShort>调皮鬼</Heyra_Story_Naughtykid.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} used to be the naughtiest of the kids around. {PAWN_possessive} pranks often went too far and caused a fight between {PAWN_objective} and the victim. -->
+  <Heyra_Story_NaughtykidD.baseDesc>{PAWN_nameDef}曾是最调皮的那一类孩子。{PAWN_possessive}恶作剧经常搞过头，使得愤怒的受害者对{PAWN_objective}拳脚相向。</Heyra_Story_NaughtykidD.baseDesc>
+  <!-- EN: naughty kid -->
+  <Heyra_Story_NaughtykidD.title>调皮鬼</Heyra_Story_NaughtykidD.title>
+  <!-- EN: naughty kid -->
+  <Heyra_Story_NaughtykidD.titleShort>调皮鬼</Heyra_Story_NaughtykidD.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} grew up in a influential family. {PAWN_pronoun} received training in archery, music and tea ceremony as those were common activities among wealthy Heyran families.  -->
+  <Heyra_Story_Nobledaughter.baseDesc>{PAWN_nameDef}出生于当地一个颇有影响力的家庭。{PAWN_pronoun}从小接受了在贵族子女中盛行的种种修习，包括箭术，乐律，茶道等。</Heyra_Story_Nobledaughter.baseDesc>
+  <!-- EN: hierarch's daughter -->
+  <Heyra_Story_Nobledaughter.title>名门千金</Heyra_Story_Nobledaughter.title>
+  <!-- EN: hierarch's daughter -->
+  <Heyra_Story_Nobledaughter.titleShort>千金</Heyra_Story_Nobledaughter.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} grew up in a influential family. {PAWN_pronoun} received training in archery, music and tea ceremony as those were common activities among wealthy Heyran families.  -->
+  <Heyra_Story_NobledaughterD.baseDesc>{PAWN_nameDef}出生于当地一个颇有影响力的家庭。{PAWN_pronoun}从小接受了在贵族子女中盛行的种种修习，包括箭术，乐律，茶道等。</Heyra_Story_NobledaughterD.baseDesc>
+  <!-- EN: hierarch's daughter -->
+  <Heyra_Story_NobledaughterD.title>名门千金</Heyra_Story_NobledaughterD.title>
+  <!-- EN: hierarch's daughter -->
+  <Heyra_Story_NobledaughterD.titleShort>千金</Heyra_Story_NobledaughterD.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} was an attendant to a local hierarch. In return of {PAWN_possessive} labor, {PAWN_pronoun} received training in manners, literacy, combat and art. -->
+  <Heyra_Story_Page.baseDesc>{PAWN_nameDef}曾在当地一名祭司身边担任侍从。祭司教{PAWN_objective}识字，还让{PAWN_objective}学习了礼仪、武术和音乐，以作为{PAWN_possessive}尽心侍奉的回报。</Heyra_Story_Page.baseDesc>
+  <!-- EN: hierarch's page -->
+  <Heyra_Story_Page.title>祭司侍从</Heyra_Story_Page.title>
+  <!-- EN: page -->
+  <Heyra_Story_Page.titleShort>侍从</Heyra_Story_Page.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} was an attendant to a local hierarch. In return of {PAWN_possessive} labor, {PAWN_pronoun} received training in manners, literacy, combat and art. -->
+  <Heyra_Story_PageD.baseDesc>{PAWN_nameDef}曾在当地一名祭司身边担任侍从。祭司教{PAWN_objective}识字，还让{PAWN_objective}学习了礼仪、武术和音乐，以作为{PAWN_possessive}尽心侍奉的回报。</Heyra_Story_PageD.baseDesc>
+  <!-- EN: hierarch's page -->
+  <Heyra_Story_PageD.title>祭司侍从</Heyra_Story_PageD.title>
+  <!-- EN: page -->
+  <Heyra_Story_PageD.titleShort>侍从</Heyra_Story_PageD.titleShort>
+  
+  <!-- EN: Although most Heyras deny the possibility to make a peace treaty with Rong, {PAWN_nameDef} thought differently. {PAWN_pronoun} spent years reading historical documents, and found that ancient Heyra and Rong share the same bloodline. {PAWN_nameDef} believed this is key to the peaceful coexistence of the two. -->
+  <Heyra_Story_Peacecaller.baseDesc>多数聆族人都觉得与戎人之间没有和平的可能，可{PAWN_nameDef}不这么想。多年以来，{PAWN_pronoun}查阅了许多历史资料，发现聆族与戎人有共同的祖先。{PAWN_nameDef}相信这个发现是引导二者走向共存的关键。</Heyra_Story_Peacecaller.baseDesc>
+  <!-- EN: peace caller -->
+  <Heyra_Story_Peacecaller.title>调停人</Heyra_Story_Peacecaller.title>
+  <!-- EN: peace caller -->
+  <Heyra_Story_Peacecaller.titleShort>调停人</Heyra_Story_Peacecaller.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} has been hired to cultivate a strawberry field for many years. Box after box of nicely-grown strawberry has been shipped out of the farm, but {PAWN_nameDef} has never tasted a single one. -->
+  <Heyra_Story_Peasant.baseDesc>许多年来，{PAWN_nameDef}都受雇于一个草莓园。一箱又一箱成熟的草莓被运出园子，{PAWN_pronoun}自己却一颗也没有尝过。</Heyra_Story_Peasant.baseDesc>
+  <!-- EN: peasant -->
+  <Heyra_Story_Peasant.title>雇农</Heyra_Story_Peasant.title>
+  <!-- EN: peasant -->
+  <Heyra_Story_Peasant.titleShort>雇农</Heyra_Story_Peasant.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} worked in the Imperial Pharmacy. {PAWN_pronoun} was knowledgeable in medicine and wrote several books using {PAWN_possessive} knowledge. -->
+  <Heyra_Story_Pharmacist.baseDesc>{PAWN_nameDef}任职于御药房。{PAWN_pronoun}对药学的知识极为丰富，还将这些知识写成了许多册医书。</Heyra_Story_Pharmacist.baseDesc>
+  <!-- EN: imperial pharmacist -->
+  <Heyra_Story_Pharmacist.title>御医</Heyra_Story_Pharmacist.title>
+  <!-- EN: pharmacist -->
+  <Heyra_Story_Pharmacist.titleShort>御医</Heyra_Story_Pharmacist.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} has lived in an outlander settlement for several years and believed Realm of Heyra needed to be industrialized in all aspects. After going back to her hometown, {PAWN_pronoun} She persuaded the local official to let her lead a series of reforms. Sadly most of them were hasty and did not achieve satisfactory results. -->
+  <Heyra_Story_Radicalreformer.baseDesc>{PAWN_nameDef}曾经在外来者的殖民地住过几年，觉得{PAWN_possessive}国家需要全面工业化。在回到故乡之后，{PAWN_nameDef}说服了一位官员，让{PAWN_pronoun}负责进行一系列的改革。可惜的是，这些改革大多过于仓促，难以令人满意。</Heyra_Story_Radicalreformer.baseDesc>
+  <!-- EN: radical reformer -->
+  <Heyra_Story_Radicalreformer.title>激进改革家</Heyra_Story_Radicalreformer.title>
+  <!-- EN: reformer -->
+  <Heyra_Story_Radicalreformer.titleShort>改革家</Heyra_Story_Radicalreformer.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} could not stand {PAWN_possessive} family being strict with {PAWN_objective}. After runing from home, the forest became {PAWN_possessive} hiding place. {PAWN_pronoun} managed to overcome the dangers in the forest and developed the ability to survive in the wild. -->
+  <Heyra_Story_Rebellious.baseDesc>{PAWN_nameDef}觉得家庭管教过于严厉。{PAWN_pronoun}离家出走，藏匿进了一片森林。{PAWN_pronoun}在那里磨练出了在野外生存的技巧。</Heyra_Story_Rebellious.baseDesc>
+  <!-- EN: rebellious child -->
+  <Heyra_Story_Rebellious.title>叛逆少年</Heyra_Story_Rebellious.title>
+  <!-- EN: rebellious -->
+  <Heyra_Story_Rebellious.titleShort>叛逆少年</Heyra_Story_Rebellious.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} could not stand {PAWN_possessive} family being strict with {PAWN_objective}. After runing from home, the forest became {PAWN_possessive} hiding place. {PAWN_pronoun} managed to overcome the dangers in the forest and developed the ability to survive in the wild. -->
+  <Heyra_Story_RebelliousD.baseDesc>{PAWN_nameDef}觉得家庭管教过于严厉。{PAWN_pronoun}离家出走，藏匿进了一片森林。{PAWN_pronoun}在那里磨练出了在野外生存的技巧。</Heyra_Story_RebelliousD.baseDesc>
+  <!-- EN: rebellious child -->
+  <Heyra_Story_RebelliousD.title>叛逆少年</Heyra_Story_RebelliousD.title>
+  <!-- EN: rebellious -->
+  <Heyra_Story_RebelliousD.titleShort>叛逆少年</Heyra_Story_RebelliousD.titleShort>
+  
+  <!-- EN: One day, an Infestation scourged {PAWN_nameDef}'s village. {PAWN_pronoun} and {PAWN_possessive} family were scattered in the chaos as people were desperately trying to escape. After that, {PAWN_nameDef} had to survive alone. -->
+  <Heyra_Story_Separatedchild.baseDesc>某日，一场突如其来的虫害袭击了{PAWN_nameDef}的村子。村人四散奔逃。在混乱中{PAWN_pronoun}和家人走散了。那之后，{PAWN_pronoun}只能独自流浪。</Heyra_Story_Separatedchild.baseDesc>
+  <!-- EN: separated child -->
+  <Heyra_Story_Separatedchild.title>伶仃遗孤</Heyra_Story_Separatedchild.title>
+  <!-- EN: separated -->
+  <Heyra_Story_Separatedchild.titleShort>遗孤</Heyra_Story_Separatedchild.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} was employed by a Heyran shaman to do laundry, cleaning and cooking. The shaman noticed {PAWN_nameDef}'s interest in medical books and kindly gave the servant access to her book collection. {PAWN_nameDef} enjoyed reading in {PAWN_possessive} free time and learned a lot from the books. -->
+  <Heyra_Story_Servant.baseDesc>{PAWN_nameDef}受雇于一名聆族萨满，负责洗衣、打扫和做饭。主人注意到了{PAWN_pronoun}对医学方面的书有兴趣，就允许{PAWN_pronoun}自由浏览藏书阁中的书籍。{PAWN_nameDef}利用闲暇时间从书里学到了很多。</Heyra_Story_Servant.baseDesc>
+  <!-- EN: servant -->
+  <Heyra_Story_Servant.title>家仆</Heyra_Story_Servant.title>
+  <!-- EN: servant -->
+  <Heyra_Story_Servant.titleShort>家仆</Heyra_Story_Servant.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} knows how to fight with weapons or unarmed. {PAWN_pronoun} fought in many underground arenas with more victories than losses. -->
+  <Heyra_Story_Skilledfighter.baseDesc>不管有没有武器，{PAWN_nameDef}都懂得如何和敌人战斗。{PAWN_pronoun}在不少地下竞技场打过，胜多负少。</Heyra_Story_Skilledfighter.baseDesc>
+  <!-- EN: skilled fighter -->
+  <Heyra_Story_Skilledfighter.title>得技斗士</Heyra_Story_Skilledfighter.title>
+  <!-- EN: fighter -->
+  <Heyra_Story_Skilledfighter.titleShort>斗士</Heyra_Story_Skilledfighter.titleShort>
+  
+  <!-- EN: A pair of binoculars and a clear night sky were enough to make {PAWN_nameDef} happy. {PAWN_pronoun} would spent hours lying on the ground watching the stars as it had an unexplainable attraction to {PAWN_objective}. -->
+  <Heyra_Story_Skywatcher.baseDesc>晴朗的夜空加上一副望远镜就足以让{PAWN_nameDef}高兴起来。星星对{PAWN_pronoun}有着特殊的吸引力，{PAWN_pronoun}一看就是好几个小时。</Heyra_Story_Skywatcher.baseDesc>
+  <!-- EN: sky watcher -->
+  <Heyra_Story_Skywatcher.title>观星者</Heyra_Story_Skywatcher.title>
+  <!-- EN: sky watcher -->
+  <Heyra_Story_Skywatcher.titleShort>观星者</Heyra_Story_Skywatcher.titleShort>
+  
+  <!-- EN: A pair of binoculars and a clear night sky were enough to make {PAWN_nameDef} happy. {PAWN_pronoun} would spent hours lying on the ground watching the stars as it had an unexplainable attraction to {PAWN_objective}. -->
+  <Heyra_Story_SkywatcherD.baseDesc>晴朗的夜空加上一副望远镜就足以让{PAWN_nameDef}高兴起来。星星对{PAWN_pronoun}有着特殊的吸引力，{PAWN_pronoun}一看就是好几个小时。</Heyra_Story_SkywatcherD.baseDesc>
+  <!-- EN: sky watcher -->
+  <Heyra_Story_SkywatcherD.title>观星者</Heyra_Story_SkywatcherD.title>
+  <!-- EN: sky watcher -->
+  <Heyra_Story_SkywatcherD.titleShort>观星者</Heyra_Story_SkywatcherD.titleShort>
+  
+  <!-- EN: {PAWN_nameDef}'s sister gave {PAWN_pronoun} a slingshot carved from branches. {PAWN_nameDef} liked it very much, and practiced shooting with many different targets, including a few birds that unfortunately became {PAWN_possessive} victims. -->
+  <Heyra_Story_Slingshot.baseDesc>{PAWN_nameDef}的姐姐给了{PAWN_pronoun}一把用树枝雕刻的弹弓。{PAWN_nameDef}对它爱不释手，拿各种目标练习射击。曾有几只不幸的鸟儿成了{PAWN_possessive}石下亡魂。</Heyra_Story_Slingshot.baseDesc>
+  <!-- EN: slingshot pro -->
+  <Heyra_Story_Slingshot.title>弹弓达人</Heyra_Story_Slingshot.title>
+  <!-- EN: pro -->
+  <Heyra_Story_Slingshot.titleShort>达人</Heyra_Story_Slingshot.titleShort>
+  
+  <!-- EN: {PAWN_nameDef}'s sister gave {PAWN_pronoun} a slingshot carved from branches. {PAWN_nameDef} liked it very much, and practiced shooting with many different targets, including a few birds that unfortunately became {PAWN_possessive} victims. -->
+  <Heyra_Story_SlingshotD.baseDesc>{PAWN_nameDef}的姐姐给了{PAWN_pronoun}一把用树枝雕刻的弹弓。{PAWN_nameDef}对它爱不释手，拿各种目标练习射击。曾有几只不幸的鸟儿成了{PAWN_possessive}石下亡魂。</Heyra_Story_SlingshotD.baseDesc>
+  <!-- EN: slingshot pro -->
+  <Heyra_Story_SlingshotD.title>弹弓达人</Heyra_Story_SlingshotD.title>
+  <!-- EN: pro -->
+  <Heyra_Story_SlingshotD.titleShort>达人</Heyra_Story_SlingshotD.titleShort>
+  
+  <!-- EN: {PAWN_nameDef}的双角长得比同龄人都慢. {PAWN_pronoun}苦恼不已，用了各种手段想让它们长快一些。幸运的是没过几年{PAWN_possessive}的角就长到了正常尺寸。也不知道是哪种“疗法”起了作用。是草药？按摩？还是那晚{PAWN_pronoun}对流星许的愿？ -->
+  <Heyra_Story_Slowgrower.backstory.baseDesc>TODO</Heyra_Story_Slowgrower.backstory.baseDesc>
+  <!-- EN: {PAWN_nameDef} had a set of slow-growing horns. {PAWN_pronoun} was annoyed and concerned, and tried many ways to improve the growth rate of {PAWN_possessive} horns. Luckily it turned out just fine after she grew up a little bit. It remains unknown which, if any, method actually helped it. Was it the herbal medicine, the massage, or the wish she made to the meteor that night?  -->
+  <Heyra_Story_Slowgrower.baseDesc>{PAWN_nameDef}的双角长得比同龄人都慢. {PAWN_pronoun}苦恼不已，用了各种手段想让它们长快一些。幸运的是没过几年{PAWN_possessive}的角就长到了正常尺寸。也不知道是哪种“疗法”起了作用。是草药？按摩？还是那晚{PAWN_pronoun}对流星许的愿？</Heyra_Story_Slowgrower.baseDesc>
+  <!-- EN: slow-grower -->
+  <Heyra_Story_Slowgrower.title>迟育孩童</Heyra_Story_Slowgrower.title>
+  <!-- EN: slow-grower -->
+  <Heyra_Story_Slowgrower.titleShort>迟育孩童</Heyra_Story_Slowgrower.titleShort>
+  
+  <!-- EN: {PAWN_nameDef}的双角长得比同龄人都慢. {PAWN_pronoun}苦恼不已，用了各种手段想让它们长快一些。幸运的是没过几年{PAWN_possessive}的角就长到了正常尺寸。也不知道是哪种“疗法”起了作用。是草药？按摩？还是那晚{PAWN_pronoun}对流星许的愿？ -->
+  <Heyra_Story_SlowgrowerD.backstory.baseDesc>TODO</Heyra_Story_SlowgrowerD.backstory.baseDesc>
+  <!-- EN: {PAWN_nameDef} had a set of slow-growing horns. {PAWN_pronoun} was annoyed and concerned, and tried many ways to improve the growth rate of {PAWN_possessive} horns. Luckily it turned out just fine after {PAWN_pronoun} grew up a little bit. It remains unknown which, if any, method actually helped it. Was it the herbal medicine, the massage, or the wish {PAWN_pronoun} made to the meteor that night?  -->
+  <Heyra_Story_SlowgrowerD.baseDesc>{PAWN_nameDef}的双角长得比同龄人都慢. {PAWN_pronoun}苦恼不已，用了各种手段想让它们长快一些。幸运的是没过几年{PAWN_possessive}的角就长到了正常尺寸。也不知道是哪种“疗法”起了作用。是草药？按摩？还是那晚{PAWN_pronoun}对流星许的愿？</Heyra_Story_SlowgrowerD.baseDesc>
+  <!-- EN: slow-grower -->
+  <Heyra_Story_SlowgrowerD.title>迟育孩童</Heyra_Story_SlowgrowerD.title>
+  <!-- EN: slow-grower -->
+  <Heyra_Story_SlowgrowerD.titleShort>迟育孩童</Heyra_Story_SlowgrowerD.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} was born in an affluent family and was provided with the best education and living conditions. However, the excessive love {PAWN_pronoun} received have made {PAWN_objective} a domineering child.  -->
+  <Heyra_Story_Spoiled.baseDesc>{PAWN_nameDef}出生在有钱人家，享受了最好的教育和生活条件。但是，家庭的溺爱使{PAWN_pronoun}变得嚣张跋扈。</Heyra_Story_Spoiled.baseDesc>
+  <!-- EN: spoiled kid -->
+  <Heyra_Story_Spoiled.title>娇纵劣童</Heyra_Story_Spoiled.title>
+  <!-- EN: spoiled kid -->
+  <Heyra_Story_Spoiled.titleShort>娇纵劣童</Heyra_Story_Spoiled.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} was born in an affluent family and was provided with the best education and living conditions. However, the excessive love {PAWN_pronoun} received have made {PAWN_objective} a domineering child.  -->
+  <Heyra_Story_SpoiledD.baseDesc>{PAWN_nameDef}出生在有钱人家，享受了最好的教育和生活条件。但是，家庭的溺爱使{PAWN_pronoun}变得嚣张跋扈。</Heyra_Story_SpoiledD.baseDesc>
+  <!-- EN: spoiled kid -->
+  <Heyra_Story_SpoiledD.title>娇纵劣童</Heyra_Story_SpoiledD.title>
+  <!-- EN: spoiled kid -->
+  <Heyra_Story_SpoiledD.titleShort>娇纵劣童</Heyra_Story_SpoiledD.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} cut and polished stones into bricks, grinding discs, armor pieces and many other necessaries of life. In order to obtain high-quality stones, {PAWN_pronoun} always quarried them herself. -->
+  <Heyra_Story_Stonemason.baseDesc>{PAWN_nameDef}的工作是把石头加工成石砖、甲片、磨盘等等生活必需品。为了获取高级石材，{PAWN_pronoun}总是亲自去采石。</Heyra_Story_Stonemason.baseDesc>
+  <!-- EN: stonemason -->
+  <Heyra_Story_Stonemason.title>石匠</Heyra_Story_Stonemason.title>
+  <!-- EN: stonemason -->
+  <Heyra_Story_Stonemason.titleShort>石匠</Heyra_Story_Stonemason.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} has mastered the use of the sword. {PAWN_pronoun} can land a precise hit on the fastest-moving enemies with her elegant yet deadly moves. -->
+  <Heyra_Story_Swordmaster.baseDesc>{PAWN_nameDef}的剑用得炉火纯青。就算是最难缠的对手，{PAWN_pronoun}也能用优雅而致命的动作击倒对方。</Heyra_Story_Swordmaster.baseDesc>
+  <!-- EN: swordmaster -->
+  <Heyra_Story_Swordmaster.title>剑圣</Heyra_Story_Swordmaster.title>
+  <!-- EN: swordmaster -->
+  <Heyra_Story_Swordmaster.titleShort>剑圣</Heyra_Story_Swordmaster.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} were addicted to tea. {PAWN_pronoun} spent a small fortune on buying the most premium tea and {PAWN_pronoun} refered to them as the "nerves-calming omnirefresher". -->
+  <Heyra_Story_Tealover.baseDesc>{PAWN_nameDef}嗜茶如命。{PAWN_pronoun}会挥金购买最高级的茶叶，还管茶叫“消愁万能药”。</Heyra_Story_Tealover.baseDesc>
+  <!-- EN: tea fanatic -->
+  <Heyra_Story_Tealover.title>茶瘾者</Heyra_Story_Tealover.title>
+  <!-- EN: tea fanatic -->
+  <Heyra_Story_Tealover.titleShort>茶瘾者</Heyra_Story_Tealover.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} grew up in a monastery and was raised by Heyran clergies. Life in the monastery gradually became boring. From then on, {PAWN_pronoun} was looking forward to the day when {PAWN_pronoun} could leave and live {PAWN_possessive} own life. -->
+  <Heyra_Story_Templekid.baseDesc>{PAWN_nameDef}是被僧侣们在一所寺院里养大的。寺院里的生活枯燥乏味，{PAWN_pronoun}一直盼望着可以离开寺院独自生活的那一天。</Heyra_Story_Templekid.baseDesc>
+  <!-- EN: kid in the monastery -->
+  <Heyra_Story_Templekid.title>寺院寥童</Heyra_Story_Templekid.title>
+  <!-- EN: monastery kid -->
+  <Heyra_Story_Templekid.titleShort>寺院寥童</Heyra_Story_Templekid.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} grew up in a monastery and was raised by Heyran clergies. Life in the monastery gradually became boring. From then on, {PAWN_pronoun} was looking forward to the day when {PAWN_pronoun} could leave and live {PAWN_possessive} own life. -->
+  <Heyra_Story_TemplekidD.baseDesc>{PAWN_nameDef}是被僧侣们在一所寺院里养大的。寺院里的生活枯燥乏味，{PAWN_pronoun}一直盼望着可以离开寺院独自生活的那一天。</Heyra_Story_TemplekidD.baseDesc>
+  <!-- EN: kid in the monastery -->
+  <Heyra_Story_TemplekidD.title>寺院寥童</Heyra_Story_TemplekidD.title>
+  <!-- EN: monastery kid -->
+  <Heyra_Story_TemplekidD.titleShort>寺院寥童</Heyra_Story_TemplekidD.titleShort>
+  
+  <!-- EN: A toxic fallout brought an end to the peaceful life of young {PAWN_nameDef}. {PAWN_pronoun} had to leave {PAWN_possessive} hometown and seek ways to survive in a unfamiliar city. -->
+  <Heyra_Story_Wanderer.baseDesc>年幼时，一场有毒尘埃摧毁了{PAWN_nameDef}的平静生活。{PAWN_pronoun}被迫背井离乡，在陌生的城市中艰难求生。</Heyra_Story_Wanderer.baseDesc>
+  <!-- EN: wanderer child -->
+  <Heyra_Story_Wanderer.title>流浪儿</Heyra_Story_Wanderer.title>
+  <!-- EN: wanderer -->
+  <Heyra_Story_Wanderer.titleShort>流浪儿</Heyra_Story_Wanderer.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} inherited a lot of land and wealth from the family. {PAWN_pronoun} enjoyed {PAWN_possessive} worry-free life as {PAWN_pronoun} went daily hunting for fun and delegated all the work to the servants. -->
+  <Heyra_Story_Wealthylandlord.baseDesc>{PAWN_nameDef}从祖上继承了大量土地和财富。{PAWN_pronoun}把大小事务都交给仆人来做，自己整日狩猎纵乐。</Heyra_Story_Wealthylandlord.baseDesc>
+  <!-- EN: wealthy landlord -->
+  <Heyra_Story_Wealthylandlord.title>阔绰地主</Heyra_Story_Wealthylandlord.title>
+  <!-- EN: landlord -->
+  <Heyra_Story_Wealthylandlord.titleShort>地主</Heyra_Story_Wealthylandlord.titleShort>
+  
+</LanguageData>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has sent us a message. [asker_possessive] scouts have spotted a hidden base controlled by [siteFaction_name]. \n[asker_nameDef] wants us to launch an assault on it. [asker_pronoun] has no intention of taking over the base. Once the threat is eliminated, you are free to take whatever valuables are left.\n\nThe base's defense force includes several turrets and a large group of well-equipped Rong warriors. This will be a very tough fight.</li>
+  -->
+  <Heyra_Quest_Lab.questDescriptionRules.rulesStrings>
+	<li>questDescription->[asker_nameFull]，[asker_faction_name]的[asker_faction_leaderTitle]给我们发来一条信息。 [asker_possessive]斥候发现了一处由[siteFaction_name]控制的隐秘基地，[asker_nameDef]希望我们能铲除它。[asker_pronoun]无意占领该基地，一旦守卫被击败，你就可以带走所有你喜欢的东西。\n\n基地的防备力量由炮塔和大量装备精良的戎族组成，这将会是一场恶战。</li>
+  </Heyra_Quest_Lab.questDescriptionRules.rulesStrings>
+  
+  
+  <!-- EN:-->
+  <Heyra_Quest_Lab.questNameRules.rulesStrings>
+    <li>questName->发现隐蔽基地</li>
+	<li>questName->发现戎族基地</li>
+  </Heyra_Quest_Lab.questNameRules.rulesStrings>
+
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <Heyra_Quest_Lab.LetterLabelQuestExpired.slateRef>任务失效：[resolvedQuestName]</Heyra_Quest_Lab.LetterLabelQuestExpired.slateRef>
+  <!-- EN: The base seems to have been relocated and everyone who was there has left. The quest [resolvedQuestName] has expired. -->
+  <Heyra_Quest_Lab.LetterTextQuestExpired.slateRef>斥候通知我们戎族基地和人员已经转移。任务[resolvedQuestName]失效。</Heyra_Quest_Lab.LetterTextQuestExpired.slateRef>
+  <!-- EN: Quest failed: [resolvedQuestName] -->
+  <Heyra_Quest_Lab.LetterLabelQuestFailed.slateRef>任务失败：[resolvedQuestName]</Heyra_Quest_Lab.LetterLabelQuestFailed.slateRef>
+  <!-- EN: After being discovered, the base has been relocated. The quest [resolvedQuestName] has ended. -->
+  <Heyra_Quest_Lab.LetterTextQuestFailed.slateRef>在被发现之后，戎族人迅速转移了基地。任务[resolvedQuestName]失败。</Heyra_Quest_Lab.LetterTextQuestFailed.slateRef>
+  <!-- EN: Payment arrived -->
+  <Heyra_Quest_Lab.LetterLabelPaymentArrived.slateRef>报酬送达</Heyra_Quest_Lab.LetterLabelPaymentArrived.slateRef>
+  <!-- EN: You have cleared the Rong base!\n\nThe payment from [asker_faction_name] has arrived. -->
+  <Heyra_Quest_Lab.LetterTextPaymentArrived.slateRef>你铲除了这个基地。报酬已经送达。</Heyra_Quest_Lab.LetterTextPaymentArrived.slateRef>
+  <!-- EN: [asker_faction_royalFavorLabel] -->
+  <Heyra_Quest_Lab.LetterLabelFavorReceiver.slateRef>N/A不适用</Heyra_Quest_Lab.LetterLabelFavorReceiver.slateRef>
+  <!-- EN: These colonists participated in the victory for the quest [resolvedQuestName]. [asker_definite] wants to know who should receive the [royalFavorReward_amount] [asker_faction_royalFavorLabel] for this service. -->
+  <Heyra_Quest_Lab.LetterTextFavorReceiver.slateRef>N/A不适用</Heyra_Quest_Lab.LetterTextFavorReceiver.slateRef>
+  
+</LanguageData>

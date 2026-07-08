@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FleshTypeDef>
+    <defName>Heyra_TotemFleshType</defName>
+    <corpseCategory>CorpsesMechanoid</corpseCategory>
+    <damageEffecter>Damage_HitMechanoid</damageEffecter>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechC</texture>
+      </li>
+    </genericWounds>
+  </FleshTypeDef>
+
+<ThingDef ParentName="BasePawn">
+    <defName>Heyra_MobileTotem</defName>
+    <label>Heyran totem carrier</label>
+    <description>This wooden cart-mounting totem is rarely seen on the battlefield. It has a built-in ballista for close-range defense. This device is closely related to Heyran necromancy.</description>
+     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <statBases>
+      <PsychicSensitivity>0.0</PsychicSensitivity>
+      <ToxicResistance>1</ToxicResistance>
+      <Flammability>1</Flammability>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+      <MeatAmount>0</MeatAmount>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+	   <MoveSpeed>1.8</MoveSpeed>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_CausesGameCondition">
+        <conditionDef>Eclipse</conditionDef>
+        <worldRange>1</worldRange>
+      </li>
+    </comps>
+   <tools>
+      <li>
+        <label>Cart body</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>8</cooldownTime>
+        <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+	 <butcherProducts>
+      <Steel>15</Steel>
+    </butcherProducts>
+    <race>
+	  <fleshType>Heyra_TotemFleshType</fleshType>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <lifeExpectancy>200</lifeExpectancy>
+      <bloodDef>Filth_MachineBits</bloodDef>
+      <body>Heyra_MobileTotem_Body</body>
+      <baseHealthScale>2</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <!-- [1.6 FIX] Pawn_Melee_Punch_HitBuilding SoundDef removed in 1.5+. Commented out. -->
+      <!-- <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding> -->
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+	  <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <baseBodySize>1.0</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded></soundWounded>
+          <soundDeath></soundDeath>
+          <soundCall></soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+    </race>
+  </ThingDef>
+
+	<PawnKindDef>
+		<defName>Heyra_MobileTotem_PawnKind</defName>
+		<label>Heyran field totem carrier</label>
+		<race>Heyra_MobileTotem</race>
+		<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+		<combatPower>120</combatPower>
+		<aiAvoidCover>true</aiAvoidCover>
+		<canBeSapper>false</canBeSapper>		
+		<minGenerationAge>2</minGenerationAge>
+		<maxGenerationAge>72</maxGenerationAge>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Monster/Totem/HeyraTotem</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.0</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+      <min>400</min>
+      <max>400</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Heyra_RangedTypeHiddenbow</li>
+    </weaponTags>
+	</PawnKindDef>
+
+</Defs>

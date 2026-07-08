@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 制作聆族悦音头饰 -->
+  <Make_Heyra_Bellclips.label>制作聆族悦音头饰</Make_Heyra_Bellclips.label>
+  <!-- EN: 制作聆族悦音头饰。 -->
+  <Make_Heyra_Bellclips.description>制作聆族悦音头饰。</Make_Heyra_Bellclips.description>
+  <!-- EN: 正在制作聆族悦音头饰。 -->
+  <Make_Heyra_Bellclips.jobString>正在制作聆族悦音头饰。</Make_Heyra_Bellclips.jobString>
+  
+  <!-- EN: 制作聆族纱裙 -->
+  <Make_Heyra_Bubleskirt.label>制作聆族纱裙</Make_Heyra_Bubleskirt.label>
+  <!-- EN: 制作聆族纱裙。 -->
+  <Make_Heyra_Bubleskirt.description>制作聆族纱裙。</Make_Heyra_Bubleskirt.description>
+  <!-- EN: 正在制作聆族纱裙。 -->
+  <Make_Heyra_Bubleskirt.jobString>正在制作聆族纱裙。</Make_Heyra_Bubleskirt.jobString>
+  
+  <!-- EN: 制作聆族朴素斗篷 -->
+  <Make_Heyra_Cloak.label>制作聆族朴素斗篷</Make_Heyra_Cloak.label>
+  <!-- EN: 制作聆族朴素斗篷。 -->
+  <Make_Heyra_Cloak.description>制作聆族朴素斗篷。</Make_Heyra_Cloak.description>
+  <!-- EN: 正在制作聆族朴素斗篷。 -->
+  <Make_Heyra_Cloak.jobString>正在制作聆族朴素斗篷。</Make_Heyra_Cloak.jobString>
+  
+  <!-- EN: 制作聆族护耳 -->
+  <Make_Heyra_Earmuffs.label>制作聆族护耳</Make_Heyra_Earmuffs.label>
+  <!-- EN: 制作聆族护耳。 -->
+  <Make_Heyra_Earmuffs.description>制作聆族护耳。</Make_Heyra_Earmuffs.description>
+  <!-- EN: 正在制作聆族护耳。 -->
+  <Make_Heyra_Earmuffs.jobString>正在制作聆族护耳。</Make_Heyra_Earmuffs.jobString>
+  
+  <!-- EN: 制作聆族巫蛊长袍 -->
+  <Make_Heyra_Eldritchrobe.label>制作聆族巫蛊长袍</Make_Heyra_Eldritchrobe.label>
+  <!-- EN: 制作聆族巫蛊长袍。 -->
+  <Make_Heyra_Eldritchrobe.description>制作聆族巫蛊长袍。</Make_Heyra_Eldritchrobe.description>
+  <!-- EN: 正在制作聆族巫蛊长袍。 -->
+  <Make_Heyra_Eldritchrobe.jobString>正在制作聆族巫蛊长袍。</Make_Heyra_Eldritchrobe.jobString>
+  
+  <!-- EN: 制作聆族绣花衫 -->
+  <Make_Heyra_Embroideredshirt.label>制作聆族绣花衫</Make_Heyra_Embroideredshirt.label>
+  <!-- EN: 制作聆族绣花衫。 -->
+  <Make_Heyra_Embroideredshirt.description>制作聆族绣花衫。</Make_Heyra_Embroideredshirt.description>
+  <!-- EN: 正在制作聆族绣花衫。 -->
+  <Make_Heyra_Embroideredshirt.jobString>正在制作聆族绣花衫。</Make_Heyra_Embroideredshirt.jobString>
+  
+  <!-- EN: 制作聆族禁军头盔 -->
+  <Make_Heyra_Forbiddenarmyhelmet.label>制作聆族禁军头盔</Make_Heyra_Forbiddenarmyhelmet.label>
+  <!-- EN: 制作聆族禁军头盔。 -->
+  <Make_Heyra_Forbiddenarmyhelmet.description>制作聆族禁军头盔。</Make_Heyra_Forbiddenarmyhelmet.description>
+  <!-- EN: 正在制作聆族禁军头盔。 -->
+  <Make_Heyra_Forbiddenarmyhelmet.jobString>正在制作聆族禁军头盔。</Make_Heyra_Forbiddenarmyhelmet.jobString>
+  
+  <!-- EN: 制作聆族禁军盔甲 -->
+  <Make_Heyra_Forbiddenarmypanoply.label>制作聆族禁军铠甲</Make_Heyra_Forbiddenarmypanoply.label>
+  <!-- EN: 制作聆族禁军盔甲。 -->
+  <Make_Heyra_Forbiddenarmypanoply.description>制作聆族禁军铠甲。</Make_Heyra_Forbiddenarmypanoply.description>
+  <!-- EN: 正在制作聆族禁军盔甲。 -->
+  <Make_Heyra_Forbiddenarmypanoply.jobString>正在制作聆族禁军铠甲。</Make_Heyra_Forbiddenarmypanoply.jobString>
+  
+  <!-- EN: 制作戎族铳刃 -->
+  <Make_Heyra_Gunblade.label>制作戎族铳刃</Make_Heyra_Gunblade.label>
+  <!-- EN: 制作戎族铳刃。 -->
+  <Make_Heyra_Gunblade.description>制作戎族铳刃。</Make_Heyra_Gunblade.description>
+  <!-- EN: 正在制作戎族铳刃。 -->
+  <Make_Heyra_Gunblade.jobString>正在制作戎族铳刃。</Make_Heyra_Gunblade.jobString>
+  
+  <!-- EN: 制作聆族包头巾 -->
+  <Make_Heyra_Headband.label>制作聆族包头巾</Make_Heyra_Headband.label>
+  <!-- EN: 制作聆族包头巾。 -->
+  <Make_Heyra_Headband.description>制作聆族包头巾。</Make_Heyra_Headband.description>
+  <!-- EN: 正在制作聆族包头巾。 -->
+  <Make_Heyra_Headband.jobString>正在制作聆族包头巾。</Make_Heyra_Headband.jobString>
+  
+  <!-- EN: 制作聆族祭祀装束 -->
+  <Make_Heyra_Hierarchattire.label>制作聆族祭司装束</Make_Heyra_Hierarchattire.label>
+  <!-- EN: 制作聆族祭祀装束。 -->
+  <Make_Heyra_Hierarchattire.description>制作聆族祭司装束。</Make_Heyra_Hierarchattire.description>
+  <!-- EN: 正在制作聆族祭祀装束。 -->
+  <Make_Heyra_Hierarchattire.jobString>正在制作聆族祭司装束。</Make_Heyra_Hierarchattire.jobString>
+  
+  <!-- EN: 制作聆族褙子 -->
+  <Make_Heyra_Jacketskirt.label>制作聆族褙子</Make_Heyra_Jacketskirt.label>
+  <!-- EN: 制作聆族褙子。 -->
+  <Make_Heyra_Jacketskirt.description>制作聆族褙子。</Make_Heyra_Jacketskirt.description>
+  <!-- EN: 正在制作聆族褙子。 -->
+  <Make_Heyra_Jacketskirt.jobString>正在制作聆族褙子。</Make_Heyra_Jacketskirt.jobString>
+  
+  <!-- EN: 制作聆族江湖短衣 -->
+  <Make_Heyra_Jianghusuit.label>制作聆族江湖短衣</Make_Heyra_Jianghusuit.label>
+  <!-- EN: 制作聆族江湖短衣。 -->
+  <Make_Heyra_Jianghusuit.description>制作聆族江湖短衣。</Make_Heyra_Jianghusuit.description>
+  <!-- EN: 正在制作聆族江湖短衣。 -->
+  <Make_Heyra_Jianghusuit.jobString>正在制作聆族江湖短衣。</Make_Heyra_Jianghusuit.jobString>
+  
+  <!-- EN: 制作聆族长裙 -->
+  <Make_Heyra_Longdress.label>制作聆族长裙</Make_Heyra_Longdress.label>
+  <!-- EN: 制作聆族长裙。 -->
+  <Make_Heyra_Longdress.description>制作聆族长裙。</Make_Heyra_Longdress.description>
+  <!-- EN: 正在制作聆族长裙。 -->
+  <Make_Heyra_Longdress.jobString>正在制作聆族长裙。</Make_Heyra_Longdress.jobString>
+  
+  <!-- EN: 制作聆族先知装束 -->
+  <Make_Heyra_Prophetessattire.label>制作聆族先知装束</Make_Heyra_Prophetessattire.label>
+  <!-- EN: 制作聆族先知装束。 -->
+  <Make_Heyra_Prophetessattire.description>制作聆族先知装束。</Make_Heyra_Prophetessattire.description>
+  <!-- EN: 正在制作聆族先知装束。 -->
+  <Make_Heyra_Prophetessattire.jobString>正在制作聆族先知装束。</Make_Heyra_Prophetessattire.jobString>
+  
+  <!-- EN: 制作聆族先知华冠 -->
+  <Make_Heyra_Prophetesscrown.label>制作聆族先知华冠</Make_Heyra_Prophetesscrown.label>
+  <!-- EN: 制作聆族先知华冠。 -->
+  <Make_Heyra_Prophetesscrown.description>制作聆族先知华冠。</Make_Heyra_Prophetesscrown.description>
+  <!-- EN: 正在制作聆族先知华冠。 -->
+  <Make_Heyra_Prophetesscrown.jobString>正在制作聆族先知华冠。</Make_Heyra_Prophetesscrown.jobString>
+  
+  <!-- EN: 制作戎族躁狂者护具 -->
+  <Make_Heyra_Rong_Berserkerarmor.label>制作戎族躁狂者护具</Make_Heyra_Rong_Berserkerarmor.label>
+  <!-- EN: 制作戎族躁狂者护具。 -->
+  <Make_Heyra_Rong_Berserkerarmor.description>制作戎族躁狂者护具。</Make_Heyra_Rong_Berserkerarmor.description>
+  <!-- EN: 正在制作戎族躁狂者护具。 -->
+  <Make_Heyra_Rong_Berserkerarmor.jobString>正在制作戎族躁狂者护具。</Make_Heyra_Rong_Berserkerarmor.jobString>
+  
+  <!-- EN: 制作戎族四目面具 -->
+  <Make_Heyra_Rong_MaskA.label>制作戎族四目面具</Make_Heyra_Rong_MaskA.label>
+  <!-- EN: 制作戎族四目面具。 -->
+  <Make_Heyra_Rong_MaskA.description>制作戎族四目面具。</Make_Heyra_Rong_MaskA.description>
+  <!-- EN: 正在制作戎族四目面具。 -->
+  <Make_Heyra_Rong_MaskA.jobString>正在制作戎族四目面具。</Make_Heyra_Rong_MaskA.jobString>
+  
+  <!-- EN: 制作戎族长耳面具 -->
+  <Make_Heyra_Rong_MaskB.label>制作戎族长耳面具</Make_Heyra_Rong_MaskB.label>
+  <!-- EN: 制作戎族长耳面具。 -->
+  <Make_Heyra_Rong_MaskB.description>制作戎族长耳面具。</Make_Heyra_Rong_MaskB.description>
+  <!-- EN: 正在制作戎族长耳面具。 -->
+  <Make_Heyra_Rong_MaskB.jobString>正在制作戎族长耳面具。</Make_Heyra_Rong_MaskB.jobString>
+  
+  <!-- EN: 制作戎族恶狼护具 -->
+  <Make_Heyra_Rong_Ulfhednararmor.label>制作戎族恶狼护具</Make_Heyra_Rong_Ulfhednararmor.label>
+  <!-- EN: 制作戎族恶狼护具。 -->
+  <Make_Heyra_Rong_Ulfhednararmor.description>制作戎族恶狼护具。</Make_Heyra_Rong_Ulfhednararmor.description>
+  <!-- EN: 正在制作戎族恶狼护具。 -->
+  <Make_Heyra_Rong_Ulfhednararmor.jobString>正在制作戎族恶狼护具。</Make_Heyra_Rong_Ulfhednararmor.jobString>
+  
+  <!-- EN: 制作戎族巨剑 -->
+  <Make_Heyra_Ronggreatblade.label>制作戎族巨剑</Make_Heyra_Ronggreatblade.label>
+  <!-- EN: 制作戎族巨剑。 -->
+  <Make_Heyra_Ronggreatblade.description>制作戎族巨剑。</Make_Heyra_Ronggreatblade.description>
+  <!-- EN: 正在制作戎族巨剑。 -->
+  <Make_Heyra_Ronggreatblade.jobString>正在制作戎族巨剑。</Make_Heyra_Ronggreatblade.jobString>
+  
+  <!-- EN: 制作聆族萨满装束 -->
+  <Make_Heyra_Shamanattire.label>制作聆族萨满装束</Make_Heyra_Shamanattire.label>
+  <!-- EN: 制作聆族萨满装束。 -->
+  <Make_Heyra_Shamanattire.description>制作聆族萨满装束。</Make_Heyra_Shamanattire.description>
+  <!-- EN: 正在制作聆族萨满装束。 -->
+  <Make_Heyra_Shamanattire.jobString>正在制作聆族萨满装束。</Make_Heyra_Shamanattire.jobString>
+  
+  <!-- EN: 制作聆族萨满兜帽 -->
+  <Make_Heyra_Shamanheadwear.label>制作聆族萨满兜帽</Make_Heyra_Shamanheadwear.label>
+  <!-- EN: 制作聆族萨满兜帽。 -->
+  <Make_Heyra_Shamanheadwear.description>制作聆族萨满兜帽。</Make_Heyra_Shamanheadwear.description>
+  <!-- EN: 正在制作聆族萨满兜帽。 -->
+  <Make_Heyra_Shamanheadwear.jobString>正在制作聆族萨满兜帽。</Make_Heyra_Shamanheadwear.jobString>
+  
+  <!-- EN: 制作聆族短袄 -->
+  <Make_Heyra_Shortcoat.label>制作聆族短袄</Make_Heyra_Shortcoat.label>
+  <!-- EN: 制作聆族短袄。 -->
+  <Make_Heyra_Shortcoat.description>制作聆族短袄。</Make_Heyra_Shortcoat.description>
+  <!-- EN: 正在制作聆族短袄。 -->
+  <Make_Heyra_Shortcoat.jobString>正在制作聆族短袄。</Make_Heyra_Shortcoat.jobString>
+  
+  <!-- EN: 制作聆族背心 -->
+  <Make_Heyra_Sleeveless.label>制作聆族背心</Make_Heyra_Sleeveless.label>
+  <!-- EN: 制作聆族背心。 -->
+  <Make_Heyra_Sleeveless.description>制作聆族背心。</Make_Heyra_Sleeveless.description>
+  <!-- EN: 正在制作聆族背心。 -->
+  <Make_Heyra_Sleeveless.jobString>正在制作聆族背心。</Make_Heyra_Sleeveless.jobString>
+  
+  <!-- EN: 制作聆族军士甲 -->
+  <Make_Heyra_Soldierarmor.label>制作聆族军士甲</Make_Heyra_Soldierarmor.label>
+  <!-- EN: 制作聆族军士甲。 -->
+  <Make_Heyra_Soldierarmor.description>制作聆族军士甲。</Make_Heyra_Soldierarmor.description>
+  <!-- EN: 正在制作聆族军士甲。 -->
+  <Make_Heyra_Soldierarmor.jobString>正在制作聆族军士甲。</Make_Heyra_Soldierarmor.jobString>
+  
+  <!-- EN: 制作聆族军士头盔 -->
+  <Make_Heyra_Soldierhelmet.label>制作聆族军士头盔</Make_Heyra_Soldierhelmet.label>
+  <!-- EN: 制作聆族军士头盔。 -->
+  <Make_Heyra_Soldierhelmet.description>制作聆族军士头盔。</Make_Heyra_Soldierhelmet.description>
+  <!-- EN: 正在制作聆族军士头盔。 -->
+  <Make_Heyra_Soldierhelmet.jobString>正在制作聆族军士头盔。</Make_Heyra_Soldierhelmet.jobString>
+  
+  <!-- EN: 制作聆族夜行衣 -->
+  <Make_Heyra_Stealthsuit.label>制作聆族夜行衣</Make_Heyra_Stealthsuit.label>
+  <!-- EN: 制作聆族夜行衣。 -->
+  <Make_Heyra_Stealthsuit.description>制作聆族夜行衣。</Make_Heyra_Stealthsuit.description>
+  <!-- EN: 正在制作聆族夜行衣。 -->
+  <Make_Heyra_Stealthsuit.jobString>正在制作聆族夜行衣。</Make_Heyra_Stealthsuit.jobString>
+  
+  <!-- EN: 制作聆族工匠腰带 -->
+  <Make_Heyra_Toolbelt.label>制作聆族工匠腰带</Make_Heyra_Toolbelt.label>
+  <!-- EN: 制作聆族工匠腰带。 -->
+  <Make_Heyra_Toolbelt.description>制作聆族工匠腰带。</Make_Heyra_Toolbelt.description>
+  <!-- EN: 正在制作聆族工匠腰带。 -->
+  <Make_Heyra_Toolbelt.jobString>正在制作聆族工匠腰带。</Make_Heyra_Toolbelt.jobString>
+  
+  <!-- EN: 制作聆族冬袍 -->
+  <Make_Heyra_Wintercoat.label>制作聆族冬袍</Make_Heyra_Wintercoat.label>
+  <!-- EN: 制作聆族冬袍。 -->
+  <Make_Heyra_Wintercoat.description>制作聆族冬袍。</Make_Heyra_Wintercoat.description>
+  <!-- EN: 正在制作聆族冬袍。 -->
+  <Make_Heyra_Wintercoat.jobString>正在制作聆族冬袍。</Make_Heyra_Wintercoat.jobString>
+  
+  <!-- EN: 制作聆族大锅 -->
+  <Make_Heyra_Wok.label>制作聆族大锅</Make_Heyra_Wok.label>
+  <!-- EN: 制作聆族大锅。 -->
+  <Make_Heyra_Wok.description>制作聆族大锅。</Make_Heyra_Wok.description>
+  <!-- EN: 正在制作聆族大锅。 -->
+  <Make_Heyra_Wok.jobString>正在制作聆族大锅。</Make_Heyra_Wok.jobString>
+  
+</LanguageData>

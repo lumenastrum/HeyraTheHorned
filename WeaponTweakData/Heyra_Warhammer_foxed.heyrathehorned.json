@@ -1,0 +1,11 @@
+{
+  "TextureModID": "foxed.heyrathehorned",
+  "ItemDefName": "Heyra_Warhammer",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.122489959,
+  "Rotation": 45.0,
+  "BladeStart": 0.3172691,
+  "BladeEnd": 0.7730924,
+  "MeleeWeaponType": 1
+}

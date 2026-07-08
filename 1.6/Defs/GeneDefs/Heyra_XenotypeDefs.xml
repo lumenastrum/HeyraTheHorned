@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Xenotype_TellerBlessed</defName>
+		<label>teller-blessed</label>
+		<description>The children of the Teller — an ancient all-female race of horned, flame-haired oracles. Their psychic horns receive divine whispers, their bodies age with glacial slowness, and deep within their blood lies the dormant potential for a devastating beast form. Graceful and beautiful, but poorly suited to extremes of temperature and slow to adopt systematic research.</description>
+		<descriptionShort>Horned oracles with psychic sensitivity, longevity, and latent beast form potential.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Heyra_Xenotype_TellerBlessed</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Heyra_Gene_EfficientDigestion</li>
+			<li>Heyra_Gene_AllDaughterLineage</li>
+			<li>Heyra_Gene_PrehensileTail</li>
+			<li>Heyra_Gene_DibbaSota</li>
+			<li>Heyra_Gene_NaturalGrace</li>
+			<li>Heyra_Gene_NarrowComfort</li>
+			<li>Heyra_Gene_ExoticBeauty</li>
+			<li>Heyra_Gene_OralTradition</li>
+			<li>Heyra_Gene_AwakeningPotential</li>
+			<li>Heyra_Gene_FlameTouched</li>
+			<li>AptitudeStrong_Plants</li>
+			<li>Libido_High</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Xenotype_Severed</defName>
+		<label>severed</label>
+		<description>The Rong — a savage offshoot of the Heyra who severed their psychic connection and embraced primal violence. They are faster, tougher, and far more lethal in melee than their civilized cousins. What they gained in raw combat power, they lost in social grace and the whispers of the divine.</description>
+		<descriptionShort>Feral Heyra offshoot with enhanced combat ability and severed psychic heritage.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Heyra_Xenotype_Severed</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Heyra_Gene_EfficientDigestion</li>
+			<li>Heyra_Gene_AllDaughterLineage</li>
+			<li>Heyra_Gene_PrehensileTail</li>
+			<li>Heyra_Gene_SeveredLineage</li>
+			<li>Heyra_Gene_FeralReflexes</li>
+			<li>Heyra_Gene_PrimalVigor</li>
+			<li>Heyra_Gene_PrimalFerocity</li>
+			<li>Heyra_Gene_SavageInstinct</li>
+			<li>Heyra_Gene_UmbralAdaptation</li>
+			<li>Libido_High</li>
+		</genes>
+	</XenotypeDef>
+
+</Defs>

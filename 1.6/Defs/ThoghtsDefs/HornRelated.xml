@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>Heyra_Missinghornthought</defName>
+		<stages>
+			<li>
+				<label>Horns missing</label>
+				<description>I lost my horns. This makes me no different than a Rong!</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Heyra_Atebeanpulp</defName>
+		<thoughtClass>Thought_FoodEaten</thoughtClass>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+		<stages>
+		  <li>
+			<label>ate bean pulp</label>
+			<description>I had to eat bean pulp. It was so bland in taste, and the texture was disgusting too.</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+	  </ThoughtDef>
+
+</Defs>

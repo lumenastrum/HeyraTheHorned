@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Milksoy plant -->
+  <Heyra_Bean.label>矮豆</Heyra_Bean.label>
+  <!-- EN: A plant that yields edible beans that are rich in protein. The beans can be used to produce plant milk, and filtered out bean pulp makes good animal feed. -->
+  <Heyra_Bean.description>这个作物结出富含蛋白质的、可食用的豆子。种子可以用来制作成豆奶，过程中产出的豆渣是很好的饲料。</Heyra_Bean.description>
+  
+  <!-- EN: Heyran bean -->
+  <Heyra_Rawbean.label>矮豆</Heyra_Rawbean.label>
+  <!-- EN: Raw Milksoy bean. -->
+  <Heyra_Rawbean.description>生的矮豆。</Heyra_Rawbean.description>
+  
+</LanguageData>

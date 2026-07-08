@@ -1,0 +1,11 @@
+{
+  "TextureModID": "foxed.heyrathehorned",
+  "ItemDefName": "Heyra_Daggeraxe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3253012,
+  "Rotation": 45.0,
+  "BladeStart": 0.628514051,
+  "BladeEnd": 0.997992,
+  "MeleeWeaponType": 6
+}

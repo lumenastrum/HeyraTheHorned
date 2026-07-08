@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: plasma beam -->
+  <Heyra_Bowprojectile.label>粒子束</Heyra_Bowprojectile.label>
+  
+  <!-- EN: Celestial whisper -->
+  <Heyra_Celestialwhisper.label>天人低语</Heyra_Celestialwhisper.label>
+  <!-- EN: A bow-like weapon. It shoots plasma beams that penetrate plasteel plates like paper while being almost silent. The builder of this masterpiece remains unknown. -->
+  <Heyra_Celestialwhisper.description>一件类似弓的兵器。它发射削铁如泥的高能离子束，并几乎是静音的。这件神兵的打造者不得而知。</Heyra_Celestialwhisper.description>
+  <!-- EN: limb -->
+  <Heyra_Celestialwhisper.tools.limb.label>弓臂</Heyra_Celestialwhisper.tools.limb.label>
+  <!-- EN: Celestial whisper -->
+  <Heyra_Celestialwhisper.verbs.Verb_Shoot.label>TODO</Heyra_Celestialwhisper.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Dismemberer straight blade -->
+  <Heyra_Dismembererblade.label>裂肢者直刃</Heyra_Dismembererblade.label>
+  <!-- EN: Dismemberer's melee weapon. -->
+  <Heyra_Dismembererblade.description>这是裂肢者所装备的近战武器。</Heyra_Dismembererblade.description>
+  <!-- EN: blade -->
+  <Heyra_Dismembererblade.tools.blade.label>剑刃</Heyra_Dismembererblade.tools.blade.label>
+  <!-- EN: point -->
+  <Heyra_Dismembererblade.tools.point.label>刃尖</Heyra_Dismembererblade.tools.point.label>
+  
+  <!-- EN: hidden ballista -->
+  <Heyra_Hiddenbow.label>内藏弩</Heyra_Hiddenbow.label>
+  <!-- EN: A built-in ballista that launches arrows at a very fast speed. -->
+  <Heyra_Hiddenbow.description>一把内置的小型弩，能以极快的射速发射弩箭。</Heyra_Hiddenbow.description>
+  <!-- EN: barrel -->
+  <Heyra_Hiddenbow.tools.barrel.label>枪管</Heyra_Hiddenbow.tools.barrel.label>
+  <!-- EN: hidden ballista -->
+  <Heyra_Hiddenbow.verbs.Verb_Shoot.label>TODO</Heyra_Hiddenbow.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Khanzio sword -->
+  <Heyra_Swordmastersword.label>甘泽剑</Heyra_Swordmastersword.label>
+  <!-- EN: An exquisite sword crafted by the master sword makers of Khanzio. It is as light as a feather. The material and recipe for making this sword are kept by Khanzio as a secret, for hundreds of years. -->
+  <Heyra_Swordmastersword.description>由来自甘泽的铸剑师打造的宝剑，像羽毛一样轻。工艺和配方一直以来都是保密的。</Heyra_Swordmastersword.description>
+  <!-- EN: blade -->
+  <Heyra_Swordmastersword.tools.blade.label>剑刃</Heyra_Swordmastersword.tools.blade.label>
+  
+  <!-- EN: Withered dagger-axe -->
+  <Heyra_Withereddaggeraxe.label>生锈的戈</Heyra_Withereddaggeraxe.label>
+  <!-- EN: A severely corroded Heyran style polearm. -->
+  <Heyra_Withereddaggeraxe.description>这件长柄武器已经严重锈蚀了。</Heyra_Withereddaggeraxe.description>
+  <!-- EN: shaft -->
+  <Heyra_Withereddaggeraxe.tools.shaft.label>杆子</Heyra_Withereddaggeraxe.tools.shaft.label>
+  <!-- EN: blade -->
+  <Heyra_Withereddaggeraxe.tools.blade.label>刃</Heyra_Withereddaggeraxe.tools.blade.label>
+  
+  <!-- EN: Withered sword -->
+  <Heyra_Witheredsword.label>生锈的剑</Heyra_Witheredsword.label>
+  <!-- EN: A severely corroded Heyran style sword. -->
+  <Heyra_Witheredsword.description>这把聆族剑已经严重锈蚀了。</Heyra_Witheredsword.description>
+  <!-- EN: handle -->
+  <Heyra_Witheredsword.tools.handle.label>把手</Heyra_Witheredsword.tools.handle.label>
+  <!-- EN: blade -->
+  <Heyra_Witheredsword.tools.blade.label>剑刃</Heyra_Witheredsword.tools.blade.label>
+  <!-- EN: point -->
+  <Heyra_Witheredsword.tools.point.label>刃尖</Heyra_Witheredsword.tools.point.label>
+  
+</LanguageData>

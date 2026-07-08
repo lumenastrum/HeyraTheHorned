@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Heyran altar -->
+  <Heyra_Altar.label>聆族祭坛</Heyra_Altar.label>
+  <!-- EN: A Heyran installation with mysterious power. Miracle seeds are produced here. -->
+  <Heyra_Altar.description>拥有神秘力量的聆族装置。奇迹之种是在这里培育出来的。</Heyra_Altar.description>
+  
+  <!-- EN: biscuit machine -->
+  <Heyra_Biscuitmachine.label>饼干加工机</Heyra_Biscuitmachine.label>
+  <!-- EN: A machine that bakes bean pulp into biscuits. The biscuits are crushed and compressed into small cubes before being sealed in a vacuum package. No manual operation is required as it goes through all the processes automatically. However, your colonists still need to manually fill the ingredient tank and collect the product. -->
+  <Heyra_Biscuitmachine.description>把豆渣烘培成饼干的机器。饼干被打碎，然后压缩成小方块，最后封装进真空包装里。这台机器是全自动工作的。但仍需要殖民者手动添加原材料并收集产物。</Heyra_Biscuitmachine.description>
+  
+  <!-- EN: Synthread loom -->
+  <Heyra_Loommachine.label>合成纤维加工机</Heyra_Loommachine.label>
+  <!-- EN: A machine that produce synthread using protein fiber derived from milksoy, making it a great place to dump your excess bean pulp. No manual operation is required as it goes through all the processes automatically. However, your colonists still need to manually fill the ingredient tank and collect the product.\n Allowed raw materials: milksoy\bean pulp -->
+  <Heyra_Loommachine.description>提取矮豆的蛋白纤维来生产合成纤维的机器，是一个不错的消耗多余的豆渣的方法。这台机器是全自动工作的。但仍需要殖民者手动添加原材料并收集产物。</Heyra_Loommachine.description>
+  
+  <!-- EN: Mote -->
+  <Heyra_Mote_Bean.label>TODO</Heyra_Mote_Bean.label>
+  
+  <!-- EN: Mote -->
+  <Heyra_Mote_Biscuit.label>TODO</Heyra_Mote_Biscuit.label>
+  
+  <!-- EN: Mote -->
+  <Heyra_Mote_Loommachine.label>TODO</Heyra_Mote_Loommachine.label>
+  
+  <!-- EN: Mote -->
+  <Heyra_Mote_Milk.label>TODO</Heyra_Mote_Milk.label>
+  
+  <!-- EN: mysterious container -->
+  <Heyra_Samplecontainer.label>神秘的容器</Heyra_Samplecontainer.label>
+  <!-- EN: A self-powered crate that keeps the contents safly in a constant temperature and humidity chamber, making it the ideal container for long-term storage of blood samples.\n\nThis container is securely locked. The only way to acquire the contents is to deconstruct it. -->
+  <Heyra_Samplecontainer.description>一个自主供电的保险箱，能将内容物安全地保存在恒温恒湿环境中，是长期保存血液样品的理想容器。\n\n这个容器已经被锁死，只有拆解它才能获得其内容物。</Heyra_Samplecontainer.description>
+  
+  <!-- EN: bean milk machine -->
+  <Heyra_Soymilkmachine.label>豆奶加工机</Heyra_Soymilkmachine.label>
+  <!-- EN: A machine that cooks milksoy beans into bean milk. No manual operation is required as it goes through all the processes automatically. However, your colonists still need to manually fill the ingredient tank and collect the milk produced. \n\nThis machine produces heat. Do not build this directly in your refrigerating chamber. -->
+  <Heyra_Soymilkmachine.description>把矮豆烹制成豆奶的机器。这台机器是全自动工作的。但仍需要殖民者手动添加原材料并收集产物。\n\n工作时会发热，不要把它直接建造在冷库里。</Heyra_Soymilkmachine.description>
+  
+  <!-- EN: stone mill -->
+  <Heyra_Stonemill.label>石磨</Heyra_Stonemill.label>
+  <!-- EN: A household device for grinding beans into the bean milk. -->
+  <Heyra_Stonemill.description>这个家庭用的石磨可以把矮豆磨成豆奶。</Heyra_Stonemill.description>
+  
+  <!-- EN: Heyran workbench -->
+  <Heyra_Workbench.label>聆族工作台</Heyra_Workbench.label>
+  <!-- EN: A workbench for crafting Heyran items. -->
+  <Heyra_Workbench.description>用来打造聆族物品的工作台。</Heyra_Workbench.description>
+  
+</LanguageData>

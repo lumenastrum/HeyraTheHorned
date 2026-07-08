@@ -1,0 +1,966 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+		<defName>Heyra_Weapons</defName>
+		<label>Heyran weaponry</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Heyra_Masterpieces</defName>
+		<label>Heyran Masterpieces</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingDef Name="Heyra_MeleeSharpBase" Abstract="true" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<techLevel>Medieval</techLevel>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<graphicData>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>Heyra_Weapons</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+			<li>Heyra_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>		
+	</ThingDef>
+
+  <ThingDef ParentName="Heyra_MeleeSharpBase">
+    <defName>Heyra_Forbiddenarmysword</defName>
+    <label>Forbidden Army's sword</label>
+    <description>An exquisite sword etched with a diamond pattern. Standard sidearm of the Heyran Forbidden Army, it rewards skilled duelists with superior edge control that turns defense into offense.</description>
+    <graphicData>
+      <texPath>Weapon/Heyra_Forbiddenarmysword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>Heyra_MeleeTypeR</li>
+    </weaponTags>
+    <costStuffCount>80</costStuffCount>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeDodgeChance>2.0</MeleeDodgeChance>
+      <MeleeHitChance>1.0</MeleeHitChance>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>28</power>
+		<armorPenetration>0.40</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Heyra_Researchforbiddenarmy</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="Heyra_MeleeSharpBase">
+    <defName>Heyra_Sword</defName>
+    <label>Heyran sword</label>
+    <description>A sword with a popular design among the realm of Heyra. Its lightweight construction and elegant balance reward graceful footwork, allowing the wielder to deflect incoming blows with ease.</description>
+    <graphicData>
+      <texPath>Weapon/Heyra_Sword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>Heyra_MeleeTypeN</li>
+	  <li>Heyra_MeleeTypeSword</li>
+    </weaponTags>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeDodgeChance>1.0</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+		<armorPenetration>0.40</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Heyra_Researchweapontier1</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>Heyra_Warhammer</defName>
+    <label>Heyran breach hammer</label>
+    <description>A deadly war hammer designed to efficiently tear down walls and gates. Its balanced weight doubles as a construction tool, making it a favorite among Heyran pioneers.</description>
+	<thingCategories Inherit="False">
+			<li>Heyra_Weapons</li>
+		</thingCategories>
+    <graphicData>
+      <texPath>Weapon/Heyra_Warhammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>80</costStuffCount>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>2.0</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ConstructionSpeed>0.15</ConstructionSpeed>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-30</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>Heyra_Researchweapontier1</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+	  <recipeUsers Inherit="False">
+			<li>Heyra_Workbench</li>
+		</recipeUsers>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <weaponTags>
+      <li>Heyra_MeleeTypeB</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Heyra_Halberd</defName>
+    <label>Heyran halberd</label>
+    <description>A polearm consisting of two vertically positioned blades mounted on the end of a long staff. Its superior reach keeps attackers at bay, offering the wielder a defensive advantage.</description>
+	<thingCategories Inherit="False">
+			<li>Heyra_Weapons</li>
+		</thingCategories>
+    <graphicData>
+      <texPath>Weapon/Heyra_Halberd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags>
+      <li>Heyra_MeleeTypeN</li>
+    </weaponTags>
+    <costStuffCount>60</costStuffCount>
+    <thingSetMakerTags></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeDodgeChance>0.5</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>30</power>
+        <armorPenetration>0.50</armorPenetration>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Heyra_Researchweapontier1</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+	  <recipeUsers Inherit="False">
+			<li>Heyra_Workbench</li>
+	  </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Heyra_Daggeraxe</defName>
+    <label>Heyran dagger-axe</label>
+    <description>A polearm tipped with a curved blade and a sharp spike. The hooked blade catches limbs and finds gaps in armor with unsettling precision.</description>
+	<thingCategories Inherit="False">
+			<li>Heyra_Weapons</li>
+		</thingCategories>
+    <graphicData>
+      <texPath>Weapon/Heyra_Daggeraxe1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags>
+      <li>Heyra_MeleeTypeN</li>
+    </weaponTags>
+    <costStuffCount>60</costStuffCount>
+    <thingSetMakerTags></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeHitChance>1.0</MeleeHitChance>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-30</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Heyra_Researchweapontier1</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+	  <recipeUsers Inherit="False">
+			<li>Heyra_Workbench</li>
+	</recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Heyra_Forbiddenarmyhalberd</defName>
+    <label>Forbidden Army's halberd</label>
+    <description>A masterfully forged polearm with a crescent blade and razor-edged spear tip. Standard issue for the Heyran Forbidden Army, its balanced length keeps attackers at bay while allowing the wielder to flow between strikes.</description>
+	<thingCategories Inherit="False">
+			<li>Heyra_Weapons</li>
+		</thingCategories>
+    <graphicData>
+      <texPath>Weapon/Heyra_Forbiddenarmyhalberd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <weaponTags>
+      <li>Heyra_MeleeTypeR</li>
+    </weaponTags>
+    <costStuffCount>85</costStuffCount>
+    <thingSetMakerTags></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeDodgeChance>1.5</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <equippedAngleOffset>30</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>34</power>
+        <armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Heyra_Researchforbiddenarmy</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+	  <recipeUsers Inherit="False">
+			<li>Heyra_Workbench</li>
+			</recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Heyra_Blastarrow</defName>
+    <label>Heyran bow arrow</label>
+    <graphicData>
+		<shaderType Inherit="False">TransparentPostLight</shaderType>
+		<drawSize>1.3</drawSize>
+      <texPath>Weapon/Heyra_Blastarrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	  <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+	  <armorPenetrationBase>0.9</armorPenetrationBase>
+      <stoppingPower>1.2</stoppingPower>
+      <speed>45</speed>
+	  <explosionRadius>0.4</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+	  <arcHeightFactor>0.4</arcHeightFactor>
+	  <shadowSize>0.5</shadowSize>
+      <preExplosionSpawnChance>0.4</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseWeapon">
+    <defName>Heyra_Blastcrossbow</defName>
+    <label>Heyran blast crossbow</label>
+    <description>A crossbow that fires a pair of explosive arrows at a time. Practiced handling of its dual-arrow mechanism allows for swift reloading. The blast radius is modest but the incendiary payload excels at area denial.</description>
+	<techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>Heyra_Weapons</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <statBases>
+	  <WorkToMake>38000</WorkToMake>
+      <Mass>1.0</Mass>
+	   <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.05</AimingDelayFactor>
+    </equippedStatOffsets>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>      
+    </comps>
+    <graphicData>
+      <texPath>Weapon/Heyra_Blastcrossbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+      <WoodLog>20</WoodLog>
+	  <Gold>20</Gold>
+	  <Steel>60</Steel>
+	  <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags></thingSetMakerTags>
+    <weaponTags>
+      <li>Heyra_RangedTypeR</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Heyra_Blastarrow</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>26.0</range>
+		<forcedMissRadius>0.01</forcedMissRadius>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <soundCast>Bow_Large</soundCast>
+		<soundCastTail>GunTail_Medium</soundCastTail>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+		<muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<recipeUsers Inherit="False">
+			<li>Heyra_Workbench</li>
+			</recipeUsers>
+      <researchPrerequisite>Heyra_Researchweapontier1</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Heyra_Crossbowarrow</defName>
+    <label>greatbow arrow</label>
+    <graphicData>
+      <texPath>Weapon/Heyra_Crossbowarrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>23</damageAmountBase>
+      <stoppingPower>3.0</stoppingPower>
+      <armorPenetrationBase>0.55</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseWeapon">
+    <defName>Heyra_Crossbow</defName>
+    <label>Heyran crossbow</label>
+    <description>A powerful long-range crossbow with finely calibrated sighting. It trades rate of fire for devastating single-bolt impact and exceptional armor penetration.</description>
+	<techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>Heyra_Weapons</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <statBases>
+	  <WorkToMake>12000</WorkToMake>
+      <Mass>1.0</Mass>
+	   <AccuracyTouch>0.45</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>      
+    </comps>
+    <graphicData>
+      <texPath>Weapon/Heyra_Crossbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+      <WoodLog>60</WoodLog>
+	  <Steel>20</Steel>
+    </costList>
+    <thingSetMakerTags></thingSetMakerTags>
+    <weaponTags>
+      <li>Heyra_RangedTypeN</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Heyra_Crossbowarrow</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>30.0</range>
+        <soundCast>Bow_Large</soundCast>
+		<soundCastTail>GunTail_Medium</soundCastTail>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+       <recipeMaker>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<recipeUsers Inherit="False">
+			<li>Heyra_Workbench</li>
+			</recipeUsers>
+      <researchPrerequisite>Heyra_Researchweapontier1</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  
+  <!-- ======================Rong===================== -->
+  
+  <ThingDef ParentName="Heyra_MeleeSharpBase">
+    <defName>Heyra_Ronggreatblade</defName>
+    <label>Rong greatsword</label>
+    <description>These intimidating Rong swords are typically five to six feet long. The sheer mass of the blade ensures that even glancing blows land with devastating force — one can only hope their armor holds.</description>
+    <graphicData>
+      <texPath>Weapon/Heyra_Ronggreatblade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>Heyra_MeleeTypeRong</li>
+    </weaponTags>
+    <costStuffCount>80</costStuffCount>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeHitChance>1.5</MeleeHitChance>
+    </equippedStatOffsets>
+    <equippedAngleOffset>30</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+		<armorPenetration>0.45</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>24</power>
+		<armorPenetration>0.55</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Heyra_Researchrong</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseWeapon">
+    <defName>Heyra_Gunblade</defName>
+    <label>Rong gunblade</label>
+    <description>A hybrid weapon consisting of two parts: a reinforced blade and an autocannon. The blade cleaves through light armor while the autocannon fires high-velocity sabot rounds that punch through heavy plating — a deadly combination at any range.</description>
+	<techLevel>Industrial</techLevel>
+    <thingCategories>
+      <li>Heyra_Weapons</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <statBases>
+	  <WorkToMake>50000</WorkToMake>
+      <Mass>6.0</Mass>
+	   <AccuracyTouch>0.45</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MeleeHitChance>1.0</MeleeHitChance>
+    </equippedStatOffsets>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <!-- MVCF: Gunblade's ranged verb doesn't upset Brawler pawns.
+           The gunblade is fundamentally a melee weapon with an integrated cannon. -->
+      <li Class="MVCF.Comps.CompProperties_VerbProps">
+        <compClass>MVCF.Comps.Comp_VerbProps</compClass>
+        <verbProps>
+          <li>
+            <label>sabot cannon</label>
+            <brawlerCaresAbout>false</brawlerCaresAbout>
+          </li>
+        </verbProps>
+      </li>
+    </comps>
+    <graphicData>
+      <texPath>Weapon/Heyra_Gunblade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<equippedAngleOffset>-45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <costList>
+	  <Steel>130</Steel>
+	  <ComponentIndustrial>17</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags></thingSetMakerTags>
+    <weaponTags>
+      <li>Heyra_RangedTypeRong</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <label>sabot cannon</label>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Heyra_Sabotround</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>24.0</range>
+		<burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <soundCast>Shot_SniperRifle</soundCast>
+		<soundCastTail>GunTail_Heavy</soundCastTail>
+		<targetParams>
+          <canTargetLocations>false</canTargetLocations>
+        </targetParams>
+		<muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Stab</li>
+          <li>Cut</li>
+        </capacities>
+        <power>34</power>
+		<armorPenetration>0.30</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<recipeUsers Inherit="False">
+			<li>Heyra_Workbench</li>
+			</recipeUsers>
+      <researchPrerequisite>Heyra_Researchrong</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Heyra_Sabotround</defName>
+    <label>sabot round</label>
+    <graphicData>
+      <texPath>Weapon/Heyra_Sabotround</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>2.0</stoppingPower>
+      <armorPenetrationBase>0.65</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================================
+       Soul Great Bow — Heyra sniper bow with soul-energy trail
+       ============================================================ -->
+
+  <!-- Soul arrow projectile — trail effect is baked into the _Q texture sprite -->
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Heyra_SoulGreatBow_Projectile</defName>
+    <label>soul arrow</label>
+    <graphicData>
+      <shaderType Inherit="False">MoteGlow</shaderType>
+      <texPath>Weapon/Bullet_SoulGreatBow_Q</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>ArrowHighVelocity</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationBase>0.55</armorPenetrationBase>
+      <stoppingPower>2.5</stoppingPower>
+      <speed>110</speed>
+      <extraDamages>
+        <li>
+          <def>EMP</def>
+          <amount>10</amount>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <!-- Awakened soul arrow — enhanced projectile for Enableformchange pawns -->
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Heyra_SoulGreatBow_Projectile_Awakened</defName>
+    <label>awakened soul arrow</label>
+    <graphicData>
+      <shaderType Inherit="False">MoteGlow</shaderType>
+      <texPath>Weapon/Bullet_SoulGreatBow_Q</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.0</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>ArrowHighVelocity</damageDef>
+      <damageAmountBase>45</damageAmountBase>
+      <armorPenetrationBase>0.65</armorPenetrationBase>
+      <stoppingPower>3.5</stoppingPower>
+      <speed>130</speed>
+      <extraDamages>
+        <li>
+          <def>EMP</def>
+          <amount>100</amount>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeapon">
+    <defName>Heyra_SoulGreatBow</defName>
+    <label>Heyran soul great bow</label>
+    <description>A massive greatbow infused with soul energy. Each draw demands immense strength, but the arrow flies true over extraordinary distances, trailing a shimmering wake of spectral light. Heyra sharpshooters prize it above all ranged weapons — a single shot can fell an armored foe before they ever close the gap.\n\nThe bow resonates with Heyra who have undergone the Awakening ritual. In their hands, each arrow channels devastating soul energy that disrupts even mechanoid systems.</description>
+    <techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>Heyra_Weapons</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>5</Beauty>
+      <WorkToMake>55000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.45</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>2.0</ShootingAccuracyPawn>
+      <HuntingStealth>0.50</HuntingStealth>
+      <PsychicSensitivity>0.15</PsychicSensitivity>
+    </equippedStatOffsets>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="Heyra.CompProperties_SoulWeapon">
+        <awakenedProjectile>Heyra_SoulGreatBow_Projectile_Awakened</awakenedProjectile>
+      </li>
+    </comps>
+    <graphicData>
+      <texPath>Weapon/Heyra_SoulGreatBow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+      <Plasteel>50</Plasteel>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Heyra_Item_Seedingredient>1</Heyra_Item_Seedingredient>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>Heyra_RangedTypeR</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+      <li>LongShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Heyra.Verb_SoulShoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Heyra_SoulGreatBow_Projectile</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+        <range>46.0</range>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <recipeUsers Inherit="False">
+        <li>Heyra_Workbench</li>
+      </recipeUsers>
+      <researchPrerequisite>Heyra_Researchlegendaryarms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== SHARED GERMLINE (Heyra + Rong) ==================== -->
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_CentennialBlood</defName>
+		<label>centennial blood</label>
+		<description>An ancient bloodline grants extraordinary longevity. Heyra elders have witnessed the rise and fall of human empires, their bodies resisting the decay of time for centuries.</description>
+		<iconPath>UI/Icons/Genes/Gene_Ageless</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<!-- Longevity is handled by the race def's lifeExpectancy / chronologicalAge curves.
+		     This gene exists as a lore marker and metabolism cost for the trait. -->
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_EfficientDigestion</defName>
+		<label>efficient digestion</label>
+		<description>Millennia of bean-based diets have refined Heyra digestion into remarkable efficiency. They extract more nutrition from less food, a trait that has sustained their civilization through lean seasons.</description>
+		<iconPath>UI/Icons/Genes/Gene_StrongStomach</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>20</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statFactors>
+			<MaxNutrition>0.75</MaxNutrition>
+		</statFactors>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_AllDaughterLineage</defName>
+		<label>all-daughter lineage</label>
+		<description>Heyra reproduction produces only daughters. Whether this is true parthenogenesis or some deeper mechanism remains debated among xenobiologists. The result is the same: an unbroken matrilineal chain stretching back millennia.</description>
+		<iconPath>UI/Icons/Genes/Gene_AllDaughterLineage</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>30</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_PrehensileTail</defName>
+		<label>prehensile tail</label>
+		<description>A dexterous tail inherited from ancient ancestors. Used for balance and expression rather than combat, it is a defining mark of Heyra heritage — a reminder of what they once were, and what they chose to become.</description>
+		<iconPath>UI/Icons/Genes/Gene_TailSmooth</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>40</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<!-- ==================== HEYRA-EXCLUSIVE GENES ==================== -->
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_DibbaSota</defName>
+		<label>dibba-sota</label>
+		<description>Horns capture the subtlest pulses of psychic energy. Heyra call this gift 'dibba-sota' — the horn oracle. The Supreme Hierarch insists these whispers are the voice of God. Scientists suspect a biological antenna effect. The truth, as always, lies somewhere in between.</description>
+		<iconPath>UI/Icons/Genes/Gene_EnhancedPsychicAbility</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<statOffsets>
+			<PsychicSensitivity>0.5</PsychicSensitivity>
+		</statOffsets>
+		<exclusionTags>
+			<li>Heyra_PsychicHeritage</li>
+		</exclusionTags>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_NaturalGrace</defName>
+		<label>natural grace</label>
+		<description>An innate fluidity of movement makes Heyra difficult targets in close combat. They weave through strikes like wind through branches — not through training, but through instinct written into their blood.</description>
+		<iconPath>UI/Icons/Genes/Gene_QuickMovespeed</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>60</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<MeleeDodgeChance>0.15</MeleeDodgeChance>
+		</statOffsets>
+		<exclusionTags>
+			<li>Heyra_Reflexes</li>
+		</exclusionTags>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_NarrowComfort</defName>
+		<label>narrow comfort</label>
+		<description>Heyra physiology craves moderate warmth. Extremes of heat or cold are poorly tolerated — a price for their refined biology. Their settlements cluster in temperate zones for good reason.</description>
+		<iconPath>UI/Icons/Genes/Gene_MaxTemperatureSmallDecrease</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMin>2</ComfyTemperatureMin>
+			<ComfyTemperatureMax>-4</ComfyTemperatureMax>
+		</statOffsets>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_ExoticBeauty</defName>
+		<label>exotic beauty</label>
+		<description>Horned, flame-haired, and effortlessly graceful — Heyra are striking by any species' standards. Their presence commands attention even before they speak, lending weight to their words and bearing.</description>
+		<iconPath>UI/Icons/Genes/Gene_Beautiful</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>80</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<PawnBeauty>1</PawnBeauty>
+		</statOffsets>
+		<statFactors>
+			<SocialImpact>1.2</SocialImpact>
+		</statFactors>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_OralTradition</defName>
+		<label>oral tradition</label>
+		<description>Heyra civilization is built on spoken word, prophecy, and ancestral memory rather than written scholarship. Their monasteries preserve knowledge through song and recitation, not journals and equations. Systematic research is... unhurried.</description>
+		<iconPath>UI/Icons/Genes/Gene_SlowLearning</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>90</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<statFactors>
+			<ResearchSpeed>0.75</ResearchSpeed>
+		</statFactors>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_AwakeningPotential</defName>
+		<label>awakening potential</label>
+		<description>Deep within the Heyra genome lies a dormant sequence — the blueprint for a devastating combat form. Razor claws, hardened scales, breath of dragonfire. Only through the alchemical Seed of Awakening can this potential be realized.</description>
+		<iconPath>UI/Icons/Genes/Gene_AwakeningPotential</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_FlameTouched</defName>
+		<label>flame-touched</label>
+		<description>Heyra hair shimmers with otherworldly hues — flame orange, electric blue, or ethereal pink. In beast form, it ignites into living fire. Xenobiologists theorize the pigments are byproducts of psychic resonance in the horn structures.</description>
+		<iconPath>UI/Icons/Genes/Gene_Firespew</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>110</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<!-- ==================== RONG-EXCLUSIVE GENES ==================== -->
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_SeveredLineage</defName>
+		<label>severed lineage</label>
+		<description>The Rong severed their connection to the whispers generations ago. Their horns — if they ever had them — are long broken. What the Heyra call divine guidance, the Rong call a leash. Freedom, they say, tastes like silence.</description>
+		<iconPath>UI/Icons/Genes/Gene_PsychicallyDull</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>120</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<statFactors>
+			<PsychicSensitivity>0.8</PsychicSensitivity>
+		</statFactors>
+		<exclusionTags>
+			<li>Heyra_PsychicHeritage</li>
+		</exclusionTags>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_FeralReflexes</defName>
+		<label>feral reflexes</label>
+		<description>Where Heyra dodge with grace, Rong dodge with animal instinct. Centuries of underground combat — where hesitation means death — have honed their reflexes beyond anything the civilized world can match.</description>
+		<iconPath>UI/Icons/Genes/Gene_VeryQuickMovespeed</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>130</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<statOffsets>
+			<MeleeDodgeChance>0.35</MeleeDodgeChance>
+		</statOffsets>
+		<exclusionTags>
+			<li>Heyra_Reflexes</li>
+		</exclusionTags>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_PrimalVigor</defName>
+		<label>primal vigor</label>
+		<description>The Rong traded sophistication for survival. Their bodies are hardier, more adaptable to extremes — thriving in frozen tundra or scorching wastes where their Heyra cousins would falter.</description>
+		<iconPath>UI/Icons/Genes/Gene_Tough</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>140</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMin>-6</ComfyTemperatureMin>
+			<ComfyTemperatureMax>7</ComfyTemperatureMax>
+		</statOffsets>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_PrimalFerocity</defName>
+		<label>primal ferocity</label>
+		<description>The Rong fight like cornered animals — every strike aimed to kill. Their cult rituals glorify the perfect cut, and generations of selecting for violence have bred raw killing power into their blood.</description>
+		<iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>150</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statFactors>
+			<MeleeDamageFactor>1.2</MeleeDamageFactor>
+		</statFactors>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_SavageInstinct</defName>
+		<label>savage instinct</label>
+		<description>The cult philosophy that pleasure lies in violence has been etched into Rong biology over generations. They struggle with empathy and social norms, but revel in the clarity of combat.</description>
+		<iconPath>UI/Icons/Genes/Gene_HyperAggressive</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>160</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<statFactors>
+			<SocialImpact>0.55</SocialImpact>
+		</statFactors>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+	<GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Heyra_Gene_UmbralAdaptation</defName>
+		<label>umbral adaptation</label>
+		<description>Generations in subterranean settlements have adapted Rong perception to perpetual darkness. Where others stumble and grow uneasy, a Rong moves with practiced ease — the deep places are home.</description>
+		<iconPath>UI/Icons/Genes/Gene_Darkvision</iconPath>
+		<displayCategory>Heyra_GeneCategory</displayCategory>
+		<displayOrderInCategory>170</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<ignoreDarkness>true</ignoreDarkness>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</GeneDef>
+
+</Defs>

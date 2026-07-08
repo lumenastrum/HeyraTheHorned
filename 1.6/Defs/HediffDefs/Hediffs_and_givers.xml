@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<HediffDef>
+    <defName>Heyra_HornHediff</defName>
+    <label>dibba-sota</label>
+    <labelNoun>dibba-sota</labelNoun>
+    <description>Heryas' horns can capture the subtlest pulses of psychic energy.</description>
+    <defaultLabelColor>(0.4,0.2,0.8)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <stages>
+	  <li>
+            <statOffsets>
+                <PsychicSensitivity>0.5</PsychicSensitivity>
+            </statOffsets>
+       </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>Heyra_DragonHediff</defName>
+    <label>scion of dragon</label>
+    <labelNoun>scion of dragon</labelNoun>
+    <description>Some Heyras were born with their dibba-sota even stronger than others.</description>
+    <defaultLabelColor>(0.4,0.2,0.8)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <stages>
+	  <li>
+            <statOffsets>
+                <PsychicSensitivity>0.15</PsychicSensitivity>
+            </statOffsets>
+       </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>Vengefulspectre</defName>
+    <label>vengeful spectre</label>
+    <labelNoun>vengeful spectre</labelNoun>
+    <description>Horned Spectres are much stronger than normal Heyras.</description>
+    <defaultLabelColor>(0.4,0.2,0.8)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <stages>
+	  <li>
+		  <painFactor>0.01</painFactor>
+            <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.50</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.1</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.5</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>0.50</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.20</offset>
+          </li>
+           <li>
+            <capacity>Metabolism</capacity>
+            <offset>0.20</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>0.20</offset>
+          </li>
+        </capMods>
+       </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Heyra_RongHornHediff</defName>
+    <label>severed horn</label>
+    <labelNoun>severed horn</labelNoun>
+    <description>This horn has been ritually severed — a mark of the Rong's rejection of the Teller's whispers. What remains is a broken stump, silent and free.</description>
+    <defaultLabelColor>(0.5,0.5,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <isBad>false</isBad>
+    <stages>
+      <li/>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Heyra_TailHediff</defName>
+    <label>prehensile tail</label>
+    <labelNoun>prehensile tail</labelNoun>
+    <description>Heyras possess a long, graceful tail that aids in balance and expression.</description>
+    <defaultLabelColor>(0.4,0.2,0.8)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <isBad>false</isBad>
+    <stages>
+      <li/>
+    </stages>
+  </HediffDef>
+
+  <HediffGiverSetDef>
+    <defName>HeyraTailBuffGiver</defName>
+    <hediffGivers>
+        <li Class="HediffGiver_Birthday">
+            <hediff>Heyra_TailHediff</hediff>
+            <partsToAffect>
+                <li>Heyra_Tail</li>
+            </partsToAffect>
+            <countToAffect>1</countToAffect>
+            <ageFractionChanceCurve>
+                <points>
+                    <li>(0, 1)</li>
+                </points>
+            </ageFractionChanceCurve>
+        </li>
+    </hediffGivers>
+</HediffGiverSetDef>
+
+  <HediffGiverSetDef>
+    <defName>HeyraHornBuffGiver</defName>
+    <hediffGivers>
+        <li Class="HediffGiver_Birthday">
+            <hediff>Heyra_HornHediff</hediff>
+            <partsToAffect>
+                <li>Heyra_Horn</li>
+            </partsToAffect>
+            <countToAffect>1</countToAffect>
+            <ageFractionChanceCurve>
+                <points>
+                    <li>(0, 1)</li>
+                </points>
+            </ageFractionChanceCurve>
+        </li>
+    </hediffGivers>
+</HediffGiverSetDef>
+
+<HediffGiverSetDef>
+    <defName>HeyraHornBuffGiver_Rong</defName>
+    <hediffGivers>
+        <li Class="HediffGiver_Birthday">
+            <hediff>Heyra_RongHornHediff</hediff>
+            <partsToAffect>
+                <li>Heyra_Horn</li>
+            </partsToAffect>
+            <countToAffect>1</countToAffect>
+            <ageFractionChanceCurve>
+                <points>
+                    <li>(0, 1)</li>
+                </points>
+            </ageFractionChanceCurve>
+        </li>
+    </hediffGivers>
+</HediffGiverSetDef>
+
+  <HediffGiverSetDef>
+    <defName>HornedSpectreBuffGiver</defName>
+    <hediffGivers>
+        <li Class="HediffGiver_Birthday">
+            <hediff>Vengefulspectre</hediff>
+            <countToAffect>1</countToAffect>
+            <ageFractionChanceCurve>
+                <points>
+                    <li>(0, 1)</li>
+                </points>
+            </ageFractionChanceCurve>
+        </li>
+    </hediffGivers>
+</HediffGiverSetDef>
+
+</Defs>

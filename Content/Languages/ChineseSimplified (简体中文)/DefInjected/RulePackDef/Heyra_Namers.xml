@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>r_name->Cult of Knowing</li>
+  -->
+  <Heyra_Namer_Cultofknowing.rulePack.rulesStrings>
+	<li>r_name->通晓会</li>
+  </Heyra_Namer_Cultofknowing.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name->The [Color] [TerrainFeature]</li>
+  -->
+  <Heyra_Namer_Heyrareno.rulePack.rulesStrings>
+	<li>r_name->[Color][TerrainFeature]</li>
+  </Heyra_Namer_Heyrareno.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name->Realm of Heyra</li>
+    <li>r_name->The Great Temple of Heyra</li>
+  -->
+  <Heyra_Namer_Heyratrad.rulePack.rulesStrings>
+	<li>r_name->聆族王国</li>
+    <li>r_name->碧水大寺</li>
+  </Heyra_Namer_Heyratrad.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name->Cult of Steel</li>
+    <li>r_name->Cult of Pleasure</li>
+  -->
+  <Heyra_Namer_Rong.rulePack.rulesStrings>
+	<li>r_name->珞钢会</li>
+    <li>r_name->欢愉会</li>
+  </Heyra_Namer_Rong.rulePack.rulesStrings>
+  
+ 
+</LanguageData>

@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	  <ThingCategoryDef>
+        <defName>Heyra_Biohorns</defName>
+        <label>Miracle seeds</label>
+        <parent>BodyParts</parent>
+      </ThingCategoryDef>
+
+	<ThingDef Name="Heyra_BioHornBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>Heyra_Biohorns</li>
+    </thingCategories>
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+      <color>(255,255,255)</color>
+    </graphicData>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+	        <Mass>1</Mass>
+    </statBases>
+	<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Ingest_Pill</soundWorking>
+      <recipeUsers>
+        <li>Heyra_Altar</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+      <researchPrerequisite></researchPrerequisite>
+    </recipeMaker>
+	<costList>
+      <Jade>40</Jade>
+      <Gold>20</Gold>
+    </costList>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+  </ThingDef>
+
+	<!-- Mingzi Buneng Yi Shuzi Shouwei A Wu Hanyi -->
+
+  <ThingDef ParentName="Heyra_BioHornBase">
+    <defName>Heyra_Biohorn0A</defName>
+    <label>miracle seed - Taiga echoes</label>
+    <description>A magical item capable of changing the appearance of Heyra's horns. Can also be used to regrow the missing horns</description>
+	<graphicData>
+      <texPath>Item/Heyra_Biohorn0</texPath>
+    </graphicData>
+  </ThingDef>
+  
+   <ThingDef ParentName="Heyra_BioHornBase">
+    <defName>Heyra_Biohorn1A</defName>
+    <label>miracle seed - Mountain echoes</label>
+    <description>A magical item capable of changing the appearance of Heyra's horns. Can also be used to regrow the missing horns</description>
+	<graphicData>
+      <texPath>Item/Heyra_Biohorn1</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="Heyra_BioHornBase">
+    <defName>Heyra_Biohorn2A</defName>
+    <label>miracle seed - Forest echoes</label>
+    <description>A magical item capable of changing the appearance of Heyra's horns. Can also be used to regrow the missing horns</description>
+	<graphicData>
+      <texPath>Item/Heyra_Biohorn2</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="Heyra_BioHornBase">
+    <defName>Heyra_Biohorn3A</defName>
+    <label>miracle seed - Tundra echoes</label>
+    <description>A magical item capable of changing the appearance of Heyra's horns. Can also be used to regrow the missing horns</description>
+	<graphicData>
+      <texPath>Item/Heyra_Biohorn3</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="Heyra_BioHornBase">
+    <defName>Heyra_Biohorn4A</defName>
+    <label>miracle seed - Wetland echoes</label>
+    <description>A magical item capable of changing the appearance of Heyra's horns. Can also be used to regrow the missing horns</description>
+	<graphicData>
+      <texPath>Item/Heyra_Biohorn4</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="Heyra_BioHornBase">
+    <defName>Heyra_Biohorn5A</defName>
+    <label>miracle seed - Grassland echoes</label>
+    <description>A magical item capable of changing the appearance of Heyra's horns. Can also be used to regrow the missing horns</description>
+	<graphicData>
+      <texPath>Item/Heyra_Biohorn5</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="Heyra_BioHornBase">
+    <defName>Heyra_Biohorn0D</defName>
+    <label>miracle seed - Jade echoes</label>
+    <description>A magical item capable of changing the appearance of Heyra's horns. Can also be used to regrow the missing horns</description>
+	<graphicData>
+      <texPath>Item/Heyra_BiohornD0</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="Heyra_BioHornBase">
+    <defName>Heyra_Biohorn1D</defName>
+    <label>miracle seed - Flame echoes</label>
+    <description>A magical item capable of changing the appearance of Heyra's horns. Can also be used to regrow the missing horns</description>
+	<graphicData>
+      <texPath>Item/Heyra_BiohornD1</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="Heyra_BioHornBase">
+    <defName>Heyra_Biohorn2D</defName>
+    <label>miracle seed - Moon echoes</label>
+    <description>A magical item capable of changing the appearance of Heyra's horns. Can also be used to regrow the missing horns</description>
+	<graphicData>
+      <texPath>Item/Heyra_BiohornD2</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="Heyra_BioHornBase">
+    <defName>Heyra_Biohorn3D</defName>
+    <label>miracle seed - Lightning echoes</label>
+    <description>A magical item capable of changing the appearance of Heyra's horns. Can also be used to regrow the missing horns</description>
+	<graphicData>
+      <texPath>Item/Heyra_BiohornD3</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <!-- Prosthetic leg -->
+
+  <HediffDef Name="Heyra_HediffBioHornBase" ParentName="AddedBodyPartBase" Abstract="True">
+    <description>Miracle seed has exerted its power.</description>
+	<label>transmogrified</label>
+    <labelNoun>transmogrified horns</labelNoun>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+	<stages>
+	  <li>
+            <statOffsets>
+                <PsychicSensitivity>0.5</PsychicSensitivity>
+            </statOffsets>
+       </li>
+    </stages>
+  </HediffDef>
+  
+  <!-- [1.6 FIX] renderNodeProperties added to each biohorn HediffDef using AncotLibrary's
+       PawnRenderNodeProperties_Race. This bypasses HAR's broken hediffGraphics pipeline
+       and uses vanilla's DynamicPawnRenderNodeSetup_Hediffs instead. The race filter ensures
+       horns only render on Heyra/Rong pawns. A companion Harmony patch in Patches_HAR
+       suppresses the default HAR horn addon when any biohorn hediff is present,
+       preventing double-rendering. -->
+
+  <HediffDef ParentName="Heyra_HediffBioHornBase">
+    <defName>Heyra_Biohorn0A</defName>
+    <renderNodeProperties>
+      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+        <texPath>Heyra/Horns/HornA</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <shaderTypeDef>Cutout</shaderTypeDef>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0.3, 0.03)</offset>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0.03)</offset>
+          </dataNorth>
+        </drawData>
+        <races>
+          <li>Alien_Heyra</li>
+          <li>Alien_Rong</li>
+        </races>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef ParentName="Heyra_HediffBioHornBase">
+    <defName>Heyra_Biohorn1A</defName>
+    <renderNodeProperties>
+      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+        <texPath>Heyra/Horns/Horn1</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <shaderTypeDef>Cutout</shaderTypeDef>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0.3, 0.03)</offset>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0.03)</offset>
+          </dataNorth>
+        </drawData>
+        <races>
+          <li>Alien_Heyra</li>
+          <li>Alien_Rong</li>
+        </races>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef ParentName="Heyra_HediffBioHornBase">
+    <defName>Heyra_Biohorn2A</defName>
+    <renderNodeProperties>
+      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+        <texPath>Heyra/Horns/Horn2</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <shaderTypeDef>Cutout</shaderTypeDef>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0.3, 0.03)</offset>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0.03)</offset>
+          </dataNorth>
+        </drawData>
+        <races>
+          <li>Alien_Heyra</li>
+          <li>Alien_Rong</li>
+        </races>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef ParentName="Heyra_HediffBioHornBase">
+    <defName>Heyra_Biohorn3A</defName>
+    <renderNodeProperties>
+      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+        <texPath>Heyra/Horns/Horn3</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <shaderTypeDef>Cutout</shaderTypeDef>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0.3, 0.03)</offset>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0.03)</offset>
+          </dataNorth>
+        </drawData>
+        <races>
+          <li>Alien_Heyra</li>
+          <li>Alien_Rong</li>
+        </races>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef ParentName="Heyra_HediffBioHornBase">
+    <defName>Heyra_Biohorn4A</defName>
+    <renderNodeProperties>
+      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+        <texPath>Heyra/Horns/Horn4</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <shaderTypeDef>Cutout</shaderTypeDef>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0.3, 0.03)</offset>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0.03)</offset>
+          </dataNorth>
+        </drawData>
+        <races>
+          <li>Alien_Heyra</li>
+          <li>Alien_Rong</li>
+        </races>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef ParentName="Heyra_HediffBioHornBase">
+    <defName>Heyra_Biohorn5A</defName>
+    <renderNodeProperties>
+      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+        <texPath>Heyra/Horns/Horn5</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <shaderTypeDef>Cutout</shaderTypeDef>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0.3, 0.03)</offset>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0.03)</offset>
+          </dataNorth>
+        </drawData>
+        <races>
+          <li>Alien_Heyra</li>
+          <li>Alien_Rong</li>
+        </races>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef ParentName="Heyra_HediffBioHornBase">
+    <defName>Heyra_Biohorn0D</defName>
+    <renderNodeProperties>
+      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+        <texPath>Heyra/Horns/DHornA</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <shaderTypeDef>Cutout</shaderTypeDef>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0.3, 0.03)</offset>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0.03)</offset>
+          </dataNorth>
+        </drawData>
+        <races>
+          <li>Alien_Heyra</li>
+          <li>Alien_Rong</li>
+        </races>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef ParentName="Heyra_HediffBioHornBase">
+    <defName>Heyra_Biohorn1D</defName>
+    <renderNodeProperties>
+      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+        <texPath>Heyra/Horns/DHorn1</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <shaderTypeDef>Cutout</shaderTypeDef>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0.3, 0.03)</offset>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0.03)</offset>
+          </dataNorth>
+        </drawData>
+        <races>
+          <li>Alien_Heyra</li>
+          <li>Alien_Rong</li>
+        </races>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef ParentName="Heyra_HediffBioHornBase">
+    <defName>Heyra_Biohorn2D</defName>
+    <renderNodeProperties>
+      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+        <texPath>Heyra/Horns/DHorn2</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <shaderTypeDef>Cutout</shaderTypeDef>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0.3, 0.03)</offset>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0.03)</offset>
+          </dataNorth>
+        </drawData>
+        <races>
+          <li>Alien_Heyra</li>
+          <li>Alien_Rong</li>
+        </races>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <HediffDef ParentName="Heyra_HediffBioHornBase">
+    <defName>Heyra_Biohorn3D</defName>
+    <renderNodeProperties>
+      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+        <texPath>Heyra/Horns/DHorn3</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <shaderTypeDef>Cutout</shaderTypeDef>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0.3, 0.03)</offset>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0.03)</offset>
+          </dataNorth>
+        </drawData>
+        <races>
+          <li>Alien_Heyra</li>
+          <li>Alien_Rong</li>
+        </races>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+
+  <!-- Prosthetic leg -->
+
+  <RecipeDef Name="Heyra_SurgeryBioHornBase" ParentName="SurgeryInstallBodyPartProstheticBase" Abstract="True">
+    <description>Apply the miracle seed.</description>
+    <jobString>Applying miracle seed.</jobString>
+    <appliedOnFixedBodyParts>
+      <li>Heyra_Horn</li>
+    </appliedOnFixedBodyParts>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="Heyra_SurgeryBioHornBase">
+    <defName>Applybiohorn0A</defName>
+	<label>Apply miracle seed - Taiga</label>
+	<descriptionHyperlinks><ThingDef>Heyra_Biohorn0A</ThingDef></descriptionHyperlinks>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Biohorn0A</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heyra_Biohorn0A</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>Heyra_Biohorn0A</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="Heyra_SurgeryBioHornBase">
+    <defName>Applybiohorn1A</defName>
+	<label>Apply miracle seed - Mountain</label>
+	<descriptionHyperlinks><ThingDef>Heyra_Biohorn1A</ThingDef></descriptionHyperlinks>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Biohorn1A</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heyra_Biohorn1A</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>Heyra_Biohorn1A</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="Heyra_SurgeryBioHornBase">
+    <defName>Applybiohorn2A</defName>
+	<label>Apply miracle seed - Forest</label>
+	<descriptionHyperlinks><ThingDef>Heyra_Biohorn2A</ThingDef></descriptionHyperlinks>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Biohorn2A</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heyra_Biohorn2A</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>Heyra_Biohorn2A</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="Heyra_SurgeryBioHornBase">
+    <defName>Applybiohorn3A</defName>
+	<label>Apply miracle seed - Tundra</label>
+	<descriptionHyperlinks><ThingDef>Heyra_Biohorn3A</ThingDef></descriptionHyperlinks>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Biohorn3A</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heyra_Biohorn3A</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>Heyra_Biohorn3A</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="Heyra_SurgeryBioHornBase">
+    <defName>Applybiohorn4A</defName>
+	<label>Apply miracle seed - Wetland</label>
+	<descriptionHyperlinks><ThingDef>Heyra_Biohorn4A</ThingDef></descriptionHyperlinks>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Biohorn4A</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heyra_Biohorn4A</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>Heyra_Biohorn4A</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="Heyra_SurgeryBioHornBase">
+    <defName>Applybiohorn5A</defName>
+	<label>Apply miracle seed - Grassland</label>
+	<descriptionHyperlinks><ThingDef>Heyra_Biohorn5A</ThingDef></descriptionHyperlinks>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Biohorn5A</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heyra_Biohorn5A</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>Heyra_Biohorn5A</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="Heyra_SurgeryBioHornBase">
+    <defName>Applybiohorn0D</defName>
+	<label>Apply miracle seed - Jade</label>
+	<descriptionHyperlinks><ThingDef>Heyra_Biohorn0D</ThingDef></descriptionHyperlinks>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Biohorn0D</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heyra_Biohorn0D</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>Heyra_Biohorn0D</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="Heyra_SurgeryBioHornBase">
+    <defName>Applybiohorn1D</defName>
+	<label>Apply miracle seed - Flame</label>
+	<descriptionHyperlinks><ThingDef>Heyra_Biohorn1D</ThingDef></descriptionHyperlinks>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Biohorn1D</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heyra_Biohorn1D</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>Heyra_Biohorn1D</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="Heyra_SurgeryBioHornBase">
+    <defName>Applybiohorn2D</defName>
+	<label>Apply miracle seed - Moon</label>
+	<descriptionHyperlinks><ThingDef>Heyra_Biohorn2D</ThingDef></descriptionHyperlinks>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Biohorn2D</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heyra_Biohorn2D</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>Heyra_Biohorn2D</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="Heyra_SurgeryBioHornBase">
+    <defName>Applybiohorn3D</defName>
+	<label>Apply miracle seed - Lightning</label>
+	<descriptionHyperlinks><ThingDef>Heyra_Biohorn3D</ThingDef></descriptionHyperlinks>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heyra_Biohorn3D</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heyra_Biohorn3D</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>Heyra_Biohorn3D</addsHediff>
+  </RecipeDef>
+
+</Defs>

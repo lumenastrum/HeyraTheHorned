@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: hidden base -->
+  <Heyra_Sitepart_Lab.label>隐蔽基地</Heyra_Sitepart_Lab.label>
+  <!-- EN: A hidden base controlled by the Rong. -->
+  <Heyra_Sitepart_Lab.description>一个由戎族控制的隐蔽据点。</Heyra_Sitepart_Lab.description>
+  
+  <!-- EN: hidden base -->
+  <Heyra_Sitepart_Spawnrongs.label>隐蔽基地</Heyra_Sitepart_Spawnrongs.label>
+  <!-- EN: A hidden base controlled by the Rong. -->
+  <Heyra_Sitepart_Spawnrongs.description>一个由戎族控制的隐蔽据点。</Heyra_Sitepart_Spawnrongs.description>
+  
+</LanguageData>

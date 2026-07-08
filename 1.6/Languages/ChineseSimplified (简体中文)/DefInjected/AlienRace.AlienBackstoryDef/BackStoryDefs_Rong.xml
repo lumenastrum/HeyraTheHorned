@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: {PAWN_nameDef} was a dancer in the Cult of Pleasure. {PAWN_pronoun} turned sword fighting moves into an elaborate acrobatic dance and entertained many. {PAWN_pronoun} brought {PAWN_possessive} greatsword to many fights, bathed in enemies's blood, just to get inspiration for the new dance. -->
+  <Heyra_Story_Rong_Dancer.baseDesc>{PAWN_nameDef}是欢愉会的一名舞者。{PAWN_pronoun}把剑的招式改编成了优美的舞蹈，深受欢愉会成员的好评。{PAWN_pronoun}经常带着巨剑杀进战场，只为了寻找舞蹈的灵感。</Heyra_Story_Rong_Dancer.baseDesc>
+  <!-- EN: sword dancer -->
+  <Heyra_Story_Rong_Dancer.title>舞剑者</Heyra_Story_Rong_Dancer.title>
+  <!-- EN: sword dancer -->
+  <Heyra_Story_Rong_Dancer.titleShort>舞剑者</Heyra_Story_Rong_Dancer.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} spent many years improving the Rong automatas, making them kill faster while costing less. To see the performance of {PAWN_possessive} creation, {PAWN_pronoun} joined the raids and fought alongside the berserkers and automatas. -->
+  <Heyra_Story_Rong_Engineer.baseDesc>{PAWN_nameDef}用了很多年改进戎族的机巧俑：降低成本，提高杀人效率。为了亲眼观察机巧俑的性能，{PAWN_pronoun}加入了掠袭小组，与{PAWN_possessive}造物并肩战斗。</Heyra_Story_Rong_Engineer.baseDesc>
+  <!-- EN: automata engineer -->
+  <Heyra_Story_Rong_Engineer.title>机巧俑工程师</Heyra_Story_Rong_Engineer.title>
+  <!-- EN: engineer -->
+  <Heyra_Story_Rong_Engineer.titleShort>工程师</Heyra_Story_Rong_Engineer.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} was a warrior of the Cult of Steel. Which means in battle, {PAWN_pronoun} would always be accompanied by automatas. {PAWN_pronoun} used automatas as meat shields and shot from from a safe distance. -->
+  <Heyra_Story_Rong_Gunner.baseDesc>{PAWN_nameDef}是珞钢会的战士。在战斗中，珞钢会战士总与机巧俑结伴出现。{PAWN_nameDef}喜欢把机巧俑当作肉盾，自己则在安全的远处射击。</Heyra_Story_Rong_Gunner.baseDesc>
+  <!-- EN: heavy gunner -->
+  <Heyra_Story_Rong_Gunner.title>重炮手</Heyra_Story_Rong_Gunner.title>
+  <!-- EN: gunner -->
+  <Heyra_Story_Rong_Gunner.titleShort>重炮手</Heyra_Story_Rong_Gunner.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} worked at the Cult of Glamor, where {PAWN_pronoun} made clothes from leather, one of Rongs' favorite materials. Although Rongs tend to use synthetic leather, {PAWN_nameDef} has a special fascination with the real thing. Sometimes, {PAWN_pronoun} would skin the dead enemy and keep a small part as a trophy. -->
+  <Heyra_Story_Rong_Leatherworker.baseDesc>{PAWN_nameDef}在谜魅会工作，负责用皮革制作服装，而皮革也是戎族人最喜欢的材料之一。虽然戎族使用的皮革多是合成的，但{PAWN_pronoun}对真货情有独钟。{PAWN_pronoun}偶尔会将敌人尸体剥皮并留下一小块作为战利品。</Heyra_Story_Rong_Leatherworker.baseDesc>
+  <!-- EN: leatherworker -->
+  <Heyra_Story_Rong_Leatherworker.title>制革匠</Heyra_Story_Rong_Leatherworker.title>
+  <!-- EN: leatherworker -->
+  <Heyra_Story_Rong_Leatherworker.titleShort>制革匠</Heyra_Story_Rong_Leatherworker.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} made and fit artificial limbs for Rong warriors. {PAWN_possessive} job required years of practice and {PAWN_pronoun} barely had any time left to do social activites. -->
+  <Heyra_Story_Rong_Prosthetist.baseDesc>{PAWN_nameDef}为那些有需要的戎族战士安装义肢。{PAWN_possessive}工作需求大量的练习，这让{PAWN_pronoun}几乎没有时间参加社交活动了。</Heyra_Story_Rong_Prosthetist.baseDesc>
+  <!-- EN: prosthetist -->
+  <Heyra_Story_Rong_Prosthetist.title>义体医生</Heyra_Story_Rong_Prosthetist.title>
+  <!-- EN: prosthetist -->
+  <Heyra_Story_Rong_Prosthetist.titleShort>义体医生</Heyra_Story_Rong_Prosthetist.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} has suffered from anxiety since {PAWN_pronoun} became an adult. When {PAWN_pronoun} killed an enemy for the first time, {PAWN_pronoun} found that she was able to relieve her anxiety by killing. Since then, {PAWN_pronoun} has not shown mercy to {PAWN_possessive} opponents. -->
+  <Heyra_Story_Rong_Raider.baseDesc>{PAWN_nameDef}自成年后就患上了焦虑症。当{PAWN_pronoun}第一次处死一名敌人时，{PAWN_pronoun}发现杀人能缓解{PAWN_possessive}焦虑。那之后{PAWN_pronoun}再也没有对任何人手下留情过。</Heyra_Story_Rong_Raider.baseDesc>
+  <!-- EN: Anxious raider -->
+  <Heyra_Story_Rong_Raider.title>紧张的掠袭者</Heyra_Story_Rong_Raider.title>
+  <!-- EN: raider -->
+  <Heyra_Story_Rong_Raider.titleShort>掠袭者</Heyra_Story_Rong_Raider.titleShort>
+  
+  <!-- EN: {PAWN_nameDef} served in the Cult of Knowing. The stressful research tasks exhausted {PAWN_objective}. {PAWN_pronoun} took a leave and joined the raiding group. Now {PAWN_pronoun} can enjoy the pure fun of killing. -->
+  <Heyra_Story_Rong_Researcher.baseDesc>{PAWN_nameDef}在通晓会工作。繁杂的研究任务让{PAWN_objective}心力憔悴。于是{PAWN_pronoun}请了假，抽身加入了掠袭小组。现在{PAWN_pronoun}只想尽情享受杀戮的乐趣。</Heyra_Story_Rong_Researcher.baseDesc>
+  <!-- EN: researcher on vacation -->
+  <Heyra_Story_Rong_Researcher.title>度假研究员</Heyra_Story_Rong_Researcher.title>
+  <!-- EN: researcher -->
+  <Heyra_Story_Rong_Researcher.titleShort>研究员</Heyra_Story_Rong_Researcher.titleShort>
+  
+  <!-- EN: Just like many other Rongs, {PAWN_nameDef} did not remember much about {PAWN_possessive} childhood. {PAWN_pronoun} grew up in Rong's underground settlement, and never got to see the sky or the sun. -->
+  <Heyra_Story_Rong_Rongkid.baseDesc>和大多数戎族孩子一样，{PAWN_nameDef}对童年的事情记得不多。{PAWN_pronoun}在戎族的地下城市长大，没有见过太阳和天空。</Heyra_Story_Rong_Rongkid.baseDesc>
+  <!-- EN: Rong kid -->
+  <Heyra_Story_Rong_Rongkid.title>戎族孩童</Heyra_Story_Rong_Rongkid.title>
+  <!-- EN: Rong kid -->
+  <Heyra_Story_Rong_Rongkid.titleShort>戎族孩童</Heyra_Story_Rong_Rongkid.titleShort>
+  
+</LanguageData>

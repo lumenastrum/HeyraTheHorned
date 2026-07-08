@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BodyPartDef>
+		<defName>Heyra_Horn</defName>
+		<label>horns</label>
+		<hitPoints>30</hitPoints>
+		<bleedRate>0.0001</bleedRate>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>true</canSuggestAmputation>
+		<!-- [1.6 FIX] Removed spawnThingOnRemoved: was "Heart" (copy-paste
+		     from vanilla Heart BodyPartDef). Horn surgery was dropping a
+		     heart item on the ground. Horns don't spawn any item. -->
+	</BodyPartDef>
+
+	<BodyPartGroupDef>
+		<defName>Tail</defName>
+		<label>tail</label>
+		<listOrder>85</listOrder>
+	</BodyPartGroupDef>
+
+	<BodyPartDef>
+		<defName>Heyra_Tail</defName>
+		<label>tail</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>0.5</bleedRate>
+		<frostbiteVulnerability>1</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<beautyRelated>true</beautyRelated>
+		<canSuggestAmputation>true</canSuggestAmputation>
+	</BodyPartDef>
+
+</Defs>

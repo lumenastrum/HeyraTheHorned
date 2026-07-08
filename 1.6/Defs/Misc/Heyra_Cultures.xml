@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <CultureDef>
+    <defName>Heyra_Culture</defName>
+    <label>Disciples of the Teller</label>
+    <description>The traditional culture of the Heyras.</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">Heyra_NamerIdeo</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">Heyra_LeaderTitleMaker</leaderTitleMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">Heyra_NamerFestival</festivalNameMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>Icon/Heyra_Heyraicon</iconPath>
+    <iconColor>(150, 70, 60)</iconColor>
+    <thingStyleCategories>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Totemic</category>
+        <priority>2</priority>
+      </li>
+    </thingStyleCategories>
+	<preferredWeaponClasses>
+	<noble>Melee</noble>
+    <despised>Ultratech</despised>
+    </preferredWeaponClasses>
+    <styleItemTags>
+      <li>
+        <tag>HeyraHairTypeHeyra</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+  
+    <CultureDef>
+    <defName>Heyra_Culture_Rong</defName>
+    <label>Cult of Pleasure</label>
+    <description>The culture of the Rongs.</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">Heyra_Rong_NamerIdeo</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">Heyra_Rong_LeaderTitleMaker</leaderTitleMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">Heyra_Rong_NamerFestival</festivalNameMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>Icon/Heyra_Heyraicon</iconPath>
+    <iconColor>(90, 80, 30)</iconColor>
+    <thingStyleCategories>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Spikecore</category>
+        <priority>2</priority>
+      </li>
+    </thingStyleCategories>
+	<preferredWeaponClasses>
+	<noble>Melee</noble>
+    <despised>Ultratech</despised>
+    </preferredWeaponClasses>
+    <styleItemTags>
+      <li>
+        <tag>HeyraHairTypeRong</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+</Defs>

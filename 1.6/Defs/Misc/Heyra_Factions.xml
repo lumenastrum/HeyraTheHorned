@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<!--============ Player =======================-->
+<FactionDef ParentName="FactionBase" Name="Heyra_PlayerFactionBase" Abstract="True">
+		<settlementTexturePath>Icon/Heyra_Heyraicon</settlementTexturePath>
+		<colorSpectrum>
+			<li>(65, 85, 140)</li>
+		</colorSpectrum>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<techLevel>Medieval</techLevel>
+		<xenotypeSet MayRequire="Ludeon.RimWorld.Biotech">
+			<xenotypeChances>
+				<Heyra_Xenotype_TellerBlessed>1</Heyra_Xenotype_TellerBlessed>
+			</xenotypeChances>
+		</xenotypeSet>
+		<factionIconPath>Icon/Heyra_Heyraicon</factionIconPath>
+		<playerInitialSettlementNameMaker>Heyra_Namer_Settlement</playerInitialSettlementNameMaker>
+		<factionNameMaker>Heyra_Namer_Heyrareno</factionNameMaker>
+		<settlementNameMaker>Heyra_Namer_Settlement</settlementNameMaker>
+		<melaninRange>0.7</melaninRange>
+		<startingResearchTags>
+			<li>Heyra_ResearchTypeStart</li>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Steel</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<allowedCultures>
+				<li>Heyra_Culture</li>
+		</allowedCultures>		
+	</FactionDef>
+	
+	<FactionDef ParentName="Heyra_PlayerFactionBase">
+	<defName>Heyra_PlayerFactionSoldier</defName>
+		<label>settlement of Heyras</label>
+		<description>A settlement of Heyras.</description>
+		<basicMemberKind>Heyra_ForbiddenArmyMeleeA</basicMemberKind>
+	</FactionDef>
+	
+	<FactionDef ParentName="Heyra_PlayerFactionBase">
+	<defName>Heyra_PlayerFactionGeneral</defName>
+		<label>settlement of Heyras</label>
+		<description>A settlement of Heyras.</description>
+		<basicMemberKind>Heyra_Playable</basicMemberKind>
+	</FactionDef>
+	
+	
+	<!--============= NonPlayer ======================-->
+	<FactionDef ParentName="FactionBase" Name="HeyraFactionBase" Abstract="True">
+		<factionIconPath>Icon/Heyra_Heyraicon</factionIconPath>
+		<settlementTexturePath>Icon/Heyra_Heyraicon</settlementTexturePath>
+		<pawnSingular>Heyra</pawnSingular>
+		<pawnsPlural>Heyras</pawnsPlural>
+		<listOrderPriority>30</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>12</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>60</configurationListOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<factionNameMaker>Heyra_Namer_Heyrareno</factionNameMaker>
+		<settlementNameMaker>Heyra_Namer_Settlement</settlementNameMaker>
+		<leaderTitle>Supreme Matriarch</leaderTitle>
+		<canSiege>false</canSiege>
+		<canStageAttacks>false</canStageAttacks>
+		<techLevel>Medieval</techLevel>
+		<xenotypeSet MayRequire="Ludeon.RimWorld.Biotech">
+			<xenotypeChances>
+				<Heyra_Xenotype_TellerBlessed>1</Heyra_Xenotype_TellerBlessed>
+			</xenotypeChances>
+		</xenotypeSet>
+		<allowedCultures><li>Heyra_Culture</li></allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistAbstract</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>			
+		</disallowedMemes>
+		<requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+		</requiredMemes>
+		<structureMemeWeights>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">2</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<melaninRange>0.7</melaninRange>
+		<apparelStuffFilter>
+			<stuffCategoriesToAllow>
+				<li>Metallic</li>
+				<li>Fabric</li>
+				<li>Leathery</li>
+				<li>Stony</li>
+			</stuffCategoriesToAllow>
+			<disallowedThingDefs>
+				<li>Hyperweave</li>
+			</disallowedThingDefs>
+		</apparelStuffFilter>
+		<caravanTraderKinds>
+			<li>Caravan_Heyra_Merchant</li>
+			<li>Caravan_Heyra_Armorer</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Heyra_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Heyra_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
+		<raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+				<!-- Peaceful -->
+		<li>
+        <kindDef>Peaceful</kindDef>
+		<commonality>5</commonality>
+        <options>
+          <Heyra_LightInfantry>20</Heyra_LightInfantry>
+          <Heyra_BattleCook>5</Heyra_BattleCook>
+		  <Heyra_Archer>20</Heyra_Archer>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Peaceful</kindDef>
+		<commonality>5</commonality>
+        <options>
+          <Heyra_Freeman>15</Heyra_Freeman>
+          <Heyra_Artisan>5</Heyra_Artisan>
+        </options>
+      </li>
+	  	  <li>
+        <kindDef>Peaceful</kindDef>
+		<commonality>5</commonality>
+        <options>
+          <Heyra_Freeman>5</Heyra_Freeman>
+          <Heyra_Artisan>3</Heyra_Artisan>
+		  <Heyra_Escort>2</Heyra_Escort>
+		  <Heyra_Necromancer>1</Heyra_Necromancer>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Peaceful</kindDef>
+		<commonality>5</commonality>
+        <options>
+          <Heyra_Freeman>5</Heyra_Freeman>
+          <Heyra_Aristocrat>5</Heyra_Aristocrat>
+		  <Heyra_Escort>5</Heyra_Escort>
+		  <Heyra_Cook>2</Heyra_Cook>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Peaceful</kindDef>
+		<commonality>5</commonality>
+        <options>
+          <Heyra_Freeman>3</Heyra_Freeman>
+          <Heyra_Aristocrat>5</Heyra_Aristocrat>
+		  <Heyra_Hierarch>1</Heyra_Hierarch>
+		  <Heyra_Shaman>1</Heyra_Shaman>
+		  <Heyra_Prophetess>1</Heyra_Prophetess>
+		  <Heyra_Cook>1</Heyra_Cook>
+		  <Heyra_Escort>3</Heyra_Escort>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Heyra_Trader>1</Heyra_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Elephant>3</Elephant>
+        </carriers>
+        <guards>
+          <Heyra_Escort>8</Heyra_Escort>
+		  <Heyra_Freeman>3</Heyra_Freeman>
+		  <Heyra_Ranger>4</Heyra_Ranger>
+		  <Heyra_Swordmaster>3</Heyra_Swordmaster>
+		  <Heyra_BattleCook>3</Heyra_BattleCook>
+        </guards>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Heyra_Ranger>1</Heyra_Ranger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Heyra_Freeman>1</Heyra_Freeman>
+        </options>
+      </li>
+	  
+			<!-- Jidi -->
+			<li>
+				<kindDef>Settlement</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<Heyra_LightInfantry>30</Heyra_LightInfantry>
+					<Heyra_BattleCook>5</Heyra_BattleCook>
+					<Heyra_Archer>20</Heyra_Archer>
+				</options>
+			</li>
+			<!-- Shibing -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<Heyra_LightInfantry>30</Heyra_LightInfantry>
+					<Heyra_BattleCook>5</Heyra_BattleCook>
+					<Heyra_Archer>20</Heyra_Archer>
+				</options>
+			</li>
+			<!-- Shibing + Breacher -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<Heyra_Breacher>5</Heyra_Breacher>
+					<Heyra_LightInfantry>25</Heyra_LightInfantry>
+					<Heyra_Archer>20</Heyra_Archer>
+				</options>
+			</li>
+				
+		
+		<!-- Leader + Forbidden Army -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Heyra_Leader>1</Heyra_Leader>
+					<Heyra_ForbiddenArmyMeleeA>24</Heyra_ForbiddenArmyMeleeA>
+					<Heyra_Archer>15</Heyra_Archer>
+				</options>
+			</li>
+			<!-- Leader + visitor -->
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Heyra_Leader>1</Heyra_Leader>
+					<Heyra_ForbiddenArmyMeleeA>24</Heyra_ForbiddenArmyMeleeA>
+					<Heyra_Archer>15</Heyra_Archer>
+				</options>
+			</li>
+			
+			<!-- Leader + guards -->
+			<li>
+				<kindDef>Settlement</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Heyra_Leader>1</Heyra_Leader>
+					<Heyra_ForbiddenArmyMeleeA>24</Heyra_ForbiddenArmyMeleeA>
+					<Heyra_Archer>15</Heyra_Archer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+	<FactionDef ParentName="HeyraFactionBase">
+    <defName>Heyra_TradFaction</defName>
+    <label>conservative Heyran faction</label>
+    <description>A country consists of old-fashioned Heyras. They have been keeping their customs or beliefs for countless generations. Generally, they are less willing to cooperate with foreigners.</description>
+	<factionNameMaker>Heyra_Namer_Heyratrad</factionNameMaker>
+	<colorSpectrum>
+      <li>(0.85, 0.75, 0.37)</li>
+      <li>(0.94, 0.61, 0.06)</li>
+    </colorSpectrum>
+	<pawnGroupMakers>
+			<!-- WalkingDead -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<Heyra_MobileTotem_PawnKind>10</Heyra_MobileTotem_PawnKind>					
+					<Heyra_HornedSpectreUnarmed>50</Heyra_HornedSpectreUnarmed>
+					<Heyra_HornedSpectreArmed>30</Heyra_HornedSpectreArmed>
+					<Heyra_Necromancer>10</Heyra_Necromancer>
+				</options>
+			</li>
+				<!-- Forbidden Army -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>25</commonality>
+				<options>
+					<Heyra_ForbiddenArmyMeleeA>25</Heyra_ForbiddenArmyMeleeA>
+					<Heyra_ForbiddenArmyRangedA>10</Heyra_ForbiddenArmyRangedA>
+				</options>
+			</li>
+			
+			<!-- Forbidden Army + Braecher -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>25</commonality>
+				<options>
+					<Heyra_ForbiddenArmyMeleeA>17</Heyra_ForbiddenArmyMeleeA>
+					<Heyra_ForbiddenArmyBreacher>8</Heyra_ForbiddenArmyBreacher>
+					<Heyra_ForbiddenArmyRangedA>10</Heyra_ForbiddenArmyRangedA>
+				</options>
+			</li>
+	</pawnGroupMakers>
+	<!-- VEF FactionDefExtension: custom starting goodwill values.
+	     Namespace updated from VFECore.FactionDefExtension to VEF.Factions.FactionDefExtension for VEF 1.6. -->
+	<modExtensions>
+		<li Class="VEF.Factions.FactionDefExtension">
+			<startingGoodwillByFactionDefs>
+				<PlayerColony>-75~-50</PlayerColony>
+				<Heyra_PlayerFactionSoldier>0~50</Heyra_PlayerFactionSoldier>
+				<Heyra_PlayerFactionGeneral>0~30</Heyra_PlayerFactionGeneral>
+				<Heyra_RenoFaction>80~100</Heyra_RenoFaction>
+			</startingGoodwillByFactionDefs>
+		</li>
+	</modExtensions>
+  </FactionDef>
+  
+  <FactionDef ParentName="HeyraFactionBase">
+    <defName>Heyra_RenoFaction</defName>
+    <label>broad-minded Heyran faction</label>
+    <description>A more progressive Heyra faction. They still keep most Heyran traditions but are open to new things. Generally, they are more friendly and easier to cooperate with.</description>
+    <factionNameMaker>Heyra_Namer_Heyrareno</factionNameMaker>
+	<colorSpectrum>
+      <li>(0.25, 0.75, 0.47)</li>
+      <li>(0.34, 0.71, 0.36)</li>
+    </colorSpectrum>
+	<pawnGroupMakers>
+			<!-- Escorts + Rangers -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>40</commonality>
+				<options>
+					<Heyra_Escort>10</Heyra_Escort>	
+					<Heyra_Swordmaster>5</Heyra_Swordmaster>						
+					<Heyra_Ranger>20</Heyra_Ranger>
+					<Heyra_BattleCook>3</Heyra_BattleCook>
+				</options>
+			</li>
+	</pawnGroupMakers>
+  </FactionDef>
+  
+</Defs>

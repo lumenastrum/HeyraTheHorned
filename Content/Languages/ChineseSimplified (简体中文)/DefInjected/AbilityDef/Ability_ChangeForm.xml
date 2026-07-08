@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: static field -->
+  <Heyra_Ability_Electricfield.label>静电场</Heyra_Ability_Electricfield.label>
+  <!-- EN: Create a strong electric field around, shock enemies that are ignorant enough to come close. -->
+  <Heyra_Ability_Electricfield.description>在身体周围制造一个强力的静电场，电击那些胆敢靠近的敌人。</Heyra_Ability_Electricfield.description>
+  
+  <!-- EN: change form -->
+  <Heyra_Ability_Formchange.label>变化形态</Heyra_Ability_Formchange.label>
+  <!-- EN: Transform into the beast form.\n\nWarning: The after-effect of the transformation will debilitate the subject for weeks, and can be life-threatening if not given enough rest between transformations. -->
+  <Heyra_Ability_Formchange.description>变化为兽形态。\n\n警告: 变身后会因副作用而在数周内变得虚弱。在副作用没有缓解前使用变身可能致命。</Heyra_Ability_Formchange.description>
+  
+</LanguageData>

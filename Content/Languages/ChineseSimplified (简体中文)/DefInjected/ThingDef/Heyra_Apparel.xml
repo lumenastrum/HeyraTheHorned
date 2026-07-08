@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Heyran euphona hair clips -->
+  <Heyra_Bellclips.label>聆族悦音头饰</Heyra_Bellclips.label>
+  <!-- EN: A pair of bell-shaped headdresses that make a delicate sound when the wearer walks. -->
+  <Heyra_Bellclips.description>一对铃铛状的头饰。佩戴者走起路来会发出轻微的声响。</Heyra_Bellclips.description>
+  
+  <!-- EN: Heyran Buble Skirt -->
+  <Heyra_Bubleskirt.label>聆族纱裙</Heyra_Bubleskirt.label>
+  <!-- EN: A good looking muslin skirt. -->
+  <Heyra_Bubleskirt.description>一件美观的小裙子。</Heyra_Bubleskirt.description>
+  
+  <!-- EN: Heyran simple cloak -->
+  <Heyra_Cloak.label>聆族朴素斗篷</Heyra_Cloak.label>
+  <!-- EN: A relatively cheap cloak made of leather or fabric. -->
+  <Heyra_Cloak.description>用皮革和织物制成的简易斗篷。</Heyra_Cloak.description>
+  
+  <!-- EN: Heyran earmuffs -->
+  <Heyra_Earmuffs.label>聆族护耳</Heyra_Earmuffs.label>
+  <!-- EN: A pair of soft fluff keeps the wearer warm in winter. -->
+  <Heyra_Earmuffs.description>一对毛绒绒的护耳，能让戴着的人保持温暖。</Heyra_Earmuffs.description>
+  
+  <!-- EN: Heyran eldritch robe -->
+  <Heyra_Eldritchrobe.label>聆族巫蛊长袍</Heyra_Eldritchrobe.label>
+  <!-- EN: An asymmetrical costume decorated with skulls and feathers. -->
+  <Heyra_Eldritchrobe.description>一件怪异的不对称装束，装饰着头骨和羽毛。</Heyra_Eldritchrobe.description>
+  
+  <!-- EN: Heyran embroidered shirt -->
+  <Heyra_Embroideredshirt.label>聆族绣花衫</Heyra_Embroideredshirt.label>
+  <!-- EN: A luxurious shirt embroidered with a flower pattern. -->
+  <Heyra_Embroideredshirt.description>一件绣着花朵图案的精致服装。</Heyra_Embroideredshirt.description>
+  
+  <!-- EN: Heyran Forbidden Army's helmet -->
+  <Heyra_Forbiddenarmyhelmet.label>聆族禁军头盔</Heyra_Forbiddenarmyhelmet.label>
+  <!-- EN: The helmet that matches the armor of the Forbidden Army. -->
+  <Heyra_Forbiddenarmyhelmet.description>这件头盔是设计来搭配禁军装甲使用的。</Heyra_Forbiddenarmyhelmet.description>
+  
+  <!-- EN: Heyran Forbidden Amry's panoply -->
+  <Heyra_Forbiddenarmypanoply.label>聆族禁军盔甲</Heyra_Forbiddenarmypanoply.label>
+  <!-- EN: A set of advanced armor designed for the Heyran Forbidden Army. -->
+  <Heyra_Forbiddenarmypanoply.description>一件高级的铠甲。供给禁军穿着。</Heyra_Forbiddenarmypanoply.description>
+  
+  <!-- EN: Heyran headwrap -->
+  <Heyra_Headband.label>聆族包头巾</Heyra_Headband.label>
+  <!-- EN: A strip of cloth wrapped around the wearer's head and tied in a knot at the front. -->
+  <Heyra_Headband.description>一片布料缠绕在头部并在额头前方打成一个蝴蝶结。</Heyra_Headband.description>
+  
+  <!-- EN: Heyran hierarch's attire -->
+  <Heyra_Hierarchattire.label>聆族祭祀装束</Heyra_Hierarchattire.label>
+  <!-- EN: The offical uniform of Heyran hierarchs. -->
+  <Heyra_Hierarchattire.description>聆族祭司的制式服装。</Heyra_Hierarchattire.description>
+  
+  <!-- EN: Heyran jacket and skirt -->
+  <Heyra_Jacketskirt.label>聆族褙子</Heyra_Jacketskirt.label>
+  <!-- EN: This suit consists of a light jacket and a gauze skirt inside. -->
+  <Heyra_Jacketskirt.description>聆族的一种传统服饰。</Heyra_Jacketskirt.description>
+  
+  <!-- EN: Heyran Jianghu suit -->
+  <Heyra_Jianghusuit.label>聆族江湖短衣</Heyra_Jianghusuit.label>
+  <!-- EN: A piece of clothing sewn with a hard-wearing fabric, a favorite of laborers. -->
+  <Heyra_Jianghusuit.description>用耐磨的材料缝制的衣服，是劳动者的最爱。</Heyra_Jianghusuit.description>
+  
+  <!-- EN: Heyran long dress -->
+  <Heyra_Longdress.label>聆族长裙</Heyra_Longdress.label>
+  <!-- EN: An elegant dress featuring a tube top design. -->
+  <Heyra_Longdress.description>一件优雅的抹胸长裙。</Heyra_Longdress.description>
+  
+  <!-- EN: Heyran prophetess' attire -->
+  <Heyra_Prophetessattire.label>聆族先知装束</Heyra_Prophetessattire.label>
+  <!-- EN: The offical uniform of Heyran prophetesses. -->
+  <Heyra_Prophetessattire.description>聆族先知的制式服装。</Heyra_Prophetessattire.description>
+  
+  <!-- EN: Heyran prophetess crown -->
+  <Heyra_Prophetesscrown.label>聆族先知华冠</Heyra_Prophetesscrown.label>
+  <!-- EN: A silk hat decorated with colorful feathers, covered with animal leather and gold leaf. -->
+  <Heyra_Prophetesscrown.description>一顶装饰着五彩羽毛的丝绸帽子，覆盖有动物皮革和金叶。</Heyra_Prophetesscrown.description>
+  
+  <!-- EN: Heyran simple cloak -->
+  <Heyra_Raincoat.label>聆族蓑衣</Heyra_Raincoat.label>
+  <!-- EN: A cloak that keeps the wearer dry during the rain. -->
+  <Heyra_Raincoat.description>一件能挡住雨水的斗篷。</Heyra_Raincoat.description>
+  
+  <!-- EN: Heyran Jianghu hat -->
+  <Heyra_Rainhat.label>聆族斗笠</Heyra_Rainhat.label>
+  <!-- EN: A hat that is good at keeping the wearer cool in summer and dry in rainy days. -->
+  <Heyra_Rainhat.description>这个帽子能为佩戴者遮阳挡雨。</Heyra_Rainhat.description>
+  
+  <!-- EN: Heyran koi armor -->
+  <Heyra_Scalearmor.label>聆族鲤甲</Heyra_Scalearmor.label>
+  <!-- EN: A piece of armor consisting of many individual fish scale-like armor plates. It is surprisingly protective for its weight. However, it only protects the upper body of the wearer. -->
+  <Heyra_Scalearmor.description>一件由许多鱼鳞状的甲片编制的护甲，相对其重量来说防护性很好。但它只保护使用者的上半身。</Heyra_Scalearmor.description>
+  
+  <!-- EN: Heyran shaman's attire -->
+  <Heyra_Shamanattire.label>聆族萨满装束</Heyra_Shamanattire.label>
+  <!-- EN: The offical uniform of Heyran shamans. -->
+  <Heyra_Shamanattire.description>聆族萨满的制式服装。</Heyra_Shamanattire.description>
+  
+  <!-- EN: Heyran shaman head wear -->
+  <Heyra_Shamanheadwear.label>聆族萨满兜帽</Heyra_Shamanheadwear.label>
+  <!-- EN: A Heyran style white hood decorated with charms and glazed beads. -->
+  <Heyra_Shamanheadwear.description>装饰着琉璃珠和符咒的聆族兜帽。</Heyra_Shamanheadwear.description>
+  
+  <!-- EN: Heyran short coat -->
+  <Heyra_Shortcoat.label>聆族短袄</Heyra_Shortcoat.label>
+  <!-- EN: A Heyran style casual coat. -->
+  <Heyra_Shortcoat.description>聆族人日常穿着的服装。</Heyra_Shortcoat.description>
+  
+  <!-- EN: Heyran sleeveless shirt -->
+  <Heyra_Sleeveless.label>聆族背心</Heyra_Sleeveless.label>
+  <!-- EN: A simple-looking sleeveless top. -->
+  <Heyra_Sleeveless.description>一件简单的无袖上衣。</Heyra_Sleeveless.description>
+  
+  <!-- EN: Heyran soldier's armor -->
+  <Heyra_Soldierarmor.label>聆族军士甲</Heyra_Soldierarmor.label>
+  <!-- EN: The standard armor of the Heyran army. -->
+  <Heyra_Soldierarmor.description>聆族军队的标准装备。</Heyra_Soldierarmor.description>
+  
+  <!-- EN: Heyran soldier's helmet -->
+  <Heyra_Soldierhelmet.label>聆族军士头盔</Heyra_Soldierhelmet.label>
+  <!-- EN: The standard helmet of the Heyran army. -->
+  <Heyra_Soldierhelmet.description>聆族军队的标准头盔。</Heyra_Soldierhelmet.description>
+  
+  <!-- EN: Heyran stealth suit -->
+  <Heyra_Stealthsuit.label>聆族夜行衣</Heyra_Stealthsuit.label>
+  <!-- EN: A dark-colored tight-fitting suit that helps the wearer hide their whereabouts at night. -->
+  <Heyra_Stealthsuit.description>一件暗色的紧身衣。它能帮助穿着的人在夜晚隐匿行踪。</Heyra_Stealthsuit.description>
+  
+  <!-- EN: Heyran sword master's panoply -->
+  <Heyra_Swordmasterarmor.label>聆族斗铠</Heyra_Swordmasterarmor.label>
+  <!-- EN: A set of armor designed for the flexible sword fighters. Heyran armorer adopted the technology of flak vests and applied additional armor plates to give the limbs the same amount of protection. -->
+  <Heyra_Swordmasterarmor.description>适合灵活的剑士使用的护甲。聆族甲匠在这件护甲上使用了防弹背心同款材料。但额外的插板让它也能保护使用者的四肢。</Heyra_Swordmasterarmor.description>
+  
+  <!-- EN: Heyran worker's belt -->
+  <Heyra_Toolbelt.label>聆族工匠腰带</Heyra_Toolbelt.label>
+  <!-- EN: This belt is equipped with many tools and is a must-have for Heyran craftsmen. This piece of equipment can get very dirty and it is recommended not to bring it to the kitchen. or you may find metal shavings in your food. -->
+  <Heyra_Toolbelt.description>这件腰带上配备了许多实用工具，是聆族工匠的必需品。这件装备经常被用得脏兮兮的。穿着它进厨房的话小心在菜里吃到金属屑哦。</Heyra_Toolbelt.description>
+  
+  <!-- EN: Heyran winter coat -->
+  <Heyra_Wintercoat.label>聆族冬袍</Heyra_Wintercoat.label>
+  <!-- EN: A warm cloak that features a fluffy collar. -->
+  <Heyra_Wintercoat.description>一件有着毛茸茸领子的冬季保暖服装。</Heyra_Wintercoat.description>
+  
+  <!-- EN: Heyran Wok -->
+  <Heyra_Wok.label>聆族大锅</Heyra_Wok.label>
+  <!-- EN: A Heyran style cooking utensil that can be creatively used as a shield or a piece of armor. -->
+  <Heyra_Wok.description>一件聆族风格的厨具，能被创造性地当作护具来用。</Heyra_Wok.description>
+
+</LanguageData>

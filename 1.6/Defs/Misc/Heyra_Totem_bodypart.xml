@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartDef>
+    <defName>Heyra_MobileTotem_Thorax</defName>
+    <label>core part</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>Heyra_MobileTotem_Wheel</defName>
+    <label>wheel</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  
+   <BodyPartDef>
+    <defName>Heyra_MobileTotem_Holder</defName>
+    <label>grail holder</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>false</alive>
+	<tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  
+   <BodyPartDef>
+    <defName>Heyra_MobileTotem_Grail</defName>
+    <label>grail</label>
+    <hitPoints>60</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>false</alive>
+  </BodyPartDef>
+  
+   <BodyPartDef>
+    <defName>Heyra_MobileTotem_Core</defName>
+    <label>mysterious device</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>false</alive>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<tags>
+	<li>ConsciousnessSource</li>
+	<li>BloodPumpingSource</li>
+	<li>BloodFiltrationSource</li>
+	<li>SightSource</li>
+	<li>HearingSource</li>
+	</tags>
+  </BodyPartDef>
+ 
+</Defs>

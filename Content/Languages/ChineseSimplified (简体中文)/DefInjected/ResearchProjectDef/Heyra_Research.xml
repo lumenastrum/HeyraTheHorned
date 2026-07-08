@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: miracle seed -->
+  <Heyra_Researchaltar.label>奇迹之种</Heyra_Researchaltar.label>
+  <!-- EN: Build the Heyran altar and grow the miracle seeds, a magical item that can reform the horns of your Heyra colonists. -->
+  <Heyra_Researchaltar.description>建造聆族祭坛，并种植奇迹之种。这是一个神奇的道具，能用来改变聆族人角的外观，或者用来让失去角的聆族人重新长出双角。</Heyra_Researchaltar.description>
+  
+  <!-- EN: basic Heyran crafting -->
+  <Heyra_Researchappareltier0.label>初阶聆族工艺</Heyra_Researchappareltier0.label>
+  <!-- EN: Learn Heyran crafting with this amazing starter kit! Includes a compact workbench and two simple reciepes for beginners to practice. \n\n* Materials required for manufacturing are not included -->
+  <Heyra_Researchappareltier0.description>用这个初心者套装开始你的聆族制衣之旅！包括一个紧凑的工作台和一个适合新手练习的简单配方。 \n\n* 制造材料需另购</Heyra_Researchappareltier0.description>
+  
+  <!-- EN: authentic Heyran tailoring -->
+  <Heyra_Researchappareltier1.label>传统聆族制衣</Heyra_Researchappareltier1.label>
+  <!-- EN: Gain access to the Heyran apparel -->
+  <Heyra_Researchappareltier1.description>获取聆族服装的配方。</Heyra_Researchappareltier1.description>
+  
+  <!-- EN: innovative Heyran tailoring -->
+  <Heyra_Researchappareltier2.label>革新聆族制衣</Heyra_Researchappareltier2.label>
+  <!-- EN: By Combining Heyran tailoring with your colony's technology, a series of advanced gears are made available for your Heyra colonists. -->
+  <Heyra_Researchappareltier2.description>通过联姻聆族制衣和你殖民地的科技，你的殖民者能够设计出这些高科技的聆族装备、</Heyra_Researchappareltier2.description>
+  
+  <!-- EN: Heyran armor construction -->
+  <Heyra_Researcharmortier1.label>聆族铸甲</Heyra_Researcharmortier1.label>
+  <!-- EN: Unlock the recipes for Heyran armory. -->
+  <Heyra_Researcharmortier1.description>解锁聆族盔甲的配方。</Heyra_Researcharmortier1.description>
+  
+  <!-- EN: seed of awakening -->
+  <Heyra_Researchawaken.label>觉醒之种</Heyra_Researchawaken.label>
+  <!-- EN: Synthesize the seed of awakening, a single-dose gene activator that grants Heyras the power to transform. -->
+  <Heyra_Researchawaken.description>合成觉醒之种————一次性的基因活化剂，能让聆族获得变身的能力。</Heyra_Researchawaken.description>
+  
+  <!-- EN: compressed biscuits -->
+  <Heyra_Researchbiscuit.label>压缩饼干</Heyra_Researchbiscuit.label>
+  <!-- EN: Bake bean pulp into compressed biscuits, an ideal survival food that can be enjoyed without a dining table. -->
+  <Heyra_Researchbiscuit.description>将豆渣烘焙成压缩饼干，一种不需要餐桌即可享用的生存食品。</Heyra_Researchbiscuit.description>
+  
+  <!-- EN: stone mill -->
+  <Heyra_Researchfarming.label>石磨</Heyra_Researchfarming.label>
+  <!-- EN: Learn how to make bean milk from milksoy. -->
+  <Heyra_Researchfarming.description>学习用矮豆制做豆奶的方法。</Heyra_Researchfarming.description>
+  
+  <!-- EN: automatic milling -->
+  <Heyra_Researchfarmingadvanced.label>自动研磨</Heyra_Researchfarmingadvanced.label>
+  <!-- EN: Build machines that automatically cook bean milk for your colonists. -->
+  <Heyra_Researchfarmingadvanced.description>建造能为殖民者自动烹饪豆奶的机器。</Heyra_Researchfarmingadvanced.description>
+  
+  <!-- EN: fiber extraction -->
+  <Heyra_Researchloom.label>纤维提取</Heyra_Researchloom.label>
+  <!-- EN: Extract the protein fiber from milksoy and turn it into synthread. -->
+  <Heyra_Researchloom.description>从矮豆中提取蛋白纤维并将其制作成合成纤维。</Heyra_Researchloom.description>
+  
+  <!-- EN: exotic gears -->
+  <Heyra_Researchrong.label>异族武具</Heyra_Researchrong.label>
+  <!-- EN: Reverse engineer Rong technology to produce their weapons and apparel.\n\n*Heyras can wear Rong clothing and vice versa. -->
+  <Heyra_Researchrong.description>通过逆向工程来生产戎族的装备。</Heyra_Researchrong.description>
+  
+  <!-- EN: Heyran blacksmithing -->
+  <Heyra_Researchweapontier1.label>聆族锻铁</Heyra_Researchweapontier1.label>
+  <!-- EN: Craft Heyran weapons. -->
+  <Heyra_Researchweapontier1.description>打造聆族兵刃。</Heyra_Researchweapontier1.description>
+  
+</LanguageData>

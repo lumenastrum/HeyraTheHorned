@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Heyran archeress -->
+  <Heyra_Archer.label>聆族弓手</Heyra_Archer.label>
+  <Heyra_Archer.labelFemale>聆族弓手</Heyra_Archer.labelFemale>
+  <Heyra_Archer.labelFemalePlural>聆族弓手</Heyra_Archer.labelFemalePlural>
+  <Heyra_Archer.labelMale>聆族弓手</Heyra_Archer.labelMale>
+  <Heyra_Archer.labelMalePlural>聆族弓手</Heyra_Archer.labelMalePlural>
+  <Heyra_Archer.labelPlural>聆族弓手</Heyra_Archer.labelPlural>
+  
+  <!-- EN: Heyran aristocrat -->
+  <Heyra_Aristocrat.label>聆族贵族</Heyra_Aristocrat.label>
+  <Heyra_Aristocrat.labelFemale>聆族贵族</Heyra_Aristocrat.labelFemale>
+  <Heyra_Aristocrat.labelFemalePlural>聆族贵族</Heyra_Aristocrat.labelFemalePlural>
+  <Heyra_Aristocrat.labelMale>聆族贵族</Heyra_Aristocrat.labelMale>
+  <Heyra_Aristocrat.labelMalePlural>聆族贵族</Heyra_Aristocrat.labelMalePlural>
+  <Heyra_Aristocrat.labelPlural>聆族贵族</Heyra_Aristocrat.labelPlural>
+  
+  <!-- EN: Heyran artisan -->
+  <Heyra_Artisan.label>聆族匠人</Heyra_Artisan.label>
+  <Heyra_Artisan.labelFemale>聆族匠人</Heyra_Artisan.labelFemale>
+  <Heyra_Artisan.labelFemalePlural>聆族匠人</Heyra_Artisan.labelFemalePlural>
+  <Heyra_Artisan.labelMale>聆族匠人</Heyra_Artisan.labelMale>
+  <Heyra_Artisan.labelMalePlural>聆族匠人</Heyra_Artisan.labelMalePlural>
+  <Heyra_Artisan.labelPlural>聆族匠人</Heyra_Artisan.labelPlural>
+  
+  <!-- EN: Heyran battle cook -->
+  <Heyra_BattleCook.label>聆族战斗厨师</Heyra_BattleCook.label>
+  <Heyra_BattleCook.labelFemale>聆族战斗厨师</Heyra_BattleCook.labelFemale>
+  <Heyra_BattleCook.labelFemalePlural>聆族战斗厨师</Heyra_BattleCook.labelFemalePlural>
+  <Heyra_BattleCook.labelMale>聆族战斗厨师</Heyra_BattleCook.labelMale>
+  <Heyra_BattleCook.labelMalePlural>聆族战斗厨师</Heyra_BattleCook.labelMalePlural>
+  <Heyra_BattleCook.labelPlural>聆族战斗厨师</Heyra_BattleCook.labelPlural>
+  
+  <!-- EN: Light Infantry -->
+  <Heyra_Breacher.label>聆族军士</Heyra_Breacher.label>
+  <Heyra_Breacher.labelFemale>聆族军士</Heyra_Breacher.labelFemale>
+  <Heyra_Breacher.labelFemalePlural>聆族军士</Heyra_Breacher.labelFemalePlural>
+  <Heyra_Breacher.labelMale>聆族军士</Heyra_Breacher.labelMale>
+  <Heyra_Breacher.labelMalePlural>聆族军士</Heyra_Breacher.labelMalePlural>
+  <Heyra_Breacher.labelPlural>聆族军士</Heyra_Breacher.labelPlural>
+  
+  <!-- EN: Heyran cook -->
+  <Heyra_Cook.label>聆族厨师</Heyra_Cook.label>
+  <Heyra_Cook.labelFemale>聆族厨师</Heyra_Cook.labelFemale>
+  <Heyra_Cook.labelFemalePlural>聆族厨师</Heyra_Cook.labelFemalePlural>
+  <Heyra_Cook.labelMale>聆族厨师</Heyra_Cook.labelMale>
+  <Heyra_Cook.labelMalePlural>聆族厨师</Heyra_Cook.labelMalePlural>
+  <Heyra_Cook.labelPlural>聆族厨师</Heyra_Cook.labelPlural>
+  
+  <!-- EN: Heyran escort -->
+  <Heyra_Escort.label>聆族护卫</Heyra_Escort.label>
+  <Heyra_Escort.labelFemale>聆族护卫</Heyra_Escort.labelFemale>
+  <Heyra_Escort.labelFemalePlural>聆族护卫</Heyra_Escort.labelFemalePlural>
+  <Heyra_Escort.labelMale>聆族护卫</Heyra_Escort.labelMale>
+  <Heyra_Escort.labelMalePlural>聆族护卫</Heyra_Escort.labelMalePlural>
+  <Heyra_Escort.labelPlural>聆族护卫</Heyra_Escort.labelPlural>
+  
+  <!-- EN: Heyran Forbidden Army -->
+  <Heyra_ForbiddenArmyBreacher.label>聆族禁军</Heyra_ForbiddenArmyBreacher.label>
+  <Heyra_ForbiddenArmyBreacher.labelFemale>聆族禁军</Heyra_ForbiddenArmyBreacher.labelFemale>
+  <Heyra_ForbiddenArmyBreacher.labelFemalePlural>聆族禁军</Heyra_ForbiddenArmyBreacher.labelFemalePlural>
+  <Heyra_ForbiddenArmyBreacher.labelMale>聆族禁军</Heyra_ForbiddenArmyBreacher.labelMale>
+  <Heyra_ForbiddenArmyBreacher.labelMalePlural>聆族禁军</Heyra_ForbiddenArmyBreacher.labelMalePlural>
+  <Heyra_ForbiddenArmyBreacher.labelPlural>聆族禁军</Heyra_ForbiddenArmyBreacher.labelPlural>
+  
+  <!-- EN: Heyran Forbidden Army -->
+  <Heyra_ForbiddenArmyMeleeA.label>聆族禁军</Heyra_ForbiddenArmyMeleeA.label>
+  <Heyra_ForbiddenArmyMeleeA.labelFemale>聆族禁军</Heyra_ForbiddenArmyMeleeA.labelFemale>
+  <Heyra_ForbiddenArmyMeleeA.labelFemalePlural>聆族禁军</Heyra_ForbiddenArmyMeleeA.labelFemalePlural>
+  <Heyra_ForbiddenArmyMeleeA.labelMale>聆族禁军</Heyra_ForbiddenArmyMeleeA.labelMale>
+  <Heyra_ForbiddenArmyMeleeA.labelMalePlural>聆族禁军</Heyra_ForbiddenArmyMeleeA.labelMalePlural>
+  <Heyra_ForbiddenArmyMeleeA.labelPlural>聆族禁军</Heyra_ForbiddenArmyMeleeA.labelPlural>
+  
+  <!-- EN: Heyra Forbidden Army Arbalester -->
+  <Heyra_ForbiddenArmyRangedA.label>聆族禁军神火弩手</Heyra_ForbiddenArmyRangedA.label>
+  <Heyra_ForbiddenArmyRangedA.labelFemale>聆族禁军神火弩手</Heyra_ForbiddenArmyRangedA.labelFemale>
+  <Heyra_ForbiddenArmyRangedA.labelFemalePlural>聆族禁军神火弩手</Heyra_ForbiddenArmyRangedA.labelFemalePlural>
+  <Heyra_ForbiddenArmyRangedA.labelMale>聆族禁军神火弩手</Heyra_ForbiddenArmyRangedA.labelMale>
+  <Heyra_ForbiddenArmyRangedA.labelMalePlural>聆族禁军神火弩手</Heyra_ForbiddenArmyRangedA.labelMalePlural>
+  <Heyra_ForbiddenArmyRangedA.labelPlural>聆族禁军神火弩手</Heyra_ForbiddenArmyRangedA.labelPlural>
+  
+  <!-- EN: Heyran freeman -->
+  <Heyra_Freeman.label>聆族草民</Heyra_Freeman.label>
+  <Heyra_Freeman.labelFemale>聆族草民</Heyra_Freeman.labelFemale>
+  <Heyra_Freeman.labelFemalePlural>聆族草民</Heyra_Freeman.labelFemalePlural>
+  <Heyra_Freeman.labelMale>聆族草民</Heyra_Freeman.labelMale>
+  <Heyra_Freeman.labelMalePlural>聆族草民</Heyra_Freeman.labelMalePlural>
+  <Heyra_Freeman.labelPlural>聆族草民</Heyra_Freeman.labelPlural>
+  
+  <!-- EN: Heyran hierarch -->
+  <Heyra_Hierarch.label>聆族祭司</Heyra_Hierarch.label>
+  <Heyra_Hierarch.labelFemale>聆族祭司</Heyra_Hierarch.labelFemale>
+  <Heyra_Hierarch.labelFemalePlural>聆族祭司</Heyra_Hierarch.labelFemalePlural>
+  <Heyra_Hierarch.labelMale>聆族祭司</Heyra_Hierarch.labelMale>
+  <Heyra_Hierarch.labelMalePlural>聆族祭司</Heyra_Hierarch.labelMalePlural>
+  <Heyra_Hierarch.labelPlural>聆族祭司</Heyra_Hierarch.labelPlural>
+  
+  <!-- EN: Summoned Horned Spectre -->
+  <Heyra_HornedSpectreArmed.label>受唤孽物</Heyra_HornedSpectreArmed.label>
+  <Heyra_HornedSpectreArmed.labelFemale>受唤孽物</Heyra_HornedSpectreArmed.labelFemale>
+  <Heyra_HornedSpectreArmed.labelFemalePlural>受唤孽物</Heyra_HornedSpectreArmed.labelFemalePlural>
+  <Heyra_HornedSpectreArmed.labelMale>受唤孽物</Heyra_HornedSpectreArmed.labelMale>
+  <Heyra_HornedSpectreArmed.labelMalePlural>受唤孽物</Heyra_HornedSpectreArmed.labelMalePlural>
+  <Heyra_HornedSpectreArmed.labelPlural>受唤孽物</Heyra_HornedSpectreArmed.labelPlural>
+  
+  <!-- EN: Summoned Horned Spectre -->
+  <Heyra_HornedSpectreUnarmed.label>受唤孽物</Heyra_HornedSpectreUnarmed.label>
+  <Heyra_HornedSpectreUnarmed.labelFemale>受唤孽物</Heyra_HornedSpectreUnarmed.labelFemale>
+  <Heyra_HornedSpectreUnarmed.labelFemalePlural>受唤孽物</Heyra_HornedSpectreUnarmed.labelFemalePlural>
+  <Heyra_HornedSpectreUnarmed.labelMale>受唤孽物</Heyra_HornedSpectreUnarmed.labelMale>
+  <Heyra_HornedSpectreUnarmed.labelMalePlural>受唤孽物</Heyra_HornedSpectreUnarmed.labelMalePlural>
+  <Heyra_HornedSpectreUnarmed.labelPlural>受唤孽物</Heyra_HornedSpectreUnarmed.labelPlural>
+  
+  <!-- EN: Heyran Supreme Matriarch -->
+  <Heyra_Leader.label>聆族至高祭司</Heyra_Leader.label>
+  <Heyra_Leader.labelFemale>聆族至高祭司</Heyra_Leader.labelFemale>
+  <Heyra_Leader.labelFemalePlural>聆族至高祭司</Heyra_Leader.labelFemalePlural>
+  <Heyra_Leader.labelMale>聆族至高祭司</Heyra_Leader.labelMale>
+  <Heyra_Leader.labelMalePlural>聆族至高祭司</Heyra_Leader.labelMalePlural>
+  <Heyra_Leader.labelPlural>聆族至高祭司</Heyra_Leader.labelPlural>
+  
+  <!-- EN: Light Infantry -->
+  <Heyra_LightInfantry.label>聆族军士</Heyra_LightInfantry.label>
+  <Heyra_LightInfantry.labelFemale>聆族军士</Heyra_LightInfantry.labelFemale>
+  <Heyra_LightInfantry.labelFemalePlural>聆族军士</Heyra_LightInfantry.labelFemalePlural>
+  <Heyra_LightInfantry.labelMale>聆族军士</Heyra_LightInfantry.labelMale>
+  <Heyra_LightInfantry.labelMalePlural>聆族军士</Heyra_LightInfantry.labelMalePlural>
+  <Heyra_LightInfantry.labelPlural>聆族军士</Heyra_LightInfantry.labelPlural>
+  
+  <!-- EN: Heyran necromancer -->
+  <Heyra_Necromancer.label>聆族巫蛊师</Heyra_Necromancer.label>
+  <Heyra_Necromancer.labelFemale>聆族巫蛊师</Heyra_Necromancer.labelFemale>
+  <Heyra_Necromancer.labelFemalePlural>聆族巫蛊师</Heyra_Necromancer.labelFemalePlural>
+  <Heyra_Necromancer.labelMale>聆族巫蛊师</Heyra_Necromancer.labelMale>
+  <Heyra_Necromancer.labelMalePlural>聆族巫蛊师</Heyra_Necromancer.labelMalePlural>
+  <Heyra_Necromancer.labelPlural>聆族巫蛊师</Heyra_Necromancer.labelPlural>
+  
+  <!-- EN: Example Heyra -->
+  <Heyra_Playable.label>Example Heyra</Heyra_Playable.label>
+  <Heyra_Playable.labelFemale>Example Heyra</Heyra_Playable.labelFemale>
+  <Heyra_Playable.labelFemalePlural>Example Heyras</Heyra_Playable.labelFemalePlural>
+  <Heyra_Playable.labelMale>Example Heyra</Heyra_Playable.labelMale>
+  <Heyra_Playable.labelMalePlural>Example Heyras</Heyra_Playable.labelMalePlural>
+  <Heyra_Playable.labelPlural>Example Heyras</Heyra_Playable.labelPlural>
+  
+  <!-- EN: Heyran prophetess -->
+  <Heyra_Prophetess.label>聆族先知</Heyra_Prophetess.label>
+  <Heyra_Prophetess.labelFemale>聆族先知</Heyra_Prophetess.labelFemale>
+  <Heyra_Prophetess.labelFemalePlural>聆族先知</Heyra_Prophetess.labelFemalePlural>
+  <Heyra_Prophetess.labelMale>聆族先知</Heyra_Prophetess.labelMale>
+  <Heyra_Prophetess.labelMalePlural>聆族先知</Heyra_Prophetess.labelMalePlural>
+  <Heyra_Prophetess.labelPlural>聆族先知</Heyra_Prophetess.labelPlural>
+  
+  <!-- EN: Heyran ranger -->
+  <Heyra_Ranger.label>聆族游侠</Heyra_Ranger.label>
+  <Heyra_Ranger.labelFemale>聆族游侠</Heyra_Ranger.labelFemale>
+  <Heyra_Ranger.labelFemalePlural>聆族游侠</Heyra_Ranger.labelFemalePlural>
+  <Heyra_Ranger.labelMale>聆族游侠</Heyra_Ranger.labelMale>
+  <Heyra_Ranger.labelMalePlural>聆族游侠</Heyra_Ranger.labelMalePlural>
+  <Heyra_Ranger.labelPlural>聆族游侠</Heyra_Ranger.labelPlural>
+  
+  <!-- EN: Heyran shaman -->
+  <Heyra_Shaman.label>聆族萨满</Heyra_Shaman.label>
+  <Heyra_Shaman.labelFemale>聆族萨满</Heyra_Shaman.labelFemale>
+  <Heyra_Shaman.labelFemalePlural>聆族萨满</Heyra_Shaman.labelFemalePlural>
+  <Heyra_Shaman.labelMale>聆族萨满</Heyra_Shaman.labelMale>
+  <Heyra_Shaman.labelMalePlural>聆族萨满</Heyra_Shaman.labelMalePlural>
+  <Heyra_Shaman.labelPlural>聆族萨满</Heyra_Shaman.labelPlural>
+  
+  <!-- EN: Heyran sword master -->
+  <Heyra_Swordmaster.label>聆族剑圣</Heyra_Swordmaster.label>
+  <Heyra_Swordmaster.labelFemale>聆族剑圣</Heyra_Swordmaster.labelFemale>
+  <Heyra_Swordmaster.labelFemalePlural>聆族剑圣</Heyra_Swordmaster.labelFemalePlural>
+  <Heyra_Swordmaster.labelMale>聆族剑圣</Heyra_Swordmaster.labelMale>
+  <Heyra_Swordmaster.labelMalePlural>聆族剑圣</Heyra_Swordmaster.labelMalePlural>
+  <Heyra_Swordmaster.labelPlural>聆族剑圣</Heyra_Swordmaster.labelPlural>
+  
+  <!-- EN: Heyran trader -->
+  <Heyra_Trader.label>聆族商人</Heyra_Trader.label>
+  <Heyra_Trader.labelFemale>聆族商人</Heyra_Trader.labelFemale>
+  <Heyra_Trader.labelFemalePlural>聆族商人</Heyra_Trader.labelFemalePlural>
+  <Heyra_Trader.labelMale>聆族商人</Heyra_Trader.labelMale>
+  <Heyra_Trader.labelMalePlural>聆族商人</Heyra_Trader.labelMalePlural>
+  <Heyra_Trader.labelPlural>聆族商人</Heyra_Trader.labelPlural>
+  
+</LanguageData>

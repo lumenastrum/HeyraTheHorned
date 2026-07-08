@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Disciples of the Teller -->
+  <Heyra_Culture.label>叙者门徒</Heyra_Culture.label>
+  <!-- EN: The traditonal culture of the Heyras. -->
+  <Heyra_Culture.description>聆族的传统文化信仰。</Heyra_Culture.description>
+  
+  <!-- EN: Cult of Pleasure -->
+  <Heyra_Culture_Rong.label>欢愉会</Heyra_Culture_Rong.label>
+  <!-- EN: The culture of the Rongs. -->
+  <Heyra_Culture_Rong.description>戎族的传统文化信仰。</Heyra_Culture_Rong.description>
+  
+</LanguageData>

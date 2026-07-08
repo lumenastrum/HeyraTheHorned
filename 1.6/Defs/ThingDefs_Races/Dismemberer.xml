@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<ThingDef ParentName="BaseMechanoidWalker">
+    <defName>Heyra_Dismemberer</defName>
+    <label>Dismemberer</label>
+    <description>Human-sized combat automatas specializing in melee combat. Due to their purely mechanical body, Dismemberers are not affected by EMP.</description>
+    <tools>
+      <li>
+        <label>left blade</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right blade</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+    <race>
+	  <fleshType Inherit="False">Heyra_TotemFleshType</fleshType>
+	  <lifeExpectancy Inherit="False">35</lifeExpectancy>
+      <body>Scyther</body>
+      <baseHealthScale>2.0</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+      <!-- [1.6 FIX] soundMeleeHitBuilding removed in RimWorld 1.5+ -->
+      <!-- <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding> -->
+      <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  
+<PawnKindDef>
+    <defName>Heyra_Dismemberer_PawnKind</defName>
+    <label>Dismemberer</label>
+    <race>Heyra_Dismemberer</race>
+	<defaultFactionType>Heyra_Rong_Faction</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+    <combatPower>130</combatPower>
+	<minGenerationAge>2</minGenerationAge>
+	<maxGenerationAge>36</maxGenerationAge>
+    <lifeStages>
+		<li MayRequire="Ludeon.RimWorld.Biotech">
+			<bodyGraphicData>
+			  <texPath>Monster/Rong/Dismemberer</texPath>
+			  <graphicClass>Graphic_Multi</graphicClass>
+			  <drawSize>1.8</drawSize>
+			  <shadowData>
+				<volume>(0.5, 0.8, 0.5)</volume>
+				<offset>(0,0,-0.3)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Monster/Rong/Dismemberer</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+          <shadowData>
+            <volume>(0.5, 0.8, 0.5)</volume>
+			<offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>180~280</weaponMoney>
+    <defendPointRadius>0</defendPointRadius>
+    <weaponTags>
+	<li>Heyra_MeleeTypeMechMelee</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  
+</Defs>

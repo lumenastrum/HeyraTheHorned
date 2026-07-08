@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Alien_Heyra_Rong.label>戎族</Alien_Heyra_Rong.label>
+  <Alien_Heyra_Rong.description>这些残暴的戎族是聆族的死敌。他们舍弃了道德的观念，只重视人类最原始的需求。一系列证据都表明戎族是聆族的一个分支，但聆族至高祭司从不承认这一观点。</Alien_Heyra_Rong.description>
+  <Alien_Heyra_Rong.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>skin</Alien_Heyra_Rong.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Alien_Heyra_Rong.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>hair</Alien_Heyra_Rong.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Alien_Heyra_Rong.tools.0.label>左拳</Alien_Heyra_Rong.tools.0.label>
+  <Alien_Heyra_Rong.tools.1.label>右拳</Alien_Heyra_Rong.tools.1.label>
+  <Alien_Heyra_Rong.tools.2.label>牙齿</Alien_Heyra_Rong.tools.2.label>
+
+
+</LanguageData>

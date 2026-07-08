@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>Heyra_Hediff_Enableformchange</defName>
+		<description>This Heyra possesses the power to transform into a majectic beast.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>awakened</label>
+		<defaultLabelColor>(0.8,0.4,0.6)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDefs>
+					<li>Heyra_Ability_Formchange</li>
+				</abilityDefs>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Heyra_Hediff_Monsterform</defName>
+		<description>The alternate form of a Heyra. This beast is armed with razor-sharp claws, protected by hardened scales, and swiftened by the Blessing of Air. A Heyra in this form is can take on several enemies single-handedly. However, this state expires very soon and will cause extreme exhaustion after that.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>transformed</label>
+		<defaultLabelColor>(1,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>0.1</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_Effecter"/>						<!-- Leave this empty since this is just an anchor point for my Harmony Patch -->
+			<li Class="Heyra.HediffCompProperties_DirectionalEffecters">	<!-- Actual effecters to be loaded -->
+				<effecterEast>Heyra_Effecter_Flamehair_East</effecterEast>
+				<effecterWest>Heyra_Effecter_Flamehair_West</effecterWest>
+				<effecterSouth>Heyra_Effecter_Flamehair_South</effecterSouth>
+			</li>
+			<li Class="Heyra.HediffCompProperties_ChangeForm">
+				<graphic>
+					<texPath>Heyra/Body/ChangedForm</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3.5,3.5)</drawSize>
+				</graphic>
+				<customDrawSize>(3.5,3.5)</customDrawSize>
+				<floatOffset>(0,1.2)</floatOffset>
+				<removeOnDowned>true</removeOnDowned>
+				<removeSound>DropPod_Open</removeSound>
+				<immuneToStagger>true</immuneToStagger>
+			</li>
+			<li Class="Heyra.HediffCompProperties_AddHediffOnRemove">
+			  <hediffsToParts>
+				<li>
+				  <hediffDef>Heyra_Hediff_Postfatigue</hediffDef>
+				  <changeSeverityIfAlreadyExist>true</changeSeverityIfAlreadyExist>
+				  <severity>0.5</severity>
+				</li>
+			  </hediffsToParts>
+			</li>
+			<li Class="Heyra.HediffCompProperties_DispelAllHediffsOnMap">
+			  <hediffDefs>
+				<li>Heyra_Hediff_Monsterform</li>
+			  </hediffDefs>
+			  <dispelPlayerPawns>true</dispelPlayerPawns>
+			  <dispelNonHostilePawns>false</dispelNonHostilePawns>
+			  <dispelHostilePawns>false</dispelHostilePawns>
+			</li>
+			<li Class="Heyra.HediffCompProperties_AddHediffToBodyPart">		<!-- How to use this HediffComp by CnArmor -->
+				<hediffsToParts>											<!-- Declare a hediffsToParts List -->
+					<li>													<!-- In each list entry -->
+						<hediffDef>Heyra_Hediff_Dragonbreath</hediffDef>					<!-- Declare the hediffDef you want to add -->
+						<bodyPartTagDef>TalkingSource</bodyPartTagDef>		<!-- Declare the bodyPartTagDef of which bodyparts you want add the hediff to -->
+						<bodyPartLable>										<!-- And/Or declare a list of labels of which bodyparts you want add the hediff to -->
+							<li>jaw</li>									<!-- Don't worry about duplicated hediffs on the same body part, my code will ensure it doesn't happen -->
+						</bodyPartLable>									<!-- After the main hediff is removed, all added hediffs will also be removed -->
+					</li>
+					<li>
+						<hediffDef>Heyra_Hediff_Claw</hediffDef>
+						<bodyPartLable>
+							<li>left hand</li>
+							<li>right hand</li>
+						</bodyPartLable>
+					</li>
+				</hediffsToParts>
+			</li>
+			<!-- DragonBreath is now an MVCF hediff verb on Heyra_Hediff_Dragonbreath, not an ability -->
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDefs>
+					<li>Heyra_Ability_Electricfield</li>
+				</abilityDefs>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.5</painFactor>
+				<becomeVisible>true</becomeVisible>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ComfyTemperatureMax>20</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+					<IncomingDamageFactor>-0.85</IncomingDamageFactor>
+					<ArmorRating_Sharp>1.65</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.25</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.60</ArmorRating_Heat>
+					<Flammability>0</Flammability>
+				</statOffsets>
+				<disabledWorkTags>
+					<li>Social</li>
+					<li>Caring</li>
+					<li>Commoner</li>
+					<li>Intellectual</li>
+					<li>Crafting</li>
+					<li>Cooking</li>
+					<li>Cleaning</li>
+					<li>PlantWork</li>
+					<li>Mining</li>
+					<li>Hunting</li>
+					<li>Constructing</li>					
+				<!--All Work Tags:
+					None
+					ManualDumb
+					ManualSkilled
+					Violent
+					Caring
+					Social
+					Commoner
+					Intellectual
+					Animals
+					Artistic
+					Crafting
+					Cooking
+					Firefighting
+					Cleaning
+					Hauling
+					PlantWork
+					Mining
+					Hunting
+					Constructing
+					Shooting
+					AllWork-->
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Heyra_Hediff_Postfatigue</defName>
+		<description>After-effects of transform. The patient is debilitated but not in a life-threatening condition. They can still transform in this state, but doing so will further crumple their body and eventually lead to the worst outcome—death.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>post-transform fatigue</label>
+		<defaultLabelColor>(1,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<initialSeverity>0.5</initialSeverity>
+		<lethalSeverity>1</lethalSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.03</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<label>minor</label>
+				<!--becomeVisible>true</becomeVisible-->
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>-0.2</offset>
+				  </li>
+				</capMods>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+				<restFallFactorOffset>0.2</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.3</minSeverity>
+				<label>releasing</label>
+				<painOffset>0.10</painOffset>
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>-0.25</offset>
+				  </li>
+				</capMods>
+				<hungerRateFactorOffset>0.4</hungerRateFactorOffset>
+				<restFallFactorOffset>0.4</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.40</minSeverity>
+				<label>aching</label>
+				<painOffset>0.20</painOffset>
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>-0.3</offset>
+				  </li>
+				</capMods>
+				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<restFallFactorOffset>0.5</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.45</minSeverity>
+				<label>painful</label>
+				<painOffset>0.4</painOffset>
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>-0.4</offset>
+				  </li>
+				</capMods>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+				<restFallFactorOffset>0.2</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.51</minSeverity>
+				<label>extreme</label>
+				<painOffset>0.4</painOffset>
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>-0.5</offset>
+				  </li>
+				</capMods>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+				<restFallFactorOffset>0.2</restFallFactorOffset>
+			</li>
+			<li>
+				<minSeverity>0.81</minSeverity>
+				<label>near-lethal</label>
+				<painOffset>0.6</painOffset>
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>-0.5</offset>
+				  </li>
+				</capMods>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+				<restFallFactorOffset>0.2</restFallFactorOffset>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Heyra_Hediff_Dragonbreath</defName>
+		<description>This creature can exhale destructive energy.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>breath weapon</label>
+		<defaultLabelColor>(1,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<addedPartProps>
+			<partEfficiency>1.0</partEfficiency>
+		</addedPartProps>
+		<!-- [VEF FORK] Breath attack restored as MVCF hediff verb with VEF GaussProjectile -->
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<label>breath attack</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>0.9</accuracyShort>
+						<accuracyMedium>0.7</accuracyMedium>
+						<accuracyLong>0.6</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Heyra_Projectile_Breath</defaultProjectile>
+						<warmupTime>0.6</warmupTime>
+						<defaultCooldownTime>1.2</defaultCooldownTime>
+						<minRange>2.8</minRange>
+						<range>20</range>
+						<forcedMissRadius>1.9</forcedMissRadius>
+						<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+						<burstShotCount>4</burstShotCount>
+						<soundCast>Shot_IncendiaryLauncher</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>10</muzzleFlashScale>
+						<targetParams>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>breath attack</label>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Heyra_Hediff_Electricfield</defName>
+		<description>This creature is generating a strong electric field around its body.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>static field</label>
+		<defaultLabelColor>(1,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<addedPartProps>
+			<partEfficiency>1.0</partEfficiency>
+		</addedPartProps>
+		<!-- [VEF FORK] Restored MVCF 4-range-band turret system from 1.4 original -->
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<label>electric shockZ</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>1</accuracyMedium>
+						<accuracyLong>1</accuracyLong>
+						<forcedMissRadius>0.1</forcedMissRadius>
+						<hasStandardCommand>false</hasStandardCommand>
+						<defaultProjectile>Heyra_Projectile_Electricshock</defaultProjectile>
+						<warmupTime>0.1</warmupTime>
+						<defaultCooldownTime>1.0</defaultCooldownTime>
+						<minRange>1</minRange>
+						<range>4</range>
+						<soundCast>Heyra_Sound_Spark</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>6</muzzleFlashScale>
+						<targetParams>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+					</li>
+					<li>
+						<label>electric shockX</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>1</accuracyMedium>
+						<accuracyLong>1</accuracyLong>
+						<forcedMissRadius>0.1</forcedMissRadius>
+						<hasStandardCommand>false</hasStandardCommand>
+						<defaultProjectile>Heyra_Projectile_Electricshock</defaultProjectile>
+						<warmupTime>0.1</warmupTime>
+						<defaultCooldownTime>1.0</defaultCooldownTime>
+						<minRange>4.001</minRange>
+						<range>6</range>
+						<soundCast>Heyra_Sound_Spark</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>6</muzzleFlashScale>
+						<targetParams>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+					</li>
+					<li>
+						<label>electric shockC</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>1</accuracyMedium>
+						<accuracyLong>1</accuracyLong>
+						<forcedMissRadius>0.1</forcedMissRadius>
+						<hasStandardCommand>false</hasStandardCommand>
+						<defaultProjectile>Heyra_Projectile_Electricshock</defaultProjectile>
+						<warmupTime>0.1</warmupTime>
+						<defaultCooldownTime>1.0</defaultCooldownTime>
+						<minRange>6.001</minRange>
+						<range>8</range>
+						<soundCast>Heyra_Sound_Spark</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>6</muzzleFlashScale>
+						<targetParams>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+					</li>
+					<li>
+						<label>electric shockW</label>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>1</accuracyMedium>
+						<accuracyLong>1</accuracyLong>
+						<forcedMissRadius>0.1</forcedMissRadius>
+						<hasStandardCommand>false</hasStandardCommand>
+						<defaultProjectile>Heyra_Projectile_Electricshock</defaultProjectile>
+						<warmupTime>0.1</warmupTime>
+						<defaultCooldownTime>1.0</defaultCooldownTime>
+						<minRange>8.001</minRange>
+						<range>10</range>
+						<soundCast>Heyra_Sound_Spark</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>6</muzzleFlashScale>
+						<targetParams>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>electric shockZ</label>
+						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Turret">
+								<compClass>MVCF.VerbComps.VerbComp_Turret</compClass>
+							</li>
+						</comps>
+					</li>
+					<li>
+						<label>electric shockX</label>
+						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Turret">
+								<compClass>MVCF.VerbComps.VerbComp_Turret</compClass>
+							</li>
+						</comps>
+					</li>
+					<li>
+						<label>electric shockC</label>
+						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Turret">
+								<compClass>MVCF.VerbComps.VerbComp_Turret</compClass>
+							</li>
+						</comps>
+					</li>
+					<li>
+						<label>electric shockW</label>
+						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Turret">
+								<compClass>MVCF.VerbComps.VerbComp_Turret</compClass>
+							</li>
+						</comps>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Heyra_Hediff_Claw</defName>
+		<description>nails of this creature are as hard as steel.</description>
+		<label>claw</label>
+		<defaultLabelColor>(1,0,0)</defaultLabelColor>
+		<hediffClass>Hediff_Implant</hediffClass>
+		<priceImpact>false</priceImpact>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<addedPartProps>
+			<partEfficiency>1.0</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>claw</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>36</power>
+						<cooldownTime>1.4</cooldownTime>
+						<armorPenetration>0.45</armorPenetration>
+						<!--extraMeleeDamages>
+							<li>
+								<def>Burn</def>
+								<amount>3</amount>
+							</li>
+						</extraMeleeDamages-->
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<!-- [VEF FORK] Breath projectile — VEF.Weapons.ExpandableProjectileDef with Burn+EMP damage -->
+	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Heyra_Projectile_Breath</defName>
+		<label>thunder breath</label>
+		<thingClass>VEF.Weapons.GaussProjectile</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_BreathFadeout_</texPath>
+			<texPathFadeOut>Mote/Heyra_Breath_</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+			<color>(70,80,254)</color>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<speed>300</speed>
+			<damageAmountBase>36</damageAmountBase>
+			<armorPenetrationBase>2</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>1</amount>
+					<armorPenetration>1</armorPenetration>
+				</li>
+			</extraDamages>
+		</projectile>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>27</lifeTimeDuration>
+		<widthScaleFactor>0.9</widthScaleFactor>
+		<heightScaleFactor>1.5</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -2)</startingPositionOffset>
+		<totalSizeScale>0.8</totalSizeScale>
+		<tickFrameRate>3</tickFrameRate>
+		<finalTickFrameRate>2</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2.8</minDistanceToAffect>
+	</VEF.Weapons.ExpandableProjectileDef>
+
+	<!-- [VEF FORK] Electric shock projectile — VEF.Weapons.ExpandableProjectileDef -->
+	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Heyra_Projectile_Electricshock</defName>
+		<label>electric arc</label>
+		<thingClass>VEF.Weapons.GaussProjectile</thingClass>
+		<graphicData>
+			<texPath>Mote/Heyra_ElectricshockFadeout_</texPath>
+			<texPathFadeOut>Mote/Heyra_Electricshock_</texPathFadeOut>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<speed>900</speed>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>2</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>10</amount>
+					<armorPenetration>1</armorPenetration>
+				</li>
+			</extraDamages>
+		</projectile>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>60</lifeTimeDuration>
+		<widthScaleFactor>1</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, 0)</startingPositionOffset>
+		<totalSizeScale>1</totalSizeScale>
+		<tickFrameRate>3</tickFrameRate>
+		<finalTickFrameRate>3</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>12</minDistanceToAffect>
+	</VEF.Weapons.ExpandableProjectileDef>
+
+</Defs>

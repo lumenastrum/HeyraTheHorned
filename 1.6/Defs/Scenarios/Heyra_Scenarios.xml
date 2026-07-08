@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- [1.6 FIX] ScenarioDef must inherit ScenarioBase for map layer system (surfaceLayer etc.) -->
+
+	<!-- ═══════════════════════════════════════════════════════════════════════
+	     SCENARIO 1: New Horizons — Standard Crashlanded-equivalent start
+	     3 colonists, basic Heyra gear, balanced resources
+	     ═══════════════════════════════════════════════════════════════════════ -->
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>Heyra_Scenario_Crashlanded</defName>
+		<label>Heyran Chronicle: New Horizons</label>
+		<description>The homeland is far behind. Whether driven out by war, famine, or simply the restless pull of the unknown, the three of you have wandered for weeks through unfamiliar territory. The trails have grown cold and the old maps are useless here.\n\nBut the land ahead is rich — timber, stone, fertile soil. The Teller's blessing still hums faintly in your horns. With what supplies you've carried and whatever this new land offers, it's time to put down roots. A new chapter begins.</description>
+		<scenario>
+			<summary>Three Heyra wanderers settle in an unknown land with basic supplies. A standard starting experience.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Heyra_PlayerFactionGeneral</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>3</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>800</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Biscuit</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Crossbow</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Crossbow</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Sword</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Soldierhelmet</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>450</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+	<!-- ═══════════════════════════════════════════════════════════════════════
+	     SCENARIO 2: The Long March — Many colonists, scarce resources
+	     6 colonists, tribal-level supplies, survival pressure
+	     ═══════════════════════════════════════════════════════════════════════ -->
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>Heyra_Scenario_LongMarch</defName>
+		<label>Heyran Chronicle: The Long March</label>
+		<description>The village burned three days ago. The Rong came at dawn, and by dusk there was nothing left but ash and screaming. You gathered who you could — farmers, a healer, an old smith, anyone still standing — and fled into the hills.\n\nSix of you survived the march. Your supplies are pitiful: a handful of biscuits, some scavenged weapons, and whatever herbs the healer managed to grab. But there are six pairs of hands, and the land you've stumbled into is untouched. If you work together, you might just make it.</description>
+		<scenario>
+			<summary>Six Heyra refugees flee a destroyed village. Many hands, but almost nothing to work with.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Heyra_PlayerFactionGeneral</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>6</pawnCount>
+					<pawnChoiceCount>12</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Biscuit</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Crossbow</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Sword</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Daggeraxe</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Halberd</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>150</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+	<!-- ═══════════════════════════════════════════════════════════════════════
+	     SCENARIO 3: The Blade Unsheathed — Two elite veterans, well-equipped
+	     2 colonists, soldier faction, strong gear but outnumbered
+	     ═══════════════════════════════════════════════════════════════════════ -->
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>Heyra_Scenario_BladeUnsheathed</defName>
+		<label>Heyran Chronicle: The Blade Unsheathed</label>
+		<description>You were the best. Two sword-sisters of the Forbidden Army, the sharpest blades the Heyra have ever forged. But the war is over, and your side lost. The generals are dead, the banners burned, the army scattered to the winds.\n\nNow you walk as ronin — masterless, but not toothless. Your armor still gleams, your blades are still sharp, and between the two of you, there is enough skill to build an empire from nothing. The question is whether two warriors can learn to farm before their supplies run dry.</description>
+		<scenario>
+			<summary>Two elite Heyra veterans with excellent equipment. Highly skilled, but dangerously outnumbered.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Heyra_PlayerFactionSoldier</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>2</pawnCount>
+					<pawnChoiceCount>6</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Biscuit</thingDef>
+					<count>40</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>15</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>15</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Forbiddenarmysword</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Forbiddenarmyhalberd</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Forbiddenarmypanoply</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Forbiddenarmypanoply</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Forbiddenarmyhelmet</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Heyra_Forbiddenarmyhelmet</thingDef>
+					<stuff>Steel</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>350</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>250</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: mysterious device -->
+  <Heyra_MobileTotem_Core.label>神秘装置</Heyra_MobileTotem_Core.label>
+  
+  <!-- EN: grail -->
+  <Heyra_MobileTotem_Grail.label>鼎</Heyra_MobileTotem_Grail.label>
+  
+  <!-- EN: grail holder -->
+  <Heyra_MobileTotem_Holder.label>承载结构</Heyra_MobileTotem_Holder.label>
+  
+  <!-- EN: core part -->
+  <Heyra_MobileTotem_Thorax.label>核心区</Heyra_MobileTotem_Thorax.label>
+  
+  <!-- EN: wheel -->
+  <Heyra_MobileTotem_Wheel.label>轮子</Heyra_MobileTotem_Wheel.label>
+  
+</LanguageData>

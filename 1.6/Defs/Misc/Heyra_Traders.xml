@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ============================================================
+     Heyra Faction Traders
+     Three custom TraderKindDefs replacing vanilla neolithic defaults.
+     Heyran caravans now sell actual Heyran goods.
+     ============================================================ -->
+
+
+<!-- ==================== Caravan: Merchant ==================== -->
+<!-- General goods caravan — food, clothing, materials, jade.
+     Replaces Caravan_Neolithic_BulkGoods. -->
+
+<TraderKindDef>
+  <defName>Caravan_Heyra_Merchant</defName>
+  <label>Heyran merchant caravan</label>
+  <commonality>1</commonality>
+  <orbital>false</orbital>
+  <requestable>true</requestable>
+  <stockGenerators>
+
+    <!-- === Currency === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Silver</thingDef>
+      <countRange>800~2000</countRange>
+    </li>
+
+    <!-- === Culturally important materials === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Jade</thingDef>
+      <countRange>30~80</countRange>
+    </li>
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Gold</thingDef>
+      <countRange>8~25</countRange>
+    </li>
+
+    <!-- === Crafting materials === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Steel</thingDef>
+      <countRange>80~200</countRange>
+    </li>
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>WoodLog</thingDef>
+      <countRange>150~400</countRange>
+    </li>
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Cloth</thingDef>
+      <countRange>80~200</countRange>
+    </li>
+
+    <!-- === Heyran food === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Heyra_Biscuit</thingDef>
+      <countRange>8~20</countRange>
+    </li>
+    <li Class="StockGenerator_Category">
+      <categoryDef>FoodRaw</categoryDef>
+      <excludedCategories>
+        <li>EggsFertilized</li>
+      </excludedCategories>
+      <thingDefCountRange>2~3</thingDefCountRange>
+      <totalPriceRange>150~500</totalPriceRange>
+    </li>
+
+    <!-- === Heyran apparel (body only, exclude headgear subcategory) === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>HeyraApparel</categoryDef>
+      <excludedCategories>
+        <li>HeyraHeadgear</li>
+      </excludedCategories>
+      <thingDefCountRange>2~4</thingDefCountRange>
+      <countRange>1~2</countRange>
+    </li>
+
+    <!-- === Heyran headgear === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>HeyraHeadgear</categoryDef>
+      <thingDefCountRange>1~2</thingDefCountRange>
+      <countRange>1~2</countRange>
+    </li>
+
+    <!-- === General textiles === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>Textiles</categoryDef>
+      <thingDefCountRange>1~2</thingDefCountRange>
+      <totalPriceRange>200~600</totalPriceRange>
+      <excludedThingDefs>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Leather_Dread</li>
+      </excludedThingDefs>
+    </li>
+
+    <!-- === Medicine === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>MedicineHerbal</thingDef>
+      <countRange>5~15</countRange>
+    </li>
+
+    <!-- === Animals === -->
+    <li Class="StockGenerator_Animals">
+      <maxWildness>0.6</maxWildness>
+      <tradeTagsSell>
+        <li>AnimalFarm</li>
+        <li>AnimalPet</li>
+      </tradeTagsSell>
+      <tradeTagsBuy>
+        <li>AnimalExotic</li>
+      </tradeTagsBuy>
+      <kindCountRange>1~2</kindCountRange>
+      <countRange>2~4</countRange>
+    </li>
+
+    <!-- === Buy categories === -->
+    <li Class="StockGenerator_BuyExpensiveSimple" />
+    <li Class="StockGenerator_BuyTradeTag">
+      <tag>ExoticMisc</tag>
+    </li>
+
+  </stockGenerators>
+</TraderKindDef>
+
+
+<!-- ==================== Caravan: Armorer ==================== -->
+<!-- Military specialist caravan — weapons, armor, helmets.
+     Replaces Caravan_Neolithic_ShamanMerchant. -->
+
+<TraderKindDef>
+  <defName>Caravan_Heyra_Armorer</defName>
+  <label>Heyran armorer caravan</label>
+  <commonality>1</commonality>
+  <orbital>false</orbital>
+  <requestable>true</requestable>
+  <stockGenerators>
+
+    <!-- === Currency === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Silver</thingDef>
+      <countRange>600~1500</countRange>
+    </li>
+
+    <!-- === Military materials === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Steel</thingDef>
+      <countRange>120~300</countRange>
+    </li>
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Jade</thingDef>
+      <countRange>15~40</countRange>
+    </li>
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>ComponentIndustrial</thingDef>
+      <countRange>2~6</countRange>
+    </li>
+
+    <!-- === Heyran weapons === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>Heyra_Weapons</categoryDef>
+      <thingDefCountRange>2~4</thingDefCountRange>
+      <countRange>1~2</countRange>
+    </li>
+
+    <!-- === Heyran armor (body, exclude headgear) === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>HeyraApparel</categoryDef>
+      <excludedCategories>
+        <li>HeyraHeadgear</li>
+      </excludedCategories>
+      <thingDefCountRange>2~3</thingDefCountRange>
+      <countRange>1~2</countRange>
+    </li>
+
+    <!-- === Heyran helmets === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>HeyraHeadgear</categoryDef>
+      <thingDefCountRange>1~2</thingDefCountRange>
+      <countRange>1~2</countRange>
+    </li>
+
+    <!-- === Medicine === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>MedicineHerbal</thingDef>
+      <countRange>3~8</countRange>
+    </li>
+
+    <!-- === Buy categories === -->
+    <li Class="StockGenerator_BuyExpensiveSimple" />
+    <li Class="StockGenerator_BuyTradeTag">
+      <tag>ExoticMisc</tag>
+    </li>
+
+  </stockGenerators>
+</TraderKindDef>
+
+
+<!-- ==================== Settlement: Base Trader ==================== -->
+<!-- Full Heyran marketplace at settlements. Largest stock variety.
+     Replaces Base_Neolithic_Standard.
+     Ancient Heyra Blood available here at 0~1 (very rare, 3000 silver). -->
+
+<TraderKindDef>
+  <defName>Base_Heyra_Standard</defName>
+  <label>Heyran settlement trader</label>
+  <stockGenerators>
+
+    <!-- === Currency === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Silver</thingDef>
+      <countRange>2000~4000</countRange>
+    </li>
+
+    <!-- === Precious/Cultural materials === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Jade</thingDef>
+      <countRange>50~150</countRange>
+    </li>
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Gold</thingDef>
+      <countRange>15~50</countRange>
+    </li>
+
+    <!-- === Crafting materials === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Steel</thingDef>
+      <countRange>200~400</countRange>
+    </li>
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>WoodLog</thingDef>
+      <countRange>250~500</countRange>
+    </li>
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Cloth</thingDef>
+      <countRange>150~350</countRange>
+    </li>
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>ComponentIndustrial</thingDef>
+      <countRange>3~8</countRange>
+    </li>
+
+    <!-- === RARE: Ancient Heyra Blood (0~1) === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Heyra_Item_Seedingredient</thingDef>
+      <countRange>0~1</countRange>
+    </li>
+
+    <!-- === Psylink: Neuroformer (0~1, ~2600 silver) === -->
+    <li Class="StockGenerator_SingleDef" MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+      <thingDef>PsychicAmplifier</thingDef>
+      <countRange>0~1</countRange>
+    </li>
+
+    <!-- === Psylink: Random psycast trainers (Royalty/Biotech) === -->
+    <li Class="StockGenerator_Category" MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">
+      <categoryDef>NeurotrainersPsycast</categoryDef>
+      <thingDefCountRange>1~2</thingDefCountRange>
+      <countRange>0~1</countRange>
+    </li>
+
+    <!-- === Heyran weapons === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>Heyra_Weapons</categoryDef>
+      <thingDefCountRange>3~5</thingDefCountRange>
+      <countRange>1~2</countRange>
+    </li>
+
+    <!-- === Heyran apparel (body) === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>HeyraApparel</categoryDef>
+      <excludedCategories>
+        <li>HeyraHeadgear</li>
+      </excludedCategories>
+      <thingDefCountRange>4~7</thingDefCountRange>
+      <countRange>1~3</countRange>
+    </li>
+
+    <!-- === Heyran headgear === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>HeyraHeadgear</categoryDef>
+      <thingDefCountRange>2~4</thingDefCountRange>
+      <countRange>1~2</countRange>
+    </li>
+
+    <!-- === Heyran food === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Heyra_Biscuit</thingDef>
+      <countRange>10~25</countRange>
+    </li>
+    <li Class="StockGenerator_Category">
+      <categoryDef>FoodRaw</categoryDef>
+      <excludedCategories>
+        <li>EggsFertilized</li>
+      </excludedCategories>
+      <thingDefCountRange>3~3</thingDefCountRange>
+      <totalPriceRange>200~600</totalPriceRange>
+    </li>
+    <li Class="StockGenerator_Category">
+      <categoryDef>FoodMeals</categoryDef>
+      <thingDefCountRange>1~2</thingDefCountRange>
+      <countRange>10~30</countRange>
+    </li>
+
+    <!-- === Textiles === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>Textiles</categoryDef>
+      <thingDefCountRange>1~3</thingDefCountRange>
+      <totalPriceRange>300~800</totalPriceRange>
+      <excludedThingDefs>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Leather_Dread</li>
+      </excludedThingDefs>
+    </li>
+
+    <!-- === Raw resources === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>ResourcesRaw</categoryDef>
+      <thingDefCountRange>2~3</thingDefCountRange>
+      <totalPriceRange>200~600</totalPriceRange>
+      <excludedThingDefs>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">GravlitePanel</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">BlocksVacstone</li>
+      </excludedThingDefs>
+    </li>
+
+    <!-- === Medicine === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>MedicineHerbal</thingDef>
+      <countRange>8~20</countRange>
+    </li>
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>MedicineIndustrial</thingDef>
+      <countRange>2~6</countRange>
+    </li>
+
+    <!-- === Drugs === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>Drugs</categoryDef>
+      <thingDefCountRange>2~3</thingDefCountRange>
+      <totalPriceRange>300~800</totalPriceRange>
+    </li>
+
+    <!-- === Animals === -->
+    <li Class="StockGenerator_Animals">
+      <maxWildness>0.8</maxWildness>
+      <tradeTagsSell>
+        <li>AnimalFarm</li>
+        <li>AnimalPet</li>
+      </tradeTagsSell>
+      <tradeTagsBuy>
+        <li>AnimalExotic</li>
+      </tradeTagsBuy>
+      <kindCountRange>2~3</kindCountRange>
+      <countRange>3~6</countRange>
+    </li>
+
+    <!-- === Buy categories === -->
+    <li Class="StockGenerator_BuyExpensiveSimple" />
+    <li Class="StockGenerator_BuyTradeTag">
+      <tag>ExoticMisc</tag>
+    </li>
+    <li Class="StockGenerator_BuyTradeTag">
+      <tag>Art</tag>
+    </li>
+
+  </stockGenerators>
+</TraderKindDef>
+
+
+<!-- ==================== Visitor Trader ==================== -->
+<!-- Lighter version for visiting Heyran groups.
+     Replaces Visitor_Outlander_Standard. -->
+
+<TraderKindDef>
+  <defName>Visitor_Heyra_Standard</defName>
+  <label>Heyran visitor trader</label>
+  <stockGenerators>
+
+    <!-- === Currency === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Silver</thingDef>
+      <countRange>500~1200</countRange>
+    </li>
+
+    <!-- === Materials === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Jade</thingDef>
+      <countRange>10~30</countRange>
+    </li>
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Steel</thingDef>
+      <countRange>50~120</countRange>
+    </li>
+
+    <!-- === Heyran goods (small selection) === -->
+    <li Class="StockGenerator_Category">
+      <categoryDef>HeyraApparel</categoryDef>
+      <thingDefCountRange>1~3</thingDefCountRange>
+      <countRange>1~1</countRange>
+    </li>
+    <li Class="StockGenerator_Category">
+      <categoryDef>Heyra_Weapons</categoryDef>
+      <thingDefCountRange>1~2</thingDefCountRange>
+      <countRange>1~1</countRange>
+    </li>
+
+    <!-- === Food === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>Heyra_Biscuit</thingDef>
+      <countRange>5~12</countRange>
+    </li>
+
+    <!-- === Medicine === -->
+    <li Class="StockGenerator_SingleDef">
+      <thingDef>MedicineHerbal</thingDef>
+      <countRange>3~8</countRange>
+    </li>
+
+    <!-- === Buy categories === -->
+    <li Class="StockGenerator_BuyExpensiveSimple" />
+
+  </stockGenerators>
+</TraderKindDef>
+
+</Defs>

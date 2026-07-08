@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ate bean pulp -->
+  <Heyra_Atebeanpulp.stages.ate_bean_pulp.label>吃了豆渣</Heyra_Atebeanpulp.stages.ate_bean_pulp.label>
+  <!-- EN: I had to eat bean pulp. It was so bland in taste, and the texture was disgusting too. -->
+  <Heyra_Atebeanpulp.stages.ate_bean_pulp.description>我刚被迫吃了生豆渣。它寡淡无味，口感恶心。</Heyra_Atebeanpulp.stages.ate_bean_pulp.description>
+  
+  <!-- EN: Horns missing -->
+  <Heyra_Missinghornthought.stages.Horns_missing.label>失去了角</Heyra_Missinghornthought.stages.Horns_missing.label>
+  <!-- EN: I lost my horns. This makes me no different than a Rong! -->
+  <Heyra_Missinghornthought.stages.Horns_missing.description>我的角丢了。这让我与戎人无异！</Heyra_Missinghornthought.stages.Horns_missing.description>
+  
+</LanguageData>

@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Alien_Heyra</defName>
+		<label>Heyra</label>
+		<description>Heyras settled in Rimworld a long time ago. They possess a unique psychic ability to, occasionally, hear whispers in their heads. Despite these whispers being mostly scattered words, Heyras believe they are the oracles of God. We do not know if these whispers are real. But it is confirmed that Heyras have a higher psychic sensitivity than humans.</description>
+		<alienRace>
+			<generalSettings>
+			<!-- 1.4 Bio -->
+			<reproduction>
+				<femaleFertilityAgeFactor>
+				  <points>
+					<li>(14, 0)</li>
+					<li>(20, 1)</li>
+					<li>(48, 1)</li>
+					<li>(50, 0.5)</li>
+					<li>(80, 0.1)</li>
+					<li>(120, 0.02)</li>
+					<li>(140, 0)</li>
+				  </points>
+				</femaleFertilityAgeFactor>			
+			  </reproduction>
+				<maleGenderProbability>0</maleGenderProbability>
+				<growthAges>
+				  <li>7</li>
+				  <li>10</li>
+				  <li>13</li>
+				</growthAges>
+				<raceGenes MayRequire="Ludeon.RimWorld.Biotech">
+					<li><defName>Heyra_Gene_EfficientDigestion</defName></li>
+					<li><defName>Heyra_Gene_AllDaughterLineage</defName></li>
+					<li><defName>Heyra_Gene_PrehensileTail</defName></li>
+					<li><defName>Heyra_Gene_DibbaSota</defName></li>
+					<li><defName>Heyra_Gene_NaturalGrace</defName></li>
+					<li><defName>Heyra_Gene_NarrowComfort</defName></li>
+					<li><defName>Heyra_Gene_ExoticBeauty</defName></li>
+					<li><defName>Heyra_Gene_OralTradition</defName></li>
+					<li><defName>Heyra_Gene_AwakeningPotential</defName></li>
+					<li><defName>Heyra_Gene_FlameTouched</defName></li>
+				</raceGenes>
+				<lovinIntervalHoursFromAge>
+				  <points>
+					<li>(16, 4)</li>
+					<li>(23, 4)</li>
+					<li>(30, 12)</li>
+					<li>(50, 48)</li>
+					<li>(75, 72)</li>
+				  </points>
+				</lovinIntervalHoursFromAge>
+				<immuneToAge>false</immuneToAge>
+				<humanRecipeImport>true</humanRecipeImport>
+				<canLayDown>true</canLayDown>
+				<immuneToXenophobia>false</immuneToXenophobia>
+				<disallowedTraits>
+					<li>
+						<defName>Pyromaniac</defName>
+					</li>
+					<li>
+						<defName>CreepyBreathing</defName>
+					</li>
+					<li>
+						<defName>ShootingAccuracy</defName>
+					</li>					
+				</disallowedTraits>
+				<chemicalSettings>
+				</chemicalSettings>
+				<factionRelations>
+					 <!-- Used to make Factions of your Race be Friends or enemies with other factions -->
+				</factionRelations>
+				<maxDamageForSocialfight>6</maxDamageForSocialfight>
+				<allowHumanBios>true</allowHumanBios>
+				<alienPartGenerator>
+				<borderScale>2.5</borderScale>
+				<atlasScale>6</atlasScale>
+					<headTypes>
+						<li>Heyra_Head_Female01</li>
+						<li>Heyra_Head_Female02</li>
+						<li>Heyra_Head_Female03</li>
+						<li>Heyra_Head_Female04</li>
+						<li>Heyra_Head_Female05</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<headOffset>(-0.045, -0.06)</headOffset>
+					<colorChannels>
+					    <li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>20</weight>
+										<only>(245,245,245)</only>
+									</li>
+									<li>
+										<weight>20</weight>
+										<only>(235,230,225)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(255,250,255)</only>
+									</li>
+									<li>
+										<weight>3</weight>
+										<only>(227,171,144)</only>
+									</li>
+									<li>
+										<weight>2</weight>
+										<only>(217,161,124)</only>
+									</li>
+									<li>
+										<weight>2</weight>
+										<only>(207,151,114)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>(180,130,90)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(229, 121, 88, 255)</only>
+									</li>
+							    	<li>
+										<weight>10</weight>
+										<only>RGBA(245, 174, 185, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(110, 170, 230, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(130, 100, 75, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(90, 70, 60, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(85, 82, 80, 255)</only>
+									</li>
+									<li>
+										<weight>2</weight>
+										<only>RGBA(245, 245, 255, 255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<customDrawSize>(1, 1)</customDrawSize>
+					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
+					<customPortraitDrawSize>(1.1, 1.1)</customPortraitDrawSize>
+					<bodyAddons>
+						<li>
+							<drawSize>1</drawSize>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<path>Heyra/Horns/Horn</path>
+							<!-- [1.6 FIX] bodyPart and drawnInBed moved to <conditions> block in HAR 1.6.
+							     Posture must explicitly set all three fields — unspecified fields default to false. -->
+							<conditions>
+								<BodyPart>
+									<bodyPart>Heyra_Horn</bodyPart>
+								</BodyPart>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>true</drawnInBed>
+								</Posture>
+							</conditions>
+							<!-- [1.6 FIX] CutoutComplex requires mask textures (*m.png) which horns lack.
+							     Changed to Cutout since horns don't use color channels. -->
+							<shaderType>Cutout</shaderType>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<defaultOffset>Center</defaultOffset>
+							<debug>false</debug>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Female>(0,-0.02)</Female>
+										<Child MayRequire="ludeon.rimworld.biotech">(0,-0.02)</Child>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0,-0.35)</Baby>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Female>(0,-0.048)</Female>
+										<Child MayRequire="ludeon.rimworld.biotech">(0,-0.048)</Child>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0,-0.07)</Baby>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Female>(0,-0.05)</Female>
+										<Child MayRequire="ludeon.rimworld.biotech">(0,-0.05)</Child>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.05,-0.36)</Baby>
+									</bodyTypes>
+								</east>
+							</offsets>
+							<!-- [1.6 FIX] Removed Heyra_HornHediff entry — it's redundant
+							     (same texture as addon default path) and its presence poisons
+							     the lookup: HAR's GetBestGraphic() picks the FIRST matching
+							     hediffGraphics entry and stops.  Because HediffGiver_Birthday
+							     applies Heyra_HornHediff to the horn body part, and prosthetic
+							     surgery only removes other AddedBodyPartBase hediffs (not plain
+							     hediffs), Heyra_HornHediff is always present alongside biohorn
+							     hediffs.  Being first in the list, it always matched first,
+							     blocking all biohorn/dragon entries from ever being selected. -->
+							<hediffGraphics>
+								<Heyra_DragonHediff>Heyra/Horns/DHorn</Heyra_DragonHediff>
+								<Heyra_Biohorn0A>Heyra/Horns/HornA</Heyra_Biohorn0A>
+								<Heyra_Biohorn1A>Heyra/Horns/Horn1</Heyra_Biohorn1A>
+								<Heyra_Biohorn2A>Heyra/Horns/Horn2</Heyra_Biohorn2A>
+								<Heyra_Biohorn3A>Heyra/Horns/Horn3</Heyra_Biohorn3A>
+								<Heyra_Biohorn4A>Heyra/Horns/Horn4</Heyra_Biohorn4A>
+								<Heyra_Biohorn5A>Heyra/Horns/Horn5</Heyra_Biohorn5A>
+								<Heyra_Biohorn0D>Heyra/Horns/DHornA</Heyra_Biohorn0D>
+								<Heyra_Biohorn1D>Heyra/Horns/DHorn1</Heyra_Biohorn1D>
+								<Heyra_Biohorn2D>Heyra/Horns/DHorn2</Heyra_Biohorn2D>
+								<Heyra_Biohorn3D>Heyra/Horns/DHorn3</Heyra_Biohorn3D>
+								<!--Heyra_Hediff_Monsterform>Heyra/Horns/HornBlank</Heyra_Hediff_Monsterform-->
+							</hediffGraphics>
+							<backstoryGraphics>
+								<!--<ExampleBackstoryDragonchild>Heyra/Horns/DHorn</ExampleBackstoryDragonchild>-->
+								<Heyra_Story_Coral>Heyra/Horns/HornCoral</Heyra_Story_Coral>
+							</backstoryGraphics>
+						</li>
+						<li>
+							<drawSize>1</drawSize>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<path>Heyra/Tails/Heyra_Tail</path>
+							<shaderType>CutoutComplex</shaderType>
+							<inFrontOfBody>false</inFrontOfBody>
+							<!-- [1.6 FIX] drawnInBed and hiddenUnderApparelTag moved to conditions block in HAR 1.6.
+							     Posture must explicitly set all three fields — unspecified fields default to false. -->
+							<conditions>
+								<BodyPart>
+									<bodyPart>Heyra_Tail</bodyPart>
+								</BodyPart>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>false</drawnInBed>
+								</Posture>
+								<Apparel>
+									<hiddenUnderApparelTag>
+										<li>Heyra_ApparelTypeHmaal</li>
+										<li>Heyra_ApparelTypeHmaah</li>
+									</hiddenUnderApparelTag>
+								</Apparel>
+							</conditions>
+							<debug>false</debug>
+							<colorChannel>hair</colorChannel>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Female>(0,0)</Female>
+										<Child MayRequire="ludeon.rimworld.biotech">(0,0)</Child>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0,0)</Baby>										
+									</bodyTypes>
+								</south>
+								<north>
+									<!-- Was -0.285 (behind body). North-facing shows the pawn's back,
+									     so tail must render in front of body + apparel layers.
+									     +0.4 → Y = -0.3 + 0.4 = +0.1 (in front of body). -->
+									<layerOffset>0.4</layerOffset>
+									<bodyTypes>
+										<Female>(0,0)</Female>
+										<Child MayRequire="ludeon.rimworld.biotech">(0,0)</Child>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0,0)</Baby>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Female>(0,0)</Female>
+										<Child MayRequire="ludeon.rimworld.biotech">(0,0)</Child>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0,0)</Baby>
+									</bodyTypes>
+								</east>
+							</offsets>
+							<hediffGraphics>
+								<Heyra_Hediff_Monsterform>Heyra/Tails/Heyra_Tailblank</Heyra_Hediff_Monsterform>
+							</hediffGraphics>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>Heyra/Head/</head>
+				<body>Heyra/Body/</body>
+				<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+				<stump>Heyra/Head/Heyra_Stump</stump>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+                            <li>HeyraHair</li>
+                        </styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<thoughtSettings>
+			</thoughtSettings>
+			<relationSettings>
+			</relationSettings>
+			<raceRestriction>
+				<apparelList>
+					<li>Heyra_Hierarchattire</li>
+					<li>Heyra_Bellclips</li>
+					<li>Heyra_Shamanattire</li>
+					<li>Heyra_Shamanheadwear</li>
+					<li>Heyra_Prophetessattire</li>
+					<li>Heyra_Prophetesscrown</li>
+					<li>Heyra_Embroideredshirt</li>
+					<li>Heyra_Jacketskirt</li>
+					<li>Heyra_Shortcoat</li>
+					<li>Heyra_Bubleskirt</li>
+					<li>Heyra_Longdress</li>
+					<li>Heyra_Jianghusuit</li>
+					<li>Heyra_Sleeveless</li>
+					<li>Heyra_Cloak</li>
+					<li>Heyra_Wintercoat</li>
+					<li>Heyra_Stealthsuit</li>
+					<li>Heyra_Eldritchrobe</li>
+					<li>Heyra_Toolbelt</li>
+					<li>Heyra_Wok</li>
+					<li>Heyra_Soldierarmor</li>
+					<li>Heyra_Forbiddenarmypanoply</li>
+					<li>Heyra_Headband</li>
+					<li>Heyra_Earmuffs</li>
+					<li>Heyra_Soldierhelmet</li>
+					<li>Heyra_Forbiddenarmyhelmet</li>
+					<li>Heyra_Hmaal</li>
+					<li>Heyra_Hmaah</li>
+					<li>Heyra_Tightsuit</li>
+					<li>Heyra_Hmahl</li>
+					<li>Heyra_Hmahh</li>
+					<li>Heyra_Snipersuit</li>
+					<li>Heyra_Aimbot</li>
+					<li>Heyra_Rong_Berserkerarmor</li>
+					<li>Heyra_Rong_Ulfhednararmor</li>
+					<li>Heyra_Rong_MaskA</li>
+					<li>Heyra_Rong_MaskB</li>
+					<li>Heyra_Rainhat</li>
+					<li>Heyra_Raincoat</li>
+					<li>Heyra_Scalearmor</li>
+					<li>Heyra_Swordmasterarmor</li>
+				</apparelList>
+				<whiteApparelList>
+					<li>Apparel_ShieldBelt</li>
+					<li>Apparel_SmokepopBelt</li>
+					<li>Apparel_KidRomper</li>
+					<li>Apparel_KidShirt</li>
+					<li>Apparel_KidPants</li>
+					<li>Apparel_KidParka</li>
+					<li>Apparel_KidTribal</li>
+					<li>Apparel_KidHelmet</li>
+				</whiteApparelList>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<xenotypeList MayRequire="Ludeon.RimWorld.Biotech">
+					<li>Heyra_Xenotype_TellerBlessed</li>
+				</xenotypeList>
+				<geneList MayRequire="Ludeon.RimWorld.Biotech">
+					<li>Heyra_Gene_EfficientDigestion</li>
+					<li>Heyra_Gene_AllDaughterLineage</li>
+					<li>Heyra_Gene_PrehensileTail</li>
+					<li>Heyra_Gene_DibbaSota</li>
+					<li>Heyra_Gene_NaturalGrace</li>
+					<li>Heyra_Gene_NarrowComfort</li>
+					<li>Heyra_Gene_ExoticBeauty</li>
+					<li>Heyra_Gene_OralTradition</li>
+					<li>Heyra_Gene_AwakeningPotential</li>
+					<li>Heyra_Gene_FlameTouched</li>
+				</geneList>
+				<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+				  <li>BeardStyle</li>
+				  <li>HairStyle</li>
+				  <li>Fur</li>
+				  <li>SkinColorOverride</li>
+				  <li>EyeColor</li>
+				  <li>Tail</li>
+				  <li>BodyType</li>
+				  <li>Ears</li>
+				  <li>Nose</li>
+				  <li>Jaw</li>
+				  <li>Headbone</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+				  <li>HairColor</li>
+				  <li>Melanin</li>
+				</blackEndoCategories>				
+				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+				<foodList>
+                <li>Heyra_Item_Activator_Thunder</li>
+            </foodList>
+			</raceRestriction>
+		</alienRace>
+		<!--=============================================================================================================================-->
+		<statBases>
+			<MarketValue>2750</MarketValue>
+			<Flammability>1</Flammability>
+			<MoveSpeed>4.55</MoveSpeed>
+			<ComfyTemperatureMax>28</ComfyTemperatureMax>
+			<ComfyTemperatureMin>16</ComfyTemperatureMin>
+			<ImmunityGainSpeed>1.0</ImmunityGainSpeed>
+			<CarryingCapacity>75</CarryingCapacity>
+			<MeatAmount>80</MeatAmount>
+			<LeatherAmount>50</LeatherAmount>
+			<Mass>65</Mass>
+			<PsychicSensitivity>1.0</PsychicSensitivity>
+			<MeleeDodgeChance>0.9</MeleeDodgeChance>	
+			<SocialImpact>1</SocialImpact>
+			<GeneralLaborSpeed>1.0</GeneralLaborSpeed>
+			<DrugSynthesisSpeed>1.0</DrugSynthesisSpeed>
+			<MedicalTendSpeed>1.0</MedicalTendSpeed>
+			<MedicalTendQuality>1.0</MedicalTendQuality>
+			<MedicalSurgerySuccessChance>1.0</MedicalSurgerySuccessChance>
+			<RoyalFavorValue>6</RoyalFavorValue>
+		</statBases>
+		<!--=====================================================================================================================-->
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>horns</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+		</tools>
+		<!--=============================================================================================================================-->
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<!-- [1.6 FIX] renderTree is required in 1.5+. Without it, the game falls back to a default
+			     render tree that includes PawnRenderNode_AnimalPart, which crashes on humanlike pawns
+			     because they lack CurKindLifeStage. This was the root cause of all pawns being invisible. -->
+			<renderTree>Humanlike</renderTree>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>300</lifeExpectancy>
+			<leatherDef>Leather_Human</leatherDef>
+			<bloodDef>Filth_Blood</bloodDef>
+			<bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+			<fleshType>Heyra_Flesh</fleshType>
+			<nameCategory>HumanStandard</nameCategory>
+			<nameGenerator>Heyra_PawnNameGen</nameGenerator>
+			<nameGeneratorFemale>Heyra_PawnNameGen</nameGeneratorFemale>
+			<hasGenders>True</hasGenders>
+			<body>HeyraBody</body>
+			<baseHungerRate>0.75</baseHungerRate>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+				  <li>(0.5, 0)</li>
+				  <li>(1, 1)</li>
+				  <li>(1.01, 0.02)</li>
+				  <li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+					<customHeadDrawSize>(1.2,1.2)</customHeadDrawSize>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+				  <def>HumanlikeChild</def>
+				  <minAge>4</minAge>
+				  <headOffset>(0.085,0.0)</headOffset>
+				  <customDrawSize>(0.9,0.9)</customDrawSize>
+				  <customHeadDrawSize>(1.2,1.2)</customHeadDrawSize>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>9</minAge>
+					<headOffset>(0.054,-0.07)</headOffset>
+					<customDrawSize>(0.9,0.9)</customDrawSize>
+					<customHeadDrawSize>(1.2,1.2)</customHeadDrawSize>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeTeenager</def>
+					<minAge>13</minAge>
+					<headOffset>(-0.045,-0.03)</headOffset>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>16</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<!-- [1.6 FIX] Pawn_Melee_Punch_HitBuilding was removed in 1.5+. Commenting out
+			     to use the default inherited from BasePawn, same approach as MoeLotl/Wolfein. -->
+			<!-- <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding> -->
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
+						<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>  
+						<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
+						<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
+						<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					  <li>(14,0)</li>
+					  <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,20)</li>
+					<li>(16,120)</li>
+					<li>(20,100)</li>
+					<li>(30,30)</li>
+					<li>(60,5)</li>
+					<li>(80,1)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>Human</li>
+				<li>OrganicStandard</li>
+				<li>HeyraHornBuffGiver</li>
+				<li>HeyraTailBuffGiver</li>
+			</hediffGiverSets>
+		</race>
+	</AlienRace.ThingDef_AlienRace>
+	
+	<FleshTypeDef>
+		<defName>Heyra_Flesh</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<damageEffecter>Damage_HitFlesh</damageEffecter>
+		<genericWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundFleshA</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundFleshB</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundFleshC</texture>
+			</li>
+		</genericWounds>
+		<bandagedWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedA</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedB</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/BandagedC</texture>
+			</li>
+		</bandagedWounds>
+	</FleshTypeDef>
+	
+	
+</Defs>

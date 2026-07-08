@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Rong tribe -->
+  <Heyra_Rong_Faction.label>戎族部落</Heyra_Rong_Faction.label>
+  <!-- EN: Rong people live in their underground settlements, it is difficult for us to know their exact location. -->
+  <Heyra_Rong_Faction.description>戎族人生活在地下都市。难以得知他们确切的位置。</Heyra_Rong_Faction.description>
+  <!-- EN: Lord of Pleasure -->
+  <Heyra_Rong_Faction.leaderTitle>欢愉之主</Heyra_Rong_Faction.leaderTitle>
+  <!-- EN: Rong -->
+  <Heyra_Rong_Faction.pawnSingular>TODO</Heyra_Rong_Faction.pawnSingular>
+  <!-- EN: Rongs -->
+  <Heyra_Rong_Faction.pawnsPlural>戎族</Heyra_Rong_Faction.pawnsPlural>
+  
+  <!-- EN: Rong tribe -->
+  <Heyra_Rong_SubFaction.label>戎族守军（聆族任务用）</Heyra_Rong_SubFaction.label>
+  <!-- EN: Rong people live in their underground settlements, it is difficult for us to know their exact location. -->
+  <Heyra_Rong_SubFaction.description>这个隐藏阵营是聆族任务所必须的。不会对游戏产生其他影响。</Heyra_Rong_SubFaction.description>
+  <!-- EN: Lord of Pleasure -->
+  <Heyra_Rong_SubFaction.leaderTitle>TODO</Heyra_Rong_SubFaction.leaderTitle>
+  <!-- EN: Rong -->
+  <Heyra_Rong_SubFaction.pawnSingular>TODO</Heyra_Rong_SubFaction.pawnSingular>
+  <!-- EN: Rongs -->
+  <Heyra_Rong_SubFaction.pawnsPlural>TODO</Heyra_Rong_SubFaction.pawnsPlural>
+  
+</LanguageData>

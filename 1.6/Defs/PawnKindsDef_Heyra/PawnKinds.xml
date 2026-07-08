@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<PawnKindDef Abstract="True" Name="HeyraBasePawnKind">
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+		<invNutrition>3.00</invNutrition>
+	</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Playable</defName>
+    <label>Example Heyra</label>
+    <race>Alien_Heyra</race>
+	<combatPower>30</combatPower>
+    <isFighter>false</isFighter>
+	<defaultFactionType>PlayerColony</defaultFactionType>
+	<apparelTags>
+			<li>Heyra_ApparelTypeN</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>140~580</apparelMoney>
+	<weaponTags>
+			<li>None</li>
+	</weaponTags>
+		<weaponMoney>0~0</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryGeneral</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>	
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Aristocrat</defName>
+    <label>Heyran aristocrat</label>
+    <race>Alien_Heyra</race>
+	<combatPower>30</combatPower>
+    <isFighter>false</isFighter>
+	<defaultFactionType>Heyra_RenoFaction</defaultFactionType>
+	<apparelTags>
+			<li>Heyra_ApparelTypeI</li>
+			<li>Heyra_ApparelTypeE</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>200~1580</apparelMoney>
+	<weaponTags>
+	</weaponTags>
+		<weaponMoney>0~0</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+				<li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryNobleC</li>
+                <li>Heyra_BackstoryNoble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>	
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Trader</defName>
+    <label>Heyran trader</label>
+    <race>Alien_Heyra</race>
+	<combatPower>30</combatPower>
+    <isFighter>false</isFighter>
+	<trader>true</trader>
+	<defaultFactionType>Heyra_RenoFaction</defaultFactionType>
+	<apparelTags>
+			<li>Heyra_ApparelTypeI</li>
+			<li>Heyra_ApparelTypeE</li>
+			<li>Heyra_ApparelTypeGeneralHead</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>400~1580</apparelMoney>
+	<weaponTags>
+	</weaponTags>
+		<weaponMoney>0~0</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+				<li>Heyra_BackstoryNobleC</li>
+                <li>Heyra_BackstoryTrader</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>	
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Freeman</defName>
+    <label>Heyran freeman</label>
+    <race>Alien_Heyra</race>
+	<combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+	<defaultFactionType>Heyra_RenoFaction</defaultFactionType>
+	<apparelTags>
+			<li>Heyra_ApparelTypeN</li>
+			<li>Heyra_ApparelTypeGeneralHead</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>91~1480</apparelMoney>
+	<weaponTags>
+	        <li>MedievalMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
+	</weaponTags>
+		<weaponMoney>100~400</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryHumble</li>
+				<li>Heyra_BackstoryGeneral</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Artisan</defName>
+    <label>Heyran artisan</label>
+    <race>Alien_Heyra</race>
+	<combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+	<defaultFactionType>Heyra_RenoFaction</defaultFactionType>
+	<apparelTags>
+		<li>Heyra_ApparelTypeL</li>
+	</apparelTags>
+	<apparelRequired>
+		<li>Heyra_Toolbelt</li>
+    </apparelRequired>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>91~2480</apparelMoney>
+	<weaponTags>
+	        <li>None</li>
+	</weaponTags>
+		<weaponMoney>0~0</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+				<li>Heyra_BackstoryGeneral</li>
+                <li>Heyra_BackstoryCraftsman</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Cook</defName>
+    <label>Heyran cook</label>
+    <race>Alien_Heyra</race>
+	<combatPower>45</combatPower>
+    <isFighter>false</isFighter>
+	<defaultFactionType>Heyra_RenoFaction</defaultFactionType>
+	<apparelTags>
+		<li>Heyra_ApparelTypeL</li>
+		<li>Heyra_ApparelTypeWok</li>
+	</apparelTags>
+	 <apparelRequired>
+		<li>Heyra_Wok</li>
+    </apparelRequired>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>91~880</apparelMoney>
+	<weaponTags>
+	        <li>None</li>
+	</weaponTags>
+		<weaponMoney>0~0</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+			    <li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryHumble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_BattleCook</defName>
+    <label>Heyran battle cook</label>
+    <race>Alien_Heyra</race>
+	<combatPower>55</combatPower>
+    <isFighter>true</isFighter>
+	<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+	<apparelTags>
+		<li>Heyra_ApparelTypeJianghusuit</li>
+		<li>Heyra_ApparelTypeGeneralHead</li>
+	</apparelTags>
+	 <apparelRequired>
+		<li>Heyra_Jianghusuit</li>
+		<li>Heyra_Wok</li>
+    </apparelRequired>
+		<apparelMoney>200~980</apparelMoney>
+	<weaponTags>
+	        <li>Heyra_MeleeTypeN</li>
+	</weaponTags>
+		<weaponMoney>200~400</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+				<li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryHumble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Leader</defName>
+    <label>Heyran Supreme Matriarch</label>
+    <race>Alien_Heyra</race>
+	<combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+	<factionLeader>true</factionLeader>
+	<defaultFactionType>Heyra_RenoFaction</defaultFactionType>
+	<apparelTags>
+			<li>Heyra_ApparelTypeI</li>
+	</apparelTags>
+	<apparelRequired>
+      <li>Heyra_Hierarchattire</li>
+    </apparelRequired>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>300~1580</apparelMoney>
+	<weaponTags>
+	        <li>Heyra_MeleeTypeR</li>
+	</weaponTags>
+		<weaponMoney>400~400</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryNoble</li>
+                <li>Heyra_BackstoryDragon</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Hierarch</defName>
+    <label>Heyran hierarch</label>
+    <race>Alien_Heyra</race>
+	<combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+	<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+	<apparelTags>
+			<li>Heyra_ApparelTypeHierarch</li>
+			<li>Heyra_ApparelTypeI</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>2300~2580</apparelMoney>
+	<weaponTags>
+	        <li>None</li>
+	</weaponTags>
+		<weaponMoney>0~0</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryNoble</li>
+                <li>Heyra_BackstoryDragon</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Shaman</defName>
+    <label>Heyran shaman</label>
+    <race>Alien_Heyra</race>
+	<combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+	<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+	<apparelTags>
+			<li>Heyra_ApparelTypeShaman</li>
+			<li>Heyra_ApparelTypeI</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>2300~2580</apparelMoney>
+	<weaponTags>
+	        <li>None</li>
+	</weaponTags>
+		<weaponMoney>0~0</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryNoble</li>
+                <li>Heyra_BackstoryDragon</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Prophetess</defName>
+    <label>Heyran prophetess</label>
+    <race>Alien_Heyra</race>
+	<combatPower>40</combatPower>
+    <isFighter>false</isFighter>
+	<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+	<apparelTags>
+			<li>Heyra_ApparelTypeProphetess</li>
+			<li>Heyra_ApparelTypeI</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>2300~2580</apparelMoney>
+	<weaponTags>
+	        <li>None</li>
+	</weaponTags>
+		<weaponMoney>0~0</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryNoble</li>
+                <li>Heyra_BackstoryDragon</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_LightInfantry</defName>
+    <label>Light Infantry</label>
+    <race>Alien_Heyra</race>
+	<combatPower>50</combatPower>
+    <isFighter>true</isFighter>
+	<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+	<skills>
+      <li>
+        <skill>Melee</skill>
+        <range>5~12</range>
+      </li>
+    </skills>
+	<apparelRequired>
+      <li>Heyra_Jianghusuit</li>
+    </apparelRequired>
+	<apparelTags>
+			<li>Heyra_ApparelTypeA</li>
+			<li>Heyra_ApparelTypeJianghu</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<apparelMoney>400~1580</apparelMoney>
+	<weaponTags>
+			<li>Heyra_MeleeTypeN</li>
+	</weaponTags>
+	<weaponMoney>200~400</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryHumble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>	
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Breacher</defName>
+    <label>Light Infantry</label>
+    <race>Alien_Heyra</race>
+	<combatPower>65</combatPower>
+    <isFighter>true</isFighter>
+	<skills>
+      <li>
+        <skill>Melee</skill>
+        <range>7~12</range>
+      </li>
+    </skills>
+	<canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+	<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+	<apparelTags>
+			<li>Heyra_ApparelTypeA</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<apparelMoney>400~1580</apparelMoney>
+	<weaponTags>
+			<li>Heyra_MeleeTypeB</li>
+	</weaponTags>
+	<weaponMoney>200~400</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryHumble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>	
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Archer</defName>
+    <label>Heyran archeress</label>
+    <race>Alien_Heyra</race>
+	<combatPower>50</combatPower>
+    <isFighter>true</isFighter>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~12</range>
+      </li>
+    </skills>
+	<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+	<apparelRequired>
+      <li>Heyra_Jianghusuit</li>
+    </apparelRequired>
+	<apparelTags>
+			<li>Heyra_ApparelTypeA</li>
+			<li>Heyra_ApparelTypeJianghu</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<apparelMoney>400~1580</apparelMoney>
+	<weaponTags>
+			<li>NeolithicRangedDecent</li>
+            <li>NeolithicRangedChief</li>
+	</weaponTags>
+	<weaponMoney>90~400</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryHumble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>	
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Ranger</defName>
+    <label>Heyran ranger</label>
+    <race>Alien_Heyra</race>
+	<combatPower>60</combatPower>
+    <isFighter>true</isFighter>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~16</range>
+      </li>
+    </skills>
+	<defaultFactionType>Heyra_RenoFaction</defaultFactionType>
+	<apparelTags>
+		<li>Heyra_ApparelTypeStealthsuit</li>
+		<li>Heyra_ApparelTypeGeneralHead</li>
+	</apparelTags>
+	<apparelRequired>
+      <li>Heyra_Stealthsuit</li>
+    </apparelRequired>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+	<apparelMoney>600~1580</apparelMoney>
+	<weaponTags>
+			<li>Heyra_RangedTypeN</li>
+	</weaponTags>
+	<weaponMoney>200~400</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryHumble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Escort</defName>
+    <label>Heyran escort</label>
+    <race>Alien_Heyra</race>
+	<combatPower>60</combatPower>
+    <isFighter>true</isFighter>
+	<skills>
+      <li>
+        <skill>Melee</skill>
+        <range>6~10</range>
+      </li>
+    </skills>
+	<defaultFactionType>Heyra_RenoFaction</defaultFactionType>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<apparelTags>
+		<li>Heyra_ApparelTypeJianghu</li>
+	</apparelTags>
+	<apparelRequired>
+      <li>Heyra_Jianghusuit</li>
+    </apparelRequired>
+	<apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+	<apparelMoney>400~1280</apparelMoney>
+	<weaponTags>
+			<li>Heyra_MeleeTypeSword</li>
+	</weaponTags>
+	<weaponMoney>200~400</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryHumble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Swordmaster</defName>
+    <label>Heyran sword master</label>
+    <race>Alien_Heyra</race>
+	<combatPower>80</combatPower>
+    <isFighter>true</isFighter>
+	<skills>
+      <li>
+        <skill>Melee</skill>
+        <range>12~17</range>
+      </li>
+    </skills>
+	<defaultFactionType>Heyra_RenoFaction</defaultFactionType>
+	<itemQuality>Excellent</itemQuality>
+	<apparelTags>
+		<li>Heyra_ApparelTypeSwordmaster</li>
+		<li>Heyra_ApparelTypeJianghu</li>
+	</apparelTags>
+	<apparelRequired>
+      <li>Heyra_Swordmasterarmor</li>
+    </apparelRequired>
+	<biocodeWeaponChance>1.0</biocodeWeaponChance>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+	<apparelMoney>1000~2580</apparelMoney>
+	<weaponTags>
+			<li>Heyra_MeleeTypeSwordmaster</li>
+	</weaponTags>
+	<weaponMoney>600~1200</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryHumble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_Necromancer</defName>
+    <label>Heyran necromancer</label>
+    <race>Alien_Heyra</race>
+	<combatPower>100</combatPower>
+    <isFighter>true</isFighter>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~14</range>
+      </li>
+    </skills>
+	<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<apparelTags>
+		<li>Heyra_ApparelTypeI</li>
+	</apparelTags>
+	<apparelRequired>
+      <li>Heyra_Eldritchrobe</li>
+    </apparelRequired>
+	<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+	<apparelMoney>400~1580</apparelMoney>
+	<weaponTags>
+			<li>Heyra_RangedTypeR</li>
+	</weaponTags>
+	<weaponMoney>605~1200</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryGeneral</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_ForbiddenArmyMeleeA</defName>
+    <label>Heyran Forbidden Army</label>
+    <race>Alien_Heyra</race>
+	<combatPower>140</combatPower>
+    <isFighter>true</isFighter>
+	<skills>
+      <li>
+        <skill>Melee</skill>
+        <range>10~16</range>
+      </li>
+    </skills>
+	<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+	<itemQuality>Excellent</itemQuality>
+	<apparelTags>
+	        <li>Heyra_ApparelTypeI</li>
+			<li>Heyra_ApparelTypeF</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<apparelMoney>1500~3580</apparelMoney>
+	<weaponTags>
+			<li>Heyra_MeleeTypeR</li>
+	</weaponTags>
+		<weaponMoney>600~2550</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryHumble</li>
+				<li>Heyra_BackstoryNobleC</li>
+				<li>Heyra_BackstoryNoble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>	
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_ForbiddenArmyBreacher</defName>
+    <label>Heyran Forbidden Army</label>
+    <race>Alien_Heyra</race>
+	<combatPower>120</combatPower>
+    <isFighter>true</isFighter>
+	<isGoodBreacher>true</isGoodBreacher>
+	<skills>
+      <li>
+        <skill>Melee</skill>
+        <range>10~16</range>
+      </li>
+    </skills>
+	<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+	<itemQuality>Excellent</itemQuality>
+	<apparelTags>
+	        <li>Heyra_ApparelTypeI</li>
+			<li>Heyra_ApparelTypeF</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<apparelMoney>1500~3580</apparelMoney>
+	<weaponTags>
+			<li>Heyra_MeleeTypeB</li>
+	</weaponTags>
+		<weaponMoney>600~2550</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryHumble</li>
+				<li>Heyra_BackstoryNobleC</li>
+				<li>Heyra_BackstoryNoble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>
+
+<PawnKindDef ParentName="HeyraBasePawnKind">
+    <defName>Heyra_ForbiddenArmyRangedA</defName>
+    <label>Heyra Forbidden Army Arbalester</label>
+    <race>Alien_Heyra</race>
+	<combatPower>130</combatPower>
+    <isFighter>true</isFighter>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>10~16</range>
+      </li>
+    </skills>
+	<defaultFactionType>Heyra_TradFaction</defaultFactionType>
+	<itemQuality>Excellent</itemQuality>
+	<apparelTags>
+	        <li>Heyra_ApparelTypeI</li>
+			<li>Heyra_ApparelTypeF</li>
+	</apparelTags>
+	<apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+		<apparelMoney>1500~3580</apparelMoney>
+	<weaponTags>
+			<li>Heyra_RangedTypeR</li>
+	</weaponTags>
+		<weaponMoney>605~2550</weaponMoney>		
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+				<li>Heyra_BackstoryGeneralC</li>
+                <li>Heyra_BackstoryGeneral</li>
+				<li>Heyra_BackstoryHumble</li>
+				<li>Heyra_BackstoryNobleC</li>
+				<li>Heyra_BackstoryNoble</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
+</PawnKindDef>	
+	
+<PawnKindDef>
+    <defName>Heyra_HornedSpectreUnarmed</defName>
+    <label>Summoned Horned Spectre</label>
+    <defaultFactionType>Heyra_TradFaction</defaultFactionType>
+    <race>HornedSpectreA</race>
+	<alternateGraphicChance>0.66</alternateGraphicChance>
+    <alternateGraphics>
+      <li><texPath>Monster/HornedSpectre/HornedSpectre2</texPath></li>
+      <li><texPath>Monster/HornedSpectre/HornedSpectre3</texPath></li>
+    </alternateGraphics>
+	<lifeStages>
+      <li>
+	    <bodyGraphicData>
+          <texPath>Monster/HornedSpectre/HornedSpectre1</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Monster/HornedSpectre/Dessicated_HornedSpectre</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+		</li>
+    </lifeStages>
+    <combatPower>100</combatPower>
+    <apparelMoney>
+      <min>-10</min>
+      <max>-10</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>-10</min>
+      <max>-10</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>None</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+
+
+<PawnKindDef>
+    <defName>Heyra_HornedSpectreArmed</defName>
+    <label>Summoned Horned Spectre</label>
+    <defaultFactionType>Heyra_TradFaction</defaultFactionType>
+    <race>HornedSpectreA</race>
+	<alternateGraphicChance>0.66</alternateGraphicChance>
+    <alternateGraphics>
+      <li><texPath>Monster/HornedSpectre/HornedSpectre2</texPath></li>
+      <li><texPath>Monster/HornedSpectre/HornedSpectre3</texPath></li>
+    </alternateGraphics>
+	<lifeStages>
+      <li>
+	    <bodyGraphicData>
+          <texPath>Monster/HornedSpectre/HornedSpectre1</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Monster/HornedSpectre/Dessicated_HornedSpectre</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+		</li>
+    </lifeStages>
+    <combatPower>120</combatPower>
+    <apparelMoney>
+      <min>-10</min>
+      <max>-10</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>200</min>
+      <max>200</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Heyra_MeleeTypeW</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+
+</Defs>

@@ -1,0 +1,11 @@
+{
+  "TextureModID": "foxed.heyrathehorned",
+  "ItemDefName": "Heyra_Witheredsword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.222891569,
+  "OffY": 0.004016064,
+  "BladeStart": 0.09638554,
+  "BladeEnd": 0.62249,
+  "MeleeWeaponType": 2
+}

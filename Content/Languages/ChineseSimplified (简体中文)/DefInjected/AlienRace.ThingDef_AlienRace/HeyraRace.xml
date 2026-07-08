@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Alien_Heyra.label>聆族</Alien_Heyra.label>
+  <Alien_Heyra.description>聆族人很久之前就在边缘世界定居了。他们有一种特殊的能力，能够偶尔听到神秘的耳语。大多数时候，这些话语仅由零星单字组成，难以理解。但是聆族人把它们当作神谕。这些声音的真实性不得而知，但是可以确定的是聆族人的确拥有更高的心灵敏感度。</Alien_Heyra.description>
+  <Alien_Heyra.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>skin</Alien_Heyra.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Alien_Heyra.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>hair</Alien_Heyra.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Alien_Heyra.tools.0.label>左拳</Alien_Heyra.tools.0.label>
+  <Alien_Heyra.tools.1.label>右拳</Alien_Heyra.tools.1.label>
+  <Alien_Heyra.tools.2.label>牙齿</Alien_Heyra.tools.2.label>
+  <Alien_Heyra.tools.3.label>角</Alien_Heyra.tools.3.label>
+
+
+</LanguageData>

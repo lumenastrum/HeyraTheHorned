@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Heyra the Horned -->
+  <HeyraTheHorned.label>角之海拉</HeyraTheHorned.label>
+  <!-- EN: Adding ranged attack to heyra form changing ability. -->
+  <HeyraTheHorned.description>为海拉的变身能力添加远程攻击。</HeyraTheHorned.description>
+
+</LanguageData>

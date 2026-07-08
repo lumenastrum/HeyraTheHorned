@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: blood -->
+  <HornedSpectre_Blood.label>血液</HornedSpectre_Blood.label>
+  
+  <!-- EN: Horned Spectre -->
+  <HornedSpectreA.label>受唤孽物</HornedSpectreA.label>
+  <!-- EN: Being neither dead or alive, the Horned Spectres do not feel anything. They act like animals and will surely rip their enemies apart. -->
+  <HornedSpectreA.description>它活着？还是死的？关于这些可怕的东西从哪儿来，我们一点头绪也没有。</HornedSpectreA.description>
+  <!-- EN: left hand -->
+  <HornedSpectreA.tools.left_hand.label>左拳</HornedSpectreA.tools.left_hand.label>
+  <!-- EN: right hand -->
+  <HornedSpectreA.tools.right_hand.label>右拳</HornedSpectreA.tools.right_hand.label>
+  <!-- EN: teeth -->
+  <HornedSpectreA.tools.teeth.label>牙齿</HornedSpectreA.tools.teeth.label>
+  
+</LanguageData>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Heyra_Beancategory</defName>
+		<label>milksoy</label>
+		<parent>Foods</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/ThingCategories/Foods</iconPath>
+	</ThingCategoryDef>
+
+	<ThingDef>
+    <defName>Heyra_Biscuit</defName>
+    <label>compressed biscuits</label>
+    <description>Calorie-dense, vacuum-packed survival food. It never rots, and can be enjoyed without a dining table. Great for traveling.</description>
+    <graphicData>
+      <texPath>Item/Heyra_Biscuit</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>0</Beauty>
+	  <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>15</MarketValue>
+      <Mass>0.10</Mass>
+      <WorkToMake>250</WorkToMake>
+      <Nutrition>0.45</Nutrition>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>25</stackLimit>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <pathCost>14</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+    <ingestible>
+      <foodType>Meal</foodType>
+      <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <chairSearchRadius>10</chairSearchRadius>
+	  <joy>0.20</joy>
+      <joyKind>Gluttonous</joyKind>
+    </ingestible>
+    <allowedArchonexusCount>40</allowedArchonexusCount>
+  </ThingDef>
+  
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>Heyra_Beanpulp</defName>
+    <label>bean pulp</label>
+    <description>Leftovers from bean milk production, mainly composed of the insoluble part of milksoy puree. While it is safe for humans to eat, no one would really enjoy it. Also, it will rot very soon without refrigeration.</description>
+    <thingCategories>
+      <li>Heyra_Beancategory</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Item/Heyranbeanpulp</texPath>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.015</Mass>
+      <Nutrition>0.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.01</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <ingestible>
+      <foodType>Kibble</foodType>
+      <preferability>RawBad</preferability>
+      <tasteThought>Heyra_Atebeanpulp</tasteThought>
+      <optimalityOffsetHumanlikes>-29</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>16</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <comps>
+		<li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <allowedArchonexusCount>200</allowedArchonexusCount>
+  </ThingDef>
+
+
+
+</Defs>

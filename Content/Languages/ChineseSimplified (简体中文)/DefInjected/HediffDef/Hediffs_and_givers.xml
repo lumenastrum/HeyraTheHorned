@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: scion of dragon -->
+  <Heyra_DragonHediff.label>龙裔</Heyra_DragonHediff.label>
+  <!-- EN: Some Heyras were born with their dibba-sota even stronger than others. -->
+  <Heyra_DragonHediff.description>一些聆族人拥有比同族更强的心灵感应能力。</Heyra_DragonHediff.description>
+  <!-- EN: scion of dragon -->
+  <Heyra_DragonHediff.labelNoun>龙裔</Heyra_DragonHediff.labelNoun>
+  
+  <!-- EN: dibba-sota -->
+  <Heyra_HornHediff.label>神通力</Heyra_HornHediff.label>
+  <!-- EN: Heryas' horns can capture the subtlest pulses of psychic energy. -->
+  <Heyra_HornHediff.description>聆族人的角可以捕捉到最轻微的心灵脉冲。</Heyra_HornHediff.description>
+  <!-- EN: dibba-sota -->
+  <Heyra_HornHediff.labelNoun>神通力</Heyra_HornHediff.labelNoun>
+  
+  <!-- EN: vengeful spectre -->
+  <Vengefulspectre.label>持怨恶灵</Vengefulspectre.label>
+  <!-- EN: Horned Spectres are much stronger than normal Heyras. -->
+  <Vengefulspectre.description>这个东西的速度和力量都强于人类。这真的是一个活物吗？</Vengefulspectre.description>
+  <!-- EN: vengeful spectre -->
+  <Vengefulspectre.labelNoun>持怨恶灵</Vengefulspectre.labelNoun>
+  
+</LanguageData>

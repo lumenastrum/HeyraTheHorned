@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: settlement of Heyras -->
+  <Heyra_PlayerFactionGeneral.label>聆族据点</Heyra_PlayerFactionGeneral.label>
+  <!-- EN: A settlement of Heyras. -->
+  <Heyra_PlayerFactionGeneral.description>聆族据点</Heyra_PlayerFactionGeneral.description>
+  <!-- EN: colonist -->
+  <Heyra_PlayerFactionGeneral.pawnSingular>聆族</Heyra_PlayerFactionGeneral.pawnSingular>
+  <!-- EN: colonists -->
+  <Heyra_PlayerFactionGeneral.pawnsPlural>聆族</Heyra_PlayerFactionGeneral.pawnsPlural>
+  
+  <!-- EN: settlement of Heyras -->
+  <Heyra_PlayerFactionSoldier.label>聆族据点</Heyra_PlayerFactionSoldier.label>
+  <!-- EN: A settlement of Heyras. -->
+  <Heyra_PlayerFactionSoldier.description>聆族据点</Heyra_PlayerFactionSoldier.description>
+  <!-- EN: colonist -->
+  <Heyra_PlayerFactionSoldier.pawnSingular>聆族</Heyra_PlayerFactionSoldier.pawnSingular>
+  <!-- EN: colonists -->
+  <Heyra_PlayerFactionSoldier.pawnsPlural>聆族</Heyra_PlayerFactionSoldier.pawnsPlural>
+  
+  <!-- EN: broad-minded Heyran faction -->
+  <Heyra_RenoFaction.label>开明的聆族</Heyra_RenoFaction.label>
+  <!-- EN: A more progressive Heyra faction. They still keep most Heyran traditions but are open to new things. Generally, they are more friendly and easier to cooperate with. -->
+  <Heyra_RenoFaction.description>一个更开放的聆族人部落。他们尊重传统，但也接受了很多现代的思想。一般来说，和他们打交道不会太难。</Heyra_RenoFaction.description>
+  <!-- EN: Supreme Matriarch -->
+  <Heyra_RenoFaction.leaderTitle>至高祭司</Heyra_RenoFaction.leaderTitle>
+  <!-- EN: Heyra -->
+  <Heyra_RenoFaction.pawnSingular>聆族</Heyra_RenoFaction.pawnSingular>
+  <!-- EN: Heyras -->
+  <Heyra_RenoFaction.pawnsPlural>聆族</Heyra_RenoFaction.pawnsPlural>
+  
+  <!-- EN: conservative Heyran faction -->
+  <Heyra_TradFaction.label>守旧的聆族</Heyra_TradFaction.label>
+  <!-- EN: A country consists of old-fashioned Heyras. They have been keeping their customs or beliefs for countless generations. Generally, they are less willing to cooperate with foreigners. -->
+  <Heyra_TradFaction.description>保守的聆族人组成的国家。他们世代守护着他们引以为傲的传统。一般来说，他们会比较排斥和外族人交流。</Heyra_TradFaction.description>
+  <!-- EN: Supreme Matriarch -->
+  <Heyra_TradFaction.leaderTitle>至高祭司</Heyra_TradFaction.leaderTitle>
+  <!-- EN: Heyra -->
+  <Heyra_TradFaction.pawnSingular>聆族</Heyra_TradFaction.pawnSingular>
+  <!-- EN: Heyras -->
+  <Heyra_TradFaction.pawnsPlural>聆族</Heyra_TradFaction.pawnsPlural>
+  
+</LanguageData>

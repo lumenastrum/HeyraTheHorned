@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Heyra_BowprojectileCE</defName>
+    <label>Heyran bow arrow</label>
+    <graphicData>
+		<shaderType Inherit="False">TransparentPostLight</shaderType>
+		<drawSize>4.0</drawSize>
+      <texPath>Weapon/Heyra_Bowprojectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>ArrowHighVelocity</damageDef>
+      <damageAmountBase>24</damageAmountBase>
+	  <armorPenetrationBase>0.9</armorPenetrationBase>
+      <stoppingPower>1.2</stoppingPower>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef--> 
+  
+  <!-- VEF ExpandableProjectileDef: beam projectile with GaussProjectile rendering.
+       Updated from VFECore.* to VEF.Weapons.* namespace for VEF 1.6. -->
+  <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>Heyra_Bowprojectile</defName>
+		<label>plasma beam</label>
+		<thingClass>VEF.Weapons.GaussProjectile</thingClass>
+		<graphicData>
+			<texPath>Weapon/Heyra_Bowprojectile</texPath>
+			<texPathFadeOut>Weapon/Heyra_Bowprojectile_Fadeout</texPathFadeOut>
+		</graphicData>
+		<projectile>
+			<damageDef>ArrowHighVelocity</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+		<reachMaxRangeAlways>true</reachMaxRangeAlways>
+		<minDistanceToAffect>3.2</minDistanceToAffect>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>60</lifeTimeDuration>
+		<widthScaleFactor>0.3</widthScaleFactor>
+		<heightScaleFactor>1.6</heightScaleFactor>
+		<startingPositionOffset>(0,0,3)</startingPositionOffset>
+		<totalSizeScale>1.0</totalSizeScale>
+		<tickFrameRate>3</tickFrameRate>
+		<finalTickFrameRate>2</finalTickFrameRate>
+		<tickDamageRate>5</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<stopWhenHit>false</stopWhenHit>
+		<stopWhenHitAt>
+			<li>MineableSteel</li>
+			<li>CollapsedRocks</li>
+			<li>MineableSilver</li>
+			<li>MineableGold</li>
+			<li>MineableUranium</li>
+			<li>MineablePlasteel</li>
+			<li>MineableJade</li>
+			<li>MineableComponentsIndustrial</li>
+			<li>RaisedRocks</li>
+			<li>Sandstone</li>
+			<li>SmoothedSandstone</li>
+			<li>Granite</li>
+			<li>SmoothedGranite</li>
+			<li>Limestone</li>
+			<li>SmoothedLimestone</li>
+			<li>Slate</li>
+			<li>SmoothedSlate</li>
+			<li>Marble</li>
+			<li>SmoothedMarble</li>
+		</stopWhenHitAt>
+	</VEF.Weapons.ExpandableProjectileDef>
+  
+  <ThingDef ParentName="BaseWeapon">
+    <defName>Heyra_Celestialwhisper</defName>
+    <label>Celestial Whisper</label>
+    <description>A mysterious bow-like weapon that fires plasma beams capable of penetrating plasteel plates like paper, all while making almost no sound. The creator of this masterpiece remains unknown.</description>
+	<techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>Heyra_Masterpieces</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <Mass>1.0</Mass>
+	   <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>1.0</AccuracyShort>
+      <AccuracyMedium>1.4</AccuracyMedium>
+      <AccuracyLong>1.2</AccuracyLong>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <graphicData>
+      <texPath>Weapon/Heyra_Celestialwhisper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>Heyra_RangedTypeM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Heyra_Bowprojectile</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>26.0</range>
+        <soundCast>InfernoCannon_Fire</soundCast>
+		<soundCastTail>GunTail_Heavy</soundCastTail>
+		<muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseWeapon">
+    <defName>Heyra_Swordmastersword</defName>
+    <label>Khanzio sword</label>
+    <description>An exquisite sword crafted by the master blade smiths of Khanzio. It is as light as a feather. The materials and techniques used to forge it have been kept secret by Khanzio for hundreds of years.</description>
+	<techLevel>Medieval</techLevel>
+	<smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+	<thingCategories Inherit="False">
+		<li>Heyra_Weapons</li>
+	</thingCategories>
+	<inspectorTabs>
+		<li>ITab_Art</li>
+	</inspectorTabs>	
+	<graphicData>
+      <texPath>Weapon/Heyra_Swordmastersword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags>
+      <li>Heyra_MeleeTypeSwordmaster</li>
+    </weaponTags>
+	<tradeability>None</tradeability>
+    <statBases>
+	  <MarketValue>600</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+	<weaponClasses>
+      <li>MeleePiercer</li>
+	  <li>Melee</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Heyra_Speedyslash</li>
+        </capacities>
+        <power>20</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+    </tools>	
+	<comps>
+	  <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseWeapon">
+    <defName>Heyra_Withereddaggeraxe</defName>
+	<destroyOnDrop>true</destroyOnDrop>
+	<tradeability>None</tradeability>
+    <label>Withered dagger-axe</label>
+    <description>A severely corroded Heyran-style polearm. Whatever edge it once had has long since dulled.</description>
+    <graphicData>
+      <texPath>Weapon/Heyra_Withereddaggeraxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>Heyra_Weapons</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <statBases>
+      <MarketValue>180</MarketValue>
+      <Mass>2.0</Mass>
+    </statBases>
+    <weaponTags>
+      <li>Heyra_MeleeTypeW</li>
+    </weaponTags>
+    <thingSetMakerTags></thingSetMakerTags>
+    <equippedAngleOffset>-30</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+		<armorPenetration>0.0</armorPenetration>
+        <cooldownTime>1.4</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+		<armorPenetration>0.0</armorPenetration>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseWeapon">
+    <defName>Heyra_Witheredsword</defName>
+	<destroyOnDrop>true</destroyOnDrop>
+	<tradeability>None</tradeability>
+    <label>Withered sword</label>
+    <description>A severely corroded Heyran-style sword. Rust has eaten deep into the blade, leaving it brittle and dull.</description>
+    <graphicData>
+      <texPath>Weapon/Heyra_Witheredsword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>Heyra_Weapons</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <statBases>
+      <MarketValue>180</MarketValue>
+      <Mass>2.0</Mass>
+    </statBases>
+    <weaponTags>
+      <li>Heyra_MeleeTypeW</li>
+    </weaponTags>
+    <thingSetMakerTags></thingSetMakerTags>
+    <equippedAngleOffset>-60</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+		<armorPenetration>0.0</armorPenetration>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+		<armorPenetration>0.0</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+		<armorPenetration>0.3</armorPenetration>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGunWithQuality">
+	<defName>Heyra_Hiddenbow</defName>
+    <label>hidden ballista</label>
+    <description>A concealed ballista mechanism that launches arrows at tremendous speed.</description>
+    <graphicData>
+      <texPath>Heyra/Head/Heyra_Stump</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>400</MarketValue>
+      <Mass>5.5</Mass>
+      <AccuracyTouch>0.18</AccuracyTouch>
+      <AccuracyShort>0.26</AccuracyShort>
+      <AccuracyMedium>0.26</AccuracyMedium>
+      <AccuracyLong>0.18</AccuracyLong>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Medieval</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>Heyra_RangedTypeHiddenbow</li>
+    </weaponTags>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Arrow_Recurve</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>14</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Bow_Recurve</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>7.6</cooldownTime>
+      </li>
+    </tools>
+    <relicChance>0</relicChance>
+  </ThingDef>
+ 
+ <ThingDef ParentName="BaseWeapon">
+    <defName>Heyra_Dismembererblade</defName>
+	<destroyOnDrop>true</destroyOnDrop>
+	<tradeability>None</tradeability>
+    <label>Dismemberer straight blade</label>
+    <description>A cruel, straight-edged blade wielded by the Dismemberer. Its edge is honed to a monomolecular sharpness that can sever limbs with ease.</description>
+    <graphicData>
+      <texPath>Weapon/Dismemberer_Sword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>Heyra_Weapons</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <statBases>
+      <MarketValue>180</MarketValue>
+      <Mass>2.0</Mass>
+    </statBases>
+    <weaponTags>
+      <li>Heyra_MeleeTypeMechMelee</li>
+    </weaponTags>
+    <thingSetMakerTags></thingSetMakerTags>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>0.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>24</power>
+		<armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.4</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  
+</Defs>

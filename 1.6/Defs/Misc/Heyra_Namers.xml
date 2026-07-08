@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ====================== FACTION NAME MAKERS ====================== -->
+
+  <!-- Cult of Knowing - fixed quest faction name -->
+  <RulePackDef>
+    <defName>Heyra_Namer_Cultofknowing</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Cult of Knowing</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Rong faction names - dark, martial, steppe-influenced -->
+  <RulePackDef>
+    <defName>Heyra_Namer_Rong</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- Name patterns (weighted: combinatorial appears more often) -->
+        <li>r_name->The [RongAdj] [RongGroup]</li>
+        <li>r_name->The [RongAdj] [RongGroup]</li>
+        <li>r_name->Cult of [RongConcept]</li>
+        <li>r_name->[FixedRong]</li>
+        <!-- Adjectives -->
+        <li>RongAdj->Iron</li>
+        <li>RongAdj->Black</li>
+        <li>RongAdj->Crimson</li>
+        <li>RongAdj->Scarred</li>
+        <li>RongAdj->Severed</li>
+        <li>RongAdj->Bleeding</li>
+        <li>RongAdj->Burning</li>
+        <li>RongAdj->Howling</li>
+        <li>RongAdj->Shattered</li>
+        <li>RongAdj->Hollow</li>
+        <!-- Groups -->
+        <li>RongGroup->Horde</li>
+        <li>RongGroup->Pack</li>
+        <li>RongGroup->Fang</li>
+        <li>RongGroup->Clan</li>
+        <li>RongGroup->Warband</li>
+        <li>RongGroup->Host</li>
+        <li>RongGroup->Circle</li>
+        <!-- Concepts (for "Cult of...") -->
+        <li>RongConcept->Steel</li>
+        <li>RongConcept->Pleasure</li>
+        <li>RongConcept->Pain</li>
+        <li>RongConcept->Ash</li>
+        <li>RongConcept->the Severed</li>
+        <li>RongConcept->Ruin</li>
+        <li>RongConcept->the Abyss</li>
+        <li>RongConcept->Iron</li>
+        <!-- Fixed names -->
+        <li>FixedRong->The Severed</li>
+        <li>FixedRong->Daughters of Iron</li>
+        <li>FixedRong->The Flayed Host</li>
+        <li>FixedRong->The Broken Oath</li>
+        <li>FixedRong->Claw of the Deep</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Conservative Heyra faction names - traditional, temple-oriented, reverent -->
+  <RulePackDef>
+    <defName>Heyra_Namer_Heyratrad</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- Name patterns -->
+        <li>r_name->The [TradAdj] [TradInst]</li>
+        <li>r_name->The [TradAdj] [TradInst]</li>
+        <li>r_name->[TradTitle] of [TradConcept]</li>
+        <li>r_name->[FixedTrad]</li>
+        <!-- Adjectives -->
+        <li>TradAdj->Eternal</li>
+        <li>TradAdj->Sacred</li>
+        <li>TradAdj->Silent</li>
+        <li>TradAdj->Ancient</li>
+        <li>TradAdj->Hallowed</li>
+        <li>TradAdj->Celestial</li>
+        <li>TradAdj->Veiled</li>
+        <li>TradAdj->Radiant</li>
+        <li>TradAdj->Golden</li>
+        <li>TradAdj->Crimson</li>
+        <!-- Institutions -->
+        <li>TradInst->Temple</li>
+        <li>TradInst->Sanctum</li>
+        <li>TradInst->Covenant</li>
+        <li>TradInst->Court</li>
+        <li>TradInst->Order</li>
+        <li>TradInst->Conclave</li>
+        <li>TradInst->Mandate</li>
+        <li>TradInst->Dominion</li>
+        <!-- Titles (for "X of Y" pattern) -->
+        <li>TradTitle->Realm</li>
+        <li>TradTitle->Shrine</li>
+        <li>TradTitle->Temple</li>
+        <li>TradTitle->Covenant</li>
+        <li>TradTitle->Order</li>
+        <li>TradTitle->Seat</li>
+        <!-- Concepts -->
+        <li>TradConcept->the Teller</li>
+        <li>TradConcept->Heyra</li>
+        <li>TradConcept->the Horn</li>
+        <li>TradConcept->Whispered Truth</li>
+        <li>TradConcept->the Crimson Veil</li>
+        <li>TradConcept->the Eternal Flame</li>
+        <li>TradConcept->Sacred Rites</li>
+        <li>TradConcept->the Old Ways</li>
+        <!-- Fixed names (includes the original two) -->
+        <li>FixedTrad->Realm of Heyra</li>
+        <li>FixedTrad->The Great Temple of Heyra</li>
+        <li>FixedTrad->The Veiled Court</li>
+        <li>FixedTrad->Disciples of the Horn</li>
+        <li>FixedTrad->The Teller's Chosen</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Broad-minded Heyra faction names - progressive, open, nature-influenced -->
+  <RulePackDef>
+    <defName>Heyra_Namer_Heyrareno</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- Name patterns -->
+        <li>r_name->The [RenoAdj] [RenoInst]</li>
+        <li>r_name->The [RenoAdj] [RenoInst]</li>
+        <li>r_name->[FixedReno]</li>
+        <!-- Adjectives -->
+        <li>RenoAdj->Jade</li>
+        <li>RenoAdj->Azure</li>
+        <li>RenoAdj->Open</li>
+        <li>RenoAdj->Golden</li>
+        <li>RenoAdj->Free</li>
+        <li>RenoAdj->Verdant</li>
+        <li>RenoAdj->Bright</li>
+        <li>RenoAdj->New</li>
+        <li>RenoAdj->Silver</li>
+        <li>RenoAdj->Moonlit</li>
+        <!-- Institutions -->
+        <li>RenoInst->Accord</li>
+        <li>RenoInst->League</li>
+        <li>RenoInst->Alliance</li>
+        <li>RenoInst->Circle</li>
+        <li>RenoInst->Gathering</li>
+        <li>RenoInst->Pact</li>
+        <li>RenoInst->Company</li>
+        <li>RenoInst->Assembly</li>
+        <!-- Fixed names -->
+        <li>FixedReno->Daughters of the Dawn</li>
+        <li>FixedReno->The Open Path</li>
+        <li>FixedReno->The Jade Accord</li>
+        <li>FixedReno->Sisterhood of the New Moon</li>
+        <li>FixedReno->The Lotus Circle</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- ====================== SETTLEMENT NAME MAKERS ====================== -->
+
+  <!-- Heyra settlement names - Chinese-influenced eastern fantasy, graceful -->
+  <RulePackDef>
+    <defName>Heyra_Namer_Settlement</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- Combinatorial: Prefix + Suffix (weighted higher for variety) -->
+        <li>r_name->[HSetPre] [HSetSuf]</li>
+        <li>r_name->[HSetPre] [HSetSuf]</li>
+        <!-- Fixed romanized Chinese-ish names -->
+        <li>r_name->[HSetFixed]</li>
+        <!-- Prefixes - nature, grace, eastern imagery -->
+        <li>HSetPre->Jade</li>
+        <li>HSetPre->Lotus</li>
+        <li>HSetPre->Silk</li>
+        <li>HSetPre->Crane</li>
+        <li>HSetPre->Peach</li>
+        <li>HSetPre->Plum</li>
+        <li>HSetPre->Willow</li>
+        <li>HSetPre->Orchid</li>
+        <li>HSetPre->Frost</li>
+        <li>HSetPre->Dawn</li>
+        <li>HSetPre->Ember</li>
+        <li>HSetPre->Azure</li>
+        <li>HSetPre->Crimson</li>
+        <li>HSetPre->Golden</li>
+        <li>HSetPre->Moonlit</li>
+        <li>HSetPre->Cedar</li>
+        <li>HSetPre->Pine</li>
+        <li>HSetPre->Autumn</li>
+        <li>HSetPre->Lily</li>
+        <li>HSetPre->Pearl</li>
+        <li>HSetPre->Silver</li>
+        <li>HSetPre->Ivory</li>
+        <li>HSetPre->Mist</li>
+        <li>HSetPre->Phoenix</li>
+        <!-- Suffixes - settlement types, natural features -->
+        <li>HSetSuf->Gate</li>
+        <li>HSetSuf->Rest</li>
+        <li>HSetSuf->Hollow</li>
+        <li>HSetSuf->Pavilion</li>
+        <li>HSetSuf->Landing</li>
+        <li>HSetSuf->Garden</li>
+        <li>HSetSuf->Crossing</li>
+        <li>HSetSuf->Haven</li>
+        <li>HSetSuf->Terrace</li>
+        <li>HSetSuf->Valley</li>
+        <li>HSetSuf->Ferry</li>
+        <li>HSetSuf->Reach</li>
+        <li>HSetSuf->Springs</li>
+        <li>HSetSuf->Shade</li>
+        <li>HSetSuf->Bridge</li>
+        <li>HSetSuf->Dell</li>
+        <li>HSetSuf->Bluff</li>
+        <!-- Fixed romanized names (single-word, evocative) -->
+        <li>HSetFixed->Qinglian</li>
+        <li>HSetFixed->Yunshan</li>
+        <li>HSetFixed->Baiyu</li>
+        <li>HSetFixed->Lingfeng</li>
+        <li>HSetFixed->Lanxiu</li>
+        <li>HSetFixed->Meihua</li>
+        <li>HSetFixed->Fenglin</li>
+        <li>HSetFixed->Tianmu</li>
+        <li>HSetFixed->Qiuhe</li>
+        <li>HSetFixed->Yuechi</li>
+        <li>HSetFixed->Cuiwei</li>
+        <li>HSetFixed->Ruilan</li>
+        <li>HSetFixed->Zhulin</li>
+        <li>HSetFixed->Heyin</li>
+        <li>HSetFixed->Mingxia</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Rong settlement names - dark, underground, martial, steppe-influenced -->
+  <RulePackDef>
+    <defName>Heyra_Namer_Settlement_Rong</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- Combinatorial (weighted higher) -->
+        <li>r_name->[RSetPre] [RSetSuf]</li>
+        <li>r_name->[RSetPre] [RSetSuf]</li>
+        <!-- Fixed steppe-influenced names -->
+        <li>r_name->[RSetFixed]</li>
+        <!-- Prefixes - dark, underground, martial -->
+        <li>RSetPre->Iron</li>
+        <li>RSetPre->Black</li>
+        <li>RSetPre->Blood</li>
+        <li>RSetPre->Ash</li>
+        <li>RSetPre->Stone</li>
+        <li>RSetPre->Dark</li>
+        <li>RSetPre->Wolf</li>
+        <li>RSetPre->Bone</li>
+        <li>RSetPre->Shadow</li>
+        <li>RSetPre->Storm</li>
+        <li>RSetPre->Rust</li>
+        <li>RSetPre->Ember</li>
+        <li>RSetPre->Slag</li>
+        <li>RSetPre->Thorn</li>
+        <li>RSetPre->Cinder</li>
+        <!-- Suffixes - underground/martial settlement types -->
+        <li>RSetSuf->Hold</li>
+        <li>RSetSuf->Pit</li>
+        <li>RSetSuf->Den</li>
+        <li>RSetSuf->Gorge</li>
+        <li>RSetSuf->Fang</li>
+        <li>RSetSuf->Root</li>
+        <li>RSetSuf->Maw</li>
+        <li>RSetSuf->Gate</li>
+        <li>RSetSuf->Depths</li>
+        <li>RSetSuf->Burrow</li>
+        <li>RSetSuf->Hollow</li>
+        <li>RSetSuf->Cairn</li>
+        <!-- Fixed Mongol/Turkic-influenced names -->
+        <li>RSetFixed->Khar Gol</li>
+        <li>RSetFixed->Temur Khot</li>
+        <li>RSetFixed->Darkhan</li>
+        <li>RSetFixed->Ordu</li>
+        <li>RSetFixed->Burkhan</li>
+        <li>RSetFixed->Tulgat</li>
+        <li>RSetFixed->Bayan Gol</li>
+        <li>RSetFixed->Khashaat</li>
+        <li>RSetFixed->Zuunmod</li>
+        <li>RSetFixed->Naran</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- ====================== IDEOLOGY NAME MAKERS (Ideology DLC) ====================== -->
+
+  <!-- Heyra ideology namer - graceful, nature-and-philosophy themed -->
+  <RulePackDef>
+    <defName>Heyra_NamerIdeo</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ideoName->[HIdeoFirst] [HIdeoLast]</li>
+        <li>r_ideoAdjective->Heyran</li>
+        <li>r_memberName->disciple</li>
+        <!-- Hyphen prefixes - used by IdeoFoundation_Deity for variant names -->
+        <li>hyphenPrefix->Neo</li>
+        <li>hyphenPrefix->True</li>
+        <li>hyphenPrefix->Pure</li>
+        <li>hyphenPrefix->Grand</li>
+        <li>hyphenPrefix->High</li>
+        <!-- First words - evocative concepts -->
+        <li>HIdeoFirst->Jade</li>
+        <li>HIdeoFirst->Lotus</li>
+        <li>HIdeoFirst->Crimson</li>
+        <li>HIdeoFirst->Moonlit</li>
+        <li>HIdeoFirst->Silk</li>
+        <li>HIdeoFirst->Orchid</li>
+        <li>HIdeoFirst->Celestial</li>
+        <li>HIdeoFirst->Sacred</li>
+        <li>HIdeoFirst->Crane</li>
+        <li>HIdeoFirst->Willow</li>
+        <li>HIdeoFirst->Pearl</li>
+        <li>HIdeoFirst->Golden</li>
+        <li>HIdeoFirst->Azure</li>
+        <li>HIdeoFirst->Autumn</li>
+        <li>HIdeoFirst->Frost</li>
+        <li>HIdeoFirst->Dawn</li>
+        <li>HIdeoFirst->Plum</li>
+        <li>HIdeoFirst->Silver</li>
+        <li>HIdeoFirst->Mist</li>
+        <li>HIdeoFirst->Eternal</li>
+        <!-- Last words - doctrines, philosophies -->
+        <li>HIdeoLast->Path</li>
+        <li>HIdeoLast->Harmony</li>
+        <li>HIdeoLast->Teaching</li>
+        <li>HIdeoLast->Way</li>
+        <li>HIdeoLast->Doctrine</li>
+        <li>HIdeoLast->Creed</li>
+        <li>HIdeoLast->Truth</li>
+        <li>HIdeoLast->Covenant</li>
+        <li>HIdeoLast->Order</li>
+        <li>HIdeoLast->Rite</li>
+        <li>HIdeoLast->Wisdom</li>
+        <li>HIdeoLast->Faith</li>
+        <li>HIdeoLast->Mandate</li>
+        <li>HIdeoLast->Virtue</li>
+        <li>HIdeoLast->Tradition</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Heyra festival namer - seasonal, nature-themed celebrations -->
+  <RulePackDef>
+    <defName>Heyra_NamerFestival</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ritualName->Festival of Blossoms</li>
+        <li>r_ritualName->Moonrise Gathering</li>
+        <li>r_ritualName->Rite of Renewal</li>
+        <li>r_ritualName->Plum Wine Festival</li>
+        <li>r_ritualName->Harvest Moon Celebration</li>
+        <li>r_ritualName->Night of Lanterns</li>
+        <li>r_ritualName->Festival of the First Frost</li>
+        <li>r_ritualName->Spring Awakening</li>
+        <li>r_ritualName->Autumn Remembrance</li>
+        <li>r_ritualName->Ceremony of Whispers</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Heyra leader title maker - all-female race, priestess/matriarch themed -->
+  <RulePackDef>
+    <defName>Heyra_LeaderTitleMaker</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->High Priestess</li>
+        <li>r_leaderTitle->Matriarch</li>
+        <li>r_leaderTitle->Oracle</li>
+        <li>r_leaderTitle->Seeress</li>
+        <li>r_leaderTitle->First Disciple</li>
+        <li>r_leaderTitle->Hierophant</li>
+        <li>r_leaderTitle->Grand Matriarch</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Rong ideology namer - dark, martial, hedonistic -->
+  <RulePackDef>
+    <defName>Heyra_Rong_NamerIdeo</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ideoName->[RIdeoFirst] [RIdeoLast]</li>
+        <li>r_ideoAdjective->Rong</li>
+        <li>r_memberName->thrall</li>
+        <!-- Hyphen prefixes - used by IdeoFoundation_Deity for variant names -->
+        <li>hyphenPrefix->Neo</li>
+        <li>hyphenPrefix->True</li>
+        <li>hyphenPrefix->Dark</li>
+        <li>hyphenPrefix->War</li>
+        <li>hyphenPrefix->Black</li>
+        <!-- First words - dark, martial concepts -->
+        <li>RIdeoFirst->Iron</li>
+        <li>RIdeoFirst->Blood</li>
+        <li>RIdeoFirst->Severed</li>
+        <li>RIdeoFirst->Black</li>
+        <li>RIdeoFirst->Burning</li>
+        <li>RIdeoFirst->Hollow</li>
+        <li>RIdeoFirst->Shattered</li>
+        <li>RIdeoFirst->Steel</li>
+        <li>RIdeoFirst->Crimson</li>
+        <li>RIdeoFirst->Scarred</li>
+        <li>RIdeoFirst->Ash</li>
+        <li>RIdeoFirst->Storm</li>
+        <!-- Last words - doctrines -->
+        <li>RIdeoLast->Creed</li>
+        <li>RIdeoLast->Rite</li>
+        <li>RIdeoLast->Pact</li>
+        <li>RIdeoLast->Code</li>
+        <li>RIdeoLast->Oath</li>
+        <li>RIdeoLast->Law</li>
+        <li>RIdeoLast->Way</li>
+        <li>RIdeoLast->Doctrine</li>
+        <li>RIdeoLast->Path</li>
+        <li>RIdeoLast->Covenant</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Rong festival namer - dark, martial rites -->
+  <RulePackDef>
+    <defName>Heyra_Rong_NamerFestival</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ritualName->Rite of Iron</li>
+        <li>r_ritualName->Blood Moon Feast</li>
+        <li>r_ritualName->The Burning Night</li>
+        <li>r_ritualName->Trial of Blades</li>
+        <li>r_ritualName->Festival of Chains</li>
+        <li>r_ritualName->Steel Reckoning</li>
+        <li>r_ritualName->Night of Howling</li>
+        <li>r_ritualName->The Scarring</li>
+        <li>r_ritualName->Rite of Severance</li>
+        <li>r_ritualName->Forge Night</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Rong leader title maker - martial, warlord themed -->
+  <RulePackDef>
+    <defName>Heyra_Rong_LeaderTitleMaker</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->Warlord</li>
+        <li>r_leaderTitle->Khan</li>
+        <li>r_leaderTitle->Iron Mother</li>
+        <li>r_leaderTitle->War Mistress</li>
+        <li>r_leaderTitle->Blade Queen</li>
+        <li>r_leaderTitle->Forge Master</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- ====================== PAWN NAME GENERATORS ====================== -->
+
+  <!-- Heyra (Teller) pawn names - Chinese-influenced, nature/agriculture-themed -->
+  <RulePackDef>
+    <defName>Heyra_PawnNameGen</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- Name structure: Chinese order (surname first) -->
+        <li>r_name->[Surname] [GivenName]</li>
+        <!-- Surnames - Chinese-style family names (nature-themed) -->
+        <li>Surname->Lin</li>
+        <li>Surname->Bai</li>
+        <li>Surname->Yue</li>
+        <li>Surname->Lan</li>
+        <li>Surname->Qin</li>
+        <li>Surname->Feng</li>
+        <li>Surname->Hua</li>
+        <li>Surname->Xue</li>
+        <li>Surname->Yun</li>
+        <li>Surname->Mei</li>
+        <li>Surname->Luo</li>
+        <li>Surname->Shen</li>
+        <li>Surname->Ye</li>
+        <li>Surname->Su</li>
+        <li>Surname->Qiu</li>
+        <li>Surname->Wen</li>
+        <li>Surname->Xia</li>
+        <li>Surname->Mu</li>
+        <li>Surname->Jiang</li>
+        <li>Surname->Chu</li>
+        <li>Surname->Yan</li>
+        <li>Surname->Ning</li>
+        <li>Surname->Rui</li>
+        <li>Surname->Zhi</li>
+        <li>Surname->He</li>
+        <!-- Given names - feminine, nature/agriculture/elegance themed -->
+        <li>GivenName->Meiling</li>
+        <li>GivenName->Yunxi</li>
+        <li>GivenName->Xiulan</li>
+        <li>GivenName->Lianhua</li>
+        <li>GivenName->Mingzhu</li>
+        <li>GivenName->Qingwei</li>
+        <li>GivenName->Shuying</li>
+        <li>GivenName->Ruoxi</li>
+        <li>GivenName->Zhilan</li>
+        <li>GivenName->Yushu</li>
+        <li>GivenName->Wanyu</li>
+        <li>GivenName->Tingfang</li>
+        <li>GivenName->Jinglan</li>
+        <li>GivenName->Peilan</li>
+        <li>GivenName->Qiuyue</li>
+        <li>GivenName->Chunhua</li>
+        <li>GivenName->Tianxin</li>
+        <li>GivenName->Lingyue</li>
+        <li>GivenName->Ziyun</li>
+        <li>GivenName->Fengyi</li>
+        <li>GivenName->Yuxin</li>
+        <li>GivenName->Shuwen</li>
+        <li>GivenName->Hailing</li>
+        <li>GivenName->Luoying</li>
+        <li>GivenName->Danqing</li>
+        <li>GivenName->Xuemei</li>
+        <li>GivenName->Wanling</li>
+        <li>GivenName->Ruolan</li>
+        <li>GivenName->Yingzhu</li>
+        <li>GivenName->Mingxia</li>
+        <li>GivenName->Liwen</li>
+        <li>GivenName->Biyun</li>
+        <li>GivenName->Cuiwei</li>
+        <li>GivenName->Heyin</li>
+        <li>GivenName->Yilan</li>
+        <li>GivenName->Yuling</li>
+        <li>GivenName->Wenqing</li>
+        <li>GivenName->Qinghe</li>
+        <li>GivenName->Lanyin</li>
+        <li>GivenName->Xiruo</li>
+        <li>GivenName->Jinglian</li>
+        <li>GivenName->Mudan</li>
+        <li>GivenName->Shanruo</li>
+        <li>GivenName->Huizhen</li>
+        <li>GivenName->Qianxi</li>
+        <li>GivenName->Shaoli</li>
+        <li>GivenName->Tanxiang</li>
+        <li>GivenName->Zhenyi</li>
+        <li>GivenName->Fengling</li>
+        <li>GivenName->Yaotian</li>
+        <li>GivenName->Suyin</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Rong pawn names - steppe warrior, martial, Mongol/Turkic-influenced -->
+  <RulePackDef>
+    <defName>Heyra_PawnNameGen_Rong</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- Name structure: mostly name+clan, some lone warriors (single name) -->
+        <li>r_name->[FirstName] [ClanName]</li>
+        <li>r_name->[FirstName] [ClanName]</li>
+        <li>r_name->[FirstName]</li>
+        <!-- First names - steppe warrior feminine, short and sharp -->
+        <li>FirstName->Altani</li>
+        <li>FirstName->Borte</li>
+        <li>FirstName->Khulan</li>
+        <li>FirstName->Temulun</li>
+        <li>FirstName->Sarnai</li>
+        <li>FirstName->Khalira</li>
+        <li>FirstName->Ariunaa</li>
+        <li>FirstName->Enkhara</li>
+        <li>FirstName->Bolkha</li>
+        <li>FirstName->Odval</li>
+        <li>FirstName->Naryn</li>
+        <li>FirstName->Oyuun</li>
+        <li>FirstName->Tsegai</li>
+        <li>FirstName->Saranel</li>
+        <li>FirstName->Bayara</li>
+        <li>FirstName->Batma</li>
+        <li>FirstName->Delkha</li>
+        <li>FirstName->Erdeni</li>
+        <li>FirstName->Zhargal</li>
+        <li>FirstName->Chuluun</li>
+        <li>FirstName->Khongor</li>
+        <li>FirstName->Tuya</li>
+        <li>FirstName->Solongo</li>
+        <li>FirstName->Gerel</li>
+        <li>FirstName->Alungoo</li>
+        <li>FirstName->Chagun</li>
+        <li>FirstName->Dulmaa</li>
+        <li>FirstName->Erkhei</li>
+        <li>FirstName->Ganchei</li>
+        <li>FirstName->Jargal</li>
+        <li>FirstName->Monkh</li>
+        <li>FirstName->Nomin</li>
+        <li>FirstName->Odgerel</li>
+        <li>FirstName->Saruul</li>
+        <li>FirstName->Tseren</li>
+        <li>FirstName->Unuraa</li>
+        <li>FirstName->Zolzaya</li>
+        <li>FirstName->Chimgee</li>
+        <li>FirstName->Enkh</li>
+        <li>FirstName->Kherlen</li>
+        <li>FirstName->Munkhzul</li>
+        <li>FirstName->Selenge</li>
+        <li>FirstName->Bujin</li>
+        <li>FirstName->Yargui</li>
+        <li>FirstName->Gantuya</li>
+        <li>FirstName->Idree</li>
+        <li>FirstName->Purev</li>
+        <li>FirstName->Togsha</li>
+        <li>FirstName->Uurei</li>
+        <li>FirstName->Khatun</li>
+        <!-- Clan names - short, martial, steppe-warrior style -->
+        <li>ClanName->Khar</li>
+        <li>ClanName->Temur</li>
+        <li>ClanName->Altan</li>
+        <li>ClanName->Batu</li>
+        <li>ClanName->Chono</li>
+        <li>ClanName->Noyan</li>
+        <li>ClanName->Darkhan</li>
+        <li>ClanName->Kheshig</li>
+        <li>ClanName->Mergen</li>
+        <li>ClanName->Tarkhan</li>
+        <li>ClanName->Ordu</li>
+        <li>ClanName->Bulgan</li>
+        <li>ClanName->Arban</li>
+        <li>ClanName->Tughra</li>
+        <li>ClanName->Bargai</li>
+        <li>ClanName->Baatar</li>
+        <li>ClanName->Torga</li>
+        <li>ClanName->Erlik</li>
+        <li>ClanName->Suldei</li>
+        <li>ClanName->Ilkhan</li>
+        <li>ClanName->Burkhai</li>
+        <li>ClanName->Oghul</li>
+        <li>ClanName->Jagun</li>
+        <li>ClanName->Noyad</li>
+        <li>ClanName->Khagan</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

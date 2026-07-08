@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: claw -->
+  <Heyra_Hediff_Claw.label>爪</Heyra_Hediff_Claw.label>
+  <!-- EN: nails of this creature are as hard as steel. -->
+  <Heyra_Hediff_Claw.description>这个生物的锐爪如钢铁般坚硬</Heyra_Hediff_Claw.description>
+  <!-- EN: claw -->
+  <Heyra_Hediff_Claw.comps.HediffComp_VerbGiver.tools.claw.label>爪</Heyra_Hediff_Claw.comps.HediffComp_VerbGiver.tools.claw.label>
+  
+  <!-- EN: breath weapon -->
+  <Heyra_Hediff_Dragonbreath.label>毁灭吐息</Heyra_Hediff_Dragonbreath.label>
+  <!-- EN: This creature can exhale destructive energy. -->
+  <Heyra_Hediff_Dragonbreath.description>这个生物可以从口中呼出毁灭性的能量。</Heyra_Hediff_Dragonbreath.description>
+  <!-- EN: breath attack -->
+  <Heyra_Hediff_Dragonbreath.comps.HediffComp_ExtendedVerbGiver.verbProps.0.label>毁灭吐息</Heyra_Hediff_Dragonbreath.comps.HediffComp_ExtendedVerbGiver.verbProps.0.label>
+  <!-- EN: breath attack -->
+  <Heyra_Hediff_Dragonbreath.comps.HediffComp_ExtendedVerbGiver.verbs.breath_attack.label>毁灭吐息</Heyra_Hediff_Dragonbreath.comps.HediffComp_ExtendedVerbGiver.verbs.breath_attack.label>
+  
+  <!-- EN: static field -->
+  <Heyra_Hediff_Electricfield.label>静电场</Heyra_Hediff_Electricfield.label>
+  <!-- EN: This creature is generating a strong electric field around its body. -->
+  <Heyra_Hediff_Electricfield.description>此生物在它的身体周围制造了一个强大的电场。</Heyra_Hediff_Electricfield.description>
+  
+  <!-- EN: awakened -->
+  <Heyra_Hediff_Enableformchange.label>泰初之忆</Heyra_Hediff_Enableformchange.label>
+  <!-- EN: This Heyra possesses the power to transform into a majectic beast. -->
+  <Heyra_Hediff_Enableformchange.description>这个聆族拥有变化形态的能力</Heyra_Hediff_Enableformchange.description>
+  
+  <!-- EN: transformed -->
+  <Heyra_Hediff_Monsterform.label>变身</Heyra_Hediff_Monsterform.label>
+  <!-- EN: The alternate form of a Heyra. This beast is armed with razor-sharp claws, protected by hardened scales, and swiftened by the Blessing of Air. A Heyra in this form is can take on several enemies single-handedly. However, this state expires very soon and will cause extreme exhaustion after that. -->
+  <Heyra_Hediff_Monsterform.description>由聆族变化而来。这头猛兽以断铁锐爪为剑，折戟坚鳞为盾，可谓是所向披靡。然而，这个形态只能维持一段时间，在解除后还会造成严重的疲劳。</Heyra_Hediff_Monsterform.description>
+  <!-- EN: left hand -->
+  <Heyra_Hediff_Monsterform.comps.HediffComp_AddHediffToBodyPart.hediffsToParts.1.bodyPartLable.0>左手</Heyra_Hediff_Monsterform.comps.HediffComp_AddHediffToBodyPart.hediffsToParts.1.bodyPartLable.0>
+  <!-- EN: right hand -->
+  <Heyra_Hediff_Monsterform.comps.HediffComp_AddHediffToBodyPart.hediffsToParts.1.bodyPartLable.1>右手</Heyra_Hediff_Monsterform.comps.HediffComp_AddHediffToBodyPart.hediffsToParts.1.bodyPartLable.1>
+  
+  <!-- EN: post-transform fatigue -->
+  <Heyra_Hediff_Postfatigue.label>变身疲惫</Heyra_Hediff_Postfatigue.label>
+  <!-- EN: After-effects of transform. The patient is debilitated but not in a life-threatening condition. They can still transform in this state, but doing so will further crumple their body and eventually lead to the worst outcome—death. -->
+  <Heyra_Hediff_Postfatigue.description>变身的后效应。病人的身体变得虚弱，但没有生命危险。处在这个阶段的聆族仍然可以变身，但如此做会使身体情况进一步恶化，最严重的情况下可以致死。</Heyra_Hediff_Postfatigue.description>
+  <!-- EN: minor -->
+  <Heyra_Hediff_Postfatigue.stages.minor.label>轻微</Heyra_Hediff_Postfatigue.stages.minor.label>
+  <!-- EN: releasing -->
+  <Heyra_Hediff_Postfatigue.stages.releasing.label>缓解</Heyra_Hediff_Postfatigue.stages.releasing.label>
+  <!-- EN: aching -->
+  <Heyra_Hediff_Postfatigue.stages.aching.label>刺痛</Heyra_Hediff_Postfatigue.stages.aching.label>
+  <!-- EN: painful -->
+  <Heyra_Hediff_Postfatigue.stages.painful.label>痛苦</Heyra_Hediff_Postfatigue.stages.painful.label>
+  <!-- EN: extreme -->
+  <Heyra_Hediff_Postfatigue.stages.extreme.label>严重</Heyra_Hediff_Postfatigue.stages.extreme.label>
+  <!-- EN: near-lethal -->
+  <Heyra_Hediff_Postfatigue.stages.nearlethal.label>垂危</Heyra_Hediff_Postfatigue.stages.nearlethal.label>
+  
+</LanguageData>

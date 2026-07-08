@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bean pulp -->
+  <Heyra_Beanpulp.label>豆渣</Heyra_Beanpulp.label>
+  <!-- EN: Leftovers from bean milk production, mainly composed of the insoluble part of milksoy puree. While it is safe for humans to eat, no one would really enjoy it. Also, it will rot very soon without refrigeration. -->
+  <Heyra_Beanpulp.description>制豆奶过程中产生的副产品。集合了矮豆中不可溶的部分。人类食用它是安全的，但不会有人喜欢吃。另外，豆渣腐烂的很快。</Heyra_Beanpulp.description>
+  
+  <!-- EN: compressed biscuits -->
+  <Heyra_Biscuit.label>压缩饼干</Heyra_Biscuit.label>
+  <!-- EN: Calorie-dense, vacuum-packed survival food. It never rots, and can be enjoyed without a dining table. Great for traveling. -->
+  <Heyra_Biscuit.description>真空包装的高热量生存食品。不需要桌子，用一只手拿着就可以方便地食用，也不会腐烂。最适合长途旅行。</Heyra_Biscuit.description>
+  
+</LanguageData>

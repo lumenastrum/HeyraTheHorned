@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase" Name="Heyra_RongFactionBase" Abstract="True">
+		<factionIconPath>Icon/Heyra_Rongicon</factionIconPath>
+		<settlementTexturePath>Icon/Heyra_Rongicon</settlementTexturePath>
+		<pawnSingular>Rong</pawnSingular>
+		<pawnsPlural>Rongs</pawnsPlural>
+		<listOrderPriority>10</listOrderPriority>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<hidden>true</hidden>
+		<rescueesCanJoin>true</rescueesCanJoin>
+		<maxConfigurableAtWorldCreation>8</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>60</configurationListOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<settlementNameMaker>Heyra_Namer_Settlement_Rong</settlementNameMaker>
+		<leaderTitle>Lord of Pleasure</leaderTitle>
+		<canSiege>false</canSiege>
+		<canStageAttacks>false</canStageAttacks>
+		<techLevel>Industrial</techLevel>
+		<xenotypeSet MayRequire="Ludeon.RimWorld.Biotech">
+			<xenotypeChances>
+				<Heyra_Xenotype_Severed>1</Heyra_Xenotype_Severed>
+			</xenotypeChances>
+		</xenotypeSet>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Synthread</li>
+				<li>Hyperweave</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<allowedCultures><li>Heyra_Culture_Rong</li></allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistAbstract</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>		
+		</disallowedMemes>
+		<requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+		</requiredMemes>
+		<structureMemeWeights>
+			<Transhumanist MayRequire="Ludeon.RimWorld.Ideology">2</Transhumanist>
+			<Tunneler MayRequire="Ludeon.RimWorld.Ideology">2</Tunneler>
+			<HighLife MayRequire="Ludeon.RimWorld.Ideology">2</HighLife>
+		</structureMemeWeights>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<melaninRange>0.7</melaninRange>
+		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<!-- Basic -->
+		</pawnGroupMakers>
+	</FactionDef>
+	
+	<FactionDef ParentName="Heyra_RongFactionBase">
+    <defName>Heyra_Rong_Faction</defName>
+    <label>Violent Rong tribe</label>
+    <description>Rong people live in their underground settlements, it is difficult for us to know their exact location.</description>
+	<factionNameMaker>Heyra_Namer_Rong</factionNameMaker>
+    <permanentEnemy>true</permanentEnemy>
+	<colorSpectrum>
+      <li>(0.2, 0.2, 0.2)</li>
+      <li>(0.3, 0.3, 0.3)</li>
+    </colorSpectrum>
+	<raidCommonalityFromPointsCurve>
+      <points>
+        <li>(300,  0)</li>
+        <li>(500,  0.2)</li>
+        <li>(1100, 0.8)</li>
+        <li>(2100, 1.6)</li>
+        <li>(3300, 2.6)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+	<raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+	<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<Heyra_ZRong_BerserkerMelee>5</Heyra_ZRong_BerserkerMelee>
+					<Heyra_ZRong_BerserkerRanged>5</Heyra_ZRong_BerserkerRanged>
+					<Heyra_Dismemberer_PawnKind>10</Heyra_Dismemberer_PawnKind>
+				</options>
+			</li>
+	</pawnGroupMakers>
+  </FactionDef>
+  
+  <FactionDef ParentName="Heyra_RongFactionBase">
+    <defName>Heyra_Rong_SubFaction</defName>
+    <label>Rong Guards(Required for Quests)</label>
+    <description>This hidden faction is required for this mod's custom quests. It won't change your game in other ways.</description>
+    <permanentEnemy>true</permanentEnemy>
+	<factionNameMaker>Heyra_Namer_Cultofknowing</factionNameMaker>
+	<autoFlee>false</autoFlee>
+	<colorSpectrum>
+      <li>(0.2, 0.2, 0.2)</li>
+      <li>(0.3, 0.3, 0.3)</li>
+    </colorSpectrum>
+	<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<Heyra_ZRong_BerserkerMelee>5</Heyra_ZRong_BerserkerMelee>
+					<Heyra_ZRong_BerserkerRanged>5</Heyra_ZRong_BerserkerRanged>
+				</options>
+			</li>
+	</pawnGroupMakers>
+  </FactionDef>
+  
+
+</Defs>
