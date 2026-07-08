@@ -2,6 +2,24 @@
 
 ---
 
+## v1.0.12 — Beast Form Fixes (the claws work everywhere now)
+
+### Claws now attach on all game languages
+
+Beast form's claw attacks were silently missing on non-English clients. The transformation matched body parts by their *translated* labels ("left hand" / "right hand"), so on 简体中文 and other localized games the claw hediffs never attached — the beast transformed, but unarmed. Body parts are now matched by their internal definition name, which is identical in every language. 中文玩家们，你们的爪子回来了！
+
+### Gear is restored on every way the transformation can end
+
+Previously, worn apparel and weapons stashed during transformation were only re-equipped when you manually toggled the form off. If the transformation **timed out** naturally or ended because the pawn was **downed**, she reverted bare-skinned with all her gear sitting in her inventory — no armor, and an unhappy mood to match. Gear restoration now runs on every removal path: manual revert, timer expiry, and downed-revert alike.
+
+### Other fixes
+
+- **English equip-block messages**: trying to equip items while transformed now shows a proper message instead of the raw text `PawnInChangedFormApparel` (the translation key existed only in the Chinese language files — sorry, English players)
+- **Work restrictions no longer leak between pawns**: transformed pawns briefly inherited the *first-ever* transformed pawn's personal work incapacities (from her backstory/traits) for the duration of beast form. Each pawn now computes her own
+- **Transformation lightning strikes the right map**: with multiple colonies, the transform VFX bolt could fire on whichever map you were currently viewing instead of the transforming pawn's map
+
+---
+
 ## v1.0.11 — Armor Balance Pass
 
 ### Military Armor & Helmets — Values Reduced

@@ -34,6 +34,11 @@ namespace Heyra
             pawn.Notify_DisabledWorkTypesChanged();
             RestoreWorkPriorities();
 
+            // Restore stashed gear here, NOT in the ability's toggle-off branch:
+            // the hediff can also end via timer (HediffComp_Disappears) or
+            // removeOnDowned, and those paths must re-dress the pawn too.
+            pawn.RestoreGearFromInventory();
+
             // Force render tree to re-resolve back to normal graphic
             pawn.DirtyPawnRenderTree();
 

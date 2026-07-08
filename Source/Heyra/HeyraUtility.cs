@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using HarmonyLib;
+using RimWorld;
 using Verse;
 
 namespace Heyra
@@ -37,6 +39,53 @@ namespace Heyra
             if (!pawn.InMonsterform()) return null;
             var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HeyraHediffDefOf.Heyra_Hediff_Monsterform);
             return hediff?.TryGetComp<HediffComp_ChangeForm>();
+        }
+
+        /// <summary>
+        /// Moves apparel and weapons from inventory back to worn/equipped slots.
+        /// Gear is stashed to inventory on transform; this reverses it. Called from
+        /// HediffComp_ChangeForm.CompPostPostRemoved so EVERY removal path restores
+        /// gear — manual toggle-off, natural timer expiry, and downed-revert alike.
+        /// </summary>
+        public static void RestoreGearFromInventory(this Pawn pawn)
+        {
+            if (pawn == null || pawn.Dead || pawn.inventory?.innerContainer == null)
+                return;
+
+            // Snapshot items first — can't modify collection while iterating
+            List<Apparel> toWear = new List<Apparel>();
+            List<ThingWithComps> toEquip = new List<ThingWithComps>();
+
+            foreach (Thing thing in pawn.inventory.innerContainer)
+            {
+                if (thing is Apparel apparel)
+                    toWear.Add(apparel);
+                else if (thing is ThingWithComps twc && twc.def.IsWeapon)
+                    toEquip.Add(twc);
+            }
+
+            // Re-wear all apparel (conflicts go back to inventory, not dropped)
+            foreach (Apparel apparel in toWear)
+            {
+                if (pawn.apparel != null && pawn.inventory.innerContainer.Contains(apparel))
+                {
+                    pawn.inventory.innerContainer.Remove(apparel);
+                    pawn.apparel.Wear(apparel, dropReplacedApparel: false);
+                }
+            }
+
+            // Re-equip weapons (primary slot only — extras stay in inventory)
+            foreach (ThingWithComps weapon in toEquip)
+            {
+                if (pawn.equipment != null && pawn.inventory.innerContainer.Contains(weapon))
+                {
+                    if (pawn.equipment.Primary == null)
+                    {
+                        pawn.inventory.innerContainer.Remove(weapon);
+                        pawn.equipment.AddEquipment(weapon);
+                    }
+                }
+            }
         }
 
         /// <summary>

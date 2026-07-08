@@ -26,8 +26,8 @@ namespace Heyra
 
         /// <summary>
         /// Returns the current animation frame's material.
-        /// Sequential cycling based on real-time, with a per-call random offset so
-        /// multiple motes reading MatSingle in the same frame aren't all identical.
+        /// Sequential cycling based on real-time. (Per-mote phase offsets live in
+        /// DrawWorker, which knows the mote — this property has no Thing context.)
         /// </summary>
         public override Material MatSingle
         {

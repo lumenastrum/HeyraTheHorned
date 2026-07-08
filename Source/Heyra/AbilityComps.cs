@@ -25,10 +25,11 @@ namespace Heyra
     //  CompAbilityEffect_ChangeForm — toggleable transformation
     //
     //  Toggle ON:  stash gear → apply hediff → lightning VFX
-    //  Toggle OFF: remove hediff → restore gear from inventory
+    //  Toggle OFF: remove hediff (cleanup comps do the rest)
     //
     //  Hediff removal triggers all cleanup automatically:
-    //    - HediffComp_ChangeForm.CompPostPostRemoved (VFX, work priorities, render tree)
+    //    - HediffComp_ChangeForm.CompPostPostRemoved (VFX, work priorities,
+    //      render tree, gear restore — so timer/downed removal restores too)
     //    - HediffComp_AddHediffOnRemove (post-fatigue)
     //    - HediffComp_AddHediffToBodyPart.CompPostPostRemoved (claws, breath cleanup)
     // ═══════════════════════════════════════════════════
@@ -47,10 +48,10 @@ namespace Heyra
                 if (hediff != null)
                     pawn.health.RemoveHediff(hediff);
 
-                // Hediff removal already fired all cleanup comps (de-transform VFX,
-                // fatigue, work priorities, sub-hediff strip, render tree dirty).
-                // Now restore gear that was stashed to inventory on transform.
-                RestoreGearFromInventory(pawn);
+                // Hediff removal fires all cleanup comps (de-transform VFX, fatigue,
+                // work priorities, sub-hediff strip, render tree dirty) — including
+                // gear restore in HediffComp_ChangeForm.CompPostPostRemoved, which
+                // also covers timer-expiry and downed-revert removal paths.
                 return;
             }
 
@@ -93,56 +94,16 @@ namespace Heyra
             }
             pawn.health.AddHediff(newHediff);
 
-            // Dramatic lightning strike VFX
+            // Dramatic lightning strike VFX — on the PAWN's map, not the viewed one
+            // (Find.CurrentMap diverges from pawn.Map with multiple colonies)
             if (pawn.Spawned)
             {
-                Find.CurrentMap.weatherManager.eventHandler.AddEvent(
+                pawn.Map.weatherManager.eventHandler.AddEvent(
                     new WeatherEvent_HarmlessLightningStrike(pawn.Map, pawn.Position));
             }
         }
 
-        /// <summary>
-        /// Moves apparel and weapons from inventory back to worn/equipped slots.
-        /// Called on toggle-off to re-dress the pawn after reverting from beast form.
-        /// </summary>
-        private void RestoreGearFromInventory(Pawn pawn)
-        {
-            if (pawn.inventory?.innerContainer == null) return;
-
-            // Snapshot items first — can't modify collection while iterating
-            List<Apparel> toWear = new List<Apparel>();
-            List<ThingWithComps> toEquip = new List<ThingWithComps>();
-
-            foreach (Thing thing in pawn.inventory.innerContainer)
-            {
-                if (thing is Apparel apparel)
-                    toWear.Add(apparel);
-                else if (thing is ThingWithComps twc && twc.def.IsWeapon)
-                    toEquip.Add(twc);
-            }
-
-            // Re-wear all apparel (conflicts go back to inventory, not dropped)
-            foreach (Apparel apparel in toWear)
-            {
-                if (pawn.inventory.innerContainer.Contains(apparel))
-                {
-                    pawn.inventory.innerContainer.Remove(apparel);
-                    pawn.apparel.Wear(apparel, dropReplacedApparel: false);
-                }
-            }
-
-            // Re-equip weapons (primary slot only — extras stay in inventory)
-            foreach (ThingWithComps weapon in toEquip)
-            {
-                if (pawn.inventory.innerContainer.Contains(weapon))
-                {
-                    if (pawn.equipment.Primary == null)
-                    {
-                        pawn.inventory.innerContainer.Remove(weapon);
-                        pawn.equipment.AddEquipment(weapon);
-                    }
-                }
-            }
-        }
+        // Gear restore lives in HeyraUtility.RestoreGearFromInventory, invoked by
+        // HediffComp_ChangeForm.CompPostPostRemoved on every removal path.
     }
 }

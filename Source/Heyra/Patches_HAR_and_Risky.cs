@@ -387,8 +387,6 @@ namespace Heyra
         //  Fragile but non-critical — XML disabledWorkTags still applies.
         // ═══════════════════════════════════════════════════════════════
 
-        private static List<WorkTypeDef> cachedWorkTypeDefs = new List<WorkTypeDef>();
-
         public static bool TryPatchDisabledWorkTypes(Harmony harmony)
         {
             try
@@ -421,22 +419,18 @@ namespace Heyra
         {
             if (!__instance.InMonsterform()) return;
 
-            if (cachedWorkTypeDefs.NullOrEmpty())
-                CacheWorkTypeDefs(__instance);
-
-            foreach (WorkTypeDef wtd in cachedWorkTypeDefs)
-            {
-                if (!list.Contains(wtd))
-                    list.Add(wtd);
-            }
-        }
-
-        private static void CacheWorkTypeDefs(Pawn pawn)
-        {
+            // Computed per-pawn per-call, from THIS pawn's current disabled tags.
+            // A static cache here once froze the FIRST transformer's personal
+            // backstory/trait/gene disables and applied them to every pawn who
+            // transformed afterward. Cheap loop, and vanilla caches the result
+            // until Notify_DisabledWorkTypesChanged anyway.
             foreach (WorkTypeDef workType in DefDatabase<WorkTypeDef>.AllDefs)
             {
-                if ((workType.workTags & pawn.CombinedDisabledWorkTags) != 0)
-                    cachedWorkTypeDefs.Add(workType);
+                if ((workType.workTags & __instance.CombinedDisabledWorkTags) != 0
+                    && !list.Contains(workType))
+                {
+                    list.Add(workType);
+                }
             }
         }
     }

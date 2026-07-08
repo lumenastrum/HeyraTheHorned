@@ -79,10 +79,9 @@
 					</li>
 					<li>
 						<hediffDef>Heyra_Hediff_Claw</hediffDef>
-						<bodyPartLable>
-							<li>left hand</li>
-							<li>right hand</li>
-						</bodyPartLable>
+						<bodyPartDefs>										<!-- defName matching — locale-safe. Labels are translated (左手/右手 on CN) and silently fail to match -->
+							<li>Hand</li>									<!-- vanilla Hand def covers both left and right hand -->
+						</bodyPartDefs>
 					</li>
 				</hediffsToParts>
 			</li>
