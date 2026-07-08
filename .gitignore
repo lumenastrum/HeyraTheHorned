@@ -12,3 +12,9 @@
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Release pipeline (local-only artifacts — see RELEASING.md)
+.release-staging/
+release.local.json
+workshop_item.vdf
+changenote.txt
