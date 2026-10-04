@@ -68,6 +68,10 @@ Write-Host "Staged $fileCount files ($sizeMB MB) → $staging" -ForegroundColor 
 # Regex replacement strings don't process backslash escapes: '\\' here is the
 # two-character output for each single input backslash, as VDF expects.
 $esc = { param($s) $s -replace '\\', '\\' -replace '"', '\"' }
+# steamcmd (updated 2026-10-04, build 1788292693) no longer honours \" inside VDF strings: one
+# quoted phrase in a changenote failed the parse with "got } in key". Straight double quotes in
+# the changenote become curly ones, which need no escaping and read the same on the Workshop.
+$ChangeNote = [regex]::Replace($ChangeNote, '"([^"\r\n]*)"', ([char]0x201C + '$1' + [char]0x201D)) -replace '"', [char]0x201D
 $vdf = @"
 "workshopitem"
 {
