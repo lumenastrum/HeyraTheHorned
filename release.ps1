@@ -50,8 +50,11 @@ if (-not $SkipBuild) {
 }
 
 # ── Stage a clean copy (mod content only, no dev files) ─────────────
+# Wipe first: /MIR never purges folders that /XD excludes, so anything a previous run staged
+# under a now-excluded name (seen 2026-10-04 with .agents/.codex) would ride along forever.
+if (Test-Path $staging) { Remove-Item $staging -Recurse -Force }
 robocopy $repo $staging /MIR /NFL /NDL /NJH /NJS `
-    /XD .git .vs Source .release-staging `
+    /XD .git .vs .agents .codex .claude Source docs .release-staging `
     /XF README.md .gitignore release.ps1 release.local.json release.local.example.json RELEASING.md workshop_item.vdf changenote.txt | Out-Null
 if ($LASTEXITCODE -ge 8) { Write-Error "robocopy staging failed with exit code $LASTEXITCODE" }
 

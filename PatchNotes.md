@@ -2,6 +2,20 @@
 
 ---
 
+## v1.0.13 — Rong Get Their Horns Back
+
+### Biohorn implants now render on Rong
+
+Every biohorn implant (A-series 0–5, D-series 0–3) listed the Rong race under the wrong internal name (`Alien_Rong` instead of `Alien_Heyra_Rong`). The render filter compares race names as plain strings, so it never complained — it just never drew. Combined with the surgery removing the natural horn and the default horn graphic stepping aside for the implant, a Rong who received a biohorn ended up with **no horns at all**. All ten implants now name the right race and render on Rong exactly as they do on Heyra.
+
+Verified in an automated test bench (spawn a Rong → install a biohorn → render south/east/north): the area above her head went from 106 opaque pixels (hair only) to 3,408 (antlers). Heyra unchanged.
+
+### The in-game "Workshop page" link works again
+
+The mod's `About/PublishedFileId.txt` stopped shipping when releases moved to the new upload pipeline in v1.0.12, so the in-game link to this Workshop page pointed nowhere. It's back. Thanks to Kinu for the report.
+
+---
+
 ## v1.0.12 — Beast Form Fixes (the claws work everywhere now)
 
 ### Claws now attach on all game languages

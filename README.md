@@ -64,7 +64,7 @@ The built `Heyra.dll` is copied into `1.6/Assemblies/` automatically after every
 About/            Mod metadata + Workshop preview
 1.6/              Version-targeted Defs, Patches, and Assemblies
 Content/          Textures and Sounds (version-independent)
-WeaponTweakData/  Combat Extended weapon tweak data
+WeaponTweakData/  Melee Animation weapon alignment data
 Source/           C# source (Harmony patches, race systems, abilities)
 LoadFolders.xml   Tells RimWorld what to load (1.6 + Content)
 PatchNotes.md     Full changelog
