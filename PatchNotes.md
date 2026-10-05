@@ -2,6 +2,14 @@
 
 ---
 
+## v1.0.14 — Rong kids keep their horns on their heads
+
+### Rong children's horns now sit on top of their heads
+
+Rong's horns are drawn relative to the head, so a child needs the same offset as an adult (Heyra's children already did). Rong's child offsets for the front and side views were `(0, -0.24)` instead of `(0, -0.01)`, which hung a Rong child's horn stumps down at her chin. The back view was already right, which is why it only looked wrong from the front and side. Both offsets now match the adult Rong. Verified before/after in the test bench.
+
+---
+
 ## v1.0.13 — Rong Get Their Horns Back
 
 ### Biohorn implants now render on Rong
