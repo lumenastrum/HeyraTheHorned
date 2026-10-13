@@ -2,6 +2,19 @@
 
 ---
 
+## v1.0.15 — Ready for RimWorld 1.7
+
+### 1.7 added to supported versions
+
+RimWorld 1.7 (Ludeon's new Waylith engine, on the `unstable` beta branch since 2026-10-12) runs Heyra with no code changes. The existing 1.6 DLL loads through Waylith's Unity compatibility layer. Tested on 1.7.4977 in the test bench with HAR, VEF and Ancot Library: a Heyra spawned, rendered, transformed into beast form (claws and dragonbreath applied, gear stashed), and reverted with her gear restored. Zero errors.
+
+- `About.xml`: `1.7` added to `supportedVersions`, so the yellow "potentially unsupported" warning goes away.
+- `LoadFolders.xml`: an explicit `<v1.7>` entry that loads the same `1.6` + `Content` folders. 1.7 already fell back to the 1.6 entry; this just makes it explicit.
+
+No gameplay changes. 1.6 players are unaffected.
+
+---
+
 ## v1.0.14 — Rong kids keep their horns on their heads
 
 ### Rong children's horns now sit on top of their heads

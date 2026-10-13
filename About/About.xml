@@ -4,14 +4,15 @@
 	<author>Bando (original), Foxed (1.6 revival)</author>
 	<supportedVersions>
 		<li>1.6</li>
+		<li>1.7</li>
 	</supportedVersions>
 	<packageId>Foxed.HeyraTheHorned</packageId>
 	<modIconPath IgnoreIfNoMatchingField="True">Icon/Heyra_MainIcon</modIconPath>
 
 	<description>
-[h1]Heyra the Horned — Revived for 1.6[/h1]
+[h1]Heyra the Horned — Revived for 1.6 and 1.7[/h1]
 
-A community revival of Bando's beloved Heyra the Horned race mod, updated for RimWorld 1.6 with the original author's absence.
+A community revival of Bando's beloved Heyra the Horned race mod, updated for RimWorld 1.6 (and tested on 1.7) with the original author's absence.
 
 [h2]About[/h2]
 This mod brings a new humanoid race to Rimworld. Heyras settled in Rimworld a long time ago. They possess a unique psychic ability to, occasionally, hear whispers in their heads. Despite these whispers being mostly scattered words, Heyras believe they are the oracles of God. We do not know if these whispers are real. But it is confirmed that Heyras have a higher psychic sensitivity than humans.
