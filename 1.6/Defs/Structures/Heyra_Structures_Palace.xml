@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<KCSG.StructureLayoutDef>
+<Heyra.StructureLayoutDef>
   <defName>Heyra_Structure_Palace</defName>
   <layouts>
     <li>
@@ -260,6 +260,6 @@
   <tags>
     <li>HeyraStructureTypePalace</li>
   </tags>
-</KCSG.StructureLayoutDef>
+</Heyra.StructureLayoutDef>
 
 </Defs>

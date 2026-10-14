@@ -17,7 +17,8 @@
     <defName>Heyra_Genstep_Lab</defName>
     <linkWithSite>Heyra_Sitepart_Lab</linkWithSite>
     <order>460</order>
-    <genStep Class="KCSG.GenStep_CustomStructureGen">
+    <!-- Heyra's own generator (Source/Heyra/Structures), replaced KCSG in phase 4 of the VEF removal. -->
+    <genStep Class="Heyra.GenStep_HeyraStructure">
       <structureLayoutDefs>
         <li>Heyra_Structure_Lab_A</li>
         <li>Heyra_Structure_Lab_B</li>
@@ -42,16 +43,16 @@
   <GenStepDef>
     <defName>Heyra_Genstep_Spawnrongs</defName>
     <linkWithSite>Heyra_Sitepart_Spawnrongs</linkWithSite>
-    <order>400</order>
-    <genStep Class="KCSG.GenStep_EnnemiesPresence">
-      <forcedfaction>Heyra_Rong_SubFaction</forcedfaction>
-      <spawnOnEdge>false</spawnOnEdge>
-	   <pointMultiplier>3.0</pointMultiplier>
+    <!-- After the lab (460), so the defenders stand inside it. KCSG spawned them first, at 400. -->
+    <order>470</order>
+    <genStep Class="Heyra.GenStep_RongGarrison">
+      <forcedFaction>Heyra_Rong_SubFaction</forcedFaction>
+      <pointMultiplier>3.0</pointMultiplier>
     </genStep>
   </GenStepDef>
   
   
-<KCSG.StructureLayoutDef>
+<Heyra.StructureLayoutDef>
   <defName>Heyra_Structure_Lab_A</defName>
   <layouts>
     <li>
@@ -194,9 +195,9 @@
 		<li>HeyraStructureTypeLab</li>
 	</tags>
   <spawnConduits>false</spawnConduits>
-</KCSG.StructureLayoutDef>
+</Heyra.StructureLayoutDef>
 
-<KCSG.StructureLayoutDef>
+<Heyra.StructureLayoutDef>
   <defName>Heyra_Structure_Lab_B</defName>
   <layouts>
     <li>
@@ -334,7 +335,7 @@
 		<li>HeyraStructureTypeLab</li>
 	</tags>
   <spawnConduits>false</spawnConduits>
-</KCSG.StructureLayoutDef>
+</Heyra.StructureLayoutDef>
 
 
 </Defs>
