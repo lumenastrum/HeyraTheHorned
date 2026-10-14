@@ -155,17 +155,18 @@
     </stages>
   </HediffDef>
   
-  <!-- [1.6 FIX] renderNodeProperties added to each biohorn HediffDef using AncotLibrary's
-       PawnRenderNodeProperties_Race. This bypasses HAR's broken hediffGraphics pipeline
+  <!-- [1.6 FIX] renderNodeProperties added to each biohorn HediffDef using our own
+       Heyra.PawnRenderNodeProperties_Biohorn (Source/Heyra/Rendering; replaced the
+       AncotLibrary race filter in v1.0.16). This bypasses HAR's broken hediffGraphics pipeline
        and uses vanilla's DynamicPawnRenderNodeSetup_Hediffs instead. The race filter ensures
-       horns only render on Heyra/Rong pawns. A companion Harmony patch in Patches_HAR
+       horns only render on Heyra/Rong pawns, and never in monsterform. A companion Harmony patch in Patches_HAR
        suppresses the default HAR horn addon when any biohorn hediff is present,
        preventing double-rendering. -->
 
   <HediffDef ParentName="Heyra_HediffBioHornBase">
     <defName>Heyra_Biohorn0A</defName>
     <renderNodeProperties>
-      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+      <li Class="Heyra.PawnRenderNodeProperties_Biohorn">
         <texPath>Heyra/Horns/HornA</texPath>
         <parentTagDef>Head</parentTagDef>
         <shaderTypeDef>Cutout</shaderTypeDef>
@@ -189,7 +190,7 @@
   <HediffDef ParentName="Heyra_HediffBioHornBase">
     <defName>Heyra_Biohorn1A</defName>
     <renderNodeProperties>
-      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+      <li Class="Heyra.PawnRenderNodeProperties_Biohorn">
         <texPath>Heyra/Horns/Horn1</texPath>
         <parentTagDef>Head</parentTagDef>
         <shaderTypeDef>Cutout</shaderTypeDef>
@@ -213,7 +214,7 @@
   <HediffDef ParentName="Heyra_HediffBioHornBase">
     <defName>Heyra_Biohorn2A</defName>
     <renderNodeProperties>
-      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+      <li Class="Heyra.PawnRenderNodeProperties_Biohorn">
         <texPath>Heyra/Horns/Horn2</texPath>
         <parentTagDef>Head</parentTagDef>
         <shaderTypeDef>Cutout</shaderTypeDef>
@@ -237,7 +238,7 @@
   <HediffDef ParentName="Heyra_HediffBioHornBase">
     <defName>Heyra_Biohorn3A</defName>
     <renderNodeProperties>
-      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+      <li Class="Heyra.PawnRenderNodeProperties_Biohorn">
         <texPath>Heyra/Horns/Horn3</texPath>
         <parentTagDef>Head</parentTagDef>
         <shaderTypeDef>Cutout</shaderTypeDef>
@@ -261,7 +262,7 @@
   <HediffDef ParentName="Heyra_HediffBioHornBase">
     <defName>Heyra_Biohorn4A</defName>
     <renderNodeProperties>
-      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+      <li Class="Heyra.PawnRenderNodeProperties_Biohorn">
         <texPath>Heyra/Horns/Horn4</texPath>
         <parentTagDef>Head</parentTagDef>
         <shaderTypeDef>Cutout</shaderTypeDef>
@@ -285,7 +286,7 @@
   <HediffDef ParentName="Heyra_HediffBioHornBase">
     <defName>Heyra_Biohorn5A</defName>
     <renderNodeProperties>
-      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+      <li Class="Heyra.PawnRenderNodeProperties_Biohorn">
         <texPath>Heyra/Horns/Horn5</texPath>
         <parentTagDef>Head</parentTagDef>
         <shaderTypeDef>Cutout</shaderTypeDef>
@@ -309,7 +310,7 @@
   <HediffDef ParentName="Heyra_HediffBioHornBase">
     <defName>Heyra_Biohorn0D</defName>
     <renderNodeProperties>
-      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+      <li Class="Heyra.PawnRenderNodeProperties_Biohorn">
         <texPath>Heyra/Horns/DHornA</texPath>
         <parentTagDef>Head</parentTagDef>
         <shaderTypeDef>Cutout</shaderTypeDef>
@@ -333,7 +334,7 @@
   <HediffDef ParentName="Heyra_HediffBioHornBase">
     <defName>Heyra_Biohorn1D</defName>
     <renderNodeProperties>
-      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+      <li Class="Heyra.PawnRenderNodeProperties_Biohorn">
         <texPath>Heyra/Horns/DHorn1</texPath>
         <parentTagDef>Head</parentTagDef>
         <shaderTypeDef>Cutout</shaderTypeDef>
@@ -357,7 +358,7 @@
   <HediffDef ParentName="Heyra_HediffBioHornBase">
     <defName>Heyra_Biohorn2D</defName>
     <renderNodeProperties>
-      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+      <li Class="Heyra.PawnRenderNodeProperties_Biohorn">
         <texPath>Heyra/Horns/DHorn2</texPath>
         <parentTagDef>Head</parentTagDef>
         <shaderTypeDef>Cutout</shaderTypeDef>
@@ -381,7 +382,7 @@
   <HediffDef ParentName="Heyra_HediffBioHornBase">
     <defName>Heyra_Biohorn3D</defName>
     <renderNodeProperties>
-      <li Class="AncotLibrary.PawnRenderNodeProperties_Race">
+      <li Class="Heyra.PawnRenderNodeProperties_Biohorn">
         <texPath>Heyra/Horns/DHorn3</texPath>
         <parentTagDef>Head</parentTagDef>
         <shaderTypeDef>Cutout</shaderTypeDef>

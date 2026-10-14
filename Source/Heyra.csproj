@@ -53,7 +53,7 @@
 
     <!-- Harmony -->
     <Reference Include="0Harmony">
-      <HintPath>$(WorkshopDir)\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>$(WorkshopDir)\2009463077\1.6\Assemblies\0Harmony.dll</HintPath>
       <Private>false</Private>
     </Reference>
 

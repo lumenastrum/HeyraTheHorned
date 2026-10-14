@@ -38,7 +38,7 @@ This mod also features the Rong people, the nemesis of Heyras — a small group 
 [h2]Dependencies[/h2]
 - Humanoid Alien Races (HAR)
 - Vanilla Expanded Framework (VEF) — includes MVCF and KCSG
-- Ancot Library — for biohorn (miracle seed) visual rendering
+- (Ancot Library is no longer required since v1.0.16 — biohorn rendering is built in)
 
 [h2]Credits[/h2]
 - [b]Bando[/b] — Original mod author. All creative work, art, and design.
@@ -60,18 +60,12 @@ All rights to the original creative work belong to Bando. This revival is publis
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
 		</li>
-		<li>
-			<packageId>ancot.ancotlibrary</packageId>
-			<displayName>Ancot Library</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2988801276</steamWorkshopUrl>
-		</li>
 	</modDependencies>
 
 	<loadAfter>
 		<li>brrainz.harmony</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
-		<li>ancot.ancotlibrary</li>
 	</loadAfter>
 
 	<!-- Optional compatibility -->

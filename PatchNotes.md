@@ -2,6 +2,26 @@
 
 ---
 
+## v1.0.16 — One less dependency: Ancot Library no longer required
+
+### Biohorn rendering is built in
+
+The only thing Heyra used Ancot Library for was a small race filter on the ten miracle-seed (biohorn) horn render nodes, so a seed's horns only draw on Heyra and Rong. That filter is now Heyra's own (`Heyra.PawnRenderNodeProperties_Biohorn` in `Source/Heyra/Rendering`), and all ten biohorn HediffDefs use it.
+
+- Races are real `ThingDef` references now, not strings, so a misspelled race (the v1.0.13 `Alien_Rong` bug) is a load error instead of a horn that silently never draws.
+- The horn is explicitly hidden during monsterform, instead of relying on the head node happening to hide it.
+- Ancot removed from `modDependencies` and `loadAfter`; README and description updated.
+
+Verified in the test bench: a save made with Ancot (Heyra + Forest seed, Rong + D-series seed, and a human given a seed) loaded without Ancot rendered **pixel-identical** in all 18 views (3 directions, beast form, revert, human hat on/off). A fresh seed applied with Ancot absent draws and replaces the default horn without stacking, and removing it restores the default horn pixel-for-pixel. Also checked on 1.7 with Ancot absent.
+
+**If you unsubscribe from Ancot:** saves that had Ancot active will log a few one-time errors on the next load (Ancot's own leftover game/world components). They're harmless. If another mod you use needs Ancot (Wolfein, Kiiro, Milira...), keep it. Heyra simply doesn't need it anymore.
+
+### Build
+
+- `Heyra.csproj` references Harmony from the Workshop item's `1.6\Assemblies` (Harmony 3.0's update removed the old `Current\` folder).
+
+---
+
 ## v1.0.15 — Ready for RimWorld 1.7
 
 ### 1.7 added to supported versions

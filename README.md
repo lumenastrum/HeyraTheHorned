@@ -36,9 +36,10 @@ The mod also features the **Rong** people, the nemesis of the Heyras — a small
 | --- | --- |
 | Humanoid Alien Races (HAR) | [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=839005762) |
 | Vanilla Expanded Framework (VEF, includes MVCF + KCSG) | [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) |
-| Ancot Library (biohorn visual rendering) | [Workshop](https://steamcommunity.com/workshop/filedetails/?id=2988801276) |
 
-Load order: Harmony → HAR → VEF → Ancot Library → Heyra the Horned. Loads before Combat Extended if present.
+Ancot Library is no longer required since v1.0.16: biohorn rendering is built in (`Source/Heyra/Rendering`).
+
+Load order: Harmony → HAR → VEF → Heyra the Horned. Loads before Combat Extended if present.
 
 ## Installation
 

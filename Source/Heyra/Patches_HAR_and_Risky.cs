@@ -96,7 +96,7 @@ namespace Heyra
         //  a biohorn hediff is present on the Heyra_Horn body part.
         //
         //  When a miracle seed is applied, the biohorn HediffDef has its
-        //  own renderNodeProperties (via AncotLibrary) that renders the
+        //  own renderNodeProperties (PawnRenderNodeProperties_Biohorn) that renders the
         //  new horn texture. Without this patch, both the HAR default
         //  horn addon AND the renderNodeProperties horn would draw,
         //  causing double-rendering.
