@@ -4,6 +4,8 @@
 	<PawnInChangedFormWeapon>Cannot equip weapons while transformed</PawnInChangedFormWeapon>
 
 	<!-- Mod settings -->
+	<Heyra_Setting_Credit>Revived for 1.6 and 1.7 · original art, lore and heart by Bando</Heyra_Setting_Credit>
+	<Heyra_Setting_Options>Options</Heyra_Setting_Options>
 	<Heyra_Setting_MilksoyLoomFuel>Synthread loom also accepts milksoy as fuel</Heyra_Setting_MilksoyLoomFuel>
 	<Heyra_Setting_MilksoyLoomFuelDesc>Lets colonists fill the synthread loom with milksoy, not just bean pulp.</Heyra_Setting_MilksoyLoomFuelDesc>
 	<Heyra_Setting_UnrestrictedApparel>Heyra and Rong can wear any apparel</Heyra_Setting_UnrestrictedApparel>

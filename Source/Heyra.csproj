@@ -37,19 +37,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- RimWorld Core -->
-    <Reference Include="Assembly-CSharp">
-      <HintPath>$(ManagedDir)\Assembly-CSharp.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>$(ManagedDir)\UnityEngine.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
+    <!-- RimWorld Core: 1.6 reference assemblies from NuGet, so the build no longer depends on
+         which branch the local Steam install is on (on the 1.7 unstable branch the old
+         RimWorldWin64_Data\Managed folder doesn't exist). 1.6.4871 = the last 1.6 we shipped against. -->
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4871" ExcludeAssets="runtime" />
 
     <!-- Harmony -->
     <Reference Include="0Harmony">

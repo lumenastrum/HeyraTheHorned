@@ -4,6 +4,8 @@
 	<PawnInChangedFormWeapon>变身期间无法装备武器</PawnInChangedFormWeapon>
 
 	<!-- 模组设置 -->
+	<Heyra_Setting_Credit>为 1.6 与 1.7 复活 · 原作美术、设定与心意来自 Bando</Heyra_Setting_Credit>
+	<Heyra_Setting_Options>选项</Heyra_Setting_Options>
 	<Heyra_Setting_MilksoyLoomFuel>合成纤维织布机也可使用奶豆作为燃料</Heyra_Setting_MilksoyLoomFuel>
 	<Heyra_Setting_MilksoyLoomFuelDesc>允许殖民者用奶豆填充合成纤维织布机，而不仅限于豆渣。</Heyra_Setting_MilksoyLoomFuelDesc>
 	<Heyra_Setting_UnrestrictedApparel>海拉和龙族可以穿戴任何服装</Heyra_Setting_UnrestrictedApparel>
