@@ -939,10 +939,10 @@
       </li>
       <li Class="Heyra.CompProperties_SoulWeapon">
         <awakenedProjectile>Heyra_SoulGreatBow_Projectile_Awakened</awakenedProjectile>
-        <!-- In an awakened Heyra's hands: the smoother bow with flickering spirit fire (Andres 10/14). -->
+        <!-- In an awakened Heyra's hands: the smoother bow, its spirit fire a MiniMax H3 loop (Andres 10/14). -->
         <awakenedTexPath>Weapon/SoulBowAwakened/Heyra_SoulGreatBow_Awakened_</awakenedTexPath>
-        <awakenedFrames>6</awakenedFrames>
-        <awakenedFps>9</awakenedFps>
+        <awakenedFrames>50</awakenedFrames>
+        <awakenedFps>8</awakenedFps>
       </li>
     </comps>
     <graphicData>
