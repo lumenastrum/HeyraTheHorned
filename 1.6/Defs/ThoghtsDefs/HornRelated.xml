@@ -2,6 +2,14 @@
 <Defs>
 	<ThoughtDef>
 		<defName>Heyra_Missinghornthought</defName>
+		<!-- Was MoHAR's MoharThoughts.RaceBPHediff + an MTWDef; without them this mood never fired. -->
+		<workerClass>Heyra.ThoughtWorker_MissingPart</workerClass>
+		<modExtensions>
+			<li Class="Heyra.MissingPartThoughtExtension">
+				<race>Alien_Heyra</race>
+				<bodyPart>Heyra_Horn</bodyPart>
+			</li>
+		</modExtensions>
 		<stages>
 			<li>
 				<label>Horns missing</label>
