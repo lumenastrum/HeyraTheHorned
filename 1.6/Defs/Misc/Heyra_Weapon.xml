@@ -871,11 +871,14 @@
         <travelVisible>0.352~0.83</travelVisible>
         <trailLength>9</trailLength>
         <trailLead>1.2</trailLead>
-        <fadeFrames>Mote/Heyra_Breath_</fadeFrames>
+        <!-- Was Mote/Heyra_Breath_: that animation grows outward from the shooter, so stretched over the
+             whole lance it read as a second bolt chasing the arrow (Andres, 10/13). The normal bow's
+             crackle, in the Awakened colour and a bit wider. A proper Awakened visual pass is planned. -->
+        <fadeFrames>Mote/Heyra_Electricshock_</fadeFrames>
         <shader>MoteGlow</shader>
         <color>(70,80,254)</color>
         <width>9.0</width>
-        <fadeWidth>1.6</fadeWidth>
+        <fadeWidth>1.2</fadeWidth>
         <frameTicks>3</frameTicks>
         <fadeFrameTicks>2</fadeFrameTicks>
         <startForward>0.6</startForward>
