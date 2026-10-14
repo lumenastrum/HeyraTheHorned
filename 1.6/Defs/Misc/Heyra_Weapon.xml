@@ -821,7 +821,9 @@
       <li Class="Heyra.HeyraBeamProps">
         <headTexture>Weapon/Bullet_SoulGreatBow_Q</headTexture>
         <headSize>2.4</headSize>
-        <travelFrames>Weapon/Heyra_Bowprojectile_Fadeout</travelFrames>
+        <travelFrames>Weapon/Heyra_Bowprojectile_Fadeout/Heyra_BowprojectileA</travelFrames>
+        <travelVisible>0.352~0.871</travelVisible>
+        <trailLength>7</trailLength>
         <fadeFrames>Mote/Heyra_Electricshock_</fadeFrames>
         <shader>MoteGlow</shader>
         <color>(150,200,255)</color>
@@ -864,7 +866,9 @@
       <li Class="Heyra.HeyraBeamProps">
         <headTexture>Weapon/Bullet_SoulGreatBow_Q</headTexture>
         <headSize>3.2</headSize>
-        <travelFrames>Weapon/Heyra_Bowprojectile_Fadeout</travelFrames>
+        <travelFrames>Weapon/Heyra_Bowprojectile_Fadeout/Heyra_BowprojectileA</travelFrames>
+        <travelVisible>0.352~0.871</travelVisible>
+        <trailLength>9</trailLength>
         <fadeFrames>Mote/Heyra_Breath_</fadeFrames>
         <shader>MoteGlow</shader>
         <color>(70,80,254)</color>
@@ -875,11 +879,12 @@
         <startForward>0.6</startForward>
         <extendToRange>true</extendToRange>
         <pierceFalloff>0.85</pierceFalloff>
+        <hitWidth>1.0</hitWidth>
       </li>
     </modExtensions>
     <projectile>
       <damageDef>ArrowHighVelocity</damageDef>
-      <damageAmountBase>45</damageAmountBase>
+      <damageAmountBase>120</damageAmountBase>
       <armorPenetrationBase>2.0</armorPenetrationBase>
       <stoppingPower>3.5</stoppingPower>
       <speed>130</speed>

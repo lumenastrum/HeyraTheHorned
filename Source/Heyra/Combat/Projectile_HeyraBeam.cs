@@ -29,6 +29,12 @@ namespace Heyra
         public string travelFrames;
         /// <summary>Folder of fade frames (shown after the head arrives). Optional.</summary>
         public string fadeFrames;
+        /// <summary>While travelling, draw only the last trailLength cells behind the head (0 = whole beam).
+        /// Makes a comet tail that hugs the head instead of a line from the shooter.</summary>
+        public float trailLength = 0f;
+        /// <summary>Part of the travel texture's height that is actually painted (0 = bottom/start, 1 = top/head).
+        /// The quad is stretched so this part lines up with the trail exactly.</summary>
+        public FloatRange travelVisible = new FloatRange(0f, 1f);
         /// <summary>Optional sprite drawn at the head while it travels (e.g. the soul arrow).</summary>
         public string headTexture;
         public float headSize = 1.5f;
@@ -210,7 +216,14 @@ namespace Heyra
             if (launcher?.Faction != null && pawn.Faction != null && !pawn.Faction.HostileTo(launcher.Faction))
             {
                 if (preventFriendlyFire) return false;
-                return Rand.Chance(Find.Storyteller.difficulty.friendlyFireChanceFactor);
+                // Same odds a vanilla bullet gives a friendly bystander (Projectile.CheckForFreeIntercept):
+                // 0.4 x body size x difficulty friendly-fire factor x distance-from-shooter factor
+                // (0 within 5 cells, 1 from 12). Before this, a missed full-range Awakened lance gave every
+                // friendly on its 46-cell line the bare difficulty chance (lab, 10/13: Mie lost her neck).
+                float chance = 0.4f * Mathf.Clamp(pawn.BodySize, 0.1f, 2f)
+                    * Find.Storyteller.difficulty.friendlyFireChanceFactor
+                    * VerbUtility.InterceptChanceFactorFromDistance(beamStart, pawn.Position);
+                return Rand.Chance(chance);
             }
             return true;
         }
@@ -280,7 +293,8 @@ namespace Heyra
             Material[] frames;
             int index;
             float width = p.width;
-            if (!Arrived || FadeFrames.Length == 0 || fadeTick < p.holdTicks)
+            bool travelling = !Arrived || FadeFrames.Length == 0 || fadeTick < p.holdTicks;
+            if (travelling)
             {
                 frames = TravelFrames.Length > 0 ? TravelFrames : FadeFrames;
                 index = age / Mathf.Max(1, p.frameTicks);
@@ -299,9 +313,25 @@ namespace Heyra
             if (frames.Length > 0 && length >= 0.05f)
             {
                 Material mat = frames[Mathf.Clamp(index, 0, frames.Length - 1) % frames.Length];
-                Vector3 center = (beamStart + head) / 2f;
+                Vector3 from = beamStart;
+                float span = length;
+                float visLo = 0f, visHi = 1f;
+                if (travelling)
+                {
+                    if (p.trailLength > 0f && span > p.trailLength)
+                    {
+                        from = head - Dir * p.trailLength;
+                        span = p.trailLength;
+                    }
+                    visLo = Mathf.Clamp01(p.travelVisible.min);
+                    visHi = Mathf.Clamp(p.travelVisible.max, visLo + 0.01f, 1f);
+                }
+                // Stretch the quad so the painted part [visLo, visHi] of the texture covers [from, head].
+                float quadLen = span / (visHi - visLo);
+                Vector3 quadStart = from - Dir * (quadLen * visLo);
+                Vector3 center = quadStart + Dir * (quadLen / 2f);
                 center.y = def.Altitude;
-                Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(center, rot, new Vector3(width, 1f, length)), mat, 0);
+                Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(center, rot, new Vector3(width, 1f, quadLen)), mat, 0);
             }
 
             if (!Arrived && !p.headTexture.NullOrEmpty())
