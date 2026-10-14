@@ -137,41 +137,22 @@
 				<spawnForbidden>false</spawnForbidden>
 				<saveKeysPrefix>Beanmilk</saveKeysPrefix>
 			</li>
-			<!-- [1.6 FIX] OLB.CompProperties_Decorate requires Ominous Landscape Builder mod
-			     which is not a listed dependency. Commented out to prevent type-not-found error. -->
-			<!--
-			<li Class="OLB.CompProperties_Decorate">
-				<mote>
+			<!-- Bando's working overlays (were MoHAR's OLB.CompDecorate): beans while fueled, milk while also powered. -->
+			<li Class="Heyra.CompProperties_DecorateMote">
+				<motes>
 					<li>
-						<label>Bean</label>
 						<moteDef>Heyra_Mote_Bean</moteDef>
-						<condition>
-							<ifFueled>true</ifFueled>
-						</condition>
-						<origin>BuildingCenter</origin>
-						<transformation>
-							<scale>4.4~4.4</scale>
-						</transformation>
-						<graceTicks>80</graceTicks>
-						<coexistsWithOther>true</coexistsWithOther>
+						<ifFueled>true</ifFueled>
+						<scale>4.4</scale>
 					</li>
 					<li>
-						<label>Milk</label>
 						<moteDef>Heyra_Mote_Milk</moteDef>
-						<condition>
-							<ifFueled>true</ifFueled>
-							<ifPowered>true</ifPowered>
-						</condition>
-						<origin>BuildingCenter</origin>
-						<transformation>
-							<scale>4.4~4.4</scale>
-						</transformation>
-						<graceTicks>80</graceTicks>
-						<coexistsWithOther>true</coexistsWithOther>
+						<ifFueled>true</ifFueled>
+						<ifPowered>true</ifPowered>
+						<scale>4.4</scale>
 					</li>
-				</mote>
+				</motes>
 			</li>
-			-->
 		</comps>
 		<graphicData>
 			<texPath>Building/Soymilkmachine</texPath>
@@ -260,26 +241,16 @@
 				<spawnForbidden>false</spawnForbidden>
 				<saveKeysPrefix>Biscuit</saveKeysPrefix>
 			</li>
-			<!-- [1.6 FIX] OLB.CompProperties_Decorate requires Ominous Landscape Builder mod. Commented out. -->
-			<!--
-			<li Class="OLB.CompProperties_Decorate">
-				<mote>
+			<!-- Bando's working overlay (was MoHAR's OLB.CompDecorate). -->
+			<li Class="Heyra.CompProperties_DecorateMote">
+				<motes>
 					<li>
-						<label>Bean</label>
 						<moteDef>Heyra_Mote_Biscuit</moteDef>
-						<condition>
-							<ifFueled>true</ifFueled>
-						</condition>
-						<origin>BuildingCenter</origin>
-						<transformation>
-							<scale>4.4~4.4</scale>
-						</transformation>
-						<graceTicks>80</graceTicks>
-						<coexistsWithOther>true</coexistsWithOther>
+						<ifFueled>true</ifFueled>
+						<scale>4.4</scale>
 					</li>
-				</mote>
+				</motes>
 			</li>
-			-->
 		</comps>
 		<graphicData>
 			<texPath>Building/Biscuitmachine</texPath>
@@ -371,26 +342,16 @@
 				<spawnForbidden>false</spawnForbidden>
 				<saveKeysPrefix>Loom</saveKeysPrefix>
 			</li>
-			<!-- [1.6 FIX] OLB.CompProperties_Decorate requires Ominous Landscape Builder mod. Commented out. -->
-			<!--
-			<li Class="OLB.CompProperties_Decorate">
-				<mote>
+			<!-- Bando's working overlay (was MoHAR's OLB.CompDecorate). -->
+			<li Class="Heyra.CompProperties_DecorateMote">
+				<motes>
 					<li>
-						<label>Loom</label>
 						<moteDef>Heyra_Mote_Loommachine</moteDef>
-						<condition>
-							<ifFueled>true</ifFueled>
-						</condition>
-						<origin>BuildingCenter</origin>
-						<transformation>
-							<scale>4.4~4.4</scale>
-						</transformation>
-						<graceTicks>80</graceTicks>
-						<coexistsWithOther>true</coexistsWithOther>
+						<ifFueled>true</ifFueled>
+						<scale>4.4</scale>
 					</li>
-				</mote>
+				</motes>
 			</li>
-			-->
 		</comps>
 		<graphicData>
 			<texPath>Building/Loommachine</texPath>

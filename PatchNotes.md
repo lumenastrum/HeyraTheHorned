@@ -2,6 +2,14 @@
 
 ---
 
+## v1.0.20 — Bando's MoHAR visuals restored (DRAFT, not shipped)
+
+The February MoHAR strip had dropped or simplified several of Bando's effects (audit: `docs/mohar-vfx-audit.md`, local). All rebuilt in `Source/Heyra/Vfx`, no MoHAR needed; lab-checked on 1.6 (mote counts + frames, 0 errors).
+- **Machine overlays back** (`CompDecorateMote`, was MoHAR's bundled `OLB.CompDecorate`): soymilk beans (fueled) + milk (fueled and powered), biscuit dough, the loom's lights. One overlay per decoration, crossfaded as it renews (OLB stacked a fresh 20 s copy every 80 ticks); cleared when the machine stops. The old comment blaming "Ominous Landscape Builder" was wrong: OLB.dll shipped inside MoHAR.
+- **Slash and spark animation** (`Graphic_AnimatedMote` + `MoteAnimationExtension`): frames follow the mote's age like MoHAR's `moteLifespan` engine, so each slash/spark plays once from frame 0 (they showed ~40% of their frames from a random start on the real-time flipbook), and fade, rotation and scale apply again. `Graphic_MoteFlicker` stays for flame hair.
+- **Slash trail** (`HediffComp_TrailMotes`, was `TrailLeaver`): one random slash from Bando's pool every 8 ticks, random scale 0.75–1.25, left where it lands. The flipped A/Z slashes are back (6-mote pool). Replaces the stacked 4-effecter burst.
+- **Static-field spark ring** (`HediffComp_InnerShine`, was MoHAR `InnerShine`): up to 6 sparks + 2 circles at her head while standing, with Bando's random spark jitter (`Mote_Animated`, `periodicRandRot`). Replaces the body-centred effecter. The `Heyra_Effecter_StaticFieldRing` / `_SlashTrail` effecters are gone.
+
 ## v1.0.19 — The beast form looks like Bando drew her
 
 Found while staging Workshop page shots (2026-10-14), compared side by side in the lab with Andres.

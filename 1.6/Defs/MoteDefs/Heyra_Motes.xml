@@ -1,140 +1,137 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- Bando's animated motes, back on age-locked frames (Heyra.Graphic_AnimatedMote) with his own
+	     MoHAR timings: slashes 6 frames x 2 ticks, sparks 4 x 3, the circle 2 x 3, each over a 0.2 s life. -->
+	<ThingDef ParentName="MoteBase" Name="Heyra_AnimatedMoteBase" Abstract="True">
+		<thingClass>Heyra.Mote_Animated</thingClass>
+		<graphicData>
+			<graphicClass>Heyra.Graphic_AnimatedMote</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
 
-	<ThingDef ParentName="MoteBase">
+	<ThingDef ParentName="Heyra_AnimatedMoteBase" Name="Heyra_SlashmoteBase" Abstract="True">
+		<graphicData>
+			<drawSize>1.9</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+		<mote>
+			<solidTime>0.2</solidTime>
+		</mote>
+		<modExtensions>
+			<li Class="Heyra.MoteAnimationExtension">
+				<ticksPerFrame>2</ticksPerFrame>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="Heyra_SlashmoteBase" Name="Heyra_SlashmoteABase">
 		<defName>Heyra_SlashmoteA</defName>
-		<thingClass>MoteAttached</thingClass>
 		<graphicData>
 			<texPath>Mote/Heyra_Slash_</texPath>
-			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
-			<drawSize>1.9</drawSize>
-			<shaderType>MoteGlow</shaderType>
 		</graphicData>
-		<altitudeLayer>MoteOverheadLow</altitudeLayer>
-		<mote>
-			<solidTime>0.2</solidTime>
-		</mote>
 	</ThingDef>
-
-	<ThingDef ParentName="MoteBase">
+	<ThingDef ParentName="Heyra_SlashmoteBase">
 		<defName>Heyra_SlashmoteX</defName>
-		<thingClass>MoteAttached</thingClass>
 		<graphicData>
 			<texPath>Mote/Heyra_SlashX_</texPath>
-			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
-			<drawSize>1.9</drawSize>
-			<shaderType>MoteGlow</shaderType>
 		</graphicData>
-		<altitudeLayer>MoteOverheadLow</altitudeLayer>
-		<mote>
-			<solidTime>0.2</solidTime>
-		</mote>
 	</ThingDef>
-
-	<ThingDef ParentName="MoteBase">
+	<ThingDef ParentName="Heyra_SlashmoteBase">
 		<defName>Heyra_SlashmoteY</defName>
-		<thingClass>MoteAttached</thingClass>
 		<graphicData>
 			<texPath>Mote/Heyra_SlashY_</texPath>
-			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
-			<drawSize>1.9</drawSize>
-			<shaderType>MoteGlow</shaderType>
 		</graphicData>
-		<altitudeLayer>MoteOverheadLow</altitudeLayer>
-		<mote>
-			<solidTime>0.2</solidTime>
-		</mote>
 	</ThingDef>
-
-	<ThingDef ParentName="MoteBase">
+	<ThingDef ParentName="Heyra_SlashmoteBase" Name="Heyra_SlashmoteZBase">
 		<defName>Heyra_SlashmoteZ</defName>
-		<thingClass>MoteAttached</thingClass>
 		<graphicData>
 			<texPath>Mote/Heyra_SlashZ_</texPath>
-			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
-			<drawSize>1.9</drawSize>
-			<shaderType>MoteGlow</shaderType>
 		</graphicData>
-		<altitudeLayer>MoteOverheadLow</altitudeLayer>
-		<mote>
-			<solidTime>0.2</solidTime>
-		</mote>
 	</ThingDef>
-
-
+	<ThingDef ParentName="Heyra_SlashmoteABase">
+		<defName>Heyra_SlashmoteAFlipped</defName>
+		<modExtensions Inherit="False">
+			<li Class="Heyra.MoteAnimationExtension">
+				<ticksPerFrame>2</ticksPerFrame>
+				<flipped>true</flipped>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="Heyra_SlashmoteZBase">
+		<defName>Heyra_SlashmoteZFlipped</defName>
+		<modExtensions Inherit="False">
+			<li Class="Heyra.MoteAnimationExtension">
+				<ticksPerFrame>2</ticksPerFrame>
+				<flipped>true</flipped>
+			</li>
+		</modExtensions>
+	</ThingDef>
 	<!-- ===============================hediff====================================================== -->
 	<HediffDef>
 		<defName>Heyra_Hediff_Slash</defName>
 		<label>flash slash</label>
-
 		<hediffClass>HediffWithComps</hediffClass>
 		<description>attached by flash slash</description>
-
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>24</disappearsAfterTicks>
 			</li>
-			<li Class="Heyra.HediffCompProperties_PlayEffecter">
-				<effecterDef>Heyra_Effecter_SlashTrail</effecterDef>
+			<!-- Bando's MoHAR TrailLeaver: one random slash every 8 ticks, left where it lands. -->
+			<li Class="Heyra.HediffCompProperties_TrailMotes">
+				<period>8</period>
+				<motePool>
+					<li>Heyra_SlashmoteA</li>
+					<li>Heyra_SlashmoteAFlipped</li>
+					<li>Heyra_SlashmoteX</li>
+					<li>Heyra_SlashmoteY</li>
+					<li>Heyra_SlashmoteZ</li>
+					<li>Heyra_SlashmoteZFlipped</li>
+				</motePool>
+				<offset>(0, 0, 0.2)</offset>
+				<randomScale>0.75~1.25</randomScale>
 			</li>
 		</comps>
 	</HediffDef>
-
 <!-- ===============================SPARK====================================================== -->
-
-	<ThingDef ParentName="MoteBase">
+	<ThingDef ParentName="Heyra_AnimatedMoteBase" Name="Heyra_SparkmoteBase" Abstract="True">
+		<graphicData>
+			<drawSize>10</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<solidTime>0.2</solidTime>
+		</mote>
+		<modExtensions>
+			<li Class="Heyra.MoteAnimationExtension">
+				<ticksPerFrame>3</ticksPerFrame>
+				<randomRotationPeriod>8</randomRotationPeriod>
+				<randomRotationAngle>0~359</randomRotationAngle>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="Heyra_SparkmoteBase">
 		<defName>Heyra_Mote_Spark1_</defName>
-		<thingClass>MoteAttached</thingClass>
 		<graphicData>
 			<texPath>Mote/Heyra_Spark1_</texPath>
-			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
-			<drawSize>20</drawSize>
-			<shaderType>MoteGlow</shaderType>
 		</graphicData>
-		<altitudeLayer>MoteLow</altitudeLayer>
-		<mote>
-			<solidTime>0.2</solidTime>
-		</mote>
 	</ThingDef>
-
-	<ThingDef ParentName="MoteBase">
+	<ThingDef ParentName="Heyra_SparkmoteBase">
 		<defName>Heyra_Mote_Spark2_</defName>
-		<thingClass>MoteAttached</thingClass>
 		<graphicData>
 			<texPath>Mote/Heyra_Spark2_</texPath>
-			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
-			<drawSize>20</drawSize>
-			<shaderType>MoteGlow</shaderType>
 		</graphicData>
-		<altitudeLayer>MoteLow</altitudeLayer>
-		<mote>
-			<solidTime>0.2</solidTime>
-		</mote>
 	</ThingDef>
-
-	<ThingDef ParentName="MoteBase">
+	<ThingDef ParentName="Heyra_SparkmoteBase">
 		<defName>Heyra_Mote_Spark3_</defName>
-		<thingClass>MoteAttached</thingClass>
 		<graphicData>
 			<texPath>Mote/Heyra_Spark3_</texPath>
-			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
-			<drawSize>20</drawSize>
-			<shaderType>MoteGlow</shaderType>
 		</graphicData>
-		<altitudeLayer>MoteLow</altitudeLayer>
-		<mote>
-			<solidTime>0.2</solidTime>
-		</mote>
 	</ThingDef>
-
-	<ThingDef ParentName="MoteBase">
+	<ThingDef ParentName="Heyra_AnimatedMoteBase">
 		<defName>Heyra_Mote_SparkCircle_</defName>
-		<thingClass>MoteAttached</thingClass>
 		<graphicData>
 			<texPath>Mote/Heyra_SparkCircle_</texPath>
-			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
-			<drawSize>20</drawSize>
-			<shaderType>MoteGlow</shaderType>
+			<drawSize>10</drawSize>
 		</graphicData>
 		<altitudeLayer>MoteLow</altitudeLayer>
 		<mote>
@@ -142,24 +139,44 @@
 			<solidTime>0.3</solidTime>
 			<fadeOutTime>0.1</fadeOutTime>
 		</mote>
+		<modExtensions>
+			<li Class="Heyra.MoteAnimationExtension">
+				<ticksPerFrame>3</ticksPerFrame>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
-
 	<!-- ===============================hediff============ -->
-
 	<HediffDef>
 		<defName>Heyra_Hediff_Showspark</defName>
 		<label>ShowSpark</label>
-
 		<hediffClass>HediffWithComps</hediffClass>
 		<description>attached motes</description>
-
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>True</showRemainingTime>
 			</li>
-			<li Class="Heyra.HediffCompProperties_PlayEffecter">
-				<effecterDef>Heyra_Effecter_StaticFieldRing</effecterDef>
+			<!-- Bando's MoHAR InnerShine: up to 6 sparks and 2 circles at her head while she stands. -->
+			<li Class="Heyra.HediffCompProperties_InnerShine">
+				<shines>
+					<li>
+						<motePool>
+							<li>Heyra_Mote_Spark1_</li>
+							<li>Heyra_Mote_Spark2_</li>
+							<li>Heyra_Mote_Spark3_</li>
+						</motePool>
+						<maxAlive>6</maxAlive>
+						<period>1~4</period>
+						<scale>2.1</scale>
+					</li>
+					<li>
+						<motePool>
+							<li>Heyra_Mote_SparkCircle_</li>
+						</motePool>
+						<maxAlive>2</maxAlive>
+						<period>24</period>
+						<scale>2.1</scale>
+					</li>
+				</shines>
 			</li>
 			<li Class="Heyra.HediffCompProperties_RemoveIfHediffNotExists">
 			  <hediffDef>Heyra_Hediff_Monsterform</hediffDef>
@@ -176,13 +193,10 @@
 				</hediffsToParts>
 			</li>
 		</comps>
-
 		<stages>
 			<li>
 				<becomeVisible>false</becomeVisible>
 			</li>
 		</stages>
 	</HediffDef>
-
-
 </Defs>
