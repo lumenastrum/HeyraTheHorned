@@ -69,6 +69,7 @@ namespace Heyra
             size = new IntVec2(cols, rows);
 
             var missing = new HashSet<string>();
+            var pawns = new HashSet<string>();
             resolved = new List<SymbolDef[,]>();
             foreach (List<string> layer in layouts)
             {
@@ -81,6 +82,15 @@ namespace Heyra
                         string tok = tokens[c].Trim();
                         if (tok.Length == 0 || tok == ".") continue;
                         SymbolDef sym = SymbolDef.Resolve(tok);
+                        if (sym?.thingDef?.category == ThingCategory.Pawn
+                            || (sym == null && DefDatabase<PawnKindDef>.GetNamedSilentFail(tok) != null))
+                        {
+                            // KCSG's exporter recorded whoever stood there (Bando's Tribesperson, Colonist,
+                            // Monkey, Husky, Boomrat). KCSG would have spawned them into the player's
+                            // faction; we leave them out on purpose.
+                            pawns.Add(tok);
+                            continue;
+                        }
                         if (sym == null) missing.Add(tok);
                         grid[r, c] = sym;
                     }
@@ -90,6 +100,8 @@ namespace Heyra
             if (missing.Count > 0)
                 Log.Warning("[Heyra] Layout " + defName + " has tokens that match no symbol, thing or terrain (skipped): "
                     + string.Join(", ", missing));
+            if (pawns.Count > 0 && Prefs.DevMode)
+                Log.Message("[Heyra] Layout " + defName + ": pawn tokens left out (exporter leftovers): " + string.Join(", ", pawns));
 
             if (HasRoofGrid)
             {
@@ -144,12 +156,20 @@ namespace Heyra
             if (sym != null) return sym.thingDef != null || sym.terrainDef != null ? sym : null;
             if (autoCache.TryGetValue(token, out sym)) return sym;
 
-            sym = TryRotated(token, "_North", Rot4.North) ?? TryRotated(token, "_East", Rot4.East)
-                ?? TryRotated(token, "_South", Rot4.South) ?? TryRotated(token, "_West", Rot4.West)
-                ?? Auto(token);
+            sym = Auto(token);
+            for (int i = 0; sym == null && i < RotationSuffixes.Length; i++)
+                sym = TryRotated(token, RotationSuffixes[i].suffix, RotationSuffixes[i].rot);
             autoCache[token] = sym;
             return sym;
         }
+
+        // KCSG's exporter writes rotations in the game's language. Bando exported the Palace from a
+        // Chinese game (_北 _东 _南 _西), which KCSG itself never parsed: its furniture lost rotation.
+        private static readonly (string suffix, Rot4 rot)[] RotationSuffixes =
+        {
+            ("_North", Rot4.North), ("_East", Rot4.East), ("_South", Rot4.South), ("_West", Rot4.West),
+            ("_北", Rot4.North), ("_东", Rot4.East), ("_南", Rot4.South), ("_西", Rot4.West),
+        };
 
         private static SymbolDef TryRotated(string token, string suffix, Rot4 rot)
         {
@@ -168,8 +188,8 @@ namespace Heyra
             ThingDef t = DefDatabase<ThingDef>.GetNamedSilentFail(token);
             if (t != null && !t.IsCorpse) return new SymbolDef { defName = token, thing = token, thingDef = t };
 
-            int us = token.LastIndexOf('_');
-            if (us > 0)
+            // "<Thing>_<Stuff>", where either side may contain underscores (Armchair_Leather_Fox).
+            for (int us = token.IndexOf('_'); us > 0; us = token.IndexOf('_', us + 1))
             {
                 ThingDef made = DefDatabase<ThingDef>.GetNamedSilentFail(token.Substring(0, us));
                 ThingDef st = DefDatabase<ThingDef>.GetNamedSilentFail(token.Substring(us + 1));

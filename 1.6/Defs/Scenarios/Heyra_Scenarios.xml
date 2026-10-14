@@ -256,4 +256,143 @@
 		</scenario>
 	</ScenarioDef>
 
+	<!-- ═══════════════════════════════════════════════════════════════════════
+	     BANDO'S TWO LOST SCENARIOS, restored 2026-10 (VEF removal phase 4b)
+	     From the original Heyra the Horned (Workshop 2689852146, 1.4), words
+	     and numbers as Bando wrote them. They started you inside his
+	     Stronghold and Village layouts through KCSG; the revival's content
+	     came from a newer base that never had them. Now built by Heyra's own
+	     ScenPart_StartingStructure.
+	     ═══════════════════════════════════════════════════════════════════════ -->
+
+	<ScenPartDef>
+		<defName>Heyra_AddStartingStructure</defName>
+		<label>add Heyra structure to starting map</label>
+		<category>Misc</category>
+		<scenPartClass>Heyra.ScenPart_StartingStructure</scenPartClass>
+		<maxUses>1</maxUses>
+		<selectionWeight>0</selectionWeight>
+	</ScenPartDef>
+
+	<ScenPartDef>
+		<defName>Heyra_GameCondition_VolcanicWinter</defName>
+		<label>Volcanic winter incoming</label>
+		<scenPartClass>ScenPart_GameCondition</scenPartClass>
+		<category>GameCondition</category>
+		<selectionWeight>0.8</selectionWeight>
+		<summaryPriority>400</summaryPriority>
+		<maxUses>1</maxUses>
+		<gameCondition>VolcanicWinter</gameCondition>
+		<gameConditionTargetsWorld>true</gameConditionTargetsWorld>
+		<durationRandomRange>30~40</durationRandomRange>
+	</ScenPartDef>
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>Heyra_Scenario_Stronghold</defName>
+		<label>Heyran Chronicle: The Last Stand</label>
+		<description>Continuous fights have depleted this remote Heyran stronghold. There were sixteen soldiers, and now there are only four. The south wall was blown down by Rong artillery during last month's battle, since then defending has become much harder. And to make things worse, the supply line was cut off earlier this week. Food is running short. This looks like the end of this stronghold.\n\nThe soldiers are left to survive on their own. They need to not only repulse the raiders, but also to find a sustainable way to survive. If possible, recruit some men. After all, in a situation like this, they would really appreciate some extra helping hands.</description>
+		<scenario>
+			<summary>Four Heyra soldiers trying to survive in a remote stronghold. Situation is grim.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Heyra_PlayerFactionSoldier</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>4</pawnCount>
+					<pawnChoiceCount>10</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>100</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>150</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>220</count>
+				</li>
+				<li Class="ScenPart_CreateIncident">
+					<def>CreateIncident</def>
+					<incident>RaidEnemy</incident>
+					<intervalDays>15</intervalDays>
+					<repeat>True</repeat>
+				</li>
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>0.5</chance>
+					<hediff>Malnutrition</hediff>
+					<hideOffMap>true</hideOffMap>
+					<severityRange>0.1~0.45</severityRange>
+				</li>
+				<li Class="Heyra.ScenPart_StartingStructure">
+					<def>Heyra_AddStartingStructure</def>
+					<structureLabel>A damaged stronghold</structureLabel>
+					<nearMapCenter>True</nearMapCenter>
+					<chooseFrom>
+						<li>Heyra_Structure_Stronghold</li>
+					</chooseFrom>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>Heyra_Scenario_Village</defName>
+		<label>Heyran Chronicle: Winter is Coming</label>
+		<description>The Geomancer has given a prophecy, and it was a bad one. A distant volcano is going to erupt, and the ash will cast the darkest shadow on this village. Disputes broke out among the villagers, half of them decided to leave. In the chaos, a few thugs looted the village hall and escaped. There were not much left to you.</description>
+		<scenario>
+			<summary>Five Heyra villagers are determined to face the upcoming volcanic winter. Can they do it with very limited resources?</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Heyra_PlayerFactionGeneral</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>5</pawnCount>
+					<pawnChoiceCount>10</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>250</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>120</count>
+				</li>
+				<li Class="ScenPart_GameCondition">
+					<def>Heyra_GameCondition_VolcanicWinter</def>
+					<durationDays>15</durationDays>
+				</li>
+				<li Class="Heyra.ScenPart_StartingStructure">
+					<def>Heyra_AddStartingStructure</def>
+					<structureLabel>A small village</structureLabel>
+					<nearMapCenter>True</nearMapCenter>
+					<chooseFrom>
+						<li>Heyra_Structure_Village</li>
+					</chooseFrom>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
 </Defs>

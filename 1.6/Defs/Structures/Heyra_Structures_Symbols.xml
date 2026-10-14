@@ -282,5 +282,11 @@
   <glowColor>(217,80,80,0)</glowColor>
   </Heyra.SymbolDef>
 
+  <!-- The old dark carpet (Village and Palace) is gone from vanilla too; slate is the nearest dark grey. -->
+  <Heyra.SymbolDef>
+  <defName>CarpetDark</defName>
+  <terrain>CarpetSlate</terrain>
+  </Heyra.SymbolDef>
+
 
 </Defs>

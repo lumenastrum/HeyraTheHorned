@@ -3,5 +3,8 @@
   
   <!-- EN: Volcanic winter incoming -->
   <Heyra_GameCondition_VolcanicWinter.label>火山尘埃</Heyra_GameCondition_VolcanicWinter.label>
+
+  <!-- EN: add Heyra structure to starting map -->
+  <Heyra_AddStartingStructure.label>在初始地图添加聆族建筑</Heyra_AddStartingStructure.label>
   
 </LanguageData>
