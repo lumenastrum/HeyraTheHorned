@@ -109,7 +109,9 @@ namespace Heyra
                         ? t.Faction != site && t.Faction != Faction.OfPlayer
                         : t.def.category == ThingCategory.Filth
                           || (t.def.category == ThingCategory.Building && !t.def.building.isNaturalRock)
-                          || (t.def.thingCategories != null && t.def.thingCategories.Contains(ThingCategoryDefOf.Chunks));
+                          // Stone chunks sit in StoneChunks, a CHILD of Chunks, so KCSG's direct
+                          // Contains(Chunks) never matched them and rubble stayed inside rooms.
+                          || t.def.IsWithinCategory(ThingCategoryDefOf.Chunks);
                     if (go) t.DeSpawn();
                 }
                 TerrainDef under = map.terrainGrid.UnderTerrainAt(c);

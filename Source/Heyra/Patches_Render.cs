@@ -339,6 +339,10 @@ namespace Heyra
             // ── Monsterform body offset ──
             if (_bodyNodeType == null || !_bodyNodeType.IsInstanceOfType(__instance)) return;
 
+            // World only, like Bando's 1.4 Patch_DrawPawnBody (it skipped PawnRenderFlags.Portrait).
+            // Lifting the portrait too pushed the beast's head out of the colonist bar.
+            if (parms.Portrait) return;
+
             // Fast exit for non-monsterform pawns
             if (!changedPawns.Contains(parms.pawn.thingIDNumber)) return;
 
