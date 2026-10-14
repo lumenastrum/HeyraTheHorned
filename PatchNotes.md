@@ -2,7 +2,7 @@
 
 ---
 
-## v1.0.19 — The beast form looks like Bando drew her (DRAFT, not shipped)
+## v1.0.19 — The beast form looks like Bando drew her
 
 Found while staging Workshop page shots (2026-10-14), compared side by side in the lab with Andres.
 - **Beast size and lift back to Bando's 1.4 values.** His beast mesh was 1.5 × 2.5 = 3.75 and lifted 0.8 (decompiled `Patch_GetHumanlikeBodySetForPawnHelper` / `Patch_DrawPawnBody`); the port had 3.5 and 1.2, so she floated above the ground line. Flame hair follows the lift (z 1.2 → 0.8).
