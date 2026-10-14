@@ -32,13 +32,12 @@ This mod also features the Rong people, the nemesis of Heyras — a small group 
 [h2]Changes from Original[/h2]
 - Updated to RimWorld 1.6 compatibility
 - MoHAR framework dependency removed (functionality internalized)
-- VFE Core namespace updated for 1.6 (VFECore.* to VEF.*)
+- Vanilla Expanded Framework no longer needed: Heyra's beams, breath, static field, quest site and starting structures are built in
 - Recompiled assemblies for Unity 2022.3.35
 
 [h2]Dependencies[/h2]
 - Humanoid Alien Races (HAR)
-- Vanilla Expanded Framework (VEF) — includes MVCF and KCSG
-- (Ancot Library is no longer required since v1.0.16 — biohorn rendering is built in)
+- (Vanilla Expanded Framework and Ancot Library are no longer required. Keep them if other mods need them; Heyra works either way.)
 
 [h2]Credits[/h2]
 - [b]Bando[/b] — Original mod author. All creative work, art, and design.
@@ -48,20 +47,16 @@ This mod also features the Rong people, the nemesis of Heyras — a small group 
 All rights to the original creative work belong to Bando. This revival is published in good faith due to the original author's extended absence. If Bando returns and requests removal, this mod will be taken down immediately.
 	</description>
 
-	<!-- Hard dependencies — HAR + VEF (includes MVCF + KCSG) -->
+	<!-- Hard dependency: HAR only. VEF dropped in the VEF removal (phases 1-5, v1.0.17+). -->
 	<modDependencies>
 		<li>
 			<packageId>erdelf.HumanoidAlienRaces</packageId>
 			<displayName>Humanoid Alien Races</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
 		</li>
-		<li>
-			<packageId>oskarpotocki.vanillafactionsexpanded.core</packageId>
-			<displayName>Vanilla Expanded Framework</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
-		</li>
 	</modDependencies>
 
+	<!-- VEF stays in loadAfter so the order is stable for players who keep it for other mods. -->
 	<loadAfter>
 		<li>brrainz.harmony</li>
 		<li>erdelf.HumanoidAlienRaces</li>
