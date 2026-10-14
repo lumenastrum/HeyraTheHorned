@@ -196,9 +196,11 @@
 			<Insulation_Cold>35</Insulation_Cold>
 			<Insulation_Heat>35</Insulation_Heat>
 			<EquipDelay>3</EquipDelay>
-			<VEF_RangedCooldownFactor>0.5</VEF_RangedCooldownFactor>			
-		</statBases>			
+		</statBases>
 		<equippedStatOffsets>
+			<!-- Was VEF_RangedCooldownFactor 0.5 in statBases (VEF's apparel stat, "wearer's ranged cooldown
+			     x this"). Vanilla's pawn stat does the same job: base 1.0 - 0.5 = the same x0.5, no VEF needed. -->
+			<RangedCooldownFactor>-0.5</RangedCooldownFactor>
 			<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
 			<ToxicEnvironmentResistance>0.60</ToxicEnvironmentResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.30</VacuumResistance>
