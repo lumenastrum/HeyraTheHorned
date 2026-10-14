@@ -2,8 +2,14 @@
 
 ---
 
-## v1.0.20 — Bando's MoHAR visuals restored (DRAFT, not shipped)
+## v1.0.20 — A new Soul Bow, and Bando's MoHAR visuals restored
 
+### Soul Great Bow
+- **New art**: KREA 2 img2img restyle of the old sprite in Bando's chunky style (carved antler, brown grip, blue flames tucked behind the limbs), 512 px.
+- **Awakened look**: in an awakened Heyra's hands (`Heyra_Hediff_Enableformchange`) the bow is drawn from 50 frames instead (`CompProperties_SoulWeapon.awakenedTexPath/Frames/Fps`, `Patch_SoulWeaponAwakenedDraw` prefix on `PawnRenderUtility.DrawEquipmentAiming`, vanilla 1.6 placement maths): a smoother bow whose spirit fire is a MiniMax H3 seamless loop (fire only, keyed and drawn behind a static bone layer), with a breathing halo and 54 rising light motes. The bone gap where a flame strand crossed the limb in the source was repainted (KREA masked inpaint).
+- **Glows at night**: a fire-only additive pass (`awakenedGlowTexPath`, MoteGlow) drawn at `AltitudeLayer.VisEffects`, above RimWorld's darkness.
+
+### MoHAR visuals
 The February MoHAR strip had dropped or simplified several of Bando's effects (audit: `docs/mohar-vfx-audit.md`, local). All rebuilt in `Source/Heyra/Vfx`, no MoHAR needed; lab-checked on 1.6 (mote counts + frames, 0 errors).
 - **Machine overlays back** (`CompDecorateMote`, was MoHAR's bundled `OLB.CompDecorate`): soymilk beans (fueled) + milk (fueled and powered), biscuit dough, the loom's lights. One overlay per decoration, crossfaded as it renews (OLB stacked a fresh 20 s copy every 80 ticks); cleared when the machine stops. The old comment blaming "Ominous Landscape Builder" was wrong: OLB.dll shipped inside MoHAR.
 - **Slash and spark animation** (`Graphic_AnimatedMote` + `MoteAnimationExtension`): frames follow the mote's age like MoHAR's `moteLifespan` engine, so each slash/spark plays once from frame 0 (they showed ~40% of their frames from a random start on the real-time flipbook), and fade, rotation and scale apply again. `Graphic_MoteFlicker` stays for flame hair.
