@@ -43,10 +43,10 @@
 				<graphic>
 					<texPath>Heyra/Body/ChangedForm</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(3.5,3.5)</drawSize>
+					<drawSize>(3.75,3.75)</drawSize>
 				</graphic>
-				<customDrawSize>(3.5,3.5)</customDrawSize>
-				<floatOffset>(0,1.2)</floatOffset>
+				<customDrawSize>(3.75,3.75)</customDrawSize>
+				<floatOffset>(0,0.8)</floatOffset>
 				<removeOnDowned>true</removeOnDowned>
 				<removeSound>DropPod_Open</removeSound>
 				<immuneToStagger>true</immuneToStagger>
@@ -482,6 +482,12 @@
 				<fadeFrameTicks>2</fadeFrameTicks>
 				<startForward>0.6</startForward>
 				<minDistance>2.8</minDistance>
+				<!-- Drawing only: the breath leaves her mouth, measured on the beast sprite at Bando's size 3.75 /
+				     lift 0.8 (snout tip ~1.27 forward, ~0.37 up facing east; west mirrors). Hits still trace
+				     from her cell. Andres, 10/14: "her breath coming from her chest/legs is a little sad". -->
+				<mouthEast>(1.27,0.37)</mouthEast>
+				<mouthNorth>(0,1.0)</mouthNorth>
+				<mouthSouth>(0,0)</mouthSouth>
 			</li>
 		</modExtensions>
 	</ThingDef>

@@ -10,7 +10,7 @@
 			<texPath>Mote/Heyra_Flamehair_East_</texPath>
 			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
 			<drawSize>3</drawSize>
-			<drawOffset>(0.2, 0, 1.2)</drawOffset>
+			<drawOffset>(0.2, 0, 0.8)</drawOffset>
 		</graphicData>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>
@@ -44,7 +44,7 @@
 			<texPath>Mote/Heyra_Flamehair_West_</texPath>
 			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
 			<drawSize>3</drawSize>
-			<drawOffset>(-0.2, 0, 1.2)</drawOffset>
+			<drawOffset>(-0.2, 0, 0.8)</drawOffset>
 		</graphicData>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>
@@ -80,7 +80,7 @@
 			<texPath>Mote/Heyra_Flamehair_South_</texPath>
 			<graphicClass>Heyra.Graphic_MoteFlicker</graphicClass>
 			<drawSize>3</drawSize>
-			<drawOffset>(0, 0, 1.2)</drawOffset>
+			<drawOffset>(0, 0, 0.8)</drawOffset>
 		</graphicData>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>

@@ -75,6 +75,25 @@ namespace Heyra
         public float pierceFalloff = 1f;
         /// <summary>Stop after hitting this many pawns (0 = unlimited).</summary>
         public int maxTargets = 0;
+        /// <summary>Drawing only: where the beam appears to leave the shooter, as (x, z) cells from its
+        /// position, per facing (west mirrors east). The beast's breath used to leave from her chest because
+        /// the beast sprite is drawn lifted and forward of her cell; hits still trace from the real start.
+        /// All zero = draw from the real start.</summary>
+        public Vector2 mouthEast = Vector2.zero;
+        public Vector2 mouthNorth = Vector2.zero;
+        public Vector2 mouthSouth = Vector2.zero;
+        public bool HasMouth => mouthEast != Vector2.zero || mouthNorth != Vector2.zero || mouthSouth != Vector2.zero;
+
+        public Vector3 MouthFor(Rot4 facing)
+        {
+            switch (facing.AsInt)
+            {
+                case 0: return new Vector3(mouthNorth.x, 0f, mouthNorth.y);
+                case 1: return new Vector3(mouthEast.x, 0f, mouthEast.y);
+                case 2: return new Vector3(mouthSouth.x, 0f, mouthSouth.y);
+                default: return new Vector3(-mouthEast.x, 0f, mouthEast.y);
+            }
+        }
 
         public override IEnumerable<string> ConfigErrors()
         {
@@ -88,6 +107,7 @@ namespace Heyra
     {
         private Vector3 beamStart;
         private Vector3 beamEnd;
+        private Vector3 drawStart;   // where the beam is drawn from (mouth); beamStart is where hits trace from
         private float traveled;
         private int fadeTick = -1;
         private int age;
@@ -122,6 +142,12 @@ namespace Heyra
             if (p.extendToRange)
                 reach = Mathf.Max(reach, WeaponRange(equipment, p));
             beamEnd = ClipToWalls(beamStart, beamStart + dir * Mathf.Max(0.5f, reach - p.startForward));
+
+            // Facing from the shot's own direction: what the shooter turns to while firing, and stable
+            // even on the tick she's still turning.
+            drawStart = p.HasMouth && launcher is Pawn
+                ? origin.Yto0() + p.MouthFor(Rot4.FromAngleFlat(dir.AngleFlat()))
+                : beamStart;
         }
 
         private static float WeaponRange(Thing equipment, HeyraBeamProps p)
@@ -310,22 +336,28 @@ namespace Heyra
                 index = (fadeTick - p.holdTicks) / p.FadeFrameTicks;
                 if (p.fadeWidth > 0f) width = p.fadeWidth;
             }
-            Vector3 head = Head;
-            float length = (head - beamStart).MagnitudeHorizontal();
-            Quaternion rot = Quaternion.LookRotation(Dir == Vector3.zero ? Vector3.forward : Dir);
+            // Everything below is drawn on the visual line drawStart -> beamEnd (mouth to end), with the
+            // head at the same fraction of it as the real head along beamStart -> beamEnd.
+            Vector3 vStart = drawStart == Vector3.zero ? beamStart : drawStart;   // saves from before v1.0.19
+            float vLen = (beamEnd - vStart).MagnitudeHorizontal();
+            Vector3 vDir = vLen > 0.001f ? (beamEnd - vStart).Yto0() / vLen : Dir;
+            float progress = Length > 0.001f ? Mathf.Min(traveled, Length) / Length : 1f;
+            Vector3 head = vStart + vDir * (vLen * progress);
+            float length = vLen * progress;
+            Quaternion rot = Quaternion.LookRotation(vDir == Vector3.zero ? Vector3.forward : vDir);
 
             if (frames.Length > 0 && length >= 0.05f)
             {
                 Material mat = frames[Mathf.Clamp(index, 0, frames.Length - 1) % frames.Length];
-                Vector3 from = beamStart;
+                Vector3 from = vStart;
                 float span = length;
                 float visLo = 0f, visHi = 1f;
                 if (travelling)
                 {
-                    float front = Mathf.Min(length + p.trailLead, Length);
+                    float front = Mathf.Min(length + p.trailLead, vLen);
                     if (p.trailLength > 0f && front > p.trailLength)
                     {
-                        from = beamStart + Dir * (front - p.trailLength);
+                        from = vStart + vDir * (front - p.trailLength);
                         span = p.trailLength;
                     }
                     else span = front;
@@ -334,8 +366,8 @@ namespace Heyra
                 }
                 // Stretch the quad so the painted part [visLo, visHi] of the texture covers [from, head].
                 float quadLen = span / (visHi - visLo);
-                Vector3 quadStart = from - Dir * (quadLen * visLo);
-                Vector3 center = quadStart + Dir * (quadLen / 2f);
+                Vector3 quadStart = from - vDir * (quadLen * visLo);
+                Vector3 center = quadStart + vDir * (quadLen / 2f);
                 center.y = def.Altitude;
                 Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(center, rot, new Vector3(width, 1f, quadLen)), mat, 0);
             }
@@ -371,6 +403,7 @@ namespace Heyra
             base.ExposeData();
             Scribe_Values.Look(ref beamStart, "heyraBeamStart");
             Scribe_Values.Look(ref beamEnd, "heyraBeamEnd");
+            Scribe_Values.Look(ref drawStart, "heyraBeamDrawStart");
             Scribe_Values.Look(ref traveled, "heyraBeamTraveled");
             Scribe_Values.Look(ref fadeTick, "heyraBeamFadeTick", -1);
             Scribe_Values.Look(ref age, "heyraBeamAge");

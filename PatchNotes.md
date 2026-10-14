@@ -2,6 +2,14 @@
 
 ---
 
+## v1.0.19 — The beast form looks like Bando drew her (DRAFT, not shipped)
+
+Found while staging Workshop page shots (2026-10-14), compared side by side in the lab with Andres.
+- **Beast size and lift back to Bando's 1.4 values.** His beast mesh was 1.5 × 2.5 = 3.75 and lifted 0.8 (decompiled `Patch_GetHumanlikeBodySetForPawnHelper` / `Patch_DrawPawnBody`); the port had 3.5 and 1.2, so she floated above the ground line. Flame hair follows the lift (z 1.2 → 0.8).
+- **Breath leaves her mouth** (`HeyraBeamProps.mouthEast/North/South`, drawing only; hits still trace from her cell). It used to come out of her chest and legs.
+- **Colonist-bar portrait:** the lift is skipped for portraits, like Bando's. The bar showed her belly with the head cut off.
+- **No rubble indoors:** structure clean-up now matches stone chunks (`IsWithinCategory(Chunks)`); Rong labs and Bando's layouts had rocks inside rooms.
+
 ## v1.0.18 — Vanilla Expanded Framework no longer required (VEF removal phases 3–5)
 
 **Heyra's only dependency is now Humanoid Alien Races.** VEF leaves `modDependencies` but stays in `loadAfter`, so players who keep it for other mods keep a stable order. Tested on 1.6 (lab) and 1.7 (rig) with VEF and Ancot both absent: 0 errors.
