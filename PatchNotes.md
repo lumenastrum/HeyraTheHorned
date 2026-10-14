@@ -2,7 +2,26 @@
 
 ---
 
-## v1.0.18 — Heyra's own beams and beast attacks (DRAFT, VEF removal phase 3, not shipped)
+## v1.0.18 — Vanilla Expanded Framework no longer required (VEF removal phases 3–5)
+
+**Heyra's only dependency is now Humanoid Alien Races.** VEF leaves `modDependencies` but stays in `loadAfter`, so players who keep it for other mods keep a stable order. Tested on 1.6 (lab) and 1.7 (rig) with VEF and Ancot both absent: 0 errors.
+
+### KCSG no longer needed: Heyra builds her own structures (phase 4)
+
+`Heyra.StructureLayoutDef` / `Heyra.SymbolDef` / `StructureGen` (`Source/Heyra/Structures`) read Bando's layouts in KCSG's format; `GenStep_HeyraStructure` + `GenStep_RongGarrison` replace KCSG's two gensteps on the Rong lab site.
+- **Same placement:** every building of Lab A/B lands on the same cell with the same rotation as under KCSG (332/332, 373/373 against a 7-site VEF baseline).
+- **Fix: labs with no guards.** KCSG spawned the garrison before the lab and gave up on the whole group when the map centre was rock or marsh (2 of 7 baseline sites). Ours spawns after the lab, from the nearest standable cell, and only drops a pawn with nowhere to stand.
+- **Fix: floors.** KCSG had stopped reading terrain tokens, so the concrete, flagstone and paved floors were never laid. They are now.
+- **Fix: red lamps.** Vanilla removed `StandingLamp_Red`; it's now a standing lamp with the old red glow.
+- Resolver extras for Bando's other layouts: Chinese rotation suffixes (`_北 _东 _南 _西`), stuffs with underscores (`Leather_Fox`), `CarpetDark` → `CarpetSlate`, and pawn tokens (exporter leftovers) skipped on purpose. Bando's two Stronghold/Village scenarios are restored on branch `heyra-scenarios`, to ship separately.
+
+### Also in this release
+
+- **Soul bow trail** hugs the arrow (`trailLead`): the glow sat 2–3 cells behind the tip. Andres: "I like the tightening".
+- **Awakened arrow** fades with the purple crackle instead of the breath animation, which read as a second bolt chasing the arrow (Andres's pick; a proper Awakened visual pass is planned). Awakened arrow 120 damage, AP 2.0, hitWidth 1.0 (Centipede ~5 arrows, was 14); friendly bystanders use vanilla bullet odds.
+- **Sniper suit:** vanilla `RangedCooldownFactor` −0.5 (equipped offset) replaces VEF's `VEF_RangedCooldownFactor` 0.5; same ×0.5 cooldown.
+- **Chinese settings strings** use Bando's race names 聆族 / 戎族 (v1.0.17 said 海拉 / 龙族); stale MVCF ModDef translation removed.
+- **Andres in-game (1.7):** combat feels good; a Brawler with the gunblade gets no mood penalty.
 
 ### MVCF no longer needed: the breath, the static field and the gunblade are Heyra's own
 

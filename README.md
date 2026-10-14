@@ -27,7 +27,7 @@ The mod also features the **Rong** people, the nemesis of the Heyras — a small
 
 - Updated to RimWorld 1.6 compatibility
 - MoHAR framework dependency removed (functionality internalized)
-- VFE Core namespace updated for 1.6 (`VFECore.*` → `VEF.*`)
+- Vanilla Expanded Framework no longer needed (v1.0.18): settings, quest faction, starting goodwill, beams, breath, static field and the Rong lab site are all built in (`Source/Heyra`)
 - Recompiled assemblies for Unity 2022.3.35
 
 ## Dependencies
@@ -35,11 +35,10 @@ The mod also features the **Rong** people, the nemesis of the Heyras — a small
 | Mod | Link |
 | --- | --- |
 | Humanoid Alien Races (HAR) | [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=839005762) |
-| Vanilla Expanded Framework (VEF, includes MVCF + KCSG) | [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) |
 
-Ancot Library is no longer required since v1.0.16: biohorn rendering is built in (`Source/Heyra/Rendering`).
+That's it. Ancot Library (since v1.0.16) and Vanilla Expanded Framework (since v1.0.18) are no longer required. Keep VEF if other mods need it; Heyra works either way.
 
-Load order: Harmony → HAR → VEF → Heyra the Horned. Loads before Combat Extended if present.
+Load order: Harmony → HAR → Heyra the Horned (after VEF, if you have it). Loads before Combat Extended if present.
 
 ## Installation
 
