@@ -353,10 +353,10 @@
 				</options>
 			</li>
 	</pawnGroupMakers>
-	<!-- VEF FactionDefExtension: custom starting goodwill values.
-	     Namespace updated from VFECore.FactionDefExtension to VEF.Factions.FactionDefExtension for VEF 1.6. -->
+	<!-- Custom starting goodwill values (Source/Heyra/Factions/FactionGoodwillExtension.cs).
+	     Replaced VEF.Factions.FactionDefExtension in v1.0.17; same rules as VEF's version. -->
 	<modExtensions>
-		<li Class="VEF.Factions.FactionDefExtension">
+		<li Class="Heyra.FactionGoodwillExtension">
 			<startingGoodwillByFactionDefs>
 				<PlayerColony>-75~-50</PlayerColony>
 				<Heyra_PlayerFactionSoldier>0~50</Heyra_PlayerFactionSoldier>

@@ -58,8 +58,9 @@
           <mustBeHostileToFactionOf>$asker</mustBeHostileToFactionOf>
         </li>
 		
-		<!-- VEF QuestNode_GetFaction: force quest site to use Rong subfaction. -->
-		<li Class="VEF.Storyteller.QuestNode_GetFaction">
+		<!-- Force the quest site to use the Rong subfaction (Source/Heyra/Quests/QuestNode_GetFactionOfDef.cs;
+		     replaced VEF.Storyteller.QuestNode_GetFaction in v1.0.17, same behaviour). -->
+		<li Class="Heyra.QuestNode_GetFactionOfDef">
 			<allowEnemy>true</allowEnemy>
 			<mustBePermanentEnemy>true</mustBePermanentEnemy>
 			<storeAs>siteFaction</storeAs>

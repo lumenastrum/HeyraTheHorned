@@ -2,7 +2,7 @@
 
 ---
 
-## v1.0.17 — The mod settings finally work (draft, VEF removal phase 1)
+## v1.0.17 — The mod settings finally work (draft, VEF removal phases 1–2)
 
 ### Both settings toggles were dead since the revival
 
@@ -14,6 +14,14 @@ Heyra now has her own settings page (Options → Mod settings → Heyra the Horn
 - **Heyra and Rong can wear any apparel**: turns off HAR's `onlyUseRaceRestrictedApparel` for both races.
 
 Both default off and need a restart, same as before. Your old VEF toggle choices never applied, so nothing to carry over.
+
+### Starting goodwill and the Rong lab quest, now Heyra's own (VEF removal phase 2)
+
+Two more things Heyra borrowed from VEF are now built in. Nothing changes in play:
+- **Starting relations** of the conservative Heyran faction: hostile to an ordinary colony (-75 to -50), friendly enough to the Heyra player factions (General 0 to 30, Soldier 0 to 50), allied with the Reno (80 to 100). Same rules as before: rolled once when factions first meet, stricter side wins, never rerolled on load. One small cleanup: when RimWorld resets every faction relation (moving a colony), each pair is now rolled once instead of twice.
+- **The Rong lab quest** ("Hidden Base Found") still puts the base under the hidden Rong faction. If that faction is missing it falls back to any permanent enemy, exactly as before.
+
+Verified in fresh test worlds: vanilla Crashlanded (-56/-74/-61, hostile), Heyra Crashlanded (25, neutral), Blade Unsheathed (40, neutral), Reno 80-97 allied, quest site Rong both times, 0 errors.
 
 Under the hood: `HeyraMod` / `HeyraSettings` and `PatchOperationHeyraSetting` in `Source/Heyra/Settings`. RimWorld builds mod classes before it applies patches, so the patch reads the setting at load time. VEF is still required for now (phase 1 of 5 in `docs/VEF_REMOVAL_PLAN.md`).
 
