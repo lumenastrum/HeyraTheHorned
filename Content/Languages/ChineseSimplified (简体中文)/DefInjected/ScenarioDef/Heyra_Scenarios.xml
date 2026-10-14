@@ -40,31 +40,4 @@
   <!-- EN: Two elite Heyra veterans with excellent equipment. Highly skilled, but dangerously outnumbered. -->
   <Heyra_Scenario_BladeUnsheathed.scenario.summary>两名装备精良的聆族精锐老兵。技艺高超，但寡不敌众。</Heyra_Scenario_BladeUnsheathed.scenario.summary>
 
-  <!-- Bando's two restored scenarios (his original Chinese, Workshop 2689852146) -->
-  <!-- EN: Heyran Chronicle: The Last Stand -->
-  <Heyra_Scenario_Stronghold.label>聆族轶事：要塞</Heyra_Scenario_Stronghold.label>
-  <!-- EN: Continuous fights have depleted this remote Heyran stronghold. There were sixteen soldiers, and now there are only four. The south wall was blown down by Rong artillery during last month's battle, since then defending has become much harder. And to make things worse, the supply line was cut off earlier this week. Food is running short. This looks like the end of this stronghold.\n\nThe soldiers are left to survive on their own. They need to not only repulse the raiders, but also to find a sustainable way to survive. If possible, recruit some men. After all, in a situation like this, they would really appreciate some extra helping hands.\n -->
-  <Heyra_Scenario_Stronghold.description>这个偏远的要塞被战斗不断地摧残着，开始的十六名守军已经只剩下了四人。南面的墙上个月被戎族的大炮轰塌了，自那以后防守变得愈加困难。祸不单行，本周早间补给线也被切断。食物眼看就要见底，这恐怕就是这座要塞的末日了。\n\n剩下的士兵们被丢在这里，她们只能靠自己了。不仅需要防御入侵，还要想办法填饱肚子。如果可能的话，招募一些人吧。在这种情况下多一个人就多一份希望。</Heyra_Scenario_Stronghold.description>
-  <!-- EN: Continuous fights have depleted this remote Heyran stronghold. There were sixteen soldiers, and now there are only four. The south wall was blown down by Rong artillery during last month's battle, since then defending has become much harder. And to make things worse, the supply line was cut off earlier this week. Food is running short. This looks like the end of this stronghold.\n\nThe soldiers are left to survive on their own. They need to not only repulse the raiders, but also to find a sustainable way to survive. If possible, recruit some men. After all, in a situation like this, they would really appreciate some extra helping hands.\n -->
-  <Heyra_Scenario_Stronghold.scenario.description>这个偏远的要塞被战斗不断地摧残着，开始的十六名守军已经只剩下了四人。南面的墙上个月被戎族的大炮轰塌了，自那以后防守变得愈加困难。祸不单行，本周早间补给线也被切断。食物眼看就要见底，这恐怕就是这座要塞的末日了。\n\n剩下的士兵们被丢在这里，她们只能靠自己了。不仅需要防御入侵，还要想办法填饱肚子。如果可能的话，招募一些人吧。在这种情况下多一个人就多一份希望。</Heyra_Scenario_Stronghold.scenario.description>
-  <!-- EN: Heyran Chronicle: The Last Stand -->
-  <Heyra_Scenario_Stronghold.scenario.name>聆族轶事：要塞</Heyra_Scenario_Stronghold.scenario.name>
-  <!-- EN: A damaged stronghold -->
-  <Heyra_Scenario_Stronghold.scenario.parts.Heyra_AddStartingStructure.structureLabel>一座受损的要塞</Heyra_Scenario_Stronghold.scenario.parts.Heyra_AddStartingStructure.structureLabel>
-  <!-- EN: Four Heyra soldiers trying to survive in a remote stronghold. Situation is grim. -->
-  <Heyra_Scenario_Stronghold.scenario.summary>四名聆族士兵在一处偏远要塞中艰难求生。情况不容乐观。</Heyra_Scenario_Stronghold.scenario.summary>
-  
-  <!-- EN: Heyran Chronicle: Winter is Coming -->
-  <Heyra_Scenario_Village.label>聆族轶事：凛冬将至</Heyra_Scenario_Village.label>
-  <!-- EN: The Geomancer has given a prophecy, and it was a bad one. A distant volcano is going to erupt, and the ash will cast the darkest shadow on this village. Disputes broke out among the villagers, half of them decided to leave. In the chaos, a few thugs looted the village hall and escaped. There were not much left to you. -->
-  <Heyra_Scenario_Village.description>风水师已经下达了预言：火山将要爆发，村子将被遮天的乌云带入黑暗之中。村民中爆发了争执，一半的人决定离开。在混乱中，几个暴徒洗劫了村公堂后潜逃，留给你的东西没剩多少了。</Heyra_Scenario_Village.description>
-  <!-- EN: The Geomancer has given a prophecy, and it was a bad one. A distant volcano is going to erupt, and the ash will cast the darkest shadow on this village. Disputes broke out among the villagers, half of them decided to leave. In the chaos, a few thugs looted the village hall and escaped. There were not much left to you. -->
-  <Heyra_Scenario_Village.scenario.description>风水师已经下达了预言：火山将要爆发，村子将被遮天的乌云带入黑暗之中。村民中爆发了争执，一半的人决定离开。在混乱中，几个暴徒洗劫了村公堂后潜逃，留给你的东西没剩多少了。</Heyra_Scenario_Village.scenario.description>
-  <!-- EN: Heyran Chronicle: Winter is Coming -->
-  <Heyra_Scenario_Village.scenario.name>聆族轶事：凛冬将至</Heyra_Scenario_Village.scenario.name>
-  <!-- EN: A small village -->
-  <Heyra_Scenario_Village.scenario.parts.Heyra_AddStartingStructure.structureLabel>小村庄</Heyra_Scenario_Village.scenario.parts.Heyra_AddStartingStructure.structureLabel>
-  <!-- EN: Five Heyra villagers are determined to face the upcoming volcanic winter. Can they do it with very limited resources? -->
-  <Heyra_Scenario_Village.scenario.summary>五名聆族村民团结起来，决心共同迎接挑战。在时间和物资都有限的情况下，她们能成功吗？</Heyra_Scenario_Village.scenario.summary>
-
 </LanguageData>

@@ -11,8 +11,4 @@
 	<Heyra_Setting_UnrestrictedApparel>Heyra and Rong can wear any apparel</Heyra_Setting_UnrestrictedApparel>
 	<Heyra_Setting_UnrestrictedApparelDesc>Removes the race apparel restriction, so Heyra and Rong can wear clothes from the base game and other mods.</Heyra_Setting_UnrestrictedApparelDesc>
 	<Heyra_Setting_RestartNote>Changes take effect after restarting RimWorld.</Heyra_Setting_RestartNote>
-
-	<!-- Starting structure scenario part (Bando's restored scenarios) -->
-	<Heyra_StartingStructure_MapContains>The map contains:</Heyra_StartingStructure_MapContains>
-	<Heyra_StartingStructure_NearCenter>Build near the map centre</Heyra_StartingStructure_NearCenter>
 </LanguageData>

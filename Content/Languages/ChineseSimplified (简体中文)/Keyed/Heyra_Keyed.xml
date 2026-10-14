@@ -11,7 +11,4 @@
 	<Heyra_Setting_UnrestrictedApparel>聆族和戎族可以穿戴任何服装</Heyra_Setting_UnrestrictedApparel>
 	<Heyra_Setting_UnrestrictedApparelDesc>移除种族服装限制，聆族和戎族可以穿戴原版和其他模组的服装。</Heyra_Setting_UnrestrictedApparelDesc>
 	<Heyra_Setting_RestartNote>更改将在重启 RimWorld 后生效。</Heyra_Setting_RestartNote>
-
-	<Heyra_StartingStructure_MapContains>地图包含：</Heyra_StartingStructure_MapContains>
-	<Heyra_StartingStructure_NearCenter>建在地图中心附近</Heyra_StartingStructure_NearCenter>
 </LanguageData>
