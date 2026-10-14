@@ -10,6 +10,7 @@ The February MoHAR strip had dropped or simplified several of Bando's effects (a
 - **Slash trail** (`HediffComp_TrailMotes`, was `TrailLeaver`): one random slash from Bando's pool every 8 ticks, random scale 0.75–1.25, left where it lands. The flipped A/Z slashes are back (6-mote pool). Replaces the stacked 4-effecter burst.
 - **Static-field spark ring** (`HediffComp_InnerShine`, was MoHAR `InnerShine`): up to 6 sparks + 2 circles at her head while standing, with Bando's random spark jitter (`Mote_Animated`, `periodicRandRot`). Replaces the body-centred effecter. The `Heyra_Effecter_StaticFieldRing` / `_SlashTrail` effecters are gone.
 - **Flame hair back to Bando's size** (drawSize 3 → 3.75; the effecter scale was being ignored). Andres's call.
+- **Two wrong Feb "[1.6 FIX]"s undone**: `soundMeleeHitBuilding` still exists in 1.6, so the Dismemberer (mech slash) and Horned Spectre (big bash) sound right hitting walls again. **Spectre wildness 0.75 back** as the 1.5+ `Wildness` stat (it read as 0: trivial to tame, never reverted). Audit: `docs/feb-commented-audit.md` (local).
 - **"Horns missing" mood works again** (`ThoughtWorker_MissingPart`, was MoHAR's `MoharThoughts.RaceBPHediff` + an `MTWDef`). The strip left `Heyra_Missinghornthought` with no worker, so a Heyra who lost her horns never felt it. −15 while `Heyra_Horn` is missing, Heyra race only, cancelled by an added part. Lab: Heyra gets it, a hornless Rong doesn't.
 
 ## v1.0.19 — The beast form looks like Bando drew her

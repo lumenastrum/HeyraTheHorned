@@ -7,6 +7,9 @@
       <Flammability>1.0</Flammability>
       <LeatherAmount>0</LeatherAmount>
 	  <MeatAmount>0</MeatAmount>
+      <!-- Bando's race <wildness>0.75</wildness>; 1.5+ made it a stat. Missing, it read as 0
+           (trivial to tame, never reverts). -->
+      <Wildness>0.75</Wildness>
     </statBases>
     <race>
       <thinkTreeMain>Animal</thinkTreeMain>
@@ -33,8 +36,7 @@
       <makesFootprints>true</makesFootprints>
       <baseHealthScale>2.0</baseHealthScale>
       <gestationPeriodDays>32</gestationPeriodDays>
-      <!-- [1.6 FIX] <wildness> was removed from RaceProperties in 1.5+.
-           Leaving it in causes an XML error. Wildness is now handled via genes/life stages. -->
+      <!-- <wildness> left RaceProperties in 1.5+; it's the Wildness stat in statBases above. -->
       <foodType>None</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <herdAnimal>false</herdAnimal>
@@ -51,8 +53,7 @@
 				<offset>(0,0,-0.3)</offset>
 	  </specialShadowData>
       <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <!-- [1.6 FIX] soundMeleeHitBuilding removed in RimWorld 1.5+ -->
-      <!-- <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding> -->
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 	  <bloodDef>HornedSpectre_Blood</bloodDef>
 	  <fleshType>HornedSpectre_Flesh</fleshType>

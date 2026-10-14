@@ -36,8 +36,7 @@
       <body>Scyther</body>
       <baseHealthScale>2.0</baseHealthScale>
       <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
-      <!-- [1.6 FIX] soundMeleeHitBuilding removed in RimWorld 1.5+ -->
-      <!-- <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding> -->
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
     </race>
   </ThingDef>
