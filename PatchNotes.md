@@ -9,6 +9,7 @@ The February MoHAR strip had dropped or simplified several of Bando's effects (a
 - **Slash and spark animation** (`Graphic_AnimatedMote` + `MoteAnimationExtension`): frames follow the mote's age like MoHAR's `moteLifespan` engine, so each slash/spark plays once from frame 0 (they showed ~40% of their frames from a random start on the real-time flipbook), and fade, rotation and scale apply again. `Graphic_MoteFlicker` stays for flame hair.
 - **Slash trail** (`HediffComp_TrailMotes`, was `TrailLeaver`): one random slash from Bando's pool every 8 ticks, random scale 0.75–1.25, left where it lands. The flipped A/Z slashes are back (6-mote pool). Replaces the stacked 4-effecter burst.
 - **Static-field spark ring** (`HediffComp_InnerShine`, was MoHAR `InnerShine`): up to 6 sparks + 2 circles at her head while standing, with Bando's random spark jitter (`Mote_Animated`, `periodicRandRot`). Replaces the body-centred effecter. The `Heyra_Effecter_StaticFieldRing` / `_SlashTrail` effecters are gone.
+- **Flame hair back to Bando's size** (drawSize 3 → 3.75; the effecter scale was being ignored). Andres's call.
 - **"Horns missing" mood works again** (`ThoughtWorker_MissingPart`, was MoHAR's `MoharThoughts.RaceBPHediff` + an `MTWDef`). The strip left `Heyra_Missinghornthought` with no worker, so a Heyra who lost her horns never felt it. −15 while `Heyra_Horn` is missing, Heyra race only, cancelled by an added part. Lab: Heyra gets it, a hornless Rong doesn't.
 
 ## v1.0.19 — The beast form looks like Bando drew her
