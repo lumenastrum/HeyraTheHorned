@@ -29,6 +29,7 @@ namespace Heyra
     /// Graphic_MoteFlicker (real-time loop, made for flame hair) it draws the way vanilla Graphic_Mote does:
     /// fade (Alpha), instance colour, exactRotation and Scale all apply.
     /// </summary>
+    [StaticConstructorOnStartup]
     public class Graphic_AnimatedMote : Graphic_Collection
     {
         private static readonly MaterialPropertyBlock propertyBlock = new MaterialPropertyBlock();
