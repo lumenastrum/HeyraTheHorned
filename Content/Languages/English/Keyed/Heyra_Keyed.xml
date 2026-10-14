@@ -2,4 +2,11 @@
 <LanguageData>
 	<PawnInChangedFormApparel>Cannot wear apparel while transformed</PawnInChangedFormApparel>
 	<PawnInChangedFormWeapon>Cannot equip weapons while transformed</PawnInChangedFormWeapon>
+
+	<!-- Mod settings -->
+	<Heyra_Setting_MilksoyLoomFuel>Synthread loom also accepts milksoy as fuel</Heyra_Setting_MilksoyLoomFuel>
+	<Heyra_Setting_MilksoyLoomFuelDesc>Lets colonists fill the synthread loom with milksoy, not just bean pulp.</Heyra_Setting_MilksoyLoomFuelDesc>
+	<Heyra_Setting_UnrestrictedApparel>Heyra and Rong can wear any apparel</Heyra_Setting_UnrestrictedApparel>
+	<Heyra_Setting_UnrestrictedApparelDesc>Removes the race apparel restriction, so Heyra and Rong can wear clothes from the base game and other mods.</Heyra_Setting_UnrestrictedApparelDesc>
+	<Heyra_Setting_RestartNote>Changes take effect after restarting RimWorld.</Heyra_Setting_RestartNote>
 </LanguageData>

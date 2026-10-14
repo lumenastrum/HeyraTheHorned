@@ -2,6 +2,28 @@
 
 ---
 
+## v1.0.17 — The mod settings finally work (draft, VEF removal phase 1)
+
+### Both settings toggles were dead since the revival
+
+Heyra had two optional settings, *milksoy as synthread loom fuel* and *remove apparel restrictions*, provided through VEF's toggleable patches. VEF finds the owning mod by its exact display name, and the toggles said `Heyra the Horned` while the mod is `Heyra the Horned (Revived)`. So neither ever applied, whatever you ticked. The milksoy one was also malformed (it nested a whole `fuelFilter` inside the existing one), so it would have errored even with the right name.
+
+Heyra now has her own settings page (Options → Mod settings → Heyra the Horned (Revived)), with English and Chinese labels:
+
+- **Synthread loom also accepts milksoy as fuel**: adds the milksoy category next to bean pulp.
+- **Heyra and Rong can wear any apparel**: turns off HAR's `onlyUseRaceRestrictedApparel` for both races.
+
+Both default off and need a restart, same as before. Your old VEF toggle choices never applied, so nothing to carry over.
+
+Under the hood: `HeyraMod` / `HeyraSettings` and `PatchOperationHeyraSetting` in `Source/Heyra/Settings`. RimWorld builds mod classes before it applies patches, so the patch reads the setting at load time. VEF is still required for now (phase 1 of 5 in `docs/VEF_REMOVAL_PLAN.md`).
+
+Verified in the test bench with the new `field` reader:
+- **Off:** the loom takes bean pulp only, `onlyUseRaceRestrictedApparel` is true on both races, and HAR refuses a vanilla parka on a Heyra.
+- **On:** the loom also takes milksoy (`Heyra_Rawbean`), the flag is false on both races, and the same Heyra wears the parka.
+- 0 errors either way.
+
+---
+
 ## v1.0.16 — One less dependency: Ancot Library no longer required
 
 ### Biohorn rendering is built in

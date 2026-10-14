@@ -1,46 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-<!-- VEF PatchOperationToggableSequence: opt-in toggles in mod settings.
-     Namespace updated from VFECore to VEF for VEF 1.6. -->
+<!-- Opt-in toggles from Heyra's own mod settings (Source/Heyra/Settings/HeyraSettings.cs).
+     Replaced VEF.PatchOperationToggableSequence in v1.0.17: the VEF version matched our mod by
+     its old display name ("Heyra the Horned"), so neither toggle ever applied in the revival.
+     Both default off and need a restart. -->
 
- <Operation Class="VEF.PatchOperationToggableSequence">
-    <enabled>False</enabled>
-    <mods>
-      <li>Heyra the Horned</li>
-    </mods>
-    <label>Use milksoy to fuel synthread loom (Restart Rimworld to apply)</label>
+  <!-- Milksoy (the milksoy food category) as extra loom fuel, alongside bean pulp. -->
+  <Operation Class="Heyra.PatchOperationHeyraSetting">
+    <setting>milksoyLoomFuel</setting>
     <operations>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Heyra_Loommachine"]/comps/li[4]/fuelFilter</xpath>
-        <value>
-          <li>
-				<fuelFilter>
-					<categories>
-						<li>Heyra_Beancategory</li>
-					</categories>
-				</fuelFilter>
-			</li>
-        </value>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Heyra_Loommachine"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Heyra_Loommachine"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/categories</xpath>
+          <value>
+            <li>Heyra_Beancategory</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Heyra_Loommachine"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <categories>
+              <li>Heyra_Beancategory</li>
+            </categories>
+          </value>
+        </nomatch>
       </li>
     </operations>
   </Operation>
 
-<Operation Class="VEF.PatchOperationToggableSequence">
-    <enabled>False</enabled>
-    <mods>
-      <li>Heyra the Horned</li>
-    </mods>
-    <label>Remove all apparel restrictions in this mod (Restart Rimworld to apply)</label>
+  <!-- Let Heyra and Rong wear any apparel, not just their race-restricted lists. -->
+  <Operation Class="Heyra.PatchOperationHeyraSetting">
+    <setting>unrestrictedApparel</setting>
     <operations>
       <li Class="PatchOperationReplace">
-        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Heyra"]/alienRace/raceRestriction/onlyUseRaceRestrictedApparel</xpath>
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Heyra"]/alienRace/raceRestriction/onlyUseRaceRestrictedApparel</xpath>
         <value>
           <onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
         </value>
       </li>
-	  <li Class="PatchOperationReplace">
-        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Heyra_Rong"]/alienRace/raceRestriction/onlyUseRaceRestrictedApparel</xpath>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Heyra_Rong"]/alienRace/raceRestriction/onlyUseRaceRestrictedApparel</xpath>
         <value>
           <onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
         </value>
