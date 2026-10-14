@@ -33,7 +33,7 @@
 		<projectile>
 			<damageDef>ArrowHighVelocity</damageDef>
 			<damageAmountBase>12</damageAmountBase>
-			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<armorPenetrationBase>1.5</armorPenetrationBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>120</speed>
 		</projectile>

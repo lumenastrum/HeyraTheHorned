@@ -713,18 +713,12 @@
         <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
-      <!-- MVCF: Gunblade's ranged verb doesn't upset Brawler pawns.
-           The gunblade is fundamentally a melee weapon with an integrated cannon. -->
-      <li Class="MVCF.Comps.CompProperties_VerbProps">
-        <compClass>MVCF.Comps.Comp_VerbProps</compClass>
-        <verbProps>
-          <li>
-            <label>sabot cannon</label>
-            <brawlerCaresAbout>false</brawlerCaresAbout>
-          </li>
-        </verbProps>
-      </li>
     </comps>
+    <!-- The gunblade is fundamentally a melee weapon with an integrated cannon: Brawlers don't sulk about it
+         (Source/Heyra/Combat/Patches_HeyraVerbs.cs; replaced MVCF's brawlerCaresAbout=false in v1.0.18). -->
+    <modExtensions>
+      <li Class="Heyra.HeyraBrawlerFriendly" />
+    </modExtensions>
     <graphicData>
       <texPath>Weapon/Heyra_Gunblade</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -886,7 +880,7 @@
     <projectile>
       <damageDef>ArrowHighVelocity</damageDef>
       <damageAmountBase>45</damageAmountBase>
-      <armorPenetrationBase>0.65</armorPenetrationBase>
+      <armorPenetrationBase>2.0</armorPenetrationBase>
       <stoppingPower>3.5</stoppingPower>
       <speed>130</speed>
       <extraDamages>

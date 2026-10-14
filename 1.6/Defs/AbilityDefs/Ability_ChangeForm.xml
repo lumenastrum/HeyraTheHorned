@@ -54,7 +54,7 @@
 			</li>
 		</comps>
 	</AbilityDef>
-	<!-- Dragon breath is now an MVCF hediff verb on Heyra_Hediff_Dragonbreath, not a standalone ability -->
+	<!-- Dragon breath is a Heyra hediff verb on Heyra_Hediff_Dragonbreath (HediffComp_HeyraVerbs), not a standalone ability -->
 
 	<AbilityDef>
 		<defName>Heyra_Ability_Electricfield</defName>

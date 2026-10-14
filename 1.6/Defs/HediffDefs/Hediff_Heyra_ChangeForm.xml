@@ -85,7 +85,7 @@
 					</li>
 				</hediffsToParts>
 			</li>
-			<!-- DragonBreath is now an MVCF hediff verb on Heyra_Hediff_Dragonbreath, not an ability -->
+			<!-- DragonBreath is a Heyra hediff verb (HediffComp_HeyraVerbs) on Heyra_Hediff_Dragonbreath, not an ability -->
 			<li Class="HediffCompProperties_GiveAbility">
 				<abilityDefs>
 					<li>Heyra_Ability_Electricfield</li>
@@ -261,9 +261,10 @@
 		<addedPartProps>
 			<partEfficiency>1.0</partEfficiency>
 		</addedPartProps>
-		<!-- [VEF FORK] Breath attack restored as MVCF hediff verb with VEF GaussProjectile -->
+		<!-- Breath attack: Heyra hediff verb (Source/Heyra/Combat/HediffComp_HeyraVerbs.cs), replaced MVCF in v1.0.18.
+		     The pawn's ranged attack (drafted auto-attack + NPC AI via Patch_HeyraVerbs) with a command button. -->
 		<comps>
-			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+			<li Class="Heyra.HediffCompProperties_HeyraVerbs">
 				<verbs>
 					<li>
 						<label>breath attack</label>
@@ -289,11 +290,6 @@
 						</targetParams>
 					</li>
 				</verbs>
-				<verbProps>
-					<li>
-						<label>breath attack</label>
-					</li>
-				</verbProps>
 			</li>
 		</comps>
 	</HediffDef>
@@ -310,9 +306,10 @@
 		<addedPartProps>
 			<partEfficiency>1.0</partEfficiency>
 		</addedPartProps>
-		<!-- [VEF FORK] Restored MVCF 4-range-band turret system from 1.4 original -->
+		<!-- Static field: four range bands, each an independent turret (own target / warmup / cooldown),
+		     Heyra hediff verbs, replaced MVCF's turret verbs in v1.0.18. -->
 		<comps>
-			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+			<li Class="Heyra.HediffCompProperties_HeyraVerbs">
 				<verbs>
 					<li>
 						<label>electric shockZ</label>
@@ -399,40 +396,12 @@
 						</targetParams>
 					</li>
 				</verbs>
-				<verbProps>
-					<li>
-						<label>electric shockZ</label>
-						<comps>
-							<li Class="MVCF.VerbComps.VerbCompProperties_Turret">
-								<compClass>MVCF.VerbComps.VerbComp_Turret</compClass>
-							</li>
-						</comps>
-					</li>
-					<li>
-						<label>electric shockX</label>
-						<comps>
-							<li Class="MVCF.VerbComps.VerbCompProperties_Turret">
-								<compClass>MVCF.VerbComps.VerbComp_Turret</compClass>
-							</li>
-						</comps>
-					</li>
-					<li>
-						<label>electric shockC</label>
-						<comps>
-							<li Class="MVCF.VerbComps.VerbCompProperties_Turret">
-								<compClass>MVCF.VerbComps.VerbComp_Turret</compClass>
-							</li>
-						</comps>
-					</li>
-					<li>
-						<label>electric shockW</label>
-						<comps>
-							<li Class="MVCF.VerbComps.VerbCompProperties_Turret">
-								<compClass>MVCF.VerbComps.VerbComp_Turret</compClass>
-							</li>
-						</comps>
-					</li>
-				</verbProps>
+				<turretVerbs>
+					<li>electric shockZ</li>
+					<li>electric shockX</li>
+					<li>electric shockC</li>
+					<li>electric shockW</li>
+				</turretVerbs>
 			</li>
 		</comps>
 	</HediffDef>

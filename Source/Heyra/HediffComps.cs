@@ -81,7 +81,7 @@ namespace Heyra
 
         private void SaveDisabledWorkPriorities()
         {
-            if (parent.pawn.workSettings == null) return;
+            if (parent.pawn.workSettings == null || !parent.pawn.workSettings.EverWork) return;   // NPCs: not initialized
             foreach (WorkTypeDef workType in DefDatabase<WorkTypeDef>.AllDefs)
             {
                 if ((workType.workTags & parent.CurStage.disabledWorkTags) != 0)
@@ -93,7 +93,7 @@ namespace Heyra
 
         private void RestoreWorkPriorities()
         {
-            if (workPriorities.NullOrEmpty() || parent.pawn.Dead || parent.pawn.workSettings == null)
+            if (workPriorities.NullOrEmpty() || parent.pawn.Dead || parent.pawn.workSettings == null || !parent.pawn.workSettings.EverWork)
                 return;
 
             foreach (var kvp in workPriorities)

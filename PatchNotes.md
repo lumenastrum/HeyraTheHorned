@@ -2,7 +2,20 @@
 
 ---
 
-## v1.0.18 — Heyra's own beams (DRAFT, VEF removal phase 3a, not shipped)
+## v1.0.18 — Heyra's own beams and beast attacks (DRAFT, VEF removal phase 3, not shipped)
+
+### MVCF no longer needed: the breath, the static field and the gunblade are Heyra's own
+
+- **Breath:** a vanilla hediff verb (`HediffComp_HeyraVerbs`, built on `HediffComp_VerbGiver`) with a "Breath attack" button. A small patch on `Pawn.TryGetAttackVerb` makes it the beast's ranged attack, so drafted beasts breathe on their own and a berserk beast breathes too. Inside 2.8 cells the beast claws and bites as before.
+- **Static field:** each of the four range bands is an independent turret with its own target, warmup and cooldown. It fires without touching the pawn's stance and keeps its state through save/load.
+- **Gunblade:** Brawlers don't get the ranged-weapon mood penalty or the alert (`HeyraBrawlerFriendly`).
+- **Fix:** vanilla's forced-miss code assumed every verb has a weapon, so a weaponless breath would have crashed every cast. Guarded.
+- **Fix:** an NPC Heyra transforming (dev mode, other mods) no longer logs "did not have work settings initialized".
+- **Balance (Andres):** the stronger breath stays; Awakened Soul Bow armor penetration 0.65 → 2.0 (the mech-killer); Celestial Whisper armor penetration 2.0 → 1.5.
+
+Lab (1.6): breath auto + ordered at 14–15 cells: 8 shots in 11/12/12/108 bursts. Adjacent enemy: claws only. Field bands every 67 ticks. Saved and loaded mid-fight with beams in the air: the fight resumes, 0 errors. Still untested: Brawler mood in a real colony; a raid of beasts (enemies never transform on their own).
+
+### Phase 3a: one beam for everything
 
 ### One beam for the breath, the static field, Celestial Whisper and the Soul Great Bow
 
