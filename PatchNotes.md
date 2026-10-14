@@ -2,6 +2,22 @@
 
 ---
 
+## v1.0.18 — Heyra's own beams (DRAFT, VEF removal phase 3a, not shipped)
+
+### One beam for the breath, the static field, Celestial Whisper and the Soul Great Bow
+
+`Heyra.Projectile_HeyraBeam` (`Source/Heyra/Combat`) replaces VEF's `GaussProjectile`; per-def settings live in a `HeyraBeamProps` mod extension.
+- **Mechanics:** the head flies at the projectile's speed. Every pawn the beam passes over is hit once (with an optional per-pawn `pierceFalloff`), it stops at real walls (the Whisper goes through built walls and stops only at natural rock and ore, as before), and friendly-fire rules apply.
+- **Drawing:** the beam draws itself from the existing frames, so there are no new assets.
+- **No orphan crash:** the start point is stored at launch, so a beam whose launcher dies mid-flight just finishes. VEF's version threw an error every tick forever (lab: 6,115 errors).
+- **Soul Great Bow:** now fires a spectral lance in the beast form's palette. The soul arrow flies to full range trailing blue light and pierces every body in its line (×0.8 per extra body, ×0.85 Awakened). The old mote-trail attempt (v1.0.x) failed because vanilla `Mote.Draw` is sealed; drawing from our own projectile sidesteps that.
+
+Lab comparison against the VEF baseline (`docs/COMBAT_BASELINE_VEF.md`), 1.6:
+- **Timing is identical:** breath 4-shot bursts 11–12 ticks apart then 108; field bands every 67; Whisper every 60.
+- **Damage differs:** VEF divided each hit by (1 + things already hit / 10), plants included, so its damage depended on the vegetation. Ours is consistent, so the breath and Whisper hit noticeably harder per landed shot. **Balance pass pending (Andres).**
+
+---
+
 ## v1.0.17 — The mod settings finally work (draft, VEF removal phases 1–2)
 
 ### Both settings toggles were dead since the revival

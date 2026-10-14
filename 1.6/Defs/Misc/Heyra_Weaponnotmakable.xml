@@ -18,15 +18,17 @@
     </projectile>
   </ThingDef--> 
   
-  <!-- VEF ExpandableProjectileDef: beam projectile with GaussProjectile rendering.
-       Updated from VFECore.* to VEF.Weapons.* namespace for VEF 1.6. -->
-  <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+  <!-- Celestial Whisper beam: Heyra beam (Source/Heyra/Combat/Projectile_HeyraBeam.cs), replaced VEF
+       GaussProjectile. Always reaches full range, pierces past 3.2 cells, goes through built walls and
+       stops only at natural rock and ore (VEF's stopWhenHit=false + rock list). -->
+  <ThingDef ParentName="BaseBullet">
 		<defName>Heyra_Bowprojectile</defName>
 		<label>plasma beam</label>
-		<thingClass>VEF.Weapons.GaussProjectile</thingClass>
+		<thingClass>Heyra.Projectile_HeyraBeam</thingClass>
 		<graphicData>
-			<texPath>Weapon/Heyra_Bowprojectile</texPath>
-			<texPathFadeOut>Weapon/Heyra_Bowprojectile_Fadeout</texPathFadeOut>
+			<texPath>Weapon/Heyra_Bowprojectile_Fadeout/Heyra_BowprojectileA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MoteGlow</shaderType>
 		</graphicData>
 		<projectile>
 			<damageDef>ArrowHighVelocity</damageDef>
@@ -35,41 +37,22 @@
 			<stoppingPower>1</stoppingPower>
 			<speed>120</speed>
 		</projectile>
-		<reachMaxRangeAlways>true</reachMaxRangeAlways>
-		<minDistanceToAffect>3.2</minDistanceToAffect>
 		<drawOffscreen>true</drawOffscreen>
-		<lifeTimeDuration>60</lifeTimeDuration>
-		<widthScaleFactor>0.3</widthScaleFactor>
-		<heightScaleFactor>1.6</heightScaleFactor>
-		<startingPositionOffset>(0,0,3)</startingPositionOffset>
-		<totalSizeScale>1.0</totalSizeScale>
-		<tickFrameRate>3</tickFrameRate>
-		<finalTickFrameRate>2</finalTickFrameRate>
-		<tickDamageRate>5</tickDamageRate>
-		<dealsDamageOnce>true</dealsDamageOnce>
-		<stopWhenHit>false</stopWhenHit>
-		<stopWhenHitAt>
-			<li>MineableSteel</li>
-			<li>CollapsedRocks</li>
-			<li>MineableSilver</li>
-			<li>MineableGold</li>
-			<li>MineableUranium</li>
-			<li>MineablePlasteel</li>
-			<li>MineableJade</li>
-			<li>MineableComponentsIndustrial</li>
-			<li>RaisedRocks</li>
-			<li>Sandstone</li>
-			<li>SmoothedSandstone</li>
-			<li>Granite</li>
-			<li>SmoothedGranite</li>
-			<li>Limestone</li>
-			<li>SmoothedLimestone</li>
-			<li>Slate</li>
-			<li>SmoothedSlate</li>
-			<li>Marble</li>
-			<li>SmoothedMarble</li>
-		</stopWhenHitAt>
-	</VEF.Weapons.ExpandableProjectileDef>
+		<modExtensions>
+			<li Class="Heyra.HeyraBeamProps">
+				<travelFrames>Weapon/Heyra_Bowprojectile</travelFrames>
+				<fadeFrames>Weapon/Heyra_Bowprojectile_Fadeout</fadeFrames>
+				<shader>MoteGlow</shader>
+				<width>5.0</width>
+				<frameTicks>3</frameTicks>
+				<fadeFrameTicks>2</fadeFrameTicks>
+				<startForward>0.6</startForward>
+				<minDistance>3.2</minDistance>
+				<extendToRange>true</extendToRange>
+				<passThroughBuiltWalls>true</passThroughBuiltWalls>
+			</li>
+		</modExtensions>
+	</ThingDef>
   
   <ThingDef ParentName="BaseWeapon">
     <defName>Heyra_Celestialwhisper</defName>

@@ -810,16 +810,36 @@
        Soul Great Bow — Heyra sniper bow with soul-energy trail
        ============================================================ -->
 
-  <!-- Soul arrow projectile — trail effect is baked into the _Q texture sprite -->
+  <!-- Soul arrow: a Heyra beam (Source/Heyra/Combat/Projectile_HeyraBeam.cs). The soul arrow flies to full
+       range with a blue trail, piercing every body in its line (each extra body takes pierceFalloff less),
+       then the path crackles with the static field's lightning: the beast form's palette. -->
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>Heyra_SoulGreatBow_Projectile</defName>
     <label>soul arrow</label>
+    <thingClass>Heyra.Projectile_HeyraBeam</thingClass>
     <graphicData>
       <shaderType Inherit="False">MoteGlow</shaderType>
       <texPath>Weapon/Bullet_SoulGreatBow_Q</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.5</drawSize>
     </graphicData>
+    <modExtensions>
+      <li Class="Heyra.HeyraBeamProps">
+        <headTexture>Weapon/Bullet_SoulGreatBow_Q</headTexture>
+        <headSize>2.4</headSize>
+        <travelFrames>Weapon/Heyra_Bowprojectile_Fadeout</travelFrames>
+        <fadeFrames>Mote/Heyra_Electricshock_</fadeFrames>
+        <shader>MoteGlow</shader>
+        <color>(150,200,255)</color>
+        <width>6.0</width>
+        <fadeWidth>0.8</fadeWidth>
+        <frameTicks>3</frameTicks>
+        <fadeFrameTicks>2</fadeFrameTicks>
+        <startForward>0.6</startForward>
+        <extendToRange>true</extendToRange>
+        <pierceFalloff>0.8</pierceFalloff>
+      </li>
+    </modExtensions>
     <projectile>
       <damageDef>ArrowHighVelocity</damageDef>
       <damageAmountBase>30</damageAmountBase>
@@ -839,12 +859,30 @@
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>Heyra_SoulGreatBow_Projectile_Awakened</defName>
     <label>awakened soul arrow</label>
+    <thingClass>Heyra.Projectile_HeyraBeam</thingClass>
     <graphicData>
       <shaderType Inherit="False">MoteGlow</shaderType>
       <texPath>Weapon/Bullet_SoulGreatBow_Q</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2.0</drawSize>
     </graphicData>
+    <modExtensions>
+      <li Class="Heyra.HeyraBeamProps">
+        <headTexture>Weapon/Bullet_SoulGreatBow_Q</headTexture>
+        <headSize>3.2</headSize>
+        <travelFrames>Weapon/Heyra_Bowprojectile_Fadeout</travelFrames>
+        <fadeFrames>Mote/Heyra_Breath_</fadeFrames>
+        <shader>MoteGlow</shader>
+        <color>(70,80,254)</color>
+        <width>9.0</width>
+        <fadeWidth>1.6</fadeWidth>
+        <frameTicks>3</frameTicks>
+        <fadeFrameTicks>2</fadeFrameTicks>
+        <startForward>0.6</startForward>
+        <extendToRange>true</extendToRange>
+        <pierceFalloff>0.85</pierceFalloff>
+      </li>
+    </modExtensions>
     <projectile>
       <damageDef>ArrowHighVelocity</damageDef>
       <damageAmountBase>45</damageAmountBase>

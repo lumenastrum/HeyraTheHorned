@@ -474,14 +474,15 @@
 		</comps>
 	</HediffDef>
 	
-	<!-- [VEF FORK] Breath projectile — VEF.Weapons.ExpandableProjectileDef with Burn+EMP damage -->
-	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+	<!-- Breath: Heyra beam (Source/Heyra/Combat/Projectile_HeyraBeam.cs), replaced VEF GaussProjectile.
+	     Pierces past 2.8 cells, ends at the target; the blue smoke burst plays when it arrives. -->
+	<ThingDef ParentName="BaseBullet">
 		<defName>Heyra_Projectile_Breath</defName>
 		<label>thunder breath</label>
-		<thingClass>VEF.Weapons.GaussProjectile</thingClass>
+		<thingClass>Heyra.Projectile_HeyraBeam</thingClass>
 		<graphicData>
-			<texPath>Mote/Heyra_BreathFadeout_</texPath>
-			<texPathFadeOut>Mote/Heyra_Breath_</texPathFadeOut>
+			<texPath>Mote/Heyra_Breath_/Heyra_Breath_H</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>MoteGlow</shaderType>
 			<color>(70,80,254)</color>
 		</graphicData>
@@ -500,26 +501,31 @@
 			</extraDamages>
 		</projectile>
 		<drawOffscreen>true</drawOffscreen>
-		<lifeTimeDuration>27</lifeTimeDuration>
-		<widthScaleFactor>0.9</widthScaleFactor>
-		<heightScaleFactor>1.5</heightScaleFactor>
-		<startingPositionOffset>(0, 0, -2)</startingPositionOffset>
-		<totalSizeScale>0.8</totalSizeScale>
-		<tickFrameRate>3</tickFrameRate>
-		<finalTickFrameRate>2</finalTickFrameRate>
-		<tickDamageRate>20</tickDamageRate>
-		<dealsDamageOnce>true</dealsDamageOnce>
-		<minDistanceToAffect>2.8</minDistanceToAffect>
-	</VEF.Weapons.ExpandableProjectileDef>
+		<modExtensions>
+			<li Class="Heyra.HeyraBeamProps">
+				<travelFrames>Mote/Heyra_BreathFadeout_</travelFrames>
+				<fadeFrames>Mote/Heyra_Breath_</fadeFrames>
+				<shader>MoteGlow</shader>
+				<color>(70,80,254)</color>
+				<width>1.4</width>
+				<hitWidth>3.0</hitWidth>
+				<frameTicks>3</frameTicks>
+				<fadeFrameTicks>2</fadeFrameTicks>
+				<startForward>0.6</startForward>
+				<minDistance>2.8</minDistance>
+			</li>
+		</modExtensions>
+	</ThingDef>
 
-	<!-- [VEF FORK] Electric shock projectile — VEF.Weapons.ExpandableProjectileDef -->
-	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+	<!-- Static field shock: Heyra beam, replaced VEF GaussProjectile. Single-target zap
+	     (minDistance 12 > every band's range, so only the intended target is hit). -->
+	<ThingDef ParentName="BaseBullet">
 		<defName>Heyra_Projectile_Electricshock</defName>
 		<label>electric arc</label>
-		<thingClass>VEF.Weapons.GaussProjectile</thingClass>
+		<thingClass>Heyra.Projectile_HeyraBeam</thingClass>
 		<graphicData>
-			<texPath>Mote/Heyra_ElectricshockFadeout_</texPath>
-			<texPathFadeOut>Mote/Heyra_Electricshock_</texPathFadeOut>
+			<texPath>Mote/Heyra_Electricshock_/Heyra_Electricshock_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
@@ -537,16 +543,18 @@
 			</extraDamages>
 		</projectile>
 		<drawOffscreen>true</drawOffscreen>
-		<lifeTimeDuration>60</lifeTimeDuration>
-		<widthScaleFactor>1</widthScaleFactor>
-		<heightScaleFactor>1</heightScaleFactor>
-		<startingPositionOffset>(0, 0, 0)</startingPositionOffset>
-		<totalSizeScale>1</totalSizeScale>
-		<tickFrameRate>3</tickFrameRate>
-		<finalTickFrameRate>3</finalTickFrameRate>
-		<tickDamageRate>20</tickDamageRate>
-		<dealsDamageOnce>true</dealsDamageOnce>
-		<minDistanceToAffect>12</minDistanceToAffect>
-	</VEF.Weapons.ExpandableProjectileDef>
+		<modExtensions>
+			<li Class="Heyra.HeyraBeamProps">
+				<travelFrames>Mote/Heyra_ElectricshockFadeout_</travelFrames>
+				<fadeFrames>Mote/Heyra_Electricshock_</fadeFrames>
+				<shader>TransparentPostLight</shader>
+				<width>1.0</width>
+				<frameTicks>3</frameTicks>
+				<fadeFrameTicks>3</fadeFrameTicks>
+				<startForward>0.3</startForward>
+				<minDistance>12</minDistance>
+			</li>
+		</modExtensions>
+	</ThingDef>
 
 </Defs>
