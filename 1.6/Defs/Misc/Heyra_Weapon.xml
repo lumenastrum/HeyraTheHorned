@@ -822,8 +822,9 @@
         <headTexture>Weapon/Bullet_SoulGreatBow_Q</headTexture>
         <headSize>2.4</headSize>
         <travelFrames>Weapon/Heyra_Bowprojectile_Fadeout/Heyra_BowprojectileA</travelFrames>
-        <travelVisible>0.352~0.871</travelVisible>
+        <travelVisible>0.352~0.83</travelVisible>
         <trailLength>7</trailLength>
+        <trailLead>0.9</trailLead>
         <fadeFrames>Mote/Heyra_Electricshock_</fadeFrames>
         <shader>MoteGlow</shader>
         <color>(150,200,255)</color>
@@ -867,8 +868,9 @@
         <headTexture>Weapon/Bullet_SoulGreatBow_Q</headTexture>
         <headSize>3.2</headSize>
         <travelFrames>Weapon/Heyra_Bowprojectile_Fadeout/Heyra_BowprojectileA</travelFrames>
-        <travelVisible>0.352~0.871</travelVisible>
+        <travelVisible>0.352~0.83</travelVisible>
         <trailLength>9</trailLength>
+        <trailLead>1.2</trailLead>
         <fadeFrames>Mote/Heyra_Breath_</fadeFrames>
         <shader>MoteGlow</shader>
         <color>(70,80,254)</color>

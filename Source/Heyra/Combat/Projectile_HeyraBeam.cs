@@ -35,6 +35,10 @@ namespace Heyra
         /// <summary>Part of the travel texture's height that is actually painted (0 = bottom/start, 1 = top/head).
         /// The quad is stretched so this part lines up with the trail exactly.</summary>
         public FloatRange travelVisible = new FloatRange(0f, 1f);
+        /// <summary>Cells ahead of the head where the trail's front end sits while travelling. The head sprite
+        /// is centred on the head, so its tip leads by about half its size; without this the trail's glow
+        /// hung 2-3 cells behind the soul arrow's tip (Andres, 10/13: "still trails noticeably behind it").</summary>
+        public float trailLead = 0f;
         /// <summary>Optional sprite drawn at the head while it travels (e.g. the soul arrow).</summary>
         public string headTexture;
         public float headSize = 1.5f;
@@ -318,11 +322,13 @@ namespace Heyra
                 float visLo = 0f, visHi = 1f;
                 if (travelling)
                 {
-                    if (p.trailLength > 0f && span > p.trailLength)
+                    float front = Mathf.Min(length + p.trailLead, Length);
+                    if (p.trailLength > 0f && front > p.trailLength)
                     {
-                        from = head - Dir * p.trailLength;
+                        from = beamStart + Dir * (front - p.trailLength);
                         span = p.trailLength;
                     }
+                    else span = front;
                     visLo = Mathf.Clamp01(p.travelVisible.min);
                     visHi = Mathf.Clamp(p.travelVisible.max, visLo + 0.01f, 1f);
                 }
