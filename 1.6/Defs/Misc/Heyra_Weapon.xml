@@ -943,6 +943,8 @@
         <awakenedTexPath>Weapon/SoulBowAwakened/Heyra_SoulGreatBow_Awakened_</awakenedTexPath>
         <awakenedFrames>50</awakenedFrames>
         <awakenedFps>8</awakenedFps>
+        <awakenedGlowTexPath>Weapon/SoulBowAwakenedGlow/Heyra_SoulGreatBow_AwakenedGlow_</awakenedGlowTexPath>
+        <awakenedGlowStrength>0.6</awakenedGlowStrength>
       </li>
     </comps>
     <graphicData>

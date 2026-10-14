@@ -19,7 +19,7 @@ namespace Heyra
             if (comp == null || !comp.HasAwakenedLook) return true;
             Pawn holder = (eq.ParentHolder as Pawn_EquipmentTracker)?.pawn;
             if (!CompSoulWeapon.IsAwakened(holder)) return true;
-            Material mat = comp.AwakenedFrame();
+            Material mat = comp.AwakenedFrame(out Material glow);
             if (mat == null) return true;
 
             float angle = aimAngle - 90f;
@@ -47,6 +47,13 @@ namespace Heyra
             Vector2 size = eq.Graphic.drawSize;
             Matrix4x4 matrix = Matrix4x4.TRS(drawLoc, Quaternion.AngleAxis(angle, Vector3.up), new Vector3(size.x, 0f, size.y));
             Graphics.DrawMesh(mesh, matrix, mat, 0);
+            if (glow != null)
+            {
+                // Same placement, lifted above the LightingOverlay layer so night doesn't dim the spirit fire.
+                Vector3 up = drawLoc;
+                up.y = AltitudeLayer.VisEffects.AltitudeFor();
+                Graphics.DrawMesh(mesh, Matrix4x4.TRS(up, Quaternion.AngleAxis(angle, Vector3.up), new Vector3(size.x, 0f, size.y)), glow, 0);
+            }
             return false;
         }
     }

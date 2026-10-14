@@ -19,6 +19,11 @@ namespace Heyra
         public int awakenedFrames;
         public float awakenedFps = 10f;
 
+        /// <summary>Optional additive fire-only frames (same count), drawn above RimWorld's darkness so the
+        /// spirit fire shines at night. Strength scales their colour.</summary>
+        public string awakenedGlowTexPath;
+        public float awakenedGlowStrength = 0.6f;
+
         public CompProperties_SoulWeapon()
         {
             compClass = typeof(CompSoulWeapon);
@@ -28,6 +33,7 @@ namespace Heyra
     public class CompSoulWeapon : ThingComp
     {
         private Material[] awakenedMats;
+        private Material[] glowMats;
 
         public CompProperties_SoulWeapon Props =>
             (CompProperties_SoulWeapon)props;
@@ -37,18 +43,29 @@ namespace Heyra
         public static bool IsAwakened(Pawn pawn) =>
             pawn?.health?.hediffSet?.HasHediff(HeyraHediffDefOf.Heyra_Hediff_Enableformchange) == true;
 
-        /// <summary>The current awakened frame. Real-time, so the fire keeps moving while paused (like flame hair).</summary>
-        public Material AwakenedFrame()
+        /// <summary>The current awakened frame (and its glow frame, or null). Real-time, so the fire keeps
+        /// moving while paused (like flame hair).</summary>
+        public Material AwakenedFrame(out Material glow)
         {
+            glow = null;
             if (!HasAwakenedLook) return null;
             if (awakenedMats == null)
             {
                 awakenedMats = new Material[Props.awakenedFrames];
                 for (int i = 0; i < awakenedMats.Length; i++)
                     awakenedMats[i] = MaterialPool.MatFrom(Props.awakenedTexPath + i, ShaderDatabase.Transparent);
+                if (!Props.awakenedGlowTexPath.NullOrEmpty())
+                {
+                    float s = Props.awakenedGlowStrength;
+                    glowMats = new Material[Props.awakenedFrames];
+                    for (int i = 0; i < glowMats.Length; i++)
+                        glowMats[i] = MaterialPool.MatFrom(Props.awakenedGlowTexPath + i, ShaderDatabase.MoteGlow, new Color(s, s, s, 1f));
+                }
             }
             float phase = (parent.thingIDNumber % 100) * 0.037f;
-            return awakenedMats[Mathf.FloorToInt((Time.time + phase) * Props.awakenedFps) % awakenedMats.Length];
+            int f = Mathf.FloorToInt((Time.time + phase) * Props.awakenedFps) % awakenedMats.Length;
+            glow = glowMats?[f];
+            return awakenedMats[f];
         }
     }
 }
