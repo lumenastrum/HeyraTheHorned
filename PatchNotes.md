@@ -2,6 +2,15 @@
 
 ---
 
+## v1.0.21 — Clothes for the kids, a winter coat that takes dye, baby horns on the head
+
+Reported in play: a Heyra child had nothing Heyran to wear, and a medieval start has no tailoring bench for vanilla kids' clothes (only Kid Tribal at the crafting spot).
+- **Kids can wear four Heyran pieces**: short coat, simple cloak, winter coat and earmuffs (`developmentalStageFilter` Child, Adult). The three body pieces get `_Child_` textures that are copies of Bando's `_Female_` art, the same approach Wolfein uses for its kids' outfits; it sits right on the child body. Everything else stays adults-only. Babies wear none of it.
+- **The winter coat takes dye.** It was the only Heyran piece with no mask textures and its blue was painted in, so the styling station accepted it and nothing changed (its random colours never showed either). New masks cover only the cloth (fur trim and line art stay put), the cloth is now neutral grey with Bando's shading, and his blue is in the colour list as (0.34, 0.63, 1.0), so the classic coat still turns up. Its `.dds` files are gone; the PNGs load instead.
+- **Baby horns sit on the head** (Heyra and Rong). The Baby offsets were (0, −0.35) south and (0.05, −0.36) east, which put the horns on the swaddle; they now match child and adult, like the v1.0.14 Rong child fix. A biohorn antler still floats a little above a bald baby head (its sprite starts high and hair covers the gap from childhood on); left alone.
+
+Lab-checked on 1.6 with the v1.0.20 DLL (XML and textures only): Heyra and Rong at ages 2, 6, 10, 14 and 22, both outfits, five dye colours.
+
 ## v1.0.20 — A new Soul Bow, and Bando's MoHAR visuals restored
 
 ### Soul Great Bow
