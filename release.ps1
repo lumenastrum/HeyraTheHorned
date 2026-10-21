@@ -53,9 +53,10 @@ if (-not $SkipBuild) {
 # Wipe first: /MIR never purges folders that /XD excludes, so anything a previous run staged
 # under a now-excluded name (seen 2026-10-04 with .agents/.codex) would ride along forever.
 if (Test-Path $staging) { Remove-Item $staging -Recurse -Force }
+# In a git worktree .git is a FILE pointing at the main repo (local path inside), so /XD alone misses it.
 robocopy $repo $staging /MIR /NFL /NDL /NJH /NJS `
     /XD .git .vs .agents .codex .claude Source docs .release-staging `
-    /XF README.md .gitignore release.ps1 release.local.json release.local.example.json RELEASING.md workshop_item.vdf changenote.txt | Out-Null
+    /XF .git README.md .gitignore release.ps1 release.local.json release.local.example.json RELEASING.md workshop_item.vdf changenote.txt | Out-Null
 if ($LASTEXITCODE -ge 8) { Write-Error "robocopy staging failed with exit code $LASTEXITCODE" }
 
 $fileCount = (Get-ChildItem $staging -Recurse -File).Count
