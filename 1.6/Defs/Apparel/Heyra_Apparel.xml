@@ -767,6 +767,7 @@
 		<li>Legs</li>
       </bodyPartGroups>
       <wornGraphicPath>Apparel/Heyra_Traditional/Heyra_Shortcoat</wornGraphicPath>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <layers>
         <li>OnSkin</li>
       </layers>
@@ -1151,6 +1152,7 @@
 		<li>Legs</li>
       </bodyPartGroups>
       <wornGraphicPath>Apparel/Heyra_Traditional/Heyra_Cloak</wornGraphicPath>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <layers>
         <li>Shell</li>
       </layers>
@@ -1281,6 +1283,7 @@
 		<li>Legs</li>
       </bodyPartGroups>
       <wornGraphicPath>Apparel/Heyra_Traditional/Heyra_Wintercoat</wornGraphicPath>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <layers>
         <li>Shell</li>
       </layers>
@@ -2091,6 +2094,7 @@
         <li>UpperHead</li>
       </bodyPartGroups>
       <wornGraphicPath>Apparel/Heyra_Traditional/Heyra_Earmuffs</wornGraphicPath>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <layers>
 		<li>Overhead</li>
       </layers>
