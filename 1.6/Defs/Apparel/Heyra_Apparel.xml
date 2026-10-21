@@ -1237,6 +1237,11 @@
 	<colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
+          <!-- Bando's painted blue: the coat was baked blue with no mask, now it takes dye -->
+          <weight>20</weight>
+          <only>(0.34,0.63,1.0)</only>
+        </li>
+        <li>
           <weight>20</weight>
           <only>(0.8,0.75,0.65)</only>
         </li>
