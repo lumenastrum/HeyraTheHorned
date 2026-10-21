@@ -2,6 +2,11 @@
 
 ---
 
+## v1.0.22 — The crossbow hits what it aims at, and Heyra run a little less hot
+
+- **Heyran crossbow accuracy** 0.45/0.45/0.80/0.75 → **0.70/0.80/0.85/0.75** (touch/short/medium/long). Reported in play: a Shooting-12 pawn missed almost every shot. Lab (`ShotReport`, no cover): 28–42% from 4 to 18 cells, against 57–62% for a vanilla greatbow, and less accurate up close than our own blast crossbow (0.75/0.75). Now 60–65% across 4–18 cells. Live trial at 12 cells: 58% of hit rolls landed, against the game's 60%. Range, damage and cooldown unchanged.
+- **Narrow comfort softened** (`Heyra_Gene_NarrowComfort` +2/−4 → +1/−3): a bare Heyra is comfortable at 17–25°C (was 18–24). Heyra have few layering options, and an underdressed child hit heatstroke in a 32°C summer (#7: kids and adults share the same range, and the gap was clothing). A kid in short coat + simple cloak: −4 to 50°C.
+
 ## v1.0.21 — Clothes for the kids, a winter coat that takes dye, baby horns on the head
 
 Reported in play: a Heyra child had nothing Heyran to wear, and a medieval start has no tailoring bench for vanilla kids' clothes (only Kid Tribal at the crafting spot).

@@ -543,9 +543,11 @@
     <statBases>
 	  <WorkToMake>12000</WorkToMake>
       <Mass>1.0</Mass>
-	   <AccuracyTouch>0.45</AccuracyTouch>
-      <AccuracyShort>0.45</AccuracyShort>
-      <AccuracyMedium>0.80</AccuracyMedium>
+      <!-- v1.0.22: was 0.45/0.45/0.80/0.75, so up to 12 cells it hit about half as often as a
+           greatbow (35% vs 62% at 12 cells for a Shooting-12 pawn) and less than the blast crossbow. -->
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
       <AccuracyLong>0.75</AccuracyLong>
       <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
     </statBases>
